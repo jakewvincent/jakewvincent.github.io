@@ -1,0 +1,527 @@
+*{
+	font-family: "Merriweather Sans", sans-serif;
+	line-height: 1.65em;
+}
+
+h3{
+	font-family: "Merriweather", serif
+}
+
+html{
+	background-color: #f7f7f7;
+}
+
+/*-- Link styling --*/
+a{	/* Took out: border-bottom: 1px dashed #cacfd2;	line-height: 1.25em; text-indent: 0em; */
+	color: #114b10;
+	text-decoration: none;
+	font-weight: 600;
+	}
+
+a.image{	/* Prevent the above styling when the a tag is of class "image" */
+	display: initial;
+	border-bottom: none;
+	line-height: inherit;
+}
+
+nav a{
+	border-bottom: none;
+	color: black;
+}
+
+#ohrs a{
+	border-bottom: none;
+}
+	
+a:hover{
+	border-bottom: 1px dashed #8b8f91;
+	background-color: #e4eef5;
+	color: black;
+	}
+
+a.image:hover{	/* Prevent the above styling when the a tag is of class "image" */
+	border-bottom: none;
+	background-color: initial;
+	color: none;
+	}
+
+#activelink{
+	border-bottom: 1px solid #cacfd2;
+}
+	
+/*-- Conditional styling for different screen sizes --*/
+
+	/*-- For screen sizes smaller than 1279px wide --*/
+	@media (max-width:1279px) {	/* NOTE: Read as "for media whose width is no larger than 1279px (in width)" */
+		#container{
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+			overflow: auto;
+		}
+		#banner{	/* Center the banner contents */
+			text-align: center;
+		}
+		#banner #name{	/* Make sure my name is on its own line */
+			float: none;
+		}
+		#banner .email{	/* Make sure my email is on its own line */
+			float: none;
+			margin-left: 0;
+		}
+		nav{	/* Center the nav bar */
+			text-align: center;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#ohrs{	/* Make office hours box the only thing on its line */
+			clear: left, right;
+		}
+		.main-img{
+			display: block;
+			clear: left, right;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 1em;
+			margin-bottom: 1em;
+			width: 15rem;
+		}
+		.sectionnolist{
+			padding-left: 0.5rem;
+		}
+		
+		/* Make sure that on smaller screens, all table elements become blocks (so cells can rearrange themselves vertically) */
+		table, thead, tbody, th, td, tr{
+			display: block;
+		}
+		/* Hide table headers (but not display: none, for accessibility) */
+		thead tr{
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		/* Behave like a "row" */
+		td{
+			border: none;
+			border-bottom: 1px solid #cacfd2;
+			position: relative;
+			padding-left: 25%;
+		}
+		/* Set up styling for CSS-generated fake headers */
+		td:before{
+			position: absolute;
+			top: 6px;
+			left: 6px;
+			width: 45%;
+			padding-right: 10px;
+			white-space: nowrap;
+		}
+		/* Give the table contents fake headers */
+		td:nth-of-type(1):before{
+			content: "Advantages";
+			font-weight: bold;
+		}
+		td:nth-of-type(2):before{
+			content: "Disadvantages";
+			font-weight: bold;
+		}
+	}
+
+	/*-- For screen sizes larger than 1280px wide --*/
+	@media (min-width:1280px) {	/* NOTE: Read as "for media whose width is no smaller than 1280px (in width)" */
+		#container{
+			margin-left: auto;
+			margin-right: auto;
+			width: 60%;
+			padding: 1rem;
+			overflow: auto;
+		}
+		#banner #name{	/* Allow my name to appear on the same line as my email (see below) */
+			float: left;
+		}
+		#banner .email{	/* Allow my email to appear on the same line as my name (see above) */
+			float: left;
+			margin-left: 1em;
+		}
+		nav{	/* Center the nav bar */
+			text-align: center;	/* Previously: float: left; */
+		}
+		#ohrs{	/* Float office hours box to the left and prevent the box from overlapping other contents  */
+			clear: left;
+			overflow: hidden;
+		}
+		.main-img{	/* Float main image to the right and keep the width constant (see non-media-specific settings too) */
+			margin-left: 1em;
+			margin-right: 0;
+			float: right;
+			width: 19rem;
+		}
+		.dropdown:hover .dropdown-content {	/* Make dropdown box appear on mouseover */
+		    display: block;
+		}
+		table td + td{	/* On non-small screens (when tables won't rearrange themselves vertically), give the second column a left border */
+			border-left: 1px solid #cacfd2;
+		}
+		.sectionnolist{
+			padding-left: 2.5rem;
+		}
+	}
+
+	/*-- For screen sizes larger than 2048px wide --*/
+	@media (min-width: 2048px) {	/* NOTE: Read as "for media whose width is no smaller than 2048px (in width)" */
+		#container{
+			width: 40%;
+		}
+	}
+
+/*-- Banner styling --*/
+
+#banner{ 			/* Give the banner a bottom border */
+	border-bottom: 1px solid #cacfd2;
+	}
+
+#banner #name{		/* Float the name heading to the left */
+	font-family: "Merriweather", serif;
+}
+
+#banner .email{		/* ...and the email heading to the left */
+	color: #cacfd2;
+	font-family: "Merriweather", serif;
+}
+
+.divFill{			/* Keep banner separate from lower content */
+	clear: both;
+}
+
+/*--Nav styling--*/
+
+nav li{	/* Allow the nav bar items (syntactically an unordered list) to appear on the same line */
+	display: inline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+nav ul{
+	padding: 0px;
+}
+
+nav a{
+	position: relative;
+	display: inline-block;
+}
+
+nav a:active{
+	top: 1px;
+	left: 1px;
+	border-bottom: none;
+}
+
+nav .separator{
+	color: #cacfd2;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+/*--Image styling--*/
+
+.main-img{
+	height: auto;
+	margin-bottom: 1em;
+}
+
+.borderless{	/* Give images w/ the class "borderless" (use for images w/o borders included) rounded corners */
+	border-radius: 4px;
+}
+
+.icon{
+	width: 2em;
+	height: auto;
+	vertical-align: middle;
+	margin-right: 1em;
+}
+
+.screenshot-part{	/* Style narrower screenshot */
+	width: 65%;
+	height: auto;
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 2px;
+}
+
+.screenshot-full{	/* Style full-width screenshots */
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 2px;
+}
+
+/*--Content styling--*/
+
+#content{
+	position: relative;
+	clear: left;
+	margin-bottom: 0.5rem;
+}
+
+#ohrs{		/* Styling for office hours box */
+	text-align: center;
+	border: 3px double #cacfd2; /* ...previously #66ff66 */
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	font-variant: small-caps;
+	font-weight: bold;
+	border-radius: 4px;
+}
+
+#psrs{		/* Styling for phrase structure rules */
+	font-family: "Courier New", Courier, monospace;
+	list-style-type: none;
+}
+	
+/*--Section styling--*/
+.section{
+	border-left: 1px solid;
+	-webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;    
+    -o-border-image:
+      -o-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;
+    border-image:
+      linear-gradient(to bottom, #d9dddf, #cacfd2, #d9dddf) 1 100%;
+	}
+
+.sectionnolist{
+	border-left: 1px solid;
+	-webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;    
+    -o-border-image:
+      -o-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;
+    border-image:
+      linear-gradient(to bottom, #d9dddf, #cacfd2, #d9dddf) 1 100%;
+	}
+
+.sectionheading{
+	text-decoration: underline;
+	margin-top: 0.35rem;
+	margin-bottom: 0.35rem;
+	}
+	
+.subsection{
+	padding-left: 2rem;
+	}
+
+.par{	/* Ensure that elements (divs) marked "par" will not tolerate floating elements to their left */
+	clear: left;
+}
+
+/*-- Styling for LaTeX logo --*/
+/*-- Source: http://tess.oconnor.cx/2007/08/tex-poshlet --*/
+
+.tex sub, .latex sub, .latex sup{
+  text-transform: uppercase;
+}
+
+.tex sub, .latex sub {
+  vertical-align: -0.2em;
+  margin-left: -0.1667em;
+  margin-right: -0.125em;
+}
+
+.tex, .latex, .tex sub, .latex sub{
+  font-size: 1em;
+}
+
+.latex sup, .tex sup{
+  font-size: 0.9em;
+  vertical-align: 0.27em;
+  margin-left: -0.43em;
+  margin-right: -0.1em;
+}
+
+.latex, .tex{
+	font-family: "Merriweather", serif;
+}
+
+.latex sup, .latex sub, .tex sup, .tex sub{
+	font-family: "Merriweather", serif;
+}
+
+/*-- Interlinear glosses --*/
+/*-- HTML and CSS interlinear glossing code/styling written by me (Jake Vincent), but feel free to use/modify --*/
+
+.example{	/* Div consisting of all gloss units and free translation */
+	margin-left: 1.5rem;
+}
+
+.all-gloss-units{	/* Div consisting of all gloss-units, excluding the free translation */
+}
+
+.all-gloss-units .gloss-unit:not(:first-child){	/* Give all the non-initial gloss-units a left margin to ease readability */
+	margin-left: 0.25em;
+}
+
+.gloss-unit {	/* Div consisting of word and gloss to be vertically left-aligned */
+	display: inline-block;
+}
+
+.gloss-word{	/* Single word in the text. Keep here just in case. */
+}
+
+.gloss-gloss{	/* Gloss/translation of the single word. Keep here just in case. */
+}
+
+.gloss-gloss span{	/* Makes anything in a span tag within the gloss-gloss class small-caps, e.g. for lexical features */
+	font-variant: small-caps;
+}
+
+.free-transl{	/* English translation of text */
+}
+
+/*-- Expandable section styling --*/
+/*-- Specific method inspired by https://codepen.io/peternguyen/pen/hICga/ --*/
+
+input {
+	display: none;
+	visibility: hidden;
+}
+
+label {
+	font-family: "Merriweather", serif;
+	font-weight: bold;
+	display: block;
+	padding: 0.5em;
+	text-align: center;
+}
+
+label::before {
+	vertical-align: text-top;
+	display: inline-block;
+}
+
+#expand1, #expand2, #expand3 {
+	height: 0px;
+	overflow: hidden;
+	transition: height 0.5s;
+}
+
+#toggle1:checked ~ #expand1 {
+	height: auto;
+}
+
+#toggle2:checked ~ #expand2 {
+	height: auto;
+}
+
+#toggle3:checked ~ #expand3 {
+	height: auto;
+}
+
+.expand-button{
+	line-height: normal;
+	display: inline-block;
+	height: auto;
+	width: auto;
+	font-family: "Merriweather", serif;
+	border: 1px solid #cacfd2;
+	border-radius: 4px;
+	padding: 0.5em;
+	cursor: pointer;
+}
+
+section{
+	border-bottom: 1px solid #cacfd2;
+}
+
+/*-- Table styling --*/
+
+table{
+	width: 100%;
+}
+
+th{
+	border-bottom: 1px solid #cacfd2;
+	border-collapse: collapse;
+}
+
+td ul{
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+}
+
+/*-- Styling for "code" class --*/
+.code{
+	padding: 0.5em;
+	font-family: monospace;
+	background: #cacfd2;
+	border-radius: 4px;
+}
+
+/*-- Styling for Research Gate button --*/
+
+.serif {
+	font-family: "Merriweather", serif;
+}
+
+.sans-serif {
+	font-family: "Merriweather Sans", sans-serif;
+}
+
+#rg-button {
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: block;
+	width: 4rem;
+	height: 4rem;
+	line-height: 4.2rem;
+	border-radius: 4px;
+	background: #00CCBB;
+	border-bottom: none;
+	font-size: 1.75em;
+	box-shadow: 2px 2px 2px #cacfd2;
+}
+
+#rg-button:hover {
+	background: rgb(0, 185, 170);
+}
+
+#rg-button:active a{
+	top: 1px;
+	left: 1px;
+}
+
+/*-- Footer styling --*/
+
+.spacer{	/* Keep the footer separate from the rest of the content */
+	clear: both;
+}
+
+footer{
+	padding-top: 10px;
+	border-top: 1px solid #cacfd2;
+	font-size: 0.75rem;
+	font-style: italic;
+	color: #cacfd2;
+	text-align: right;
+}
+
