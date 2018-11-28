@@ -59,6 +59,10 @@ a.image:hover{	/* Prevent the above styling when the a tag is of class "image" *
 			width: 100%;
 			overflow: auto;
 		}
+		#tinycontainer{ /* Div for redirection notice */
+			width: 50%;
+			padding-top: 20%;
+		}
 		#banner{	/* Center the banner contents */
 			text-align: center;
 		}
@@ -136,6 +140,10 @@ a.image:hover{	/* Prevent the above styling when the a tag is of class "image" *
 			width: 60%;
 			padding: 1rem;
 			overflow: auto;
+		}
+		#tinycontainer{ /* Used for redirection notice only */
+			width: 25%;
+			padding-top: 12.5%;
 		}
 		#banner #name{	/* Allow my name to appear on the same line as my email (see below) */
 			float: left;
@@ -394,6 +402,25 @@ nav .separator{
 }
 
 .free-transl{	/* English translation of text */
+}
+
+/*-- Styling for redirect pages --*/
+
+#tinycontainer{ /* Used for redirection notice only */
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 1rem;
+	overflow: auto;
+	text-align: center;
+}
+#tinycontainer img{
+	display: block;
+	width: 50%;
+	opacity: 0.5;
+	margin-left: auto;
+	margin-right: auto;
+	clear: left, right;
+	padding: 1em;
 }
 
 /*-- Expandable section styling --*/
