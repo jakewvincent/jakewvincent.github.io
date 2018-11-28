@@ -35,11 +35,10 @@ nav a{
 	
 a:hover{
 	border-bottom: 1px dashed #8b8f91;
-	background-color: #e4eef5;
 	color: black;
 	}
 
-a.image:hover{	/* Prevent the above styling when the a tag is of class "image" */
+a.image:hover{	/* Prevent the above styling when the <a> tag is of class "image" */
 	border-bottom: none;
 	background-color: initial;
 	color: none;
@@ -60,8 +59,11 @@ a.image:hover{	/* Prevent the above styling when the a tag is of class "image" *
 			overflow: auto;
 		}
 		#tinycontainer{ /* Div for redirection notice */
+			margin-left: auto;
+			margin-right: auto;
 			width: 50%;
-			padding-top: 20%;
+			padding-top: 5rem;
+			overflow: auto;
 		}
 		#banner{	/* Center the banner contents */
 			text-align: center;
@@ -142,8 +144,11 @@ a.image:hover{	/* Prevent the above styling when the a tag is of class "image" *
 			overflow: auto;
 		}
 		#tinycontainer{ /* Used for redirection notice only */
+			margin-left: auto;
+			margin-right: auto;
 			width: 25%;
 			padding-top: 12.5%;
+			overflow: auto;
 		}
 		#banner #name{	/* Allow my name to appear on the same line as my email (see below) */
 			float: left;
@@ -409,8 +414,6 @@ nav .separator{
 #tinycontainer{ /* Used for redirection notice only */
 	margin-left: auto;
 	margin-right: auto;
-	padding-bottom: 1rem;
-	overflow: auto;
 	text-align: center;
 }
 #tinycontainer img{
@@ -420,7 +423,7 @@ nav .separator{
 	margin-left: auto;
 	margin-right: auto;
 	clear: left, right;
-	padding: 1em;
+	padding: 1rem;
 }
 
 /*-- Expandable section styling --*/
