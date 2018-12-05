@@ -207,7 +207,11 @@ a.image:hover{	/* Prevent the above styling when the <a> tag is of class "image"
 	clear: both;
 }
 
-/*--Nav styling--*/
+/*-- Nav styling --*/
+nav{
+	overflow: hidden;
+	height: 3.65em;
+}
 
 nav li{	/* Allow the nav bar items (syntactically an unordered list) to appear on the same line */
 	display: inline;
@@ -218,6 +222,10 @@ nav li{	/* Allow the nav bar items (syntactically an unordered list) to appear o
 
 nav ul{
 	padding: 0px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0
 }
 
 nav a{
@@ -235,6 +243,21 @@ nav .separator{
 	color: #cacfd2;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
+}
+
+/* Sticky class is added to nav using JS once nav reaches top of screen */
+.sticky{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #f7f7f7;
+	transition: 0.5s;
+	width: 100%;
+}
+
+.sticky + .main{
+	padding-top: 3.65em;
 }
 
 /*--Image styling--*/
