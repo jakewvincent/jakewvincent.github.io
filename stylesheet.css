@@ -158,7 +158,7 @@ a.image:hover{	/* Prevent the above styling when the <a> tag is of class "image"
 			margin-left: 1em;
 		}
 		nav{	/* Center the nav bar */
-			text-align: center;	/* Previously: float: left; */
+			text-align: center;
 		}
 		#ohrs{	/* Float office hours box to the left and prevent the box from overlapping other contents  */
 			clear: left;
@@ -210,7 +210,9 @@ a.image:hover{	/* Prevent the above styling when the <a> tag is of class "image"
 /*-- Nav styling --*/
 nav{
 	overflow: hidden;
-	height: 3.65em;
+	height: 4.25em;
+	transition: 0.33s;
+	border-bottom: 1px solid #f7f7f7;
 }
 
 nav li{	/* Allow the nav bar items (syntactically an unordered list) to appear on the same line */
@@ -222,8 +224,8 @@ nav li{	/* Allow the nav bar items (syntactically an unordered list) to appear o
 
 nav ul{
 	padding: 0px;
-	margin-top: 1em;
-	margin-bottom: 1em;
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
 	margin-left: 0;
 	margin-right: 0
 }
@@ -252,9 +254,10 @@ nav .separator{
 	left: 0;
 	right: 0;
 	background-color: #f7f7f7;
-	transition: 0.5s;
+	transition: 0.33s;
 	width: 100%;
 	z-index: 500;
+	border-bottom: 1px solid #cacfd2;
 }
 
 .sticky + .main{
@@ -313,7 +316,6 @@ nav .separator{
 	text-align: center;
 	border: 3px double #cacfd2; /* ...previously #66ff66 */
 	margin: 0 auto;
-	margin-top: 10px;
 	margin-bottom: 10px;
 	padding-left: 25px;
 	padding-right: 25px;
@@ -325,6 +327,11 @@ nav .separator{
 #psrs{		/* Styling for phrase structure rules */
 	font-family: "Courier New", Courier, monospace;
 	list-style-type: none;
+}
+
+.buttons{
+	padding: 0.5rem;
+	overflow: hidden;
 }
 	
 /*--Section styling--*/
@@ -373,153 +380,153 @@ nav .separator{
 /*-- Styling for LaTeX logo --*/
 /*-- Source: http://tess.oconnor.cx/2007/08/tex-poshlet --*/
 
-.tex sub, .latex sub, .latex sup{
-  text-transform: uppercase;
-}
+	.tex sub, .latex sub, .latex sup{
+	text-transform: uppercase;
+	}
 
-.tex sub, .latex sub {
-  vertical-align: -0.2em;
-  margin-left: -0.1667em;
-  margin-right: -0.125em;
-}
+	.tex sub, .latex sub {
+	vertical-align: -0.2em;
+	margin-left: -0.1667em;
+	margin-right: -0.125em;
+	}
 
-.tex, .latex, .tex sub, .latex sub{
-  font-size: 1em;
-}
+	.tex, .latex, .tex sub, .latex sub{
+	font-size: 1em;
+	}
 
-.latex sup, .tex sup{
-  font-size: 0.9em;
-  vertical-align: 0.27em;
-  margin-left: -0.43em;
-  margin-right: -0.1em;
-}
+	.latex sup, .tex sup{
+	font-size: 0.9em;
+	vertical-align: 0.27em;
+	margin-left: -0.43em;
+	margin-right: -0.1em;
+	}
 
-.latex, .tex{
-	font-family: "Merriweather", serif;
-}
+	.latex, .tex{
+		font-family: "Merriweather", serif;
+	}
 
-.latex sup, .latex sub, .tex sup, .tex sub{
-	font-family: "Merriweather", serif;
-}
+	.latex sup, .latex sub, .tex sup, .tex sub{
+		font-family: "Merriweather", serif;
+	}
 
 /*-- Interlinear glosses --*/
 /*-- HTML and CSS interlinear glossing code/styling written by me (Jake Vincent), but feel free to use/modify --*/
 
-.example{	/* Div consisting of all gloss units and free translation */
-	margin-left: 1.5rem;
-}
+	.example{	/* Div consisting of all gloss units and free translation */
+		margin-left: 1.5rem;
+	}
 
-.all-gloss-units{	/* Div consisting of all gloss-units, excluding the free translation */
-}
+	.all-gloss-units{	/* Div consisting of all gloss-units, excluding the free translation */
+	}
 
-.all-gloss-units .gloss-unit:not(:first-child){	/* Give all the non-initial gloss-units a left margin to ease readability */
-	margin-left: 0.25em;
-}
+	.all-gloss-units .gloss-unit:not(:first-child){	/* Give all the non-initial gloss-units a left margin to ease readability */
+		margin-left: 0.25em;
+	}
 
-.gloss-unit {	/* Div consisting of word and gloss to be vertically left-aligned */
-	display: inline-block;
-}
+	.gloss-unit {	/* Div consisting of word and gloss to be vertically left-aligned */
+		display: inline-block;
+	}
 
-.gloss-word{	/* Single word in the text. Keep here just in case. */
-}
+	.gloss-word{	/* Single word in the text. Keep here just in case. */
+	}
 
-.gloss-gloss{	/* Gloss/translation of the single word. Keep here just in case. */
-}
+	.gloss-gloss{	/* Gloss/translation of the single word. Keep here just in case. */
+	}
 
-.gloss-gloss span{	/* Makes anything in a span tag within the gloss-gloss class small-caps, e.g. for lexical features */
-	font-variant: small-caps;
-}
+	.gloss-gloss span{	/* Makes anything in a span tag within the gloss-gloss class small-caps, e.g. for lexical features */
+		font-variant: small-caps;
+	}
 
-.free-transl{	/* English translation of text */
-}
+	.free-transl{	/* English translation of text */
+	}
 
 /*-- Styling for redirect pages --*/
 
-#tinycontainer{ /* Used for redirection notice only */
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
-#tinycontainer img{
-	display: block;
-	width: 50%;
-	opacity: 0.5;
-	margin-left: auto;
-	margin-right: auto;
-	clear: left, right;
-	padding: 1rem;
-}
+	#tinycontainer{ /* Used for redirection notice only */
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	#tinycontainer img{
+		display: block;
+		width: 50%;
+		opacity: 0.5;
+		margin-left: auto;
+		margin-right: auto;
+		clear: left, right;
+		padding: 1rem;
+	}
 
 /*-- Expandable section styling --*/
 /*-- Specific method inspired by https://codepen.io/peternguyen/pen/hICga/ --*/
 
-input {
-	display: none;
-	visibility: hidden;
-}
+	input {
+		display: none;
+		visibility: hidden;
+	}
 
-label {
-	font-family: "Merriweather", serif;
-	font-weight: bold;
-	display: block;
-	padding: 0.5em;
-	text-align: center;
-}
+	label {
+		font-family: "Merriweather", serif;
+		font-weight: bold;
+		display: block;
+		padding: 0.5em;
+		text-align: center;
+	}
 
-label::before {
-	vertical-align: text-top;
-	display: inline-block;
-}
+	label::before {
+		vertical-align: text-top;
+		display: inline-block;
+	}
 
-#expand1, #expand2, #expand3 {
-	height: 0px;
-	overflow: hidden;
-	transition: height 0.5s;
-}
+	#expand1, #expand2, #expand3 {
+		height: 0px;
+		overflow: hidden;
+		transition: height 0.5s;
+	}
 
-#toggle1:checked ~ #expand1 {
-	height: auto;
-}
+	#toggle1:checked ~ #expand1 {
+		height: auto;
+	}
 
-#toggle2:checked ~ #expand2 {
-	height: auto;
-}
+	#toggle2:checked ~ #expand2 {
+		height: auto;
+	}
 
-#toggle3:checked ~ #expand3 {
-	height: auto;
-}
+	#toggle3:checked ~ #expand3 {
+		height: auto;
+	}
 
-.expand-button{
-	line-height: normal;
-	display: inline-block;
-	height: auto;
-	width: auto;
-	font-family: "Merriweather", serif;
-	border: 1px solid #cacfd2;
-	border-radius: 4px;
-	padding: 0.5em;
-	cursor: pointer;
-}
+	.expand-button{
+		line-height: normal;
+		display: inline-block;
+		height: auto;
+		width: auto;
+		font-family: "Merriweather", serif;
+		border: 1px solid #cacfd2;
+		border-radius: 4px;
+		padding: 0.5em;
+		cursor: pointer;
+	}
 
-section{
-	border-bottom: 1px solid #cacfd2;
-}
+	section{
+		border-bottom: 1px solid #cacfd2;
+	}
 
 /*-- Table styling --*/
 
-table{
-	width: 100%;
-}
+	table{
+		width: 100%;
+	}
 
-th{
-	border-bottom: 1px solid #cacfd2;
-	border-collapse: collapse;
-}
+	th{
+		border-bottom: 1px solid #cacfd2;
+		border-collapse: collapse;
+	}
 
-td ul{
-	margin-top: 0.25em;
-	margin-bottom: 0.25em;
-}
+	td ul{
+		margin-top: 0.25em;
+		margin-bottom: 0.25em;
+	}
 
 /*-- Styling for "code" class --*/
 .code{
@@ -559,9 +566,26 @@ td ul{
 	background: rgb(0, 185, 170);
 }
 
-#rg-button:active a{
-	top: 1px;
-	left: 1px;
+/*-- Styling for PDF button --*/
+
+#pdf-button {
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: block;
+	width: 4rem;
+	height: 4rem;
+	line-height: 4.2rem;
+	border-radius: 4px;
+	background: #ff0000;
+	border-bottom: none;
+	font-size: 1.25em;
+	box-shadow: 2px 2px 2px #cacfd2;
+}
+
+#pdf-button:hover {
+	background: #cc0000;
 }
 
 /*-- Footer styling --*/
@@ -578,4 +602,3 @@ footer{
 	color: #cacfd2;
 	text-align: right;
 }
-
