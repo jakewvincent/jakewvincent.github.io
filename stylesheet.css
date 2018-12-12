@@ -12,41 +12,41 @@ html{
 }
 
 /*-- Link styling --*/
-a{	/* Took out: border-bottom: 1px dashed #cacfd2;	line-height: 1.25em; text-indent: 0em; */
-	color: #114b10;
-	text-decoration: none;
-	font-weight: 600;
+	a{	/* Took out: border-bottom: 1px dashed #cacfd2;	line-height: 1.25em; text-indent: 0em; */
+		color: #114b10;
+		text-decoration: none;
+		font-weight: 600;
+		}
+
+	a.image{	/* Prevent the above styling when the a tag is of class "image" */
+		display: initial;
+		border-bottom: none;
+		line-height: inherit;
 	}
 
-a.image{	/* Prevent the above styling when the a tag is of class "image" */
-	display: initial;
-	border-bottom: none;
-	line-height: inherit;
-}
-
-nav a{
-	border-bottom: none;
-	color: black;
-}
-
-#ohrs a{
-	border-bottom: none;
-}
-	
-a:hover{
-	border-bottom: 1px dashed #8b8f91;
-	color: black;
+	nav a{
+		border-bottom: none;
+		color: black;
 	}
 
-a.image:hover{	/* Prevent the above styling when the <a> tag is of class "image" */
-	border-bottom: none;
-	background-color: initial;
-	color: none;
+	#ohrs a{
+		border-bottom: none;
 	}
+		
+	a:hover{
+		border-bottom: 1px dashed #8b8f91;
+		color: black;
+		}
 
-#activelink{
-	border-bottom: 1px solid #cacfd2;
-}
+	a.image:hover{	/* Prevent the above styling when the <a> tag is of class "image" */
+		border-bottom: none;
+		background-color: initial;
+		color: none;
+		}
+
+	#activelink{
+		border-bottom: 1px solid #cacfd2;
+	}
 	
 /*-- Conditional styling for different screen sizes --*/
 
@@ -190,192 +190,192 @@ a.image:hover{	/* Prevent the above styling when the <a> tag is of class "image"
 
 /*-- Banner styling --*/
 
-#banner{ 			/* Give the banner a bottom border */
-	border-bottom: 1px solid #cacfd2;
+	#banner{ 			/* Give the banner a bottom border */
+		border-bottom: 1px solid #cacfd2;
+		}
+
+	#banner #name{		/* Float the name heading to the left */
+		font-family: "Merriweather", serif;
 	}
 
-#banner #name{		/* Float the name heading to the left */
-	font-family: "Merriweather", serif;
-}
+	#banner .email{		/* ...and the email heading to the left */
+		color: #cacfd2;
+		font-family: "Merriweather", serif;
+	}
 
-#banner .email{		/* ...and the email heading to the left */
-	color: #cacfd2;
-	font-family: "Merriweather", serif;
-}
-
-.divFill{			/* Keep banner separate from lower content */
-	clear: both;
-}
+	.divFill{			/* Keep banner separate from lower content */
+		clear: both;
+	}
 
 /*-- Nav styling --*/
-nav{
-	overflow: hidden;
-	height: 4.25em;
-	transition: 0.33s;
-	border-bottom: 1px solid #f7f7f7;
-}
+	nav{
+		overflow: hidden;
+		height: 4.25em;
+		transition: 0.33s;
+		border-bottom: 1px solid #f7f7f7;
+	}
 
-nav li{	/* Allow the nav bar items (syntactically an unordered list) to appear on the same line */
-	display: inline;
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
+	nav li{	/* Allow the nav bar items (syntactically an unordered list) to appear on the same line */
+		display: inline;
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
 
-nav ul{
-	padding: 0px;
-	margin-top: 1.25em;
-	margin-bottom: 1.25em;
-	margin-left: 0;
-	margin-right: 0
-}
+	nav ul{
+		padding: 0px;
+		margin-top: 1.25em;
+		margin-bottom: 1.25em;
+		margin-left: 0;
+		margin-right: 0
+	}
 
-nav a{
-	position: relative;
-	display: inline-block;
-}
+	nav a{
+		position: relative;
+		display: inline-block;
+	}
 
-nav a:active{
-	top: 1px;
-	left: 1px;
-	border-bottom: none;
-}
+	nav a:active{
+		top: 1px;
+		left: 1px;
+		border-bottom: none;
+	}
 
-nav .separator{
-	color: #cacfd2;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-}
+	nav .separator{
+		color: #cacfd2;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
 
-/* Sticky class is added to nav using JS once nav reaches top of screen */
-.sticky{
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	background-color: #f7f7f7;
-	transition: 0.33s;
-	width: 100%;
-	z-index: 500;
-	border-bottom: 1px solid #cacfd2;
-}
+	/* Sticky class is added to nav using JS once nav reaches top of screen */
+	.sticky{
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: #f7f7f7;
+		transition: 0.33s;
+		width: 100%;
+		z-index: 500;
+		border-bottom: 1px solid #cacfd2;
+	}
 
-.sticky + .main{
-	padding-top: 3.65em;
-}
+	.sticky + .main{
+		padding-top: 4.25em;
+	}
 
 /*--Image styling--*/
 
-.main-img{
-	height: auto;
-	margin-bottom: 1em;
-}
+	.main-img{
+		height: auto;
+		margin-bottom: 1em;
+	}
 
-.borderless{	/* Give images w/ the class "borderless" (use for images w/o borders included) rounded corners */
-	border-radius: 4px;
-}
+	.borderless{	/* Give images w/ the class "borderless" (use for images w/o borders included) rounded corners */
+		border-radius: 4px;
+	}
 
-.icon{
-	width: 2em;
-	height: auto;
-	vertical-align: middle;
-	margin-right: 1em;
-}
+	.icon{
+		width: 2em;
+		height: auto;
+		vertical-align: middle;
+		margin-right: 1em;
+	}
 
-.screenshot-part{	/* Style narrower screenshot */
-	width: 65%;
-	height: auto;
-	display: block;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 2px;
-}
+	.screenshot-part{	/* Style narrower screenshot */
+		width: 65%;
+		height: auto;
+		display: block;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 2px;
+	}
 
-.screenshot-full{	/* Style full-width screenshots */
-	width: 100%;
-	height: auto;
-	display: block;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 2px;
-}
+	.screenshot-full{	/* Style full-width screenshots */
+		width: 100%;
+		height: auto;
+		display: block;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 2px;
+	}
 
 /*--Content styling--*/
 
-#content{
-	position: relative;
-	clear: left;
-	margin-bottom: 0.5rem;
-}
-
-#ohrs{		/* Styling for office hours box */
-	text-align: center;
-	border: 3px double #cacfd2; /* ...previously #66ff66 */
-	margin: 0 auto;
-	margin-bottom: 10px;
-	padding-left: 25px;
-	padding-right: 25px;
-	font-variant: small-caps;
-	font-weight: bold;
-	border-radius: 4px;
-}
-
-#psrs{		/* Styling for phrase structure rules */
-	font-family: "Courier New", Courier, monospace;
-	list-style-type: none;
-}
-
-.buttons{
-	padding: 0.5rem;
-	overflow: hidden;
-}
-	
-/*--Section styling--*/
-.section{
-	border-left: 1px solid;
-	-webkit-border-image: 
-      -webkit-gradient(linear, 0 0, 0 100%, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
-    -webkit-border-image: 
-      -webkit-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;
-    -moz-border-image:
-      -moz-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;    
-    -o-border-image:
-      -o-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;
-    border-image:
-      linear-gradient(to bottom, #d9dddf, #cacfd2, #d9dddf) 1 100%;
+	#content{
+		position: relative;
+		clear: left;
+		margin-bottom: 0.5rem;
 	}
 
-.sectionnolist{
-	border-left: 1px solid;
-	-webkit-border-image: 
-      -webkit-gradient(linear, 0 0, 0 100%, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
-    -webkit-border-image: 
-      -webkit-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;
-    -moz-border-image:
-      -moz-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;    
-    -o-border-image:
-      -o-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;
-    border-image:
-      linear-gradient(to bottom, #d9dddf, #cacfd2, #d9dddf) 1 100%;
+	#ohrs{		/* Styling for office hours box */
+		text-align: center;
+		border: 3px double #cacfd2; /* ...previously #66ff66 */
+		margin: 0 auto;
+		margin-bottom: 10px;
+		padding-left: 25px;
+		padding-right: 25px;
+		font-variant: small-caps;
+		font-weight: bold;
+		border-radius: 4px;
 	}
 
-.sectionheading{
-	text-decoration: underline;
-	margin-top: 0.35rem;
-	margin-bottom: 0.35rem;
-	}
-	
-.subsection{
-	padding-left: 2rem;
+	#psrs{		/* Styling for phrase structure rules */
+		font-family: "Courier New", Courier, monospace;
+		list-style-type: none;
 	}
 
-.par{	/* Ensure that elements (divs) marked "par" will not tolerate floating elements to their left */
-	clear: left;
-}
+	.buttons{
+		padding: 0.5rem;
+		overflow: hidden;
+	}
+		
+	/*--Section styling--*/
+	.section{
+		border-left: 1px solid;
+		-webkit-border-image: 
+		-webkit-gradient(linear, 0 0, 0 100%, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
+		-webkit-border-image: 
+		-webkit-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;
+		-moz-border-image:
+		-moz-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;    
+		-o-border-image:
+		-o-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;
+		border-image:
+		linear-gradient(to bottom, #d9dddf, #cacfd2, #d9dddf) 1 100%;
+		}
+
+	.sectionnolist{
+		border-left: 1px solid;
+		-webkit-border-image: 
+		-webkit-gradient(linear, 0 0, 0 100%, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
+		-webkit-border-image: 
+		-webkit-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;
+		-moz-border-image:
+		-moz-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;    
+		-o-border-image:
+		-o-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;
+		border-image:
+		linear-gradient(to bottom, #d9dddf, #cacfd2, #d9dddf) 1 100%;
+		}
+
+	.sectionheading{
+		text-decoration: underline;
+		margin-top: 0.35rem;
+		margin-bottom: 0.35rem;
+		}
+		
+	.subsection{
+		padding-left: 2rem;
+		}
+
+	.par{	/* Ensure that elements (divs) marked "par" will not tolerate floating elements to their left */
+		clear: left;
+	}
 
 /*-- Styling for LaTeX logo --*/
 /*-- Source: http://tess.oconnor.cx/2007/08/tex-poshlet --*/
@@ -529,76 +529,76 @@ nav .separator{
 	}
 
 /*-- Styling for "code" class --*/
-.code{
-	padding: 0.5em;
-	font-family: monospace;
-	background: #cacfd2;
-	border-radius: 4px;
-}
+	.code{
+		padding: 0.5em;
+		font-family: monospace;
+		background: #cacfd2;
+		border-radius: 4px;
+	}
 
 /*-- Styling for Research Gate button --*/
 
-.serif {
-	font-family: "Merriweather", serif;
-}
+	.serif {
+		font-family: "Merriweather", serif;
+	}
 
-.sans-serif {
-	font-family: "Merriweather Sans", sans-serif;
-}
+	.sans-serif {
+		font-family: "Merriweather Sans", sans-serif;
+	}
 
-#rg-button {
-	color: white;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	display: block;
-	width: 4rem;
-	height: 4rem;
-	line-height: 4.2rem;
-	border-radius: 4px;
-	background: #00CCBB;
-	border-bottom: none;
-	font-size: 1.75em;
-	box-shadow: 2px 2px 2px #cacfd2;
-}
+	#rg-button {
+		color: white;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		display: block;
+		width: 4rem;
+		height: 4rem;
+		line-height: 4.2rem;
+		border-radius: 4px;
+		background: #00CCBB;
+		border-bottom: none;
+		font-size: 1.75em;
+		box-shadow: 2px 2px 2px #cacfd2;
+	}
 
-#rg-button:hover {
-	background: rgb(0, 185, 170);
-}
+	#rg-button:hover {
+		background: rgb(0, 185, 170);
+	}
 
 /*-- Styling for PDF button --*/
 
-#pdf-button {
-	color: white;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	display: block;
-	width: 4rem;
-	height: 4rem;
-	line-height: 4.2rem;
-	border-radius: 4px;
-	background: #ff0000;
-	border-bottom: none;
-	font-size: 1.25em;
-	box-shadow: 2px 2px 2px #cacfd2;
-}
+	#pdf-button {
+		color: white;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		display: block;
+		width: 4rem;
+		height: 4rem;
+		line-height: 4.2rem;
+		border-radius: 4px;
+		background: #ff0000;
+		border-bottom: none;
+		font-size: 1.25em;
+		box-shadow: 2px 2px 2px #cacfd2;
+	}
 
-#pdf-button:hover {
-	background: #cc0000;
-}
+	#pdf-button:hover {
+		background: #cc0000;
+	}
 
 /*-- Footer styling --*/
 
-.spacer{	/* Keep the footer separate from the rest of the content */
-	clear: both;
-}
+	.spacer{	/* Keep the footer separate from the rest of the content */
+		clear: both;
+	}
 
-footer{
-	padding-top: 10px;
-	border-top: 1px solid #cacfd2;
-	font-size: 0.75rem;
-	font-style: italic;
-	color: #cacfd2;
-	text-align: right;
-}
+	footer{
+		padding-top: 10px;
+		border-top: 1px solid #cacfd2;
+		font-size: 0.75rem;
+		font-style: italic;
+		color: #cacfd2;
+		text-align: right;
+	}
