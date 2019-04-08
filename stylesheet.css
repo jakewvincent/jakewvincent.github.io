@@ -534,6 +534,7 @@ html{
 		font-family: monospace;
 		background: #cacfd2;
 		border-radius: 4px;
+		overflow: hidden;
 	}
 
 /*-- Styling for Research Gate button --*/
