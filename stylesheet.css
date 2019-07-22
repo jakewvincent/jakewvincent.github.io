@@ -464,6 +464,11 @@ html{
 /*-- Expandable section styling --*/
 /*-- Specific method inspired by https://codepen.io/peternguyen/pen/hICga/ --*/
 
+	.expand-par{	/* Ensure that elements (divs) marked "par" will not tolerate floating elements to their left */
+		clear: left;
+		margin-top: 0;
+	}
+
 	input {
 		display: none;
 		visibility: hidden;
@@ -472,9 +477,7 @@ html{
 	label {
 		font-family: "Merriweather", serif;
 		font-weight: bold;
-		display: block;
-		padding: 0.5em;
-		text-align: center;
+		text-align: left;
 	}
 
 	label::before {

@@ -26,7 +26,7 @@
 				<li class="separator">/</li>
 				<li><a href="teaching.html">Teaching</a></li>
 				<li class="separator">/</li>
-				<li><a href="research.html" id="activelink">Research</a></li>
+				<li><a href="research.html" id="activelink">Research & Projects</a></li>
 				<li class="separator">/</li>
 				<li><a href="blog.html">Blog</a></li>
 			</ul>
@@ -107,18 +107,39 @@
 
 				</div>
 
-				<h3>Other research</h3>
+				<h3>Other projects <span style="font-style: italic; color: #cacfd2">(click to expand)</span></h3>
 					<div class=sectionnolist>
-						<p class="par">
-							<b>Rhyme in Chamorro poetry</b>
-							<br>In an undergraduate project, I analyzed 106 of Joaquin F. Borja's rhyme pairs from the collection of Chamorro literature <i><a href="http://books.google.com/books/about/Estreyas_Marianas.html?id=1oAmAQAAIAAJ">Istreyas Marianas: Chamorro</a></i>. Approximately 25% of the rhyme pairs there have strict rhyme (= identical from the vowel of the stressed syllable to the end of the word), and the remainder have what I called <i>abstract rhyme</i>, which seems to creatively utilize abstract associations between classes of segments established by the phonological processes in Chamorro grammar. The use of abstract rhyme results in a broad (yet orderly) range of licit rhyming pairs. (<a href="documents/champohandout.pdf">handout</a>)
-						</p>
+						<input id="toggle1" type="checkbox" unchecked>
+						<label for="toggle1">
+							Syllable parser
+						</label>
+						<div class="expand-par" id="expand1">
+							<p>
+								I am currently working on a syllable parser that takes input in IPA characters and produces a syllabified output. Currently, the function follows essentially the same procedure that students are taught to follow in Phonology 1. It first identifies syllable nuclei (including diphthongs), then parses preceding consonants into the syllable of the following nucleus segment by segment (leaving segments unparsed if they don't form a legal onset cluster), and finally parsing remaining unparsed segments into the coda of the syllable of the preceding nucleus.
+							</p>
+							<p>
+								The program also includes an integration with the <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">Carnegie Mellon University Pronouncing Dictionary</a>, which contains pronunciations for over 100,000 words. The script converts the ARPABET codes that come with the dictionary into IPA, which makes it possible to look for statistical patterns across English pronunciations and syllabifications.
+							</p>
+							<p>
+								R implementation: <a href="https://github.com/jakewvincent/R-syllable-parser">github.com/jakewvincent/R-syllable-parser</a>.
+							</p>
+						</div>
+
+						<input id="toggle2" type="checkbox" unchecked>
+						<label for="toggle2">
+							Rhyme in Chamorro poetry
+						</label>
+						<div class="expand-par" id="expand2">
+							<p>
+								In an undergraduate project, I analyzed 106 of Joaquin F. Borja's rhyme pairs from the collection of Chamorro literature <i><a href="http://books.google.com/books/about/Estreyas_Marianas.html?id=1oAmAQAAIAAJ">Istreyas Marianas: Chamorro</a></i>. Approximately 25% of the rhyme pairs there have strict rhyme (= identical from the vowel of the stressed syllable to the end of the word), and the remainder have what I called <i>abstract rhyme</i>, which seems to creatively utilize abstract associations between classes of segments established by the phonological processes in Chamorro grammar. The use of abstract rhyme results in a broad (yet orderly) range of licit rhyming pairs. (<a href="documents/champohandout.pdf">handout</a>)
+							</p>
+						</div>
 					</div>
 
 			</div>
 		</div>
 		<div class="spacer"></div>
-		<footer>Last updated December 11, 2018</footer>
+		<footer>Last updated July 22, 2019</footer>
 	</div>
 	<script src="scripts/sticky.js"></script>
 	</body>
