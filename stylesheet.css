@@ -157,6 +157,10 @@ html{
 			float: left;
 			margin-left: 1em;
 		}
+		.email::before{
+			content: "//\2003";
+			color: #e6ecf0;
+		}
 		nav{	/* Center the nav bar */
 			text-align: center;
 		}
