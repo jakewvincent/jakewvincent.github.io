@@ -340,31 +340,11 @@ html{
 		
 	/*--Section styling--*/
 	.section{
-		border-left: 1px solid;
-		-webkit-border-image: 
-		-webkit-gradient(linear, 0 0, 0 100%, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
-		-webkit-border-image: 
-		-webkit-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;
-		-moz-border-image:
-		-moz-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;    
-		-o-border-image:
-		-o-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;
-		border-image:
-		linear-gradient(to bottom, #d9dddf, #cacfd2, #d9dddf) 1 100%;
+		border-left: 1px solid #cacfd2;
 		}
 
 	.sectionnolist{
-		border-left: 1px solid;
-		-webkit-border-image: 
-		-webkit-gradient(linear, 0 0, 0 100%, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
-		-webkit-border-image: 
-		-webkit-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;
-		-moz-border-image:
-		-moz-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;    
-		-o-border-image:
-		-o-linear-gradient(#d9dddf, #cacfd2, #d9dddf) 1 100%;
-		border-image:
-		linear-gradient(to bottom, #d9dddf, #cacfd2, #d9dddf) 1 100%;
+		border-left: 1px solid #cacfd2;
 		}
 
 	.sectionheading{
