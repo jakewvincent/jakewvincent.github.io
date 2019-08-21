@@ -343,6 +343,7 @@ html{
 	.blog-text{
 		margin-top: 3em;
 		margin-bottom: 1em;
+		border-bottom: 1px solid #cacfd2
 	}
 
 /*--Content styling--*/
