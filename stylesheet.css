@@ -18,13 +18,13 @@ html {
 }
 
 /*-- Link styling --*/
-	a {	/* Took out: border-bottom: 1px dashed #cacfd2;	line-height: 1.25em; text-indent: 0em; */
+	a {/* Took out: border-bottom: 1px dashed #cacfd2;	line-height: 1.25em; text-indent: 0em; */
 		color: #114b10;
 		text-decoration: none;
 		font-weight: 600;
 		}
 
-	a.image {	/* Prevent the above styling when the a tag is of class "image" */
+	a.image {/* Prevent the above styling when the a tag is of class "image" */
 		display: initial;
 		border-bottom: none;
 		line-height: inherit;
@@ -44,7 +44,7 @@ html {
 		color: black;
 		}
 
-	a.image:hover {	/* Prevent the above styling when the <a> tag is of class "image" */
+	a.image:hover {/* Prevent the above styling when the <a> tag is of class "image" */
 		border-bottom: none;
 		background-color: initial;
 		color: none;
@@ -57,37 +57,37 @@ html {
 /*-- Conditional styling for different screen sizes --*/
 
 	/*-- For screen sizes smaller than 1279px wide --*/
-	@media (max-width:1279px) {	/* NOTE: Read as "for media whose width is no larger than 1279px (in width)" */
+	@media (max-width:1279px) {/* NOTE: Read as "for media whose width is no larger than 1279px (in width)" */
 		#container {
 			margin-left: auto;
 			margin-right: auto;
 			width: 100%;
 			overflow: auto;
 		}
-		#tinycontainer { /* Div for redirection notice */
+		#tinycontainer {/* Div for redirection notice */
 			margin-left: auto;
 			margin-right: auto;
 			width: 50%;
 			padding-top: 5rem;
 			overflow: auto;
 		}
-		#banner {	/* Center the banner contents */
+		#banner {/* Center the banner contents */
 			text-align: center;
 		}
-		#banner #name {	/* Make sure my name is on its own line */
+		#banner #name {/* Make sure my name is on its own line */
 			float: none;
 		}
-		#banner .email {	/* Make sure my email is on its own line */
+		#banner .email {/* Make sure my email is on its own line */
 			float: none;
 			margin-left: 0;
 		}
-		nav {	/* Center the nav bar */
+		nav {/* Center the nav bar */
 			text-align: center;
 			width: 100%;
 			margin-left: auto;
 			margin-right: auto;
 		}
-		#ohrs {	/* Make office hours box the only thing on its line */
+		#ohrs {/* Make office hours box the only thing on its line */
 			clear: left, right;
 		}
 		.main-img {
@@ -103,25 +103,24 @@ html {
 			padding-left: 0.5rem;
 		}
 		
-		/* Make sure that on smaller screens, all table elements become blocks (so cells can rearrange themselves vertically) */
-		table, thead, tbody, th, td, tr {
+		table, thead, tbody, th, td, tr {/* Make sure that on smaller screens, all table elements become blocks (so cells can rearrange themselves vertically) */
 			display: block;
 		}
-		/* Hide table headers (but not display: none, for accessibility) */
-		thead tr {
+		
+		thead tr {/* Hide table headers (but not display: none, for accessibility) */
 			position: absolute;
 			top: -9999px;
 			left: -9999px;
 		}
-		/* Behave like a "row" */
-		td {
+		
+		td {/* Behave like a "row" */
 			border: none;
 			border-bottom: 1px solid #cacfd2;
 			position: relative;
 			padding-left: 25%;
 		}
-		/* Set up styling for CSS-generated fake headers */
-		td:before {
+		
+		td:before {/* Set up styling for CSS-generated fake headers */
 			position: absolute;
 			top: 6px;
 			left: 6px;
@@ -129,8 +128,8 @@ html {
 			padding-right: 10px;
 			white-space: nowrap;
 		}
-		/* Give the table contents fake headers */
-		td:nth-of-type(1):before {
+		
+		td:nth-of-type(1):before {/* Give the table contents fake headers */
 			content: "Advantages";
 			font-weight: bold;
 		}
@@ -141,7 +140,7 @@ html {
 	}
 
 	/*-- For screen sizes larger than 1280px wide --*/
-	@media (min-width:1280px) {	/* NOTE: Read as "for media whose width is no smaller than 1280px (in width)" */
+	@media (min-width:1280px) {/* NOTE: Read as "for media whose width is no smaller than 1280px (in width)" */
 		#container {
 			margin-left: auto;
 			margin-right: auto;
@@ -149,17 +148,17 @@ html {
 			padding: 1rem;
 			overflow: auto;
 		}
-		#tinycontainer { /* Used for redirection notice only */
+		#tinycontainer {/* Used for redirection notice only */
 			margin-left: auto;
 			margin-right: auto;
 			width: 25%;
 			padding-top: 12.5%;
 			overflow: auto;
 		}
-		#banner #name {	/* Allow my name to appear on the same line as my email (see below) */
+		#banner #name {/* Allow my name to appear on the same line as my email (see below) */
 			float: left;
 		}
-		#banner .email {	/* Allow my email to appear on the same line as my name (see above) */
+		#banner .email {/* Allow my email to appear on the same line as my name (see above) */
 			float: left;
 			margin-left: 1em;
 		}
@@ -167,23 +166,23 @@ html {
 			content: "//\2003";
 			color: #e6ecf0;
 		}
-		nav {	/* Center the nav bar */
+		nav {/* Center the nav bar */
 			text-align: center;
 		}
-		#ohrs {	/* Float office hours box to the left and prevent the box from overlapping other contents  */
+		#ohrs {/* Float office hours box to the left and prevent the box from overlapping other contents  */
 			clear: left;
 			overflow: hidden;
 		}
-		.main-img {	/* Float main image to the right and keep the width constant (see non-media-specific settings too) */
+		.main-img {/* Float main image to the right and keep the width constant (see non-media-specific settings too) */
 			margin-left: 1em;
 			margin-right: 0;
 			float: right;
 			width: 19rem;
 		}
-		.dropdown:hover .dropdown-content {	/* Make dropdown box appear on mouseover */
+		.dropdown:hover .dropdown-content {/* Make dropdown box appear on mouseover */
 		    display: block;
 		}
-		table td + td {	/* On non-small screens (when tables won't rearrange themselves vertically), give the second column a left border */
+		table td + td {/* On non-small screens (when tables won't rearrange themselves vertically), give the second column a left border */
 			border-left: 1px solid #cacfd2;
 		}
 		.sectionnolist {
@@ -192,7 +191,7 @@ html {
 	}
 
 	/*-- For screen sizes larger than 2048px wide --*/
-	@media (min-width: 2048px) {	/* NOTE: Read as "for media whose width is no smaller than 2048px (in width)" */
+	@media (min-width: 2048px) {/* NOTE: Read as "for media whose width is no smaller than 2048px (in width)" */
 		#container {
 			width: 40%;
 		}
@@ -200,15 +199,15 @@ html {
 
 /*-- Banner styling --*/
 
-	#banner { 			/* Give the banner a bottom border */
+	#banner {/* Give the banner a bottom border */
 		border-bottom: 1px solid #cacfd2;
 		}
 
-	#banner #name {		/* Float the name heading to the left */
+	#banner #name {/* Float the name heading to the left */
 		font-family: "Merriweather", serif;
 	}
 
-	#banner .email {		/* ...and the email heading to the left */
+	#banner .email {/* ...and the email heading to the left */
 		color: #cacfd2;
 		font-family: "Merriweather", serif;
 	}
@@ -225,7 +224,7 @@ html {
 		border-bottom: 1px solid #f7f7f7;
 	}
 
-	nav li {	/* Allow the nav bar items (syntactically an unordered list) to appear on the same line */
+	nav li {/* Allow the nav bar items (syntactically an unordered list) to appear on the same line */
 		display: inline;
 		margin: 0;
 		padding: 0;
@@ -257,8 +256,8 @@ html {
 		padding-right: 0.5em;
 	}
 
-	/* Sticky class is added to nav using JS once nav reaches top of screen */
-	.sticky {
+	
+	.sticky {/* Sticky class is added to nav using JS once nav reaches top of screen */
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -502,124 +501,93 @@ html {
 	}
 
 /*-- Styling for "code" class --*/
-.code, .code span {
-	padding: 0.5em;
-	font-family: monospace;
-	background: #cacfd2;
-	border-radius: 4px;
-	overflow: hidden;
-	line-height: default;
-}
 
-.code span {
-	color: #0004ff;
-}
+	.code, .code span {
+		padding: 0.5em;
+		font-family: monospace;
+		background: #cacfd2;
+		border-radius: 4px;
+		overflow: hidden;
+		line-height: default;
+	}
 
-.code a, .code a:hover {
-	color: #0004ff;
-	text-decoration: none;
-	font-weight: default;
-	font-family: monospace;
-	text-decoration: none;
-	line-height: default;
-	border-bottom: none;
-}
+	.code span {
+		color: #0004ff;
+	}
 
-/*-- Styling for Research Gate button --*/
-
-.serif {
-	font-family: "Merriweather", serif;
-}
-
-.sans-serif {
-	font-family: "Merriweather Sans", sans-serif;
-}
-
-#rg-button {
-	color: white;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	display: block;
-	width: 4rem;
-	height: 4rem;
-	line-height: 4.2rem;
-	border-radius: 4px;
-	background: #00CCBB;
-	border-bottom: none;
-	font-size: 1.75em;
-	box-shadow: 2px 2px 2px #cacfd2;
-}
-
-#rg-button:hover {
-	
-	border-radius: 0.25em;
-}
+	.code a, .code a:hover {
+		color: #0004ff;
+		text-decoration: none;
+		font-weight: default;
+		font-family: monospace;
+		text-decoration: none;
+		line-height: default;
+		border-bottom: none;
+	}
 
 /*-- Styling for buttons --*/
 
-.buttonspace {
-	text-align: center;
-}
+	.buttonspace {
+		text-align: center;
+	}
 
-.buttonspace a {
-	margin: 0 auto;
-	font-weight: bold;
-}
+	.buttonspace a {
+		margin: 0 auto;
+	}
 
-.a-button {
-	padding: 0.25em 0.5em;
-	border-radius: 0.25em;
-	margin-right: 0.25em;
-	font-weight: normal;
-	box-shadow: 2px 2px 2px #cacfd2;
-}
+	.a-button {
+		padding: 0.25em 0.5em;
+		border-radius: 0.25em;
+		margin-right: 0.25em;
+		font-weight: bold;
+		box-shadow: 2px 2px 2px #cacfd2;
+	}
 
-.a-button:hover {
-	border-bottom: none;
-}
+	.a-button:hover {
+		border-bottom: none;
+	}
 
-.download-pdf {
-	background: #ff0000;
-	color: white;
-}
+	.download-pdf {
+		background: #ff0000;
+		color: white;
+	}
 
-.download-pdf:hover {
-	background: #c40000;
-	color: white;
-}
+	.download-pdf:hover {
+		background: #c40000;
+		color: white;
+	}
 
-.r-notebook {
-	background: #75aadb;
-	color: white;
-}
+	.r-notebook {
+		background: #75aadb;
+		color: white;
+	}
 
-.r-notebook:hover {
-	background: #618db6;
-	color: white;
-}
+	.r-notebook:hover {
+		background: #618db6;
+		color: white;
+	}
 
-.rg-button {
-	color: white;
-	background: #00ccbb;
-}
+	.rg-button {
+		color: white;
+		background: #00ccbb;
+	}
 
-.rg-button:hover {
-	background: #00b1a2;
-	color: white;
-}
+	.rg-button:hover {
+		background: #00b1a2;
+		color: white;
+	}
 
 /*-- Footer styling --*/
 
-.spacer {	/* Keep the footer separate from the rest of the content */
-	clear: both;
-}
+	.spacer {	/* Keep the footer separate from the rest of the content */
+		clear: both;
+	}
 
-footer {
-	padding-top: 10px;
-	border-top: 1px solid #cacfd2;
-	font-size: 0.75rem;
-	font-style: italic;
-	color: #cacfd2;
-	text-align: right;
-}
+	footer {
+		padding-top: 10px;
+		border-top: 1px solid #cacfd2;
+		font-size: 0.75rem;
+		font-style: italic;
+		color: #cacfd2;
+		text-align: right;
+	}
