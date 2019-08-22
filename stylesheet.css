@@ -516,13 +516,28 @@ html{
 	}
 
 /*-- Styling for "code" class --*/
-	.code{
-		padding: 0.5em;
-		font-family: monospace;
-		background: #cacfd2;
-		border-radius: 4px;
-		overflow: hidden;
-	}
+.code, .code span{
+	padding: 0.5em;
+	font-family: monospace;
+	background: #cacfd2;
+	border-radius: 4px;
+	overflow: hidden;
+	line-height: default;
+}
+
+.code span{
+	color: #0004ff;
+}
+
+.code a, .code a:hover{
+	color: #0004ff;
+	text-decoration: none;
+	font-weight: default;
+	font-family: monospace;
+	text-decoration: none;
+	line-height: default;
+	border-bottom: none;
+}
 
 /*-- Styling for Research Gate button --*/
 
