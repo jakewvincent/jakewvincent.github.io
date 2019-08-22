@@ -476,9 +476,13 @@ html {
 		margin-right: 0.25em;
 	}
 
-	.active::before {
+	.expanded::before {
 		content: "-"; /* Unicode character for minus sign */
 		color: #8b8f91;
+	}
+
+	.expanded h4 {
+		margin: 0;
 	}
 
 /*-- Table styling --*/
