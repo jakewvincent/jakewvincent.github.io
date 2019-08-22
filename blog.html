@@ -62,8 +62,8 @@
 						<p>
 							To start using Git to keep your website up to date, you need to start two Git repos: one in the local directory where you store your website files, and one in your personal space on the server system where your website will be hosted. The repo is the place where Git keeps track of all the changes you make to your files in that folder. To start these repositories, you need to make sure Git is installed in both locations. To get it on your personal computer, check out <a href="https://git-scm.org">git-scm.org</a>. To see if it's installed on the server where your website is hosted, log into it via ssh, and from the command line enter <i>git --version</i>. If it's installed on the server, you should get back a message telling you what version of git is installed. If it's not installed on the server, contact whoever manages the server.
 						</p>
+						<h4>1. Initialize a local Git repo</h4>
 						<p>
-							<b>1. Initialize a local Git repo</b><br>
 							First start by opening your terminal application and navigating to the directory where you keep your website files (here, I'm assuming that this directory is called <i>website</i> and that it's in my home directory). Once there, initialize a Git repo, stage your website files using <i>add</i>, and commit them to the repo using <i>commit</i>, as shown below. If you are unfamiliar with these commands, check out <a href="https://git-scm.com/docs">Git's documentation</a> or click the commands below to view their specific doc pages. You may be asked to set up an identity for yourself when you enter the <i>commit</i> command.
 						</p>
 						<p class="code">
@@ -74,8 +74,8 @@
 						<p>
 							Now that you've started your local repo, you'll need to set up the repo on the server.
 						</p>
+						<h4>2. Initialize a Git repo in your server space</h4>
 						<p>
-							<b>2. Initialize a Git repo in your server space</b><br>
 							Next, ssh into the server where your website is hosted. You'll want to keep your repo somewhere separate from your public_html directory. Let's say I want to make to make a directory called <i>git</i> where I'll keep the remote copy of my website repo. In my home directory, I'll make this folder, move into it, and initialize a bare repo called <i>website.git</i>.
 						</p>
 						<p class="code">
@@ -83,8 +83,8 @@
 							<span>~</span>$ cd git<br>
 							<span>~/git</span>$ git <a href="https://git-scm.com/docs/git-init">init</a> --bare website.git<br>
 						</p>
+						<h4>3. Set up a post-receive hook to keep the files in your public_html folder updated</h4>
 						<p>
-							<b>3. Set up a post-receive hook to keep the files in your public_html folder updated</b><br>
 							Although we've now set up a repo on the server, we need to make sure that the various files that constitute your website find their way into the public_html folder so that your website remains up to date when you push the changes in your local repo to the server. This can be done with what's called a <i>post-receive hook</i>. It's a small bash script that Git runs whenever the server receives an update you've pushed, and what we want it to do is store the working files in your repo in the public_html folder and keep them up to date.
 						</p>
 						<p>
@@ -112,8 +112,8 @@
 						<p>
 							Before you can push your local repo to the server, you need to set it as a remote repo in your local setup.
 						</p>
+						<h4>4. Make the server repo a remote repo for your local repo</h4>
 						<p>
-							<b>4. Make the server repo a remote repo for your local repo</b><br>
 							Now that you have a local repo and have set up a bare repo on the server (including the post-receive hook), you need to tell Git where to push your local repo to. This is done with the <i>git remote</i> command. In your terminal application, navigate to your local website directory. To add a remote repo, use the following syntax: <i>git remote add &lt;name&gt; &lt;url&gt;</i>, where &lt;name&gt; is the name you'd like to use to refer to the remote repo and &lt;url&gt; is the location of your server space (probably including your user name, the server name, and the directory in your server space where you set up the bare repo). If I want to call the remote repo <i>ucsc</i>, if my user name is <i>user</i>, and if I'm setting this up on UCSC's Unix servers, I'd issue the following command. Once you've run this, you can run <i>git remote -v</i> to make sure you added the remote repo successfully.
 						</p>
 						<p class="code">
@@ -122,8 +122,8 @@
 						<p>
 							Now you should be ready to push to the remote repo.
 						</p>
+						<h4>5. Push your local website repo to the remote repo</h4>
 						<p>
-							<b>5. Push your local website repo to the remote repo</b><br>
 							If you've followed all the steps above, you should be able to push your local repo to the remote repo, and the post-receive hook you set up on the server side should put your website files in the public_html folder. Since you already staged and committed your website files to your local repo (using <i>add</i> and <i>commit</i>, respectively), all you need to do is enter a <i>push</i> command. To complete the push, you may have to say "yes" to storing a key, and enter the password you used to ssh into the server earlier. In the command below, I've used "ucsc" because that's what I named my remote, and I've used "master" because this is the default branch name in git.
 						</p>
 						<p class="code">
