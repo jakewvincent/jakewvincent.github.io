@@ -28,9 +28,9 @@
 				<li class="separator">/</li>
 				<li><a href="teaching.html">Teaching</a></li>
 				<li class="separator">/</li>
-				<li><a href="research.html">Research</a></li>
+				<li><a href="research.html">Research &amp; Projects</a></li>
 				<li class="separator">/</li>
-				<li><a href="latex.html" id="activelink">Misc.</a></li>
+				<li><a href="blog.html">Blog</a></li>
 			</ul>
 		</nav>
 
@@ -42,12 +42,10 @@
 
 				<h3><span class="latex">T<sub>e</sub>X</span> editors</h3>
 				<div class="sectionnolist">
-
-					<p class="par">
+					<p>
 						As Windows user, I have had a hard time finding a TeX editor that doesn't feel outdated or clunky. MacOS users have had <a href="http://pages.uoregon.edu/koch/texshop/">TeXShop</a> available for some time, which always seemed to me to be an excellent editor-previewer that's both cleaner and more functional than the standard Windows editor-previewers that I tried (<a href="http://www.tug.org/texworks/">TeXworks</a>, <a href="http://texstudio.sourceforge.net/">TeXstudio</a>). There <i>are</i> better options available for Windows users, but they weren't the first options I came across when I was starting out.
 					</p>
-
-					<p class="par">
+					<p>
 						In my opinion, the best TeX editors are source code editors (text editors optimized for writing code) outfitted with extensions for compiling LaTeX documents. These are only slightly more complicated to set up, but in my experience they offer some advantages over the dedicated TeX editors.
 						<ul>
 							<li>No specialized TeX editor required (since you probably need a text editor anyway)</li>
@@ -58,129 +56,109 @@
 						The following are my favorite source code editors for editing TeX documents, along with the extensions required to allow them to generate LaTeX documents. Click to expand.
 					</p>
 
-					<!-- First expandable section -->
+					<button class="expand-btn"><img src="images/vscode_icon_100.png" class="icon"><h4>VS Code + LaTeX Workshop extension</h4></button>
+					<div class="expand-content">
+						<p>
+							<a href="images/vscode_example.png" class="image">
+								<img src="images/vscode_example.png" class="screenshot-full">
+							</a>
 
-						<input id="toggle1" type="checkbox" unchecked>
-						<label for="toggle1">
-							<div class="expand-button">
-								<img src="images/vscode_icon_100.png" class="icon"> VS Code + LaTeX Workshop extension
-							</div>
-						</label>
-						<div id="expand1">
-							<section>
-
-								<a href="images/vscode_example.png" class="image">
-									<img src="images/vscode_example.png" class="screenshot-full">
-								</a>
-
-								<b>How to get it:</b>
-								<ol>
-									<li>Download and install VS Code: <a href="https://code.visualstudio.com">code.visualstudio.com</a></li>
-									<li>Get the <a href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop">LaTeX Workshop extension</a>:
-										<ol type="a">
-											<li>In VS Code, press Ctrl+Shift+X (Windows/Linux) or Shift+Cmd+X (Mac) to open the extensions panel</li>
-											<li>Enter "latex workshop" into the search bar</li>
-											<li>Click "LaTeX Workshop" to open the extension's page within the editor</li>
-											<li>Click "Install"</li>
-											<li>See instructions for setting up LaTeX Workshop: <a href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop">marketplace.visualstudio.com/latex-workshop</a></li>
-										</ol>
-								</ol>
-
-								<table>
-									<thead>
-										<tr>
-											<th>Advantages</th>
-											<th>Disadvantages</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>
-												<ul>  <!-- Advantages -->
-													<li>Free</li>
-													<li>Open source</li>
-													<li>Cross-platform</li>
-													<li>Great syntax highlighting for TeX editing</li>
-													<li>PDF previewer opens within the editor (as a separate pane)</li>
-													<li>Customizable builders/toolchains</li>
-													<li>Works well out of the box (as long as you already have a <a href="https://www.latex-project.org/get/">TeX distribution</a>)</li>
-												</ul>
-											</td>
-											<td>
-												<ul> <!-- Disadvantages -->
-													<li>Not as lightweight as Sublime Text 3</li>
-													<li>Changing LaTeX builders/toolchains (in LaTeX Workshop) is not as streamlined as in LaTeXTools for Sublime</li>
-												</ul>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</section>
-						</div>
-					
-					<!-- /first expandable section -->
-
-					<!-- Second expandable section -->
-
-						<input id="toggle2" type="checkbox" unchecked>
-						<label for="toggle2">
-							<div class="expand-button">
-								<img src="images/sublime_100_icon.png" class="icon"> Sublime Text 3 + LaTeXTools package
-							</div>
-						</label>
-						<div id="expand2">
-							<section>
-
-								<a href="images/sublime_example.png" class="image">
-									<img src="images/sublime_example.png" class="screenshot-full">
-								</a>
-
-								<b>How to get it:</b>
-								<ol>
-									<li>Download Sublime Text 3: <a href="https://www.sublimetext.com/3">sublimetext.com/3</a></li>
-									<li>Install Package Control for Sublime: <a href="https://packagecontrol.io/installation">packagecontrol.io</a></li>
-									<li>Get the <a href="https://packagecontrol.io/packages/LaTeXTools">LaTeXTools package</a>:</li>
+							<b>How to get it:</b>
+							<ol>
+								<li>Download and install VS Code: <a href="https://code.visualstudio.com">code.visualstudio.com</a></li>
+								<li>Get the <a href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop">LaTeX Workshop extension</a>:
 									<ol type="a">
-										<li>In Sublime (after having installed Package Control), press Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (Mac)</li>
-										<li>Start typing "install"</li>
-										<li>Click "Package Control: Install Package"</li>
-										<li>Start typing "latextools"</li>
-										<li>Click "LaTeXTools"</li>
-										<li>See instructions for setting up LaTeXTools: <a href="https://packagecontrol.io/packages/LaTeXTools">packagecontrol.io/packages/LaTeXTools</a></li>
+										<li>In VS Code, press Ctrl+Shift+X (Windows/Linux) or Shift+Cmd+X (Mac) to open the extensions panel</li>
+										<li>Enter "latex workshop" into the search bar</li>
+										<li>Click "LaTeX Workshop" to open the extension's page within the editor</li>
+										<li>Click "Install"</li>
+										<li>See instructions for setting up LaTeX Workshop: <a href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop">marketplace.visualstudio.com/latex-workshop</a></li>
 									</ol>
-								</ol>
+							</ol>
 
-								<!-- Make a table to express the advantages and disadvantages of ST3+LaTeXTools -->
-								<table>
-									<thead>
-										<tr>
-											<th>Advantages</th>
-											<th>Disadvantages</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>
-												<ul>  <!-- Advantages -->
-													<li>Very lightweight editor</li>
-													<li>Cross-platform</li>
-													<li>Customizable builders/toolchains </li>
-												</ul>
-											</td>
-											<td>
-												<ul> <!-- Disadvantages -->
-													<li>Not free (unless you're okay with occasional reminders to pay)</li>
-													<li>Closed-source</li>
-													<li>Separate PDF viewer required</li>
-												</ul>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</section>
-						</div>
-						
-					<!-- /second expandable section -->
+							<table>
+								<thead>
+									<tr>
+										<th>Advantages</th>
+										<th>Disadvantages</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<ul>  <!-- Advantages -->
+												<li>Free</li>
+												<li>Open source</li>
+												<li>Cross-platform</li>
+												<li>Great syntax highlighting for TeX editing</li>
+												<li>PDF previewer opens within the editor (as a separate pane)</li>
+												<li>Customizable builders/toolchains</li>
+												<li>Works well out of the box (as long as you already have a <a href="https://www.latex-project.org/get/">TeX distribution</a>)</li>
+											</ul>
+										</td>
+										<td>
+											<ul> <!-- Disadvantages -->
+												<li>Not as lightweight as Sublime Text 3</li>
+												<li>Changing LaTeX builders/toolchains (in LaTeX Workshop) is not as streamlined as in LaTeXTools for Sublime</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</p>
+					</div>
+
+					<button class="expand-btn"><img src="images/sublime_100_icon.png" class="icon"><h4>Sublime Text 3 + LaTeXTools package</h4></button>
+					<div class="expand-content">
+						<p>
+							<a href="images/sublime_example.png" class="image">
+								<img src="images/sublime_example.png" class="screenshot-full">
+							</a>
+
+							<b>How to get it:</b>
+							<ol>
+								<li>Download Sublime Text 3: <a href="https://www.sublimetext.com/3">sublimetext.com/3</a></li>
+								<li>Install Package Control for Sublime: <a href="https://packagecontrol.io/installation">packagecontrol.io</a></li>
+								<li>Get the <a href="https://packagecontrol.io/packages/LaTeXTools">LaTeXTools package</a>:</li>
+								<ol type="a">
+									<li>In Sublime (after having installed Package Control), press Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (Mac)</li>
+									<li>Start typing "install"</li>
+									<li>Click "Package Control: Install Package"</li>
+									<li>Start typing "latextools"</li>
+									<li>Click "LaTeXTools"</li>
+									<li>See instructions for setting up LaTeXTools: <a href="https://packagecontrol.io/packages/LaTeXTools">packagecontrol.io/packages/LaTeXTools</a></li>
+								</ol>
+							</ol>
+
+							<!-- Make a table to express the advantages and disadvantages of ST3+LaTeXTools -->
+							<table>
+								<thead>
+									<tr>
+										<th>Advantages</th>
+										<th>Disadvantages</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<ul>  <!-- Advantages -->
+												<li>Very lightweight editor</li>
+												<li>Cross-platform</li>
+												<li>Customizable builders/toolchains </li>
+											</ul>
+										</td>
+										<td>
+											<ul> <!-- Disadvantages -->
+												<li>Not free (unless you're okay with occasional reminders to pay)</li>
+												<li>Closed-source</li>
+												<li>Separate PDF viewer required</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</p>
+					</div>
 				</div>
 
 				<h3>Reference management</h3>
@@ -188,44 +166,38 @@
 					<p class="par">
 						When I first started using BibTeX with LaTeX, I would manually create a .bib file per-document with reference information copy-pasted from Google Scholar or wherever. There are much more efficient ways to do this. My favorite way is to use reference management software that keeps track of your library (and organizes it for you) and generates a single .bib file so that your references are on tap whenever you need them. When paired with a TeX editor with suggestions/completions culled from your .bib file (like either of those mentioned above), this makes for practically effortless reference management. See how the system I use works below.
 					</p>
+					<button class="expand-btn"><img src="images/mendeley_100_icon.png" class="icon"><h4>Mendeley Desktop + BibTeX/Biber</h4></button>
+					<div class="expand-content">
+						<p>
+							<p class="par">
+								<b>Mendeley</b>
+								<br>I use the Mendeley desktop application to help keep track of all of the papers I've read (or&#8212;let's be honest&#8212;thought about reading) for my research. Papers can be drag-and-dropped into the application, or downloaded into a folder that Mendeley watches, and after doing either of those things, the application saves the pdf to my library and gives it an automatically generated, easy-to-read filename. The application is also a pdf viewer and annotator. In the settings, you can ask Mendeley to manage a bib file in a directory of your choosing. Do this, and any little change made in the pdf information panel is immediately reflected in the bib file.
+							</p>
 
-					<input id="toggle3" type="checkbox" unchecked>
-						<label for="toggle3">
-							<div class="expand-button">
-								<img src="images/mendeley_100_icon.png" class="icon"> Mendeley Desktop + BibTeX/Biber
+							<p class="par">
+								<b>Referencing the bib file in the LaTeX document</b>
+								<br>With a bib file in a particular location, it's easy to just always reference its full path in your tex document. If my bib file is called "my_library.bib" and is located in my documents, I would call this command right where I want my references printed if I'm using <a href="www.bibtex.org">BibTeX</a> to generate my references:
+							</p>
+
+							<div class="code">
+								\bibliography{C:/Users/username/Documents/my_library}
 							</div>
-						</label>
-						<div id="expand3">
-							<section>
-								<p class="par">
-									<b>Mendeley</b>
-									<br>I use the Mendeley desktop application to help keep track of all of the papers I've read (or&#8212;let's be honest&#8212;thought about reading) for my research. Papers can be drag-and-dropped into the application, or downloaded into a folder that Mendeley watches, and after doing either of those things, the application saves the pdf to my library and gives it an automatically generated, easy-to-read filename. The application is also a pdf viewer and annotator. In the settings, you can ask Mendeley to manage a bib file in a directory of your choosing. Do this, and any little change made in the pdf information panel is immediately reflected in the bib file.
-								</p>
 
-								<p class="par">
-									<b>Referencing the bib file in the LaTeX document</b>
-									<br>With a bib file in a particular location, it's easy to just always reference its full path in your tex document. If my bib file is called "my_library.bib" and is located in my documents, I would call this command right where I want my references printed if I'm using <a href="www.bibtex.org">BibTeX</a> to generate my references:
-								</p>
+							<p class="par">
+								And if I'm using <a href="http://biblatex-biber.sourceforge.net/">Biber</a>, I would call this command somewhere in my preamble:
+							</p>
 
-								<div class="code">
-									\bibliography{C:/Users/username/Documents/my_library}
-								</div>
+							<div class="code">
+								\addbibresource{C:/Users/username/Documents/my_library.bib}
+							</div>
 
-								<p class="par">
-										And if I'm using <a href="http://biblatex-biber.sourceforge.net/">Biber</a>, I would call this command somewhere in my preamble:
-								</p>
+							<p class="par">
+								I like to create a shortcut to automatically fill in the basic structure of my tex documents (including calling all the packages I typically use and the command with the path for my bib file already filled in). In both of the text editors mentioned above, this can be done by creating a "snippet" (a file where your template is stored) that can be summoned by typing a particular string and hitting tab or enter. Once you save this as a .tex file, if you're using one of the above editors, you'll get suggestions/completions for your bibliography entries every time you start the first part of a citation command, as shown below. This way you don't have to memorize citation keys; you can start typing any information connected to the particular reference you're looking for, as long as that information is in that reference's entry in your bib file.
 
-								<div class="code">
-									\addbibresource{C:/Users/username/Documents/my_library.bib}
-								</div>
-
-								<p class="par">
-									I like to create a shortcut to automatically fill in the basic structure of my tex documents (including calling all the packages I typically use and the command with the path for my bib file already filled in). In both of the text editors mentioned above, this can be done by creating a "snippet" (a file where your template is stored) that can be summoned by typing a particular string and hitting tab or enter. Once you save this as a .tex file, if you're using one of the above editors, you'll get suggestions/completions for your bibliography entries every time you start the first part of a citation command, as shown below. This way you don't have to memorize citation keys; you can start typing any information connected to the particular reference you're looking for, as long as that information is in that reference's entry in your bib file.
-
-									<img class="screenshot-part" src="images/citation_animation.gif" style="width: 65%">
-								</p>
-							</section>
-						</div>
+								<img class="screenshot-part" src="images/citation_animation.gif" style="width: 65%">
+							</p>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -233,5 +205,6 @@
 		<footer>Last updated December 21, 2017</footer>
 	</div>
 	<script src="scripts/sticky.js"></script>
+	<script src="scripts/expand.js"></script>
 	</body>
 </html>
