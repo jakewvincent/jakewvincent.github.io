@@ -3,48 +3,48 @@
 	line-height: 1.65em;
 }
 
-h3{
+h3 {
 	font-family: "Merriweather", serif
 }
 
-html{
+html {
 	background-color: #f7f7f7;
 }
 
 /*-- Link styling --*/
-	a{	/* Took out: border-bottom: 1px dashed #cacfd2;	line-height: 1.25em; text-indent: 0em; */
+	a {	/* Took out: border-bottom: 1px dashed #cacfd2;	line-height: 1.25em; text-indent: 0em; */
 		color: #114b10;
 		text-decoration: none;
 		font-weight: 600;
 		}
 
-	a.image{	/* Prevent the above styling when the a tag is of class "image" */
+	a.image {	/* Prevent the above styling when the a tag is of class "image" */
 		display: initial;
 		border-bottom: none;
 		line-height: inherit;
 	}
 
-	nav a{
+	nav a {
 		border-bottom: none;
 		color: black;
 	}
 
-	#ohrs a{
+	#ohrs a {
 		border-bottom: none;
 	}
 		
-	a:hover{
+	a:hover {
 		border-bottom: 1px dashed #8b8f91;
 		color: black;
 		}
 
-	a.image:hover{	/* Prevent the above styling when the <a> tag is of class "image" */
+	a.image:hover {	/* Prevent the above styling when the <a> tag is of class "image" */
 		border-bottom: none;
 		background-color: initial;
 		color: none;
 		}
 
-	#activelink{
+	#activelink {
 		border-bottom: 1px solid #cacfd2;
 	}
 	
@@ -52,39 +52,39 @@ html{
 
 	/*-- For screen sizes smaller than 1279px wide --*/
 	@media (max-width:1279px) {	/* NOTE: Read as "for media whose width is no larger than 1279px (in width)" */
-		#container{
+		#container {
 			margin-left: auto;
 			margin-right: auto;
 			width: 100%;
 			overflow: auto;
 		}
-		#tinycontainer{ /* Div for redirection notice */
+		#tinycontainer { /* Div for redirection notice */
 			margin-left: auto;
 			margin-right: auto;
 			width: 50%;
 			padding-top: 5rem;
 			overflow: auto;
 		}
-		#banner{	/* Center the banner contents */
+		#banner {	/* Center the banner contents */
 			text-align: center;
 		}
-		#banner #name{	/* Make sure my name is on its own line */
+		#banner #name {	/* Make sure my name is on its own line */
 			float: none;
 		}
-		#banner .email{	/* Make sure my email is on its own line */
+		#banner .email {	/* Make sure my email is on its own line */
 			float: none;
 			margin-left: 0;
 		}
-		nav{	/* Center the nav bar */
+		nav {	/* Center the nav bar */
 			text-align: center;
 			width: 100%;
 			margin-left: auto;
 			margin-right: auto;
 		}
-		#ohrs{	/* Make office hours box the only thing on its line */
+		#ohrs {	/* Make office hours box the only thing on its line */
 			clear: left, right;
 		}
-		.main-img{
+		.main-img {
 			display: block;
 			clear: left, right;
 			margin-left: auto;
@@ -93,29 +93,29 @@ html{
 			margin-bottom: 1em;
 			width: 15rem;
 		}
-		.sectionnolist{
+		.sectionnolist {
 			padding-left: 0.5rem;
 		}
 		
 		/* Make sure that on smaller screens, all table elements become blocks (so cells can rearrange themselves vertically) */
-		table, thead, tbody, th, td, tr{
+		table, thead, tbody, th, td, tr {
 			display: block;
 		}
 		/* Hide table headers (but not display: none, for accessibility) */
-		thead tr{
+		thead tr {
 			position: absolute;
 			top: -9999px;
 			left: -9999px;
 		}
 		/* Behave like a "row" */
-		td{
+		td {
 			border: none;
 			border-bottom: 1px solid #cacfd2;
 			position: relative;
 			padding-left: 25%;
 		}
 		/* Set up styling for CSS-generated fake headers */
-		td:before{
+		td:before {
 			position: absolute;
 			top: 6px;
 			left: 6px;
@@ -124,11 +124,11 @@ html{
 			white-space: nowrap;
 		}
 		/* Give the table contents fake headers */
-		td:nth-of-type(1):before{
+		td:nth-of-type(1):before {
 			content: "Advantages";
 			font-weight: bold;
 		}
-		td:nth-of-type(2):before{
+		td:nth-of-type(2):before {
 			content: "Disadvantages";
 			font-weight: bold;
 		}
@@ -136,39 +136,39 @@ html{
 
 	/*-- For screen sizes larger than 1280px wide --*/
 	@media (min-width:1280px) {	/* NOTE: Read as "for media whose width is no smaller than 1280px (in width)" */
-		#container{
+		#container {
 			margin-left: auto;
 			margin-right: auto;
 			width: 60%;
 			padding: 1rem;
 			overflow: auto;
 		}
-		#tinycontainer{ /* Used for redirection notice only */
+		#tinycontainer { /* Used for redirection notice only */
 			margin-left: auto;
 			margin-right: auto;
 			width: 25%;
 			padding-top: 12.5%;
 			overflow: auto;
 		}
-		#banner #name{	/* Allow my name to appear on the same line as my email (see below) */
+		#banner #name {	/* Allow my name to appear on the same line as my email (see below) */
 			float: left;
 		}
-		#banner .email{	/* Allow my email to appear on the same line as my name (see above) */
+		#banner .email {	/* Allow my email to appear on the same line as my name (see above) */
 			float: left;
 			margin-left: 1em;
 		}
-		.email::before{
+		.email::before {
 			content: "//\2003";
 			color: #e6ecf0;
 		}
-		nav{	/* Center the nav bar */
+		nav {	/* Center the nav bar */
 			text-align: center;
 		}
-		#ohrs{	/* Float office hours box to the left and prevent the box from overlapping other contents  */
+		#ohrs {	/* Float office hours box to the left and prevent the box from overlapping other contents  */
 			clear: left;
 			overflow: hidden;
 		}
-		.main-img{	/* Float main image to the right and keep the width constant (see non-media-specific settings too) */
+		.main-img {	/* Float main image to the right and keep the width constant (see non-media-specific settings too) */
 			margin-left: 1em;
 			margin-right: 0;
 			float: right;
@@ -177,56 +177,56 @@ html{
 		.dropdown:hover .dropdown-content {	/* Make dropdown box appear on mouseover */
 		    display: block;
 		}
-		table td + td{	/* On non-small screens (when tables won't rearrange themselves vertically), give the second column a left border */
+		table td + td {	/* On non-small screens (when tables won't rearrange themselves vertically), give the second column a left border */
 			border-left: 1px solid #cacfd2;
 		}
-		.sectionnolist{
+		.sectionnolist {
 			padding-left: 2.5rem;
 		}
 	}
 
 	/*-- For screen sizes larger than 2048px wide --*/
 	@media (min-width: 2048px) {	/* NOTE: Read as "for media whose width is no smaller than 2048px (in width)" */
-		#container{
+		#container {
 			width: 40%;
 		}
 	}
 
 /*-- Banner styling --*/
 
-	#banner{ 			/* Give the banner a bottom border */
+	#banner { 			/* Give the banner a bottom border */
 		border-bottom: 1px solid #cacfd2;
 		}
 
-	#banner #name{		/* Float the name heading to the left */
+	#banner #name {		/* Float the name heading to the left */
 		font-family: "Merriweather", serif;
 	}
 
-	#banner .email{		/* ...and the email heading to the left */
+	#banner .email {		/* ...and the email heading to the left */
 		color: #cacfd2;
 		font-family: "Merriweather", serif;
 	}
 
-	.divFill{			/* Keep banner separate from lower content */
+	.divFill {			/* Keep banner separate from lower content */
 		clear: both;
 	}
 
 /*-- Nav styling --*/
-	nav{
+	nav {
 		overflow: hidden;
 		height: 4.25em;
 		transition: 0.33s;
 		border-bottom: 1px solid #f7f7f7;
 	}
 
-	nav li{	/* Allow the nav bar items (syntactically an unordered list) to appear on the same line */
+	nav li {	/* Allow the nav bar items (syntactically an unordered list) to appear on the same line */
 		display: inline;
 		margin: 0;
 		padding: 0;
 		border: 0;
 	}
 
-	nav ul{
+	nav ul {
 		padding: 0px;
 		margin-top: 1.25em;
 		margin-bottom: 1.25em;
@@ -234,25 +234,25 @@ html{
 		margin-right: 0
 	}
 
-	nav a{
+	nav a {
 		position: relative;
 		display: inline-block;
 	}
 
-	nav a:active{
+	nav a:active {
 		top: 1px;
 		left: 1px;
 		border-bottom: none;
 	}
 
-	nav .separator{
+	nav .separator {
 		color: #cacfd2;
 		padding-left: 0.5em;
 		padding-right: 0.5em;
 	}
 
 	/* Sticky class is added to nav using JS once nav reaches top of screen */
-	.sticky{
+	.sticky {
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -264,29 +264,29 @@ html{
 		border-bottom: 1px solid #cacfd2;
 	}
 
-	.sticky + .main{
+	.sticky + .main {
 		padding-top: 4.25em;
 	}
 
 /*--Image styling--*/
 
-	.main-img{
+	.main-img {
 		height: auto;
 		margin-bottom: 1em;
 	}
 
-	.borderless{	/* Give images w/ the class "borderless" (use for images w/o borders included) rounded corners */
+	.borderless {	/* Give images w/ the class "borderless" (use for images w/o borders included) rounded corners */
 		border-radius: 4px;
 	}
 
-	.icon{
+	.icon {
 		width: 2em;
 		height: auto;
 		vertical-align: middle;
 		margin-right: 1em;
 	}
 
-	.screenshot-part{	/* Style narrower screenshot */
+	.screenshot-part {	/* Style narrower screenshot */
 		width: 65%;
 		height: auto;
 		display: block;
@@ -297,7 +297,7 @@ html{
 		border-radius: 2px;
 	}
 
-	.screenshot-full{	/* Style full-width screenshots */
+	.screenshot-full {	/* Style full-width screenshots */
 		width: 100%;
 		height: auto;
 		display: block;
@@ -310,13 +310,13 @@ html{
 
 /*--Content styling--*/
 
-	#content{
+	#content {
 		position: relative;
 		clear: left;
 		margin-bottom: 0.5rem;
 	}
 
-	#ohrs{		/* Styling for office hours box */
+	#ohrs {		/* Styling for office hours box */
 		text-align: center;
 		border: 3px double #cacfd2; /* ...previously #66ff66 */
 		margin: 0 auto;
@@ -328,43 +328,43 @@ html{
 		border-radius: 4px;
 	}
 
-	#psrs{		/* Styling for phrase structure rules */
+	#psrs {		/* Styling for phrase structure rules */
 		font-family: "Courier New", Courier, monospace;
 		list-style-type: none;
 	}
 
-	.buttons{
+	.buttons {
 		padding: 0.5rem;
 		overflow: hidden;
 	}
 		
 	/*--Section styling--*/
-	.section{
+	.section {
 		border-left: 1px solid #cacfd2;
 		}
 
-	.sectionnolist{
+	.sectionnolist {
 		border-left: 1px solid #cacfd2;
 		}
 
-	.sectionheading{
+	.sectionheading {
 		text-decoration: underline;
 		margin-top: 0.35rem;
 		margin-bottom: 0.35rem;
 		}
 		
-	.subsection{
+	.subsection {
 		padding-left: 2rem;
 		}
 
-	.par{	/* Ensure that elements (divs) marked "par" will not tolerate floating elements to their left */
+	.par {	/* Ensure that elements (divs) marked "par" will not tolerate floating elements to their left */
 		clear: left;
 	}
 
 /*-- Styling for LaTeX logo --*/
 /*-- Source: http://tess.oconnor.cx/2007/08/tex-poshlet --*/
 
-	.tex sub, .latex sub, .latex sup{
+	.tex sub, .latex sub, .latex sup {
 	text-transform: uppercase;
 	}
 
@@ -374,33 +374,33 @@ html{
 	margin-right: -0.125em;
 	}
 
-	.tex, .latex, .tex sub, .latex sub{
+	.tex, .latex, .tex sub, .latex sub {
 	font-size: 1em;
 	}
 
-	.latex sup, .tex sup{
+	.latex sup, .tex sup {
 	font-size: 0.9em;
 	vertical-align: 0.27em;
 	margin-left: -0.43em;
 	margin-right: -0.1em;
 	}
 
-	.latex, .tex{
+	.latex, .tex {
 		font-family: "Merriweather", serif;
 	}
 
-	.latex sup, .latex sub, .tex sup, .tex sub{
+	.latex sup, .latex sub, .tex sup, .tex sub {
 		font-family: "Merriweather", serif;
 	}
 
 /*-- Interlinear glosses --*/
 /*-- HTML and CSS interlinear glossing code/styling written by me (Jake Vincent), but feel free to use/modify --*/
 
-	.example{	/* Div consisting of all gloss units and free translation */
+	.example {	/* Div consisting of all gloss units and free translation */
 		margin-left: 1.5rem;
 	}
 
-	.all-gloss-units{	/* Div consisting of all gloss-units, excluding the free translation */
+	.all-gloss-units {	/* Div consisting of all gloss-units, excluding the free translation */
 	}
 
 	.all-gloss-units .gloss-unit:not(:first-child){	/* Give all the non-initial gloss-units a left margin to ease readability */
@@ -411,27 +411,27 @@ html{
 		display: inline-block;
 	}
 
-	.gloss-word{	/* Single word in the text. Keep here just in case. */
+	.gloss-word {	/* Single word in the text. Keep here just in case. */
 	}
 
-	.gloss-gloss{	/* Gloss/translation of the single word. Keep here just in case. */
+	.gloss-gloss {	/* Gloss/translation of the single word. Keep here just in case. */
 	}
 
-	.gloss-gloss span{	/* Makes anything in a span tag within the gloss-gloss class small-caps, e.g. for lexical features */
+	.gloss-gloss span {	/* Makes anything in a span tag within the gloss-gloss class small-caps, e.g. for lexical features */
 		font-variant: small-caps;
 	}
 
-	.free-transl{	/* English translation of text */
+	.free-transl {	/* English translation of text */
 	}
 
 /*-- Styling for redirect pages --*/
 
-	#tinycontainer{ /* Used for redirection notice only */
+	#tinycontainer { /* Used for redirection notice only */
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
 	}
-	#tinycontainer img{
+	#tinycontainer img {
 		display: block;
 		width: 50%;
 		opacity: 0.5;
@@ -442,9 +442,15 @@ html{
 	}
 
 /*-- Expandable section styling --*/
+
+/*-- New version --*/
+	.expand-button {
+		
+	}
+
 /*-- Specific method inspired by https://codepen.io/peternguyen/pen/hICga/ --*/
 
-	.expand-par{	/* Ensure that elements (divs) marked "par" will not tolerate floating elements to their left */
+	.expand-par {	/* Ensure that elements (divs) marked "par" will not tolerate floating elements to their left */
 		clear: left;
 		margin-top: 0;
 	}
@@ -483,7 +489,7 @@ html{
 		height: auto;
 	}
 
-	.expand-button{
+	.expand-button {
 		line-height: normal;
 		display: inline-block;
 		height: auto;
@@ -495,28 +501,28 @@ html{
 		cursor: pointer;
 	}
 
-	section{
+	section {
 		border-bottom: 1px solid #cacfd2;
 	}
 
 /*-- Table styling --*/
 
-	table{
+	table {
 		width: 100%;
 	}
 
-	th{
+	th {
 		border-bottom: 1px solid #cacfd2;
 		border-collapse: collapse;
 	}
 
-	td ul{
+	td ul {
 		margin-top: 0.25em;
 		margin-bottom: 0.25em;
 	}
 
 /*-- Styling for "code" class --*/
-.code, .code span{
+.code, .code span {
 	padding: 0.5em;
 	font-family: monospace;
 	background: #cacfd2;
@@ -525,11 +531,11 @@ html{
 	line-height: default;
 }
 
-.code span{
+.code span {
 	color: #0004ff;
 }
 
-.code a, .code a:hover{
+.code a, .code a:hover {
 	color: #0004ff;
 	text-decoration: none;
 	font-weight: default;
@@ -593,11 +599,11 @@ html{
 
 /*-- Footer styling --*/
 
-	.spacer{	/* Keep the footer separate from the rest of the content */
+	.spacer {	/* Keep the footer separate from the rest of the content */
 		clear: both;
 	}
 
-	footer{
+	footer {
 		padding-top: 10px;
 		border-top: 1px solid #cacfd2;
 		font-size: 0.75rem;

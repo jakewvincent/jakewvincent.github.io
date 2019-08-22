@@ -1,5 +1,5 @@
 /*--Blog-specific styling--*/
-	.title{
+	.title {
 		font-size: 1.25em;
 		font-weight: bold;
 		font-style: italic;
@@ -10,27 +10,27 @@
 		padding-bottom: 0.25em;
 	}
 
-	.date{
+	.date {
 		margin-right: 0.5em;
 		font-style: italic;
 		padding-top: 0.25em;
 		float: left;
 	}
 
-	.date::before{
+	.date::before {
 		content: "Date: ";
 	}
 
-	.keywords{
+	.keywords {
 		font-style: italic;
 		float: right;
 	}
 
-	.keywords::before{
+	.keywords::before {
 		content: "Keywords: ";
 	}
 
-	.blog-text{
+	.blog-text {
 		margin-top: 3em;
 		margin-bottom: 1em;
 		border-bottom: 1px solid #cacfd2
