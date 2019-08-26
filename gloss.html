@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="stylesheet.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:300,700&display=swap&subset=latin-ext" rel="stylesheet">
+        <meta charset = "UTF-8">
+    </head>
+    <body onload="clearFields(); initialState()">
+        <h1>Interlinear gloss creator</h1>
+        <p>
+            Paste the following CSS into your stylesheet:
+        </p>
+        <textarea style="width: 64em; height: 24em;" id="css" onclick="selectAll('css')">
+.example {/* all align units and free translation */
+    margin-left: 1.5rem;
+}
+.all-align-units {/* all align-units (w/o free translation) */
+}
+.all-align-units .align-unit:not(:first-child){/* give non-initial align-units left margin for readability */
+    margin-left: 0.25em;
+}
+.align-unit {/* word and gloss to be vertically left-aligned */
+    display: inline-block;
+}
+.word {/* words only */
+}
+.gloss {/* glosses only */
+}
+.gloss span {/* make spans small-caps (for features) */
+    font-variant: small-caps;
+}
+.free-transl {/* free translation only */
+}</textarea>
+        <form action="" id="glossForm">
+            <fieldset>
+                <input type="button" value="Convert" onclick="convert()">
+                <input type="button" value="Reset" onclick="resetFields()">
+                <input type="button" value="Show example" onclick="showExample()">
+                <input type="button" value="Add unit" onclick="addGlossUnit()">
+                <table id="allInput">
+                    <tr id="wordRow">
+                        <td>Words:</td>
+                        <td id="wordTd1"><input type="text" id="wordIn1" size="10" oninput="convert()"></td>
+                    </tr>
+                    <tr id="glossRow">
+                        <td>Glosses:</td>
+                        <td id="glossTd1"><input type="text" id="glossIn1" size="10" oninput="convert()"></td>
+                    </tr>
+                    <tr>
+                        <td>Free translation:&nbsp;</td>
+                        <td id="ftTd" colspan="0"><input type="text" id="ftIn" style="width:100%; box-sizing:border-box" size="10" oninput="convert()"></td>
+                    </tr>
+                </table>
+
+                <div>
+                    <p>Preview:</p>
+                    <p id="examplePreview" style="color: #8b8f91;">
+                        Preview will show here.
+                    </p>
+                </div>
+
+                <p>HTML:</p>
+                <textarea type="text" id="textOut" style="width:50%; height:20em;" onclick="selectAll('textOut')"></textarea>
+            </fieldset>
+        </form>
+        <script src="scripts/lingGlossHTML.js"></script>
+        <script src="scripts/clearFields.js"></script>
+        <script src="scripts/addGlossUnit.js"></script>
+        <script src="scripts/selectOnClick.js"></script>
+        <script src="scripts/showExample.js"></script>
+        <script src="scripts/initialState.js"></script>
+        <script src="scripts/resetFields.js"></script>
+    </body>
+</html>

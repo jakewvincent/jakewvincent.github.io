@@ -7,7 +7,7 @@
 		<title>Jake W. Vincent</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
-	<body>
+	<body onload="clearFields(); initialState()">
 	<div id="container">
 	
 		<!--Banner-->
@@ -59,34 +59,34 @@
 					</p>
 
 					<div class="example">
-						<div class="all-gloss-units">
-							<div class="gloss-unit">
-								<div class="gloss-word">Chum&aring;lik</div>
-								<div class="gloss-gloss"><span>sg.agr</span>:laugh</div>
+						<div class="all-align-units">
+							<div class="align-unit">
+								<div class="word">Chum&aring;lik</div>
+								<div class="gloss"><span>sg.agr</span>:laugh</div>
 							</div>
-							<div class="gloss-unit">
-								<div class="gloss-word">i</div>
-								<div class="gloss-gloss">the</div>
+							<div class="align-unit">
+								<div class="word">i</div>
+								<div class="gloss">the</div>
 							</div>
-							<div class="gloss-unit">
-								<div class="gloss-word">[mat&aring;'chung</div>
-								<div class="gloss-gloss"><span>sg.agr</span>.sit</div>
+							<div class="align-unit">
+								<div class="word">[mat&aring;'chung</div>
+								<div class="gloss"><span>sg.agr</span>.sit</div>
 							</div>
-							<div class="gloss-unit">
-								<div class="gloss-word">na</div>
-								<div class="gloss-gloss"><span>lk</span></div>
+							<div class="align-unit">
+								<div class="word">na</div>
+								<div class="gloss"><span>lk</span></div>
 							</div>
-							<div class="gloss-unit">
-								<div class="gloss-word"><b>p&aring;tgun</b></div>
-								<div class="gloss-gloss">child</div>
+							<div class="align-unit">
+								<div class="word"><b>p&aring;tgun</b></div>
+								<div class="gloss">child</div>
 							</div>
-							<div class="gloss-unit">
-								<div class="gloss-word">gi</div>
-								<div class="gloss-gloss"><span>loc</span></div>
+							<div class="align-unit">
+								<div class="word">gi</div>
+								<div class="gloss"><span>loc</span></div>
 							</div>
-							<div class="gloss-unit">
-								<div class="gloss-word">siya.]</div>
-								<div class="gloss-gloss">chair</div>
+							<div class="align-unit">
+								<div class="word">siya.]</div>
+								<div class="gloss">chair</div>
 							</div>
 						</div>
 						<div class="free-transl">
@@ -102,15 +102,83 @@
 					<div class=sectionnolist>
 						<button class="expand-btn"><h4>Syllable parser</h4></button>
 						<div class="expand-content">
-								<p>
-									I am currently working on a syllable parser that takes input in IPA characters and produces a syllabified output. Currently, the function follows essentially the same procedure that students are taught to follow in Phonology 1. It first identifies syllable nuclei (including diphthongs), then parses preceding consonants into the syllable of the following nucleus segment by segment (leaving segments unparsed if they don't form a legal onset cluster), and finally parsing remaining unparsed segments into the coda of the syllable of the preceding nucleus.
-								</p>
-								<p>
-									The program also includes an integration with the <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">Carnegie Mellon University Pronouncing Dictionary</a>, which contains pronunciations for over 100,000 words. The script converts the ARPABET codes that come with the dictionary into IPA, which makes it possible to look for statistical patterns across English pronunciations and syllabifications.
-								</p>
-								<p>
-									R implementation: <a href="https://github.com/jakewvincent/R-syllable-parser">github.com/jakewvincent/R-syllable-parser</a>.
-								</p>
+							<a href="https://github.com/jakewvincent/R-syllable-parser" class="github-button a-button">See R implementation on GitHub</a>
+							<p>
+								I am currently working on a syllable parser that takes input in IPA characters and produces a syllabified output. Currently, the function follows essentially the same procedure that students are taught to follow in Phonology 1. It first identifies syllable nuclei (including diphthongs), then parses preceding consonants into the syllable of the following nucleus segment by segment (leaving segments unparsed if they don't form a legal onset cluster), and finally parsing remaining unparsed segments into the coda of the syllable of the preceding nucleus.
+							</p>
+							<p>
+								The program also includes an integration with the <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">Carnegie Mellon University Pronouncing Dictionary</a>, which contains pronunciations for over 100,000 words. The script converts the ARPABET codes that come with the dictionary into IPA, which makes it possible to look for statistical patterns across English pronunciations and syllabifications.
+							</p>
+						</div>
+
+						<button class="expand-btn"><h4>HTML interlinear gloss generator</h4></button>
+						<div class="expand-content">
+							<a href="https://github.com/jakewvincent/HTML-interlinear-gloss" class="github-button a-button">See on GitHub</a>
+							<p>
+								The following tool (written in JavaScript, HTML, and CSS) takes word, gloss, and free translation data and converts it into HTML that will display as an interlinear gloss when pasted into your website HTML file.
+							</p>
+							<script src="scripts/lingGlossHTML.js"></script>
+							<script src="scripts/clearFormOnLoad.js"></script>
+							<script src="scripts/addGlossUnit.js"></script>
+							<script src="scripts/selectOnClick.js"></script>
+							<script src="scripts/showExample.js"></script>
+							<script src="scripts/initialState.js"></script>
+							<script src="scripts/resetFields.js"></script>
+							<form action="" id="glossForm">
+								<fieldset>
+									<input type="button" value="Convert" onclick="convert()">
+									<input type="button" value="Reset" onclick="resetFields()">
+									<input type="button" value="Show example" onclick="showExample()">
+									<input type="button" value="Add unit" onclick="addGlossUnit()">
+									<table id="allInput">
+										<tr id="wordRow">
+											<td>Words:</td>
+											<td id="wordTd1"><input type="text" id="wordIn1" size="10" oninput="convert()"></td>
+										</tr>
+										<tr id="glossRow">
+											<td>Glosses:</td>
+											<td id="glossTd1"><input type="text" id="glossIn1" size="10" oninput="convert()"></td>
+										</tr>
+										<tr>
+											<td>Free translation:&nbsp;</td>
+											<td id="ftTd" colspan="0"><input type="text" id="ftIn" style="width:100%; box-sizing:border-box" size="10" oninput="convert()"></td>
+										</tr>
+									</table>
+					
+									<div>
+										<p>Preview:</p>
+										<p id="examplePreview" style="color: #8b8f91;">
+											Preview will show here.
+										</p>
+									</div>
+					
+									<p>HTML:</p>
+									<textarea type="text" id="textOut" style="width:50%; height:20em;" onclick="selectAll('textOut')"></textarea>
+									<p>Paste the following into your stylesheet:</p>
+									<textarea style="width: 64em; height: 24em;" id="css" onclick="selectAll('css')">
+.example {
+	margin-left: 1.5rem;
+}
+.all-align-units {
+}
+/* give non-initial align-units left margin for readability */
+.all-align-units .align-unit:not(:first-child){
+	margin-left: 0.25em;
+}
+.align-unit {
+	display: inline-block;
+}
+.word {
+}
+.gloss {
+}
+.gloss span {/* make spans small-caps (for features) */
+	font-variant: small-caps;
+}
+.free-transl {
+}</textarea>
+								</fieldset>
+							</form>
 						</div>
 
 						<button class="expand-btn"><h4>Rhyme in Chamorro poetry</h4></button>
@@ -123,7 +191,7 @@
 			</div>
 		</div>
 		<div class="spacer"></div>
-		<footer>Last updated July 22, 2019</footer>
+		<footer>Last updated August 26, 2019</footer>
 	</div>
 	<script src="scripts/sticky.js"></script>
 	<script src="scripts/expand.js"></script>

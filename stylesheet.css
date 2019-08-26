@@ -13,6 +13,11 @@ h4 {
 	color: black;
 }
 
+textarea, input[type="text"] {
+	font-family: monospace;
+	font-size: 1em;
+}
+
 html {
 	background-color: #f7f7f7;
 }
@@ -103,7 +108,7 @@ html {
 			padding-left: 0.5rem;
 		}
 		
-		table, thead, tbody, th, td, tr {/* Make sure that on smaller screens, all table elements become blocks (so cells can rearrange themselves vertically) */
+		not(fieldset) > table, thead, tbody, th, td, tr {/* Make sure that on smaller screens, all table elements become blocks (so cells can rearrange themselves vertically), unless in a form */
 			display: block;
 		}
 		
@@ -182,7 +187,7 @@ html {
 		.dropdown:hover .dropdown-content {/* Make dropdown box appear on mouseover */
 		    display: block;
 		}
-		table td + td {/* On non-small screens (when tables won't rearrange themselves vertically), give the second column a left border */
+		not(fieldset) > table td + td {/* On non-small screens (when tables won't rearrange themselves vertically), give the second column a left border */
 			border-left: 1px solid #cacfd2;
 		}
 		.sectionnolist {
@@ -399,30 +404,30 @@ html {
 	}
 
 /*-- Interlinear glosses --*/
-/*-- HTML and CSS interlinear glossing code/styling written by me (Jake Vincent), but feel free to use/modify --*/
+/*-- HTML and CSS interlinear glossing code/styling written by Jake Vincent; feel free to use/modify (https://jakewvincent.github.io) --*/
 
 	.example {	/* Div consisting of all gloss units and free translation */
 		margin-left: 1.5rem;
 	}
 
-	.all-gloss-units {	/* Div consisting of all gloss-units, excluding the free translation */
+	.all-align-units {	/* Div consisting of all align-units, excluding the free translation */
 	}
 
-	.all-gloss-units .gloss-unit:not(:first-child){	/* Give all the non-initial gloss-units a left margin to ease readability */
+	.all-align-units .align-unit:not(:first-child){	/* Give all the non-initial align-units a left margin to ease readability */
 		margin-left: 0.25em;
 	}
 
-	.gloss-unit {	/* Div consisting of word and gloss to be vertically left-aligned */
+	.align-unit {	/* Div consisting of word and gloss to be vertically left-aligned */
 		display: inline-block;
 	}
 
-	.gloss-word {	/* Single word in the text. Keep here just in case. */
+	.word {	/* Single word in the text. Keep here just in case. */
 	}
 
-	.gloss-gloss {	/* Gloss/translation of the single word. Keep here just in case. */
+	.gloss {	/* Gloss/translation of the single word. Keep here just in case. */
 	}
 
-	.gloss-gloss span {	/* Makes anything in a span tag within the gloss-gloss class small-caps, e.g. for lexical features */
+	.gloss span {	/* Makes anything in a span tag within the gloss class small-caps, e.g. for lexical features */
 		font-variant: small-caps;
 	}
 
@@ -448,7 +453,6 @@ html {
 
 /*-- Expandable section styling --*/
 
-/*-- New version --*/
 	.expand-btn {
 		border: none;
 		font-size: 1em;
@@ -480,13 +484,9 @@ html {
 		color: #8b8f91;
 	}
 
-	.expanded h4 {
-		margin: 0;
-	}
-
 /*-- Table styling --*/
 
-	table {
+	not(fieldset) > table {
 		width: 100%;
 	}
 
@@ -574,6 +574,16 @@ html {
 
 	.rg-button:hover {
 		background: #00b1a2;
+		color: white;
+	}
+
+	.github-button {
+		background: #24292e;
+		color: white;
+	}
+
+	.github-button:hover {
+		background: black;
 		color: white;
 	}
 
