@@ -108,24 +108,26 @@ html {
 			padding-left: 0.5rem;
 		}
 		
-		not(fieldset) > table, thead, tbody, th, td, tr {/* Make sure that on smaller screens, all table elements become blocks (so cells can rearrange themselves vertically), unless in a form */
+		/* Make sure that on smaller screens, all table elements become blocks (so cells can rearrange themselves vertically), unless in a form */
+		.flexible-table table, .flexible-table thead, .flexible-table tbody, .flexible-table th, .flexible-table td, .flexible-table tr {
 			display: block;
 		}
 		
-		thead tr {/* Hide table headers (but not display: none, for accessibility) */
+		/* Hide table headers (but not display: none, for accessibility) */
+		.flexible-table thead tr {
 			position: absolute;
 			top: -9999px;
 			left: -9999px;
 		}
 		
-		td {/* Behave like a "row" */
+		.flexible-table td {/* Behave like a "row" */
 			border: none;
 			border-bottom: 1px solid #cacfd2;
 			position: relative;
 			padding-left: 25%;
 		}
 		
-		td:before {/* Set up styling for CSS-generated fake headers */
+		.flexible-table td:before {/* Set up styling for CSS-generated fake headers */
 			position: absolute;
 			top: 6px;
 			left: 6px;
@@ -134,13 +136,19 @@ html {
 			white-space: nowrap;
 		}
 		
-		td:nth-of-type(1):before {/* Give the table contents fake headers */
+		/* Give the table contents fake headers */
+		#adv-disadv-table td:nth-of-type(1):before {
 			content: "Advantages";
 			font-weight: bold;
 		}
-		td:nth-of-type(2):before {
+		#adv-disadv-table td:nth-of-type(2):before {
 			content: "Disadvantages";
 			font-weight: bold;
+		}
+
+		/* Expandable section buttons */
+		.expand-btn {
+			margin-left: 0;
 		}
 	}
 
@@ -192,6 +200,9 @@ html {
 		}
 		.sectionnolist {
 			padding-left: 2.5rem;
+		}
+		.expand-btn {
+			margin-left: -1em;
 		}
 	}
 
@@ -459,8 +470,8 @@ html {
 		background-color: #f7f7f7;
 		padding: 0;
 		cursor: pointer;
-		margin-left: -1em;
 		display: block;
+		/* margin setting is located above in screen-width-specific style sections */
 	}
 
 	.expand-btn h4 {
