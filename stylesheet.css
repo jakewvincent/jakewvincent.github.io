@@ -266,12 +266,14 @@ html {
 		border-bottom: none;
 	}
 
-	nav .separator {
+	nav li:not(:first-child)::before {
+		content: "/";
 		color: #cacfd2;
 		padding-left: 0.5em;
 		padding-right: 0.5em;
 	}
 
+	.align-unit:not(:first-child)
 	
 	.sticky {/* Sticky class is added to nav using JS once nav reaches top of screen */
 		position: fixed;
