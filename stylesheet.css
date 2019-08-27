@@ -67,7 +67,7 @@ html {
 			margin-left: auto;
 			margin-right: auto;
 			width: 100%;
-			overflow: auto;
+			/*overflow: auto;*/
 		}
 		#tinycontainer {/* Div for redirection notice */
 			margin-left: auto;
@@ -159,7 +159,7 @@ html {
 			margin-right: auto;
 			width: 60%;
 			padding: 1rem;
-			overflow: auto;
+			/*overflow: auto;*/ /* removed bc it was interfering w/ CSS sticky */
 		}
 		#tinycontainer {/* Used for redirection notice only */
 			margin-left: auto;
@@ -235,9 +235,11 @@ html {
 /*-- Nav styling --*/
 	nav {
 		overflow: hidden;
-		height: 4.25em;
-		transition: 0.33s;
-		border-bottom: 1px solid #f7f7f7;
+		background: #f7f7f7;
+		position: sticky;
+		position: -webkit-sticky;
+		top: 0;
+		z-index: 9;
 	}
 
 	nav li {/* Allow the nav bar items (syntactically an unordered list) to appear on the same line */
@@ -255,17 +257,20 @@ html {
 		margin-right: 0
 	}
 
-	nav a {
+	/* Don't let nav items be split onto two lines. Removed on 8/27/19 */
+	/*nav a {
 		position: relative;
 		display: inline-block;
-	}
+	}*/
 
+	/* Make nav links click down like a button */
 	nav a:active {
 		top: 1px;
 		left: 1px;
 		border-bottom: none;
 	}
 
+	/* Add slashes between nav items */
 	nav li:not(:first-child)::before {
 		content: "/";
 		color: #cacfd2;
@@ -273,7 +278,8 @@ html {
 		padding-right: 0.5em;
 	}
 	
-	.sticky {/* Sticky class is added to nav using JS once nav reaches top of screen */
+	/* Sticky class is added to nav using JS once nav reaches top of screen */
+	/*.sticky {
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -286,8 +292,8 @@ html {
 	}
 
 	.sticky + .main {
-		padding-top: 4.25em;
-	}
+		padding-top: 4.5em;
+	}*/
 
 /*--Image styling--*/
 
