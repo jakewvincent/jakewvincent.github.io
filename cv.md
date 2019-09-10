@@ -2,7 +2,7 @@
 title: CV
 layout: default
 updated: 2019-06-26
-main-img: /assets/images/jwv_w.jpg
+main-img: assets/images/jwv_w.jpg
 main-img-title: Jake W. Vincent
 ---
 

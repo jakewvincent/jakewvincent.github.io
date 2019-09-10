@@ -2,7 +2,7 @@
 title: Research & Projects
 updated: 2019-08-26
 layout: default
-main-img: /assets/images/shasta_airport.png
+main-img: assets/images/shasta_airport.png
 main-img-title: Shasta airport, 2010
 ---
 

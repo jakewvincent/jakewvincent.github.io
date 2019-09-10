@@ -2,7 +2,7 @@
 title: Hummingbird tutorial
 layout: default
 updated: 2019-04-18
-main-img: /assets/images/black_walnut.png
+main-img: assets/images/black_walnut.png
 main-img-title: Black Walnut, 2012
 ---
 

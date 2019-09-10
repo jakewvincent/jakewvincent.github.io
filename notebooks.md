@@ -2,7 +2,7 @@
 title: Experiment notebooks
 updated: 2019-05-08
 layout: default
-main-img: /assets/images/black_walnut.png
+main-img: assets/images/black_walnut.png
 main-img-title: Black Walnut, 2012
 ---
 
