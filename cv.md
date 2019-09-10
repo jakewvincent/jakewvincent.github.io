@@ -1,7 +1,7 @@
 ---
 title: CV
 layout: default
-updated: 2019-06-26
+updated: 2019-09-10
 main-img: assets/images/jwv_w.jpg
 main-img-title: Jake W. Vincent
 ---
@@ -15,9 +15,9 @@ Syntax;	syntax-semantics interface; psycholinguistics; long-distance dependencie
 {: .sectionnolist}
 
 ### Education
-- 2015-current: <b>Ph.D. Linguistics</b>, *University of California, Santa Cruz*. Expected completion date: 2020.
-- 2017: <b>M.A. Linguistics</b>, *UC Santa Cruz.* Thesis: [*D-Raising in Chamorro Relative Clauses and Other A&prime; Constructions*](https://escholarship.org/uc/item/0jq7096r). Committee: [Sandra Chung](http://people.ucsc.edu/~schung) (chair), [Maziar Toosarvandani](http://people.ucsc.edu/~mtoosarv), and [Matthew Wagers](http://people.ucsc.edu/~mwagers).
-- 2013-2015:  <b>B.A. Linguistics</b>, *UC Santa Cruz*. Graduated Summa Cum Laude with additional Honors in Linguistics.
+- 2015-current: **Ph.D. Linguistics**, *University of California, Santa Cruz*. Expected completion date: 2020.
+- 2017: **M.A. Linguistics**, *UC Santa Cruz.* Thesis: [*D-Raising in Chamorro Relative Clauses and Other A&prime; Constructions*](https://escholarship.org/uc/item/0jq7096r). Committee: [Sandra Chung](http://people.ucsc.edu/~schung) (chair), [Maziar Toosarvandani](http://people.ucsc.edu/~mtoosarv), and [Matthew Wagers](http://people.ucsc.edu/~mwagers).
+- 2013-2015:  **B.A. Linguistics**, *UC Santa Cruz*. Graduated Summa Cum Laude with additional Honors in Linguistics.
 - 2007-2013: *Diablo Valley College*, general education.
 {: .section}
 
@@ -36,26 +36,26 @@ Syntax;	syntax-semantics interface; psycholinguistics; long-distance dependencie
 {: .section}
 
 ### Research experience
-
-- 2017: <b>Graduate student researcher</b>, *UC Santa Cruz*.
+- 2017: **Graduate student researcher**, *UC Santa Cruz*.
 	Organized and developed materials for language-learning activities in Santiago Laxopa Zapotec (SLZ) and San Mart&iacute;n Peras Mixtec (SMPM) for the inaugural [Nido de Lenguas](http://wlma.ucsc.edu/nido-de-lenguas.html) on September 1-3, 2017. Designed a [loter&iacute;a board game](images/loteria_boards.jpg) for practicing sentences in SLZ and SMPM. Supervisors: [Maziar Toosarvandani](https://people.ucsc.edu/~mtoosarv) and [Pranav Anand](https://people.ucsc.edu/~panand) June to September.
-- 2017: <b>Graduate student researcher</b>, *UC Santa Cruz*. Identified borrowings and confirmed previously-identified borrowings from Spanish, Japanese, and English into Chamorro. Supervised two undergraduate research assistants. Supervisor: [Sandra Chung](https://people.ucsc.edu/~schung). March to June.
-- 2016: <b>Graduate student researcher</b>, *UC Santa Cruz*. Facilitated and supervised annotation of recordings generated in a linguistic elicitation experiment in Chamorro. Supervisors: Matthew Wagers and Sandra Chung. March to September.
-- 2014-2015: <b>Research Experiences for Undergraduates fellowship</b>, [*Chamorro Psycholinguistics Project*](http://chamorro.sites.ucsc.edu). Supervisors: [Sandra Chung](http://people.ucsc.edu/~schung) and [Matthew Wagers](http://people.ucsc.edu/~mwagers). Developed independent project on relative clauses in Chamorro.
+- 2017: **Graduate student researcher**, *UC Santa Cruz*. Identified borrowings and confirmed previously-identified borrowings from Spanish, Japanese, and English into Chamorro. Supervised two undergraduate research assistants. Supervisor: [Sandra Chung](https://people.ucsc.edu/~schung). March to June.
+- 2016: **Graduate student researcher**, *UC Santa Cruz*. Facilitated and supervised annotation of recordings generated in a linguistic elicitation experiment in Chamorro. Supervisors: Matthew Wagers and Sandra Chung. March to September.
+- 2014-2015: **Research Experiences for Undergraduates fellowship**, [*Chamorro Psycholinguistics Project*](http://chamorro.sites.ucsc.edu). Supervisors: [Sandra Chung](http://people.ucsc.edu/~schung) and [Matthew Wagers](http://people.ucsc.edu/~mwagers). Developed independent project on relative clauses in Chamorro.
 {: .section}
 		
 ### Teaching
-- 2019: <b>Teaching assistant</b>, <b>Semantics 1</b>, *UC Santa Cruz*. Instructor: [Adrian Brasoveanu](https://people.ucsc.edu/~abrsvn). Summer session 1.
-- 2019: <b>Teaching assistant</b>, <b>Phonology 1</b>, *UC Santa Cruz*. Instructor: [Maho Morimoto](https://people.ucsc.edu/~mamorimo). Spring quarter.
-- 2018-2019: <b>Primary instructor</b>, <b>TA Training</b>, *UC Santa Cruz*. Supervisor: [Matt Wagers](https://people.ucsc.edu/~mwagers). Fall and Winter quarters. ([syllabus](assets/documents/ling240_syllabus.pdf))
-- 2018: <b>Teaching assistant</b>, <b>Syntax 1</b>, *UC Santa Cruz*. Instructor: [Jorge Hankamer](http://babel.ucsc.edu/~hank). Fall quarter.
-- 2018: <b>Teaching assistant</b>, <b>Semantics 1</b>, *UC Santa Cruz*. Instructor: [Hitomi Hirayama](https://people.ucsc.edu/~hhirayam). Summer session 2.
-- 2018: <b>Teaching assistant</b>, <b>Syntax 2</b>, *UC Santa Cruz*. Instructor: [Jorge Hankamer](http://babel.ucsc.edu/~hank). Spring quarter.
-- 2018: <b>Teaching assistant</b>, <b>Introduction to Linguistics</b>, *UC Santa Cruz*. Instructor: [Ryan Bennett](https://people.ucsc.edu/~rbennett). Winter quarter.
-- 2017: <b>Teaching assistant</b>, <b>Semantics 1</b>, *UC Santa Cruz*. Instructor: [Donka Farkas](https://people.ucsc.edu/~farkas). Fall quarter.
-- 2017: <b>Teaching assistant</b>, <b>Semantics 1</b>, *UC Santa Cruz*. Instructor: [Adrian Brasoveanu](https://people.ucsc.edu/~abrsvn/). Summer session 2.
-- 2017: <b>Teaching assistant</b>, <b>Phonology 1</b>, *UC Santa Cruz*. Instructor: [Brian Smith](https://linguistics.berkeley.edu/~bwsmith/). Winter quarter.
-- 2016: <b>Teaching assistant</b>, <b>Syntax 1</b>, *UC Santa Cruz*. Instructor: [Jorge Hankamer](http://babel.ucsc.edu/~hank). Fall quarter.
+- 2019: **Teaching assistant**, **Language & Social Identity**, *UC Santa Cruz*. Instructor: [Jed Pizarro-Guevara](https://people.ucsc.edu/~jpguevar). Fall quarter.
+- 2019: **Teaching assistant**, **Semantics 1**, *UC Santa Cruz*. Instructor: [Adrian Brasoveanu](https://people.ucsc.edu/~abrsvn). Summer session 1.
+- 2019: **Teaching assistant**, **Phonology 1**, *UC Santa Cruz*. Instructor: [Maho Morimoto](https://people.ucsc.edu/~mamorimo). Spring quarter.
+- 2018-2019: **Primary instructor**, **TA Training**, *UC Santa Cruz*. Supervisor: [Matt Wagers](https://people.ucsc.edu/~mwagers). Fall and Winter quarters. ([syllabus](assets/documents/ling240_syllabus.pdf))
+- 2018: **Teaching assistant**, **Syntax 1**, *UC Santa Cruz*. Instructor: [Jorge Hankamer](http://babel.ucsc.edu/~hank). Fall quarter.
+- 2018: **Teaching assistant**, **Semantics 1**, *UC Santa Cruz*. Instructor: [Hitomi Hirayama](https://people.ucsc.edu/~hhirayam). Summer session 2.
+- 2018: **Teaching assistant**, **Syntax 2**, *UC Santa Cruz*. Instructor: [Jorge Hankamer](http://babel.ucsc.edu/~hank). Spring quarter.
+- 2018: **Teaching assistant**, **Introduction to Linguistics**, *UC Santa Cruz*. Instructor: [Ryan Bennett](https://people.ucsc.edu/~rbennett). Winter quarter.
+- 2017: **Teaching assistant**, **Semantics 1**, *UC Santa Cruz*. Instructor: [Donka Farkas](https://people.ucsc.edu/~farkas). Fall quarter.
+- 2017: **Teaching assistant**, **Semantics 1**, *UC Santa Cruz*. Instructor: [Adrian Brasoveanu](https://people.ucsc.edu/~abrsvn/). Summer session 2.
+- 2017: **Teaching assistant**, **Phonology 1**, *UC Santa Cruz*. Instructor: [Brian Smith](https://linguistics.berkeley.edu/~bwsmith/). Winter quarter.
+- 2016: **Teaching assistant**, **Syntax 1**, *UC Santa Cruz*. Instructor: [Jorge Hankamer](http://babel.ucsc.edu/~hank). Fall quarter.
 {: .section}
 
 ### Honors and Awards
@@ -82,8 +82,9 @@ Syntax;	syntax-semantics interface; psycholinguistics; long-distance dependencie
 {: .section}
 
 ### Computer skills
-- Markup: HTML/CSS, <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span>
+- Web: HTML, CSS
+- Document preparation: <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span>
 - Programming: R, Python
 - Version control: Git
-- MS Office: Excel, Access
+- Office: Excel, Access
 {: .section}
