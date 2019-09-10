@@ -1,0 +1,62 @@
+<script src="/assets/scripts/lingGlossHTML.js"></script>
+<script src="/assets/scripts/clearFormOnLoad.js"></script>
+<script src="/assets/scripts/addGlossUnit.js"></script>
+<script src="/assets/scripts/selectOnClick.js"></script>
+<script src="/assets/scripts/showExample.js"></script>
+<script src="/assets/scripts/initialState.js"></script>
+<script src="/assets/scripts/resetFields.js"></script>
+<form action="" id="glossForm">
+    <fieldset>
+        <input type="button" value="Convert" onclick="convert()">
+        <input type="button" value="Reset" onclick="resetFields()">
+        <input type="button" value="Show example" onclick="showExample()">
+        <input type="button" value="Add unit" onclick="addGlossUnit()">
+        <table id="allInput">
+            <tr id="wordRow">
+                <td>Words:</td>
+                <td id="wordTd1"><input type="text" id="wordIn1" size="10" oninput="convert()"></td>
+            </tr>
+            <tr id="glossRow">
+                <td>Glosses:</td>
+                <td id="glossTd1"><input type="text" id="glossIn1" size="10" oninput="convert()"></td>
+            </tr>
+            <tr>
+                <td>Free translation:&nbsp;</td>
+                <td id="ftTd" colspan="0"><input type="text" id="ftIn" style="width:100%; box-sizing:border-box" size="10" oninput="convert()"></td>
+            </tr>
+        </table>
+
+        <div>
+            <p>Preview:</p>
+            <p id="examplePreview" style="color: #8b8f91;">
+                Preview will show here.
+            </p>
+        </div>
+
+        <p>HTML:</p>
+        <textarea type="text" id="textOut" style="width:50%; height:20em;" onclick="selectAll('textOut')"></textarea>
+        <p>Paste the following into your stylesheet:</p>
+        <textarea style="width: 64em; height: 24em;" id="css" onclick="selectAll('css')">
+.example {
+margin-left: 1.5rem;
+}
+.all-align-units {
+}
+/* give non-initial align-units left margin for readability */
+.all-align-units .align-unit:not(:first-child){
+margin-left: 0.25em;
+}
+.align-unit {
+display: inline-block;
+}
+.word {
+}
+.gloss {
+}
+.gloss span {/* make spans small-caps (for features) */
+font-variant: small-caps;
+}
+.free-transl {
+}</textarea>
+    </fieldset>
+</form>

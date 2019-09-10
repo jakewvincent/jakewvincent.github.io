@@ -1,0 +1,27 @@
+I"(<h3 id="using-ucscs-high-performance-computational-cluster-hummingbird">Using UCSC’s high-performance computational cluster (Hummingbird)</h3>
+
+<ul>
+  <li>There are lots of resources available at <a href="https://www.hb.ucsc.edu">hb.ucsc.edu</a>.</li>
+  <li>You can find the slides from the s/lab presentation <a href="/assets/documents/jwv_slab_hb.pdf">here</a>, and a sample SLURM and R script below (which you can also download by clicking the links below.)</li>
+</ul>
+
+<h4 id="sample-slurm-script-download-with-comments">Sample SLURM script (<a href="/assets/documents/job.slurm">download with comments</a>)</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="c">#SBATCH --nodes=1  </span>
+<span class="c">#SBATCH --partition=128x24  </span>
+<span class="c">#SBATCH --job-name=my_job  </span>
+<span class="c">#SBATCH --mail-type=ALL  </span>
+<span class="c">#SBATCH --mail-user=[your_user_name]@ucsc.edu  </span>
+<span class="c">#SBATCH --ntasks=1  </span>
+<span class="c">#SBATCH --output=%j.out  </span>
+<span class="c">#SBATCH --error=%j.err  </span>
+module load R/R-3.5.0  
+R <span class="nt">--no-save</span> &lt; script.R
+</code></pre></div></div>
+
+<h4 id="sample-r-script-that-saves-an-object-as-an-rds-file-that-you-can-download-download-with-comments">Sample R script that saves an object as an RDS file that you can download [<a href="documents/script.R">download with comments</a>]</h4>
+
+<p class="code">r_object &lt;- 1*1<br />
+saveRDS(r_object, file = “test.rds”)</p>
+:ET

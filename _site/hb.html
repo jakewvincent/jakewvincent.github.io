@@ -1,73 +1,67 @@
 <!DOCTYPE html>
-
 <html>
-	<head>
-		<link type="text/css" rel="stylesheet" href="stylesheet.css">
-		<link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:300,700&display=swap&subset=latin-ext" rel="stylesheet">
-		<title>Jake W. Vincent</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
-	<body>
-		<div id="container">
-			<!--Banner-->
-			<div id="banner">
-					<h2 id="name">Jake W. Vincent</h2>
-					<h2 class="email">&#106;&#119;&#118;&#105;&#110;&#99;&#101;n&#64;&#117;c&#115;c.e&#100;u</h2>
-					<div class="divFill"></div>
-			</div>
-			<!--Menu links-->
-			<nav id="navbar">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="cv.html">CV</a></li>
-					<li><a href="teaching.html">Teaching</a></li>
-					<li><a href="research.html">Research & Projects</a></li>
-					<li><a href="blog.html">Blog</a></li>
-				</ul>
-			</nav>
-			<div class="main">
-				<!--Image-->
-				<img src="images/black_walnut.png" class="main-img borderless" title="Black Walnut, 2012">
+    <head>
+        <link type="text/css" rel="stylesheet" href="/assets/css/stylesheet.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/syntax.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:300,700&display=swap&subset=latin-ext" rel="stylesheet">
+        <title>JWV: Hummingbird tutorial</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="container">
+            <div id="banner">
+    <h2 id="name">Jake W. Vincent</h2>
+    <h2 class="email">&#106;&#119;&#118;&#105;&#110;&#99;&#101;n&#64;&#117;c&#115;c.e&#100;u</h2>
+    <div class="divFill"></div>
+</div>
+            <nav id="navbar">
+    <ul>
+    
+        <li><a href="/" >Home</a></li>
+    
+        <li><a href="/cv.html" >CV</a></li>
+    
+        <li><a href="/teaching.html" >Teaching</a></li>
+    
+        <li><a href="/research.html" >Research & Projects</a></li>
+    
+        <li><a href="/blog.html" >Blog</a></li>
+    
+    </ul>
+</nav>
+            <div class = "main">
+                <img src=/assets/images/black_walnut.png class="main-img borderless" title="From Mt. Diablo, 2012">
+                <div id="content">
+                    <h3 id="using-ucscs-high-performance-computational-cluster-hummingbird">Using UCSC’s high-performance computational cluster (Hummingbird)</h3>
 
-				<div id="content">
-				<p>
-					<h3>Using UCSC's high-performance computational cluster (Hummingbird)</h3>
-					<ul>
-						<li>
-							There are lots of resources available at <a href="https://www.hb.ucsc.edu">hb.ucsc.edu</a>.
-						</li>
-						<li>
-							You can find the slides from the s/lab presentation <a href="documents/jwv_slab_hb.pdf">here</a>, and a sample SLURM and R script below (which you can also download by clicking the links below.)
-						</li>
-					</ul>
-				</p>
-					<h4>Sample SLURM script [<a href="documents/job.slurm">download with comments</a>]</h4>
-					<div class="code">
-						#!/bin/bash
-						<br>
-						<br>#SBATCH --nodes=1
-						<br>#SBATCH --partition=128x24
-						<br>#SBATCH --job-name=my_job
-						<br>#SBATCH --mail-type=ALL
-						<br>#SBATCH --mail-user=[your_user_name]@ucsc.edu
-						<br>#SBATCH --ntasks=1
-						<br>#SBATCH --output=%j.out
-						<br>#SBATCH --error=%j.err
-						<br>
-						<br>module load R/R-3.5.0
-						<br>
-						<br>R --no-save < script.R
-					</div>
-					<h4>Sample R script that saves an object as an RDS file that you can download [<a href="documents/script.R">download with comments</a>]</h4>
-					<div class="code">
-						r_object <- 1*1
-						<br>
-						<br>saveRDS(r_object, file = "test.rds")
-					</div>
-				</div>
-			</div>
-			<div class="spacer"></div>
-			<footer>Last updated April 8, 2019</footer>
-		</div>
-	</body>
+<ul>
+  <li>There are lots of resources available at <a href="https://www.hb.ucsc.edu">hb.ucsc.edu</a>.</li>
+  <li>You can find the slides from the s/lab presentation <a href="/assets/documents/jwv_slab_hb.pdf">here</a>, and a sample SLURM and R script below (which you can also download by clicking the links below.)</li>
+</ul>
+
+<h4 id="sample-slurm-script-download-with-comments">Sample SLURM script (<a href="/assets/documents/job.slurm">download with comments</a>)</h4>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c">#!/bin/bash</span>
+<span class="c">#SBATCH --nodes=1  </span>
+<span class="c">#SBATCH --partition=128x24  </span>
+<span class="c">#SBATCH --job-name=my_job  </span>
+<span class="c">#SBATCH --mail-type=ALL  </span>
+<span class="c">#SBATCH --mail-user=[your_user_name]@ucsc.edu  </span>
+<span class="c">#SBATCH --ntasks=1  </span>
+<span class="c">#SBATCH --output=%j.out  </span>
+<span class="c">#SBATCH --error=%j.err  </span>
+module load R/R-3.5.0  
+R <span class="nt">--no-save</span> &lt; script.R</code></pre></figure>
+
+<h4 id="sample-r-script-that-saves-an-object-as-an-rds-file-that-you-can-download-download-with-comments">Sample R script that saves an object as an RDS file that you can download [<a href="documents/script.R">download with comments</a>]</h4>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">r_object</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="o">*</span><span class="m">1</span><span class="w">  
+</span><span class="n">saveRDS</span><span class="p">(</span><span class="n">r_object</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"test.rds"</span><span class="p">)</span></code></pre></figure>
+
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <footer>Last updated April 18, 2019</footer>
+        </div>
+    </body>
 </html>
