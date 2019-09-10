@@ -22,14 +22,14 @@ Syntax;	syntax-semantics interface; psycholinguistics; long-distance dependencie
 {: .section}
 
 ### Presentations
-- 2019: *Computation via Hummingbird: Why and how to use the UCSC Hummingbird Computational Cluster.* [s/lab](https://sites.google.com/a/ucsc.edu/s-lab/), UC Santa Cruz, April 8. ([slides](documents/jwv_slab_hb.pdf) \| [other materials](hb.html))
-- 2019: *Acceptable extraction from relative clauses in English.* [s/lab](https://sites.google.com/a/ucsc.edu/s-lab/), UC Santa Cruz, January 25. ([slides](documents/jwv_rc_subext_slab.pdf))
+- 2019: *Computation via Hummingbird: Why and how to use the UCSC Hummingbird Computational Cluster.* [s/lab](https://sites.google.com/a/ucsc.edu/s-lab/), UC Santa Cruz, April 8. ([slides](assets/documents/jwv_slab_hb.pdf) \| [other materials](hb.html))
+- 2019: *Acceptable extraction from relative clauses in English.* [s/lab](https://sites.google.com/a/ucsc.edu/s-lab/), UC Santa Cruz, January 25. ([slides](assets/documents/jwv_rc_subext_slab.pdf))
 - 2018: *Sentential negation and negative concord licensing in Chamorro.* 25th meeting of the Austronesian Formal Linguistics Association (AFLA), [Academia Sinica](https://www.sinica.edu.tw/en), Taiwan, May 10-12. (contact for handout)
-- 2018: *Stranding in Chamorro internally headed relative clauses.* 36th meeting of the West Coast Conference on Formal Linguistics (WCCFL), UCLA, April 20-22. ([abstract](documents/jwv_wccfl36_abstract.pdf) \| [poster](documents/jwv_wccfl36_poster.pdf))
-- 2018: *Extraction from Complex NP islands: An experimental perspective*. Linguistics at Santa Cruz (LASC), UC Santa Cruz, March 10. ([abstract](documents/jwv_lasc2018_abstract.pdf) \| [poster](documents/jwv_lasc2018_poster.pdf))
+- 2018: *Stranding in Chamorro internally headed relative clauses.* 36th meeting of the West Coast Conference on Formal Linguistics (WCCFL), UCLA, April 20-22. ([abstract](assets/documents/jwv_wccfl36_abstract.pdf) \| [poster](assets/documents/jwv_wccfl36_poster.pdf))
+- 2018: *Extraction from Complex NP islands: An experimental perspective*. Linguistics at Santa Cruz (LASC), UC Santa Cruz, March 10. ([abstract](assets/documents/jwv_lasc2018_abstract.pdf) \| [poster](assets/documents/jwv_lasc2018_poster.pdf))
 - 2018: *Extraction from indefinites: Not inherently better than extraction from definites?* [s/lab](https://sites.google.com/a/ucsc.edu/s-lab/), UC Santa Cruz, February 22. (contact for slides)
-- 2018: *D-raising in Chamorro relative clauses (and beyond).* S-Circle, UC Santa Cruz, January 12. ([handout](documents/jwv_s-circle.pdf))
-- 2017: *Circumnominal relative clauses in Chamorro. *24th meeting of the Austronesian Formal Linguistics Association (AFLA), University of Washington, April 8. ([abstract](documents/jwv_afla24_abstract.pdf) \| [handout](documents/jwv_afla24_handout.pdf))
+- 2018: *D-raising in Chamorro relative clauses (and beyond).* S-Circle, UC Santa Cruz, January 12. ([handout](assets/documents/jwv_s-circle.pdf))
+- 2017: *Circumnominal relative clauses in Chamorro. *24th meeting of the Austronesian Formal Linguistics Association (AFLA), University of Washington, April 8. ([abstract](assets/documents/jwv_afla24_abstract.pdf) \| [handout](assets/documents/jwv_afla24_handout.pdf))
 - 2017: *Phonological lowering in Chamorro circumnominal relative clauses. *Linguistics at Santa Cruz (LASC), UC Santa Cruz, March 18.
 - 2015: *A special type of relative clause in Chamorro. *Poster presentation, Humanities Spring Awards Event, UC Santa Cruz, June.
 - 2015: *Internally headed relative clauses in Chamorro. *Linguistics Undergraduate Research Conference (LURC), UC Santa Cruz, May.
@@ -47,7 +47,7 @@ Syntax;	syntax-semantics interface; psycholinguistics; long-distance dependencie
 ### Teaching
 - 2019: <b>Teaching assistant</b>, <b>Semantics 1</b>, *UC Santa Cruz*. Instructor: [Adrian Brasoveanu](https://people.ucsc.edu/~abrsvn). Summer session 1.
 - 2019: <b>Teaching assistant</b>, <b>Phonology 1</b>, *UC Santa Cruz*. Instructor: [Maho Morimoto](https://people.ucsc.edu/~mamorimo). Spring quarter.
-- 2018-2019: <b>Primary instructor</b>, <b>TA Training</b>, *UC Santa Cruz*. Supervisor: [Matt Wagers](https://people.ucsc.edu/~mwagers). Fall and Winter quarters. ([syllabus](documents/ling240_syllabus.pdf))
+- 2018-2019: <b>Primary instructor</b>, <b>TA Training</b>, *UC Santa Cruz*. Supervisor: [Matt Wagers](https://people.ucsc.edu/~mwagers). Fall and Winter quarters. ([syllabus](assets/documents/ling240_syllabus.pdf))
 - 2018: <b>Teaching assistant</b>, <b>Syntax 1</b>, *UC Santa Cruz*. Instructor: [Jorge Hankamer](http://babel.ucsc.edu/~hank). Fall quarter.
 - 2018: <b>Teaching assistant</b>, <b>Semantics 1</b>, *UC Santa Cruz*. Instructor: [Hitomi Hirayama](https://people.ucsc.edu/~hhirayam). Summer session 2.
 - 2018: <b>Teaching assistant</b>, <b>Syntax 2</b>, *UC Santa Cruz*. Instructor: [Jorge Hankamer](http://babel.ucsc.edu/~hank). Spring quarter.

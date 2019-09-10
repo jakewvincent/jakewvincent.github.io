@@ -40,5 +40,5 @@ I enjoy teaching materials at all levels but have particularly enjoyed leading s
 - **2018-2019**
     - **TA Training** (Fall 2018-Winter 2019)  
     Supervisor: [Matt Wagers](https://people.ucsc.edu/~mwagers).  
-    [Syllabus](/assets/documents/ling240_syllabus.pdf)
+    [Syllabus](assets/documents/ling240_syllabus.pdf)
 {: .section}

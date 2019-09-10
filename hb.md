@@ -9,9 +9,9 @@ main-img-title: Black Walnut, 2012
 ### Using UCSC's high-performance computational cluster (Hummingbird)
 
 - There are lots of resources available at [hb.ucsc.edu](https://www.hb.ucsc.edu).
-- You can find the slides from the s/lab presentation [here](/assets/documents/jwv_slab_hb.pdf), and a sample SLURM and R script below (which you can also download by clicking the links below.)
+- You can find the slides from the s/lab presentation [here](assets/documents/jwv_slab_hb.pdf), and a sample SLURM and R script below (which you can also download by clicking the links below.)
 
-#### Sample SLURM script ([download with comments](/assets/documents/job.slurm))
+#### Sample SLURM script ([download with comments](assets/documents/job.slurm))
 
 {% highlight shell %}
 #!/bin/bash
