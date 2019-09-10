@@ -1,10 +1,15 @@
-- name: "Home"
+- name: Home
   link: index.html
+  id: 01
 - name: CV
   link: cv.html
+  id: 02
 - name: Teaching
   link: teaching.html
+  id: 03
 - name: Research & Projects
   link: research.html
+  id: 04
 - name: Blog
   link: blog.html
+  id: 05
