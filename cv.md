@@ -82,7 +82,7 @@ Syntax;	syntax-semantics interface; psycholinguistics; long-distance dependencie
 {: .section}
 
 ### Computer skills
-- Web: HTML, CSS
+- Web: HTML, CSS, Jekyll
 - Document preparation: <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span>
 - Programming: R, Python
 - Version control: Git

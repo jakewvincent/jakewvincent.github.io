@@ -27,7 +27,7 @@ module load R/R-3.5.0
 R --no-save < script.R
 {% endhighlight %}
 
-#### Sample R script that saves an object as an RDS file that you can download [<a href="documents/script.R">download with comments</a>]
+#### Sample R script that saves an object as an RDS file that you can download ([download with comments](assets/documents/script.R))
 
 {% highlight r %}
 r_object <- 1*1  
