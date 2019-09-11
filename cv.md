@@ -29,10 +29,10 @@ Syntax;	syntax-semantics interface; psycholinguistics; long-distance dependencie
 - 2018: *Extraction from Complex NP islands: An experimental perspective*. Linguistics at Santa Cruz (LASC), UC Santa Cruz, March 10. ([abstract](assets/documents/jwv_lasc2018_abstract.pdf) \| [poster](assets/documents/jwv_lasc2018_poster.pdf))
 - 2018: *Extraction from indefinites: Not inherently better than extraction from definites?* [s/lab](https://sites.google.com/a/ucsc.edu/s-lab/), UC Santa Cruz, February 22. (contact for slides)
 - 2018: *D-raising in Chamorro relative clauses (and beyond).* S-Circle, UC Santa Cruz, January 12. ([handout](assets/documents/jwv_s-circle.pdf))
-- 2017: *Circumnominal relative clauses in Chamorro. *24th meeting of the Austronesian Formal Linguistics Association (AFLA), University of Washington, April 8. ([abstract](assets/documents/jwv_afla24_abstract.pdf) \| [handout](assets/documents/jwv_afla24_handout.pdf))
-- 2017: *Phonological lowering in Chamorro circumnominal relative clauses. *Linguistics at Santa Cruz (LASC), UC Santa Cruz, March 18.
-- 2015: *A special type of relative clause in Chamorro. *Poster presentation, Humanities Spring Awards Event, UC Santa Cruz, June.
-- 2015: *Internally headed relative clauses in Chamorro. *Linguistics Undergraduate Research Conference (LURC), UC Santa Cruz, May.
+- 2017: *Circumnominal relative clauses in Chamorro.* 24th meeting of the Austronesian Formal Linguistics Association (AFLA), University of Washington, April 8. ([abstract](assets/documents/jwv_afla24_abstract.pdf) \| [handout](assets/documents/jwv_afla24_handout.pdf))
+- 2017: *Phonological lowering in Chamorro circumnominal relative clauses.* Linguistics at Santa Cruz (LASC), UC Santa Cruz, March 18.
+- 2015: *A special type of relative clause in Chamorro.* Poster presentation, Humanities Spring Awards Event, UC Santa Cruz, June.
+- 2015: *Internally headed relative clauses in Chamorro.* Linguistics Undergraduate Research Conference (LURC), UC Santa Cruz, May.
 {: .section}
 
 ### Research experience
