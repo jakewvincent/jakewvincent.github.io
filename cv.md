@@ -49,12 +49,12 @@ Syntax;	syntax-semantics interface; psycholinguistics; long-distance dependencie
 - 2019: **Teaching assistant**, **Phonology 1**, *UC Santa Cruz*. Instructor: [Maho Morimoto](https://people.ucsc.edu/~mamorimo). Spring quarter.
 - 2018-2019: **Primary instructor**, **TA Training**, *UC Santa Cruz*. Supervisor: [Matt Wagers](https://people.ucsc.edu/~mwagers). Fall and Winter quarters. ([syllabus](assets/documents/ling240_syllabus.pdf))
 - 2018: **Teaching assistant**, **Syntax 1**, *UC Santa Cruz*. Instructor: [Jorge Hankamer](http://babel.ucsc.edu/~hank). Fall quarter.
-- 2018: **Teaching assistant**, **Semantics 1**, *UC Santa Cruz*. Instructor: [Hitomi Hirayama](https://people.ucsc.edu/~hhirayam). Summer session 2.
+- 2018: **Teaching assistant**, **Semantics 1**, *UC Santa Cruz*. Instructor: [Hitomi Hirayama](https://hhirayam.wordpress.com). Summer session 2.
 - 2018: **Teaching assistant**, **Syntax 2**, *UC Santa Cruz*. Instructor: [Jorge Hankamer](http://babel.ucsc.edu/~hank). Spring quarter.
 - 2018: **Teaching assistant**, **Introduction to Linguistics**, *UC Santa Cruz*. Instructor: [Ryan Bennett](https://people.ucsc.edu/~rbennett). Winter quarter.
 - 2017: **Teaching assistant**, **Semantics 1**, *UC Santa Cruz*. Instructor: [Donka Farkas](https://people.ucsc.edu/~farkas). Fall quarter.
 - 2017: **Teaching assistant**, **Semantics 1**, *UC Santa Cruz*. Instructor: [Adrian Brasoveanu](https://people.ucsc.edu/~abrsvn/). Summer session 2.
-- 2017: **Teaching assistant**, **Phonology 1**, *UC Santa Cruz*. Instructor: [Brian Smith](https://linguistics.berkeley.edu/~bwsmith/). Winter quarter.
+- 2017: **Teaching assistant**, **Phonology 1**, *UC Santa Cruz*. Instructor: [Brian Smith](https://brianwilliamsmith.github.io). Winter quarter.
 - 2016: **Teaching assistant**, **Syntax 1**, *UC Santa Cruz*. Instructor: [Jorge Hankamer](http://babel.ucsc.edu/~hank). Fall quarter.
 {: .section}
 

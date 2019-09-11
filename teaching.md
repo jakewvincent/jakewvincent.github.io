@@ -23,9 +23,9 @@ I enjoy teaching materials at all levels but have particularly enjoyed leading s
     Instructor: [Jorge Hankamer](http://babel.ucsc.edu/~hank). Co-TA: [Ben Eischens](https://people.ucsc.edu/~beischen).
 - **2017-2018**
     - **Semantics 1** (Summer 2018, Session 2)  
-    Instructor: [Hitomi Hirayama](https://people.ucsc.edu/~hhirayam).
+    Instructor: [Hitomi Hirayama](https://hhirayam.wordpress.com).
     - **Syntax 2** (Spring 2018)  
-    Instructor: [Jorge Hankamer](http://babel.ucsc.edu/~hank). Co-TA: [Hitomi Hirayama](https://people.ucsc.edu/~hhirayam).
+    Instructor: [Jorge Hankamer](http://babel.ucsc.edu/~hank). Co-TA: [Hitomi Hirayama](https://hhirayam.wordpress.com).
     - **Introduction to Linguistics** (Winter 2018)  
     Instructor: [Ryan Bennett](https://people.ucsc.edu/~rbennett). Co-TA: [Nick Van Handel](https://people.ucsc.edu/~nvanhand).
     - **Semantics 1** (Fall 2017)  
@@ -34,9 +34,9 @@ I enjoy teaching materials at all levels but have particularly enjoyed leading s
     - **Semantics 1** (Summer 2017, Session 1)  
     Instructor: [Adrian Brasoveanu](https://people.ucsc.edu/~absrvn)
     - **Phonology 1** (Winter 2017)  
-    Instructor: [Brian Smith](https://linguistics.berkeley.edu/~bwsmith/). Co-TA: [Jed Pizarro-Guevara](https://people.ucsc.edu/~jpguevar/).
+    Instructor: [Brian Smith](https://brianwilliamsmith.github.io). Co-TA: [Jed Pizarro-Guevara](https://people.ucsc.edu/~jpguevar/).
     - **Syntax 1** (Fall 2016)  
-    Instructor: [Jorge Hankamer](http://babel.ucsc.edu/~hank). Co-TA: [Deniz Rudin](https://people.ucsc.edu/~drudin).
+    Instructor: [Jorge Hankamer](http://babel.ucsc.edu/~hank). Co-TA: [Deniz Rudin](https://denizrudin.github.io).
 {: .section}
 
 ### Primary Instructor
