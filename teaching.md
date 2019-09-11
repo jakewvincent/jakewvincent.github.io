@@ -1,7 +1,7 @@
 ---
 title: Teaching
 layout: default
-updated: 2019-08-21
+updated: 2019-09-11
 main-img: assets/images/boxelder_borderless.png
 main-img-title: Peel-apart Polaroid of a Box Elder, 2010
 ---
@@ -11,6 +11,9 @@ main-img-title: Peel-apart Polaroid of a Box Elder, 2010
 I enjoy teaching materials at all levels but have particularly enjoyed leading sections for Syntax 1 and 2, Phonology 1, and Semantics 1. Helping students understand course material is one of the most gratifying parts of being a teacher, and I appreciate the perspective I gain by revisiting familiar concepts and thinking of new ways to explain them to other people.
 
 ### Teaching assistant
+- **2019-2020**
+    - **Language & Social Identity** (Planned for Fall 2020)  
+    Instructor: [Jed Pizarro-Guevara](https://people.ucsc.edu/~jpguevar)
 - **2018-2019**
     - **Semantics 1** (Summer 2019, Session 1)  
     Instructor: [Adrian Brasoveanu](https://people.ucsc.edu/~abrsvn).
@@ -37,6 +40,8 @@ I enjoy teaching materials at all levels but have particularly enjoyed leading s
 {: .section}
 
 ### Primary Instructor
+- **2019-2020**
+    - **Syntactic Structures** (Planned for Spring 2020)
 - **2018-2019**
     - **TA Training** (Fall 2018-Winter 2019)  
     Supervisor: [Matt Wagers](https://people.ucsc.edu/~mwagers).  
