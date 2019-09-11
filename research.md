@@ -95,4 +95,4 @@ In an undergraduate project, I analyzed 106 of Joaquin F. Borja's rhyme pairs fr
 </div>
 </div>
 
-<script src="/assets/scripts/expand.js"></script>
+<script src="assets/scripts/expand.js"></script>
