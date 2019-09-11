@@ -74,7 +74,7 @@ I am researching Chamorro's head-internal relative clauses in relation to the la
 
 I am currently working on a syllable parser that takes input in IPA characters and produces a syllabified output. Currently, the function follows essentially the same procedure that students are taught to follow in Phonology 1. It first identifies syllable nuclei (including diphthongs), then parses preceding consonants into the syllable of the following nucleus segment by segment (leaving segments unparsed if they don't form a legal onset cluster), and finally parsing remaining unparsed segments into the coda of the syllable of the preceding nucleus.
 
-The program also includes an integration with the [](http://www.speech.cs.cmu.edu/cgi-bin/cmudict">Carnegie Mellon University Pronouncing Dictionary, which contains pronunciations for over 100,000 words. The script converts the ARPABET codes that come with the dictionary into IPA, which makes it possible to look for statistical patterns across English pronunciations and syllabifications.
+The program also includes an integration with the [Carnegie Mellon University Pronouncing Dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict), which contains pronunciations for over 100,000 words. The script converts the ARPABET codes that come with the dictionary into IPA, which makes it possible to look for statistical patterns across English pronunciations and syllabifications.
 
 </div>
 
