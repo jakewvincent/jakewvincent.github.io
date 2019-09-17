@@ -1,13 +1,13 @@
 ---
 title: CV
 layout: default
-updated: 2019-09-10
+updated: 2019-09-17
 main-img: assets/images/jwv_w.jpg
 main-img-title: Jake W. Vincent
 ---
 
 <div class="buttonspace">
-	<a href="documents/jake_vincent_cv.pdf" class="download-pdf a-button">Download as PDF</a>
+	<a href="assets/documents/jake_vincent_cv.pdf" class="download-pdf a-button">Download as PDF</a>
 </div>
 
 ### Research interests
@@ -17,22 +17,21 @@ Syntax;	syntax-semantics interface; psycholinguistics; long-distance dependencie
 ### Education
 - 2015-current: **Ph.D. Linguistics**, *University of California, Santa Cruz*. Expected completion date: 2020.
 - 2017: **M.A. Linguistics**, *UC Santa Cruz.* Thesis: [*D-Raising in Chamorro Relative Clauses and Other A&prime; Constructions*](https://escholarship.org/uc/item/0jq7096r). Committee: [Sandra Chung](http://people.ucsc.edu/~schung) (chair), [Maziar Toosarvandani](http://people.ucsc.edu/~mtoosarv), and [Matthew Wagers](http://people.ucsc.edu/~mwagers).
-- 2013-2015:  **B.A. Linguistics**, *UC Santa Cruz*. Graduated Summa Cum Laude with additional Honors in Linguistics.
-- 2007-2013: *Diablo Valley College*, general education.
+- 2015:  **B.A. Linguistics**, *UC Santa Cruz*. Graduated Summa Cum Laude with additional Honors in Linguistics.
 {: .section}
 
 ### Presentations
 - 2019: *Computation via Hummingbird: Why and how to use the UCSC Hummingbird Computational Cluster.* [s/lab](https://sites.google.com/a/ucsc.edu/s-lab/), UC Santa Cruz, April 8. ([slides](assets/documents/jwv_slab_hb.pdf) \| [other materials](hb.html))
 - 2019: *Acceptable extraction from relative clauses in English.* [s/lab](https://sites.google.com/a/ucsc.edu/s-lab/), UC Santa Cruz, January 25. ([slides](assets/documents/jwv_rc_subext_slab.pdf))
 - 2018: *Sentential negation and negative concord licensing in Chamorro.* 25th meeting of the Austronesian Formal Linguistics Association (AFLA), [Academia Sinica](https://www.sinica.edu.tw/en), Taiwan, May 10-12. (contact for handout)
-- 2018: *Stranding in Chamorro internally headed relative clauses.* 36th meeting of the West Coast Conference on Formal Linguistics (WCCFL), UCLA, April 20-22. ([abstract](assets/documents/jwv_wccfl36_abstract.pdf) \| [poster](assets/documents/jwv_wccfl36_poster.pdf))
-- 2018: *Extraction from Complex NP islands: An experimental perspective*. Linguistics at Santa Cruz (LASC), UC Santa Cruz, March 10. ([abstract](assets/documents/jwv_lasc2018_abstract.pdf) \| [poster](assets/documents/jwv_lasc2018_poster.pdf))
+- 2018: *Stranding in Chamorro internally headed relative clauses.* 36th meeting of the [West Coast Conference on Formal Linguistics (WCCFL)](https://linguistics.ucla.edu/conference/wccfl36/), UCLA, April 20-22. ([abstract](assets/documents/jwv_wccfl36_abstract.pdf) \| [poster](assets/documents/jwv_wccfl36_poster.pdf))
+- 2018: *Extraction from Complex NP islands: An experimental perspective*. [Linguistics at Santa Cruz (LASC)](https://linguistics.ucsc.edu/news-events/conferences/pdfs/LASC%20Programs/lasc-2018.pdf), UC Santa Cruz, March 10. ([abstract](assets/documents/jwv_lasc2018_abstract.pdf) \| [poster](assets/documents/jwv_lasc2018_poster.pdf))
 - 2018: *Extraction from indefinites: Not inherently better than extraction from definites?* [s/lab](https://sites.google.com/a/ucsc.edu/s-lab/), UC Santa Cruz, February 22. (contact for slides)
-- 2018: *D-raising in Chamorro relative clauses (and beyond).* S-Circle, UC Santa Cruz, January 12. ([handout](assets/documents/jwv_s-circle.pdf))
-- 2017: *Circumnominal relative clauses in Chamorro.* 24th meeting of the Austronesian Formal Linguistics Association (AFLA), University of Washington, April 8. ([abstract](assets/documents/jwv_afla24_abstract.pdf) \| [handout](assets/documents/jwv_afla24_handout.pdf))
-- 2017: *Phonological lowering in Chamorro circumnominal relative clauses.* Linguistics at Santa Cruz (LASC), UC Santa Cruz, March 18.
-- 2015: *A special type of relative clause in Chamorro.* Poster presentation, Humanities Spring Awards Event, UC Santa Cruz, June.
-- 2015: *Internally headed relative clauses in Chamorro.* Linguistics Undergraduate Research Conference (LURC), UC Santa Cruz, May.
+- 2018: *D-raising in Chamorro relative clauses (and beyond).* [S-Circle](https://sites.google.com/view/ucsc-scircle/home), UC Santa Cruz, January 12. ([handout](assets/documents/jwv_s-circle.pdf))
+- 2017: *Circumnominal relative clauses in Chamorro.* [24th meeting of the Austronesian Formal Linguistics Association (AFLA)](https://lingconf.com/afla24/), University of Washington, April 8. ([abstract](assets/documents/jwv_afla24_abstract.pdf) \| [handout](assets/documents/jwv_afla24_handout.pdf))
+- 2017: *Phonological lowering in Chamorro circumnominal relative clauses.* [Linguistics at Santa Cruz (LASC)](https://linguistics.ucsc.edu/news-events/conferences/pdfs/LASC%20Programs/LASC-2017.pdf), UC Santa Cruz, March 18.
+- 2015: *A special type of relative clause in Chamorro.* Poster presentation, [Humanities Spring Awards Event](https://thi.ucsc.edu/past-fellows/hugra-recipients/#h1415), UC Santa Cruz, June.
+- 2015: *Internally headed relative clauses in Chamorro.* [Linguistics Undergraduate Research Conference (LURC)](https://linguistics.ucsc.edu/news-events/conferences/pdfs/LURC%20Programs/LURC-2015.pdf), UC Santa Cruz, May.
 {: .section}
 
 ### Research experience
@@ -44,6 +43,8 @@ Syntax;	syntax-semantics interface; psycholinguistics; long-distance dependencie
 {: .section}
 		
 ### Teaching
+- *Planned*: **Primary instructor**, **Syntactic Structures**, *UC Santa Cruz*. Spring quarter.
+- *Planned*: **Teaching assistant**, **Syntactic Structures**, *UC Santa Cruz*. Instructor: [Matt Wagers](https://people.ucsc.edu/~mwagers). Winter quarter.
 - 2019: **Teaching assistant**, **Language & Social Identity**, *UC Santa Cruz*. Instructor: [Jed Pizarro-Guevara](https://people.ucsc.edu/~jpguevar). Fall quarter.
 - 2019: **Teaching assistant**, **Semantics 1**, *UC Santa Cruz*. Instructor: [Adrian Brasoveanu](https://people.ucsc.edu/~abrsvn). Summer session 1.
 - 2019: **Teaching assistant**, **Phonology 1**, *UC Santa Cruz*. Instructor: [Maho Morimoto](https://people.ucsc.edu/~mamorimo). Spring quarter.
@@ -60,7 +61,7 @@ Syntax;	syntax-semantics interface; psycholinguistics; long-distance dependencie
 
 ### Honors and Awards
 - 2015: Inducted into Phi Beta Kappa.
-- 2015: Chancellor's Award, *UC Santa Cruz*. Project: *Rhyme in the Chamorro language poetry of Joaquin Flores Borja (And what it tells us about poetry and language)*. Also entails Dean's Award.
+- 2015: Chancellor's Award, *UC Santa Cruz*. (Also entails Dean's Award.) Project: *Rhyme in the Chamorro language poetry of Joaquin Flores Borja (And what it tells us about poetry and language)*.
 - 2015: Humanities Undergraduate Research Award (HUGRA), Institute for Humanities Research, *UC Santa Cruz*. Bertha N. Melkonian Prize.
 {: .section}
 
@@ -69,6 +70,7 @@ Syntax;	syntax-semantics interface; psycholinguistics; long-distance dependencie
 {: .section}
 
 ### Service
+- 2019: Organizational assistance. [California Annual Meeting on Psycholinguistics (CAMP)](https://sites.google.com/view/camp-ucsc), *UC Santa Cruz*. October 26-27.
 - 2018: Organizational assistance. [Pronouns in Competition Workshop](https://sites.google.com/ucsc.edu/pronounsincompetition/home?authuser=0), *UC Santa Cruz*. April 27-28.
 - 2018: Graduate Representative. Linguistics Department, *UC Santa Cruz*. January-December.
 - 2016-2017: Events committee member. Linguistics Department, *UC Santa Cruz*.
