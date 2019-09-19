@@ -1,45 +1,11 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link type="text/css" rel="stylesheet" href="assets/css/stylesheet.css">
-        <link type="text/css" rel="stylesheet" href="assets/css/syntax.css">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:300,700&display=swap&subset=latin-ext" rel="stylesheet">
-        <title>JWV: CV</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div id="container">
-            <div id="banner">
-    <h2 id="name">Jake W. Vincent</h2>
-    <h2 class="email">&#106;&#119;&#118;&#105;&#110;&#99;&#101;n&#64;&#117;c&#115;c.e&#100;u</h2>
-    <div class="divFill"></div>
-</div>
-            <nav id="navbar">
-    <ul>
-    
-        <li><a href="index.html" >Home</a></li>
-    
-        <li><a href="cv.html"  id="activelink" >CV</a></li>
-    
-        <li><a href="teaching.html" >Teaching</a></li>
-    
-        <li><a href="research.html" >Research & Projects</a></li>
-    
-        <li><a href="blog.html" >Blog</a></li>
-    
-    </ul>
-</nav>
-            <div class = "main">
-                <img src=assets/images/jwv_w.jpg class="main-img borderless" title=Jake W. Vincent>
-                <div id="content">
-                    <div class="buttonspace">
+I"�%<div class="buttonspace">
 	<a href="assets/documents/jake_vincent_cv.pdf" class="download-pdf a-button">Download as PDF</a>
 </div>
 
 <h3 id="education">Education</h3>
 <p class="sectionnolist">2020: Ph.D., Department of Linguistics, University of California, Santa Cruz.<br />
-2017: M.A., Department of Linguistics, UC Santa Cruz. Thesis title: <a href="https://escholarship.org/uc/item/0jq7096r"><em>D-Raising in Chamorro Relative Clauses and Other A′ Constructions</em></a>. Thesis advisor: <a href="http://people.ucsc.edu/~schung">Sandra Chung</a>.<br />
-2015:  B.A., Department of Linguistics, UC Santa Cruz. Graduated <em>Summa Cum Laude</em> with additional Honors in Linguistics.</p>
+2017: M.A., Department of Linguistics, UC Santa Cruz. Thesis title: <a href="https://escholarship.org/uc/item/0jq7096r"><em>D-Raising in Chamorro Relative Clauses and Other A′ Constructions</em></a>. Thesis advisor: <a href="http://people.ucsc.edu/~schung">Sandra Chung</a> (chair), <a href="http://people.ucsc.edu/~mtoosarv">Maziar Toosarvandani</a>, and <a href="http://people.ucsc.edu/~mwagers">Matt Wagers</a>.<br />
+2015:  B.A., Department of Linguistics, UC Santa Cruz. Graduated Summa Cum Laude with additional Honors in Linguistics.</p>
 
 <h3 id="publications">Publications</h3>
 <p class="sectionnolist"><strong>Manuscripts in Preparation</strong><br />
@@ -88,38 +54,28 @@
 2017: Phonology 1, UC Santa Cruz, Winter quarter. Instructor: <a href="https://brianwilliamsmith.github.io">Brian Smith</a>.<br />
 2016: Syntax 1, UC Santa Cruz, Fall quarter. Instructor: <a href="http://babel.ucsc.edu/~hank">Jorge Hankamer</a>.</p>
 
-<h3 id="research-experience">Research Experience</h3>
+<h3 id="research-experience">Research experience</h3>
 <p class="sectionnolist">2017: Graduate student researcher, UC Santa Cruz. Helped organize and develop materials for <a href="images/loteria_boards.jpg">language-learning activities</a> in Santiago Laxopa Zapotec (SLZ) and San Martín Peras Mixtec (SMPM) for the inaugural <a href="http://wlma.ucsc.edu/nido-de-lenguas.html">Nido de Lenguas</a>. June–September. Supervisors: <a href="https://people.ucsc.edu/~mtoosarv">Maziar Toosarvandani</a> and <a href="https://people.ucsc.edu/~panand">Pranav Anand</a>.<br />
 2017: Graduate student researcher, UC Santa Cruz. Identified borrowings and confirmed previously-identified borrowings from Spanish, Japanese, and English into Chamorro and supervised two undergraduate research assistants. March–June. Supervisor: <a href="https://people.ucsc.edu/~schung">Sandra Chung</a>.<br />
 2016: Graduate student researcher, UC Santa Cruz. Facilitated and supervised annotation of recordings generated in a linguistic elicitation experiment in Chamorro. March–September. Supervisors: Matt Wagers and Sandra Chung.<br />
 2015: Research Experiences for Undergraduates Fellow, <a href="http://chamorro.sites.ucsc.edu">Chamorro Psycholinguistics Project</a> (BCS #1251429). Developed an independent project on relative clauses in Chamorro. 2014–2015 school year. Supervisors: <a href="http://people.ucsc.edu/~schung">Sandra Chung</a> and <a href="http://people.ucsc.edu/~mwagers">Matt Wagers</a>.</p>
 
-<h3 id="departmental-service">Departmental Service</h3>
-<p class="sectionnolist">Organizational assistance for <a href="https://sites.google.com/view/camp-ucsc">California Annual Meeting on Psycholinguistics (CAMP)</a>, held at UC Santa Cruz October 26–27, 2019.<br />
-Organizational assistance for <a href="https://sites.google.com/ucsc.edu/pronounsincompetition/home?authuser=0">Pronouns in Competition Workshop</a>, held at UC Santa Cruz April 27–28, 2018.<br />
-Graduate Representative, Department of Linguistics, UC Santa Cruz, January–December, 2018.<br />
-Events committee, Department of Linguistics, UC Santa Cruz, 2016–2017 school year.\</p>
+<h3 id="service">Service</h3>
+<p class="sectionnolist">2019: Organizational assistance. <a href="https://sites.google.com/view/camp-ucsc">California Annual Meeting on Psycholinguistics (CAMP)</a>, <em>UC Santa Cruz</em>. October 26–27.<br />
+2018: Organizational assistance. <a href="https://sites.google.com/ucsc.edu/pronounsincompetition/home?authuser=0">Pronouns in Competition Workshop</a>, <em>UC Santa Cruz</em>. April 27–28.<br />
+2018: Graduate Representative. Linguistics Department, <em>UC Santa Cruz</em>. January–December.<br />
+2016–2017: Events committee member. Linguistics Department, <em>UC Santa Cruz</em>.\</p>
 
 <h3 id="languages">Languages</h3>
 <p class="sectionnolist">English (native)<br />
-Spanish (reading)<br />
-Chamorro (fieldwork)<br />
+Spanish (intermediate)<br />
+Chamorro (basic, fieldwork)<br />
 <a href="http://zapotec.ucsc.edu/slz/">Santiago Laxopa Zapotec</a> (fieldwork)</p>
 
-<h3 id="professional-memberships">Professional Memberships</h3>
-<p class="sectionnolist">Linguistic Society of America</p>
-
-<h3 id="computer-skills">Computer Skills</h3>
+<h3 id="computer-skills">Computer skills</h3>
 <p class="sectionnolist">Web: HTML, CSS, Jekyll<br />
 Document preparation: <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span><br />
 Programming: R, Python<br />
 Version control: Git<br />
 Office: Excel, Access</p>
-
-                </div>
-            </div>
-            <div class="spacer"></div>
-            <footer>Last updated September 19, 2019</footer>
-        </div>
-    </body>
-</html>
+:ET
