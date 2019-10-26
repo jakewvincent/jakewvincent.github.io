@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link type="text/css" rel="stylesheet" href="assets/css/stylesheet.css">
-        <link type="text/css" rel="stylesheet" href="assets/css/stylesheet_blog.css">
-        <link type="text/css" rel="stylesheet" href="assets/css/syntax.css">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:300,700&display=swap&subset=latin-ext" rel="stylesheet">
-        <title>JWV: Relative clause subextraction in English</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div id="container">
-            <div id="banner">
-    <h2 id="name">Jake W. Vincent</h2>
-    <h2 class="email">&#106;&#119;&#118;&#105;&#110;&#99;&#101;n&#64;&#117;c&#115;c.e&#100;u</h2>
-    <div class="divFill"></div>
-</div>
-            <nav id="navbar">
-    <ul>
-    
-        <li><a href="index.html" >Home</a></li>
-    
-        <li><a href="cv.html" >CV</a></li>
-    
-        <li><a href="teaching.html" >Teaching</a></li>
-    
-        <li><a href="research.html" >Research & Projects</a></li>
-    
-        <li><a href="blog.html" >Blog</a></li>
-    
-    </ul>
-</nav>
-            <div class = "main">
-                <div id="content">
-                    <h1 id="relative-clause-subextraction-in-english">Relative clause subextraction in English</h1>
+I"<h1 id="relative-clause-subextraction-in-english">Relative clause subextraction in English</h1>
 <h2 id="camp3-presentation">CAMP3 Presentation</h2>
 
 <p><a href="assets/documents/jwv_camp_2019.pdf">DOWNLOAD POSTER</a></p>
@@ -40,6 +6,7 @@
 <p>A manuscript is in progress, but you can download my Qualifying Exam <a href="assets/documents/jwv_rc_subext_eng.pdf">HERE</a>.</p>
 
 <h2 id="references"><strong>References</strong></h2>
+
 <ol>
   <li>Bhatt, R. (1999). Covert Modality in Non-finite Contexts. University of Pennsylvania.</li>
   <li>Chung, S., &amp; McCloskey, J. (1983). On the Interpretation of Certain Island Facts in GPSG. Linguistic Inquiry, 14(4), 704–713. Retrieved from http://www.jstor.org/stable/4178357</li>
@@ -51,9 +18,4 @@
   <li>Sprouse, J., Wagers, M. W., &amp; Phillips, C. (2012). A test of the relation between working memory capacity and syntactic island effects. Language, 88(1), 82–123.</li>
   <li>Taraldsen, K. T. (1982). Extraction from relative clauses in Norwegian. In E. Engdahl &amp; E. Ejerhed (Eds.), Readings on Unbounded Dependencies in Scandinavian Languages (pp. 205–221). Stockholm, Sweden: Almqvist &amp; Wiksell International.</li>
 </ol>
-
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+:ET
