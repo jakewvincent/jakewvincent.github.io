@@ -1,7 +1,7 @@
 ---
 title: CV
 layout: default
-updated: 2019-09-19
+updated: 2019-10-29
 main-img: assets/images/jwv_w.jpg
 main-img-title: Jake W. Vincent
 ---
@@ -34,6 +34,7 @@ main-img-title: Jake W. Vincent
 
 ### Conference Activity
 **Papers Presented**\\
+2019: *Relative clause subextraction in English.* 3rd meeting of the California Annual Meeting on Psycholinguistics (CAMP), [UCSC](https://sites.google.com/view/camp-ucsc/home?authuser=0), Santa Cruz, California, October 26-27. ([abstract](assets/documents/jwv_camp3_abstract.pdf) \| [poster](assets/documents/jwv_camp3_poster.pdf))\\
 2018: *Sentential negation and negative concord licensing in Chamorro.* 25th meeting of the Austronesian Formal Linguistics Association (AFLA), [Academia Sinica](https://www.sinica.edu.tw/en), Taipei, Taiwan, May 10–12. (contact for handout)\\
 2018: *Stranding in Chamorro internally headed relative clauses.* 36th meeting of the [West Coast Conference on Formal Linguistics (WCCFL)](https://linguistics.ucla.edu/conference/wccfl36/), UCLA, Los Angeles, California, April 20–22. ([abstract](assets/documents/jwv_wccfl36_abstract.pdf) \| [poster](assets/documents/jwv_wccfl36_poster.pdf))\\
 2017: *Circumnominal relative clauses in Chamorro.* [24th meeting of the Austronesian Formal Linguistics Association (AFLA)](https://lingconf.com/afla24/), University of Washington, April 7–9. ([abstract](assets/documents/jwv_afla24_abstract.pdf) \| [handout](assets/documents/jwv_afla24_handout.pdf))
