@@ -12,7 +12,9 @@ I enjoy teaching materials at all levels but have particularly enjoyed leading s
 
 ### Teaching assistant
 - **2019-2020**
-    - **Language & Social Identity** (Planned for Fall 2020)  
+    - **Syntactic Structures** (Winter 2020)
+    Instructor: [Matt Wagers](https://people.ucsc.edu/~mwagers)
+    - **Language & Social Identity** (Fall 2019)  
     Instructor: [Jed Pizarro-Guevara](https://people.ucsc.edu/~jpguevar)
 - **2018-2019**
     - **Semantics 1** (Summer 2019, Session 1)  
