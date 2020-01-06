@@ -12,10 +12,10 @@ I enjoy teaching materials at all levels but have particularly enjoyed leading s
 
 ### Teaching assistant
 - **2019-2020**
-    - **Syntactic Structures** (Winter 2020)
-    Instructor: [Matt Wagers](https://people.ucsc.edu/~mwagers)
+    - **Syntactic Structures** (Winter 2020)  
+    Instructor: [Matt Wagers](https://people.ucsc.edu/~mwagers). Co-TA: [Max Kaplan](https://people.ucsc.edu/~mkaplan2).
     - **Language & Social Identity** (Fall 2019)  
-    Instructor: [Jed Pizarro-Guevara](https://people.ucsc.edu/~jpguevar)
+    Instructor: [Jed Pizarro-Guevara](https://people.ucsc.edu/~jpguevar).
 - **2018-2019**
     - **Semantics 1** (Summer 2019, Session 1)  
     Instructor: [Adrian Brasoveanu](https://people.ucsc.edu/~abrsvn).
