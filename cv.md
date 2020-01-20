@@ -1,7 +1,7 @@
 ---
 title: CV
 layout: default
-updated: 2019-10-29
+updated: 2020-01-20
 main-img: assets/images/jwv_w.jpg
 main-img-title: Jake W. Vincent
 ---
@@ -16,7 +16,7 @@ main-img-title: Jake W. Vincent
 2015:  B.A., Department of Linguistics, UC Santa Cruz. Graduated *Summa Cum Laude* with additional Honors in Linguistics.
 {: .sectionnolist}
 
-### Publications
+### Manuscripts
 **Manuscripts in Preparation**\\
 *Relative clause subextraction in English*.\\
 *Internally headed relative clauses in Chamorro*.
@@ -56,7 +56,7 @@ main-img-title: Jake W. Vincent
 *Planned*: Syntactic Structures, UC Santa Cruz. Spring quarter.\\
 2018–2019: TA Training, UC Santa Cruz, Fall and Winter quarters. Supervisor: [Matt Wagers](https://people.ucsc.edu/~mwagers). ([syllabus](assets/documents/ling240_syllabus.pdf))\\
 **At UC Santa Cruz as Teaching Assistant**\\
-*Planned*: Syntactic Structures, UC Santa Cruz, Winter quarter. Instructor: [Matt Wagers](https://people.ucsc.edu/~mwagers).\\
+2020: Syntactic Structures, UC Santa Cruz, Winter quarter. Instructor: [Matt Wagers](https://people.ucsc.edu/~mwagers).\\
 2019: Language & Social Identity, UC Santa Cruz, Fall quarter. Instructor: [Jed Pizarro-Guevara](https://people.ucsc.edu/~jpguevar).\\
 2019: Semantics 1, UC Santa Cruz, Summer session 1. Instructor: [Adrian Brasoveanu](https://people.ucsc.edu/~abrsvn).\\
 2019: Phonology 1, UC Santa Cruz, Spring quarter. Instructor: [Maho Morimoto](https://people.ucsc.edu/~mamorimo).\\
