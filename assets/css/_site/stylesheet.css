@@ -559,13 +559,9 @@ html {
 		font-weight: bold;
 		box-shadow: 2px 2px 2px #cacfd2;
 	}
-	
-	.a-button-inline {
-		padding: 0.05em 0.25em;
-		border-radius: 0.25em;
-		margin-right: 0.25em;
-		font-weight: bold;
-		box-shadow: 2px 2px 2px #cacfd2;
+
+	li .a-button {
+		padding: 0 0;
 	}
 
 	.a-button:hover {

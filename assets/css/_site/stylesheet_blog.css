@@ -1,0 +1,37 @@
+/*--Blog-specific styling--*/
+	.title {
+		font-size: 1.25em;
+		font-weight: bold;
+		font-style: italic;
+		margin-top: 1em;
+		clear: right;
+		display: block;
+		border-bottom: 1px solid #cacfd2;
+		padding-bottom: 0.25em;
+	}
+
+	.date {
+		margin-right: 0.5em;
+		font-style: italic;
+		padding-top: 0.25em;
+		float: left;
+	}
+
+	.date::before {
+		content: "Date: ";
+	}
+
+	.keywords {
+		font-style: italic;
+		float: right;
+	}
+
+	.keywords::before {
+		content: "Keywords: ";
+	}
+
+	.blog-text {
+		margin-top: 3em;
+		margin-bottom: 1em;
+		border-bottom: 1px solid #cacfd2
+	}
