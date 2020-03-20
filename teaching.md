@@ -1,7 +1,7 @@
 ---
 title: Teaching
 layout: default
-updated: 2020-01-05
+updated: 2020-03-20
 main-img: assets/images/boxelder_borderless.png
 main-img-title: Peel-apart Polaroid of a Box Elder, 2010
 ---
@@ -43,7 +43,7 @@ I enjoy teaching materials at all levels but have particularly enjoyed leading s
 
 ### Primary Instructor
 - **2019-2020**
-    - **Syntactic Structures** (Planned for Spring 2020)
+    - **Syntactic Structures** (Spring 2020)
 - **2018-2019**
     - **TA Training** (Fall 2018-Winter 2019)  
     Supervisor: [Matt Wagers](https://people.ucsc.edu/~mwagers).  
