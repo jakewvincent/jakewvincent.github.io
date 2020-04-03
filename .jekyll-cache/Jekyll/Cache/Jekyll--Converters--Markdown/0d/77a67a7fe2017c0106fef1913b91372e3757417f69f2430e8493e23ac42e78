@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link type="text/css" rel="stylesheet" href="assets/css/stylesheet.css">
-        <link type="text/css" rel="stylesheet" href="assets/css/syntax.css">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:300,700&display=swap&subset=latin-ext" rel="stylesheet">
-        <title>JWV: Teaching</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div id="container">
-            <div id="banner">
-    <h2 id="name">Jake W. Vincent</h2>
-    <h2 class="email">&#106;&#119;&#118;&#105;&#110;&#99;&#101;n&#64;&#117;c&#115;c.e&#100;u</h2>
-    <div class="divFill"></div>
-</div>
-            <nav id="navbar">
-    <ul>
-    
-        <li><a href="index.html" >Home</a></li>
-    
-        <li><a href="cv.html" >CV</a></li>
-    
-        <li><a href="teaching.html"  id="activelink" >Teaching</a></li>
-    
-        <li><a href="research.html" >Research & Projects</a></li>
-    
-        <li><a href="blog.html" >Blog</a></li>
-    
-    </ul>
-</nav>
-            <div class = "main">
-                <img src=assets/images/boxelder_borderless.png class="main-img borderless" title=Peel-apart Polaroid of a Box Elder, 2010>
-                <div id="content">
-                    <div id="ohrs">
+I"¼<div id="ohrs">
     <p>SPRING 2020 OFFICE HOURS:
     	<br />Mondays 11:00amâ€“12:00pm
 		<br /><a href="https://ucsc.zoom.us/my/jake.vincent">Personal Meeting Room</a>
@@ -40,7 +6,7 @@
     </p>
 </div>
 
-<p>I enjoy teaching at all levels but have particularly enjoyed leading sections for Syntax 1 and 2, Phonology 1, and Semantics 1. This quarter, I am teaching Syntactic Structures as the instructor of record. Helping students understand course material is one of the most gratifying parts of being a teacher, and I appreciate the perspective I gain by revisiting familiar concepts and thinking of new ways to explain them to other people.</p>
+<p>I enjoy teaching materials at all levels but have particularly enjoyed leading sections for Syntax 1 and 2, Phonology 1, and Semantics 1. Helping students understand course material is one of the most gratifying parts of being a teacher, and I appreciate the perspective I gain by revisiting familiar concepts and thinking of new ways to explain them to other people.</p>
 
 <h3 id="teaching-assistant">Teaching assistant</h3>
 <ul class="section">
@@ -101,11 +67,4 @@
     </ul>
   </li>
 </ul>
-
-                </div>
-            </div>
-            <div class="spacer"></div>
-            <footer>Last updated April 02, 2020</footer>
-        </div>
-    </body>
-</html>
+:ET

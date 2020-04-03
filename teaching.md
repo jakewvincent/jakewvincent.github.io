@@ -1,14 +1,14 @@
 ---
 title: Teaching
 layout: default
-updated: 2020-03-20
+updated: 2020-04-02
 main-img: assets/images/boxelder_borderless.png
 main-img-title: Peel-apart Polaroid of a Box Elder, 2010
 ---
 
 {% include ohrs.html %}
 
-I enjoy teaching materials at all levels but have particularly enjoyed leading sections for Syntax 1 and 2, Phonology 1, and Semantics 1. Helping students understand course material is one of the most gratifying parts of being a teacher, and I appreciate the perspective I gain by revisiting familiar concepts and thinking of new ways to explain them to other people.
+I enjoy teaching at all levels but have particularly enjoyed leading sections for Syntax 1 and 2, Phonology 1, and Semantics 1. This quarter, I am teaching Syntactic Structures as the instructor of record. Helping students understand course material is one of the most gratifying parts of being a teacher, and I appreciate the perspective I gain by revisiting familiar concepts and thinking of new ways to explain them to other people.
 
 ### Teaching assistant
 - **2019-2020**
