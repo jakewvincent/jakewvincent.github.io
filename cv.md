@@ -1,7 +1,7 @@
 ---
 title: CV
 layout: default
-updated: 2020-03-20
+updated: 2020-06-29
 main-img: assets/images/jwv_w.jpg
 main-img-title: Jake W. Vincent
 ---
@@ -23,9 +23,10 @@ main-img-title: Jake W. Vincent
 {: .sectionnolist}
 
 ### Awards and Honors
+2020: Outstanding Teaching Assistant Award.\\
 2015: Inducted into Phi Beta Kappa.\\
 2015: Chancellor's Award, UC Santa Cruz. (Also entails Dean's Award.) Project title: *Rhyme in the Chamorro language poetry of Joaquin Flores Borja (And what it tells us about poetry and language)*.\\
-2015: Humanities Undergraduate Research Award (HUGRA), Institute for Humanities Research, UC Santa Cruz. Bertha N. Melkonian Prize.\\
+2015: Humanities Undergraduate Research Award (HUGRA), Institute for Humanities Research, UC Santa Cruz. Bertha N. Melkonian Prize.
 {: .sectionnolist}
 
 ### Grants and Fellowships
@@ -55,9 +56,11 @@ main-img-title: Jake W. Vincent
 
 ### Teaching Experience
 **At UC Santa Cruz as Primary Instructor**\\
-*Planned*: Syntactic Structures, UC Santa Cruz. Spring quarter.\\
+*Planned:* Semantics 1, UC Santa Cruz, Fall quarter.
+2020: Syntactic Structures, UC Santa Cruz, Spring quarter. ([syllabus](assets/documents/ling111_s20_syllabus.pdf))\\
 2018–2019: TA Training, UC Santa Cruz, Fall and Winter quarters. Supervisor: [Matt Wagers](https://people.ucsc.edu/~mwagers). ([syllabus](assets/documents/ling240_syllabus.pdf))\\
 **At UC Santa Cruz as Teaching Assistant**\\
+2020: Semantics 1, UC Santa Cruz, Summer session 1. Instructor: [Adrian Brasoveanu](https://people.ucsc.edu/~abrsvn).\\
 2020: Syntactic Structures, UC Santa Cruz, Winter quarter. Instructor: [Matt Wagers](https://people.ucsc.edu/~mwagers).\\
 2019: Language & Social Identity, UC Santa Cruz, Fall quarter. Instructor: [Jed Pizarro-Guevara](https://people.ucsc.edu/~jpguevar).\\
 2019: Semantics 1, UC Santa Cruz, Summer session 1. Instructor: [Adrian Brasoveanu](https://people.ucsc.edu/~abrsvn).\\
@@ -83,7 +86,7 @@ main-img-title: Jake W. Vincent
 Organizational assistance for [California Annual Meeting on Psycholinguistics (CAMP)](https://sites.google.com/view/camp-ucsc), held at UC Santa Cruz October 26–27, 2019.\\
 Organizational assistance for [Pronouns in Competition Workshop](https://sites.google.com/ucsc.edu/pronounsincompetition/home?authuser=0), held at UC Santa Cruz April 27–28, 2018.\\
 Graduate Representative, Department of Linguistics, UC Santa Cruz, January–December, 2018.\\
-Events committee, Department of Linguistics, UC Santa Cruz, 2016–2017 school year.\\
+Events committee, Department of Linguistics, UC Santa Cruz, 2016–2017 school year.
 {: .sectionnolist}
 
 ### Languages

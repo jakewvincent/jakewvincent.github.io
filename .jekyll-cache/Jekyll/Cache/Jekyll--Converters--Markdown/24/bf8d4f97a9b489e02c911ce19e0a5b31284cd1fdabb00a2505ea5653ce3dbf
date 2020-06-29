@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link type="text/css" rel="stylesheet" href="assets/css/stylesheet.css">
-        <link type="text/css" rel="stylesheet" href="assets/css/syntax.css">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:300,700&display=swap&subset=latin-ext" rel="stylesheet">
-        <title>JWV: CV</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div id="container">
-            <div id="banner">
-    <h2 id="name">Jake W. Vincent</h2>
-    <h2 class="email">&#106;&#119;&#118;&#105;&#110;&#99;&#101;n&#64;&#117;c&#115;c.e&#100;u</h2>
-    <div class="divFill"></div>
-</div>
-            <nav id="navbar">
-    <ul>
-    
-        <li><a href="index.html" >Home</a></li>
-    
-        <li><a href="cv.html"  id="activelink" >CV</a></li>
-    
-        <li><a href="teaching.html" >Teaching</a></li>
-    
-        <li><a href="research.html" >Research & Projects</a></li>
-    
-        <li><a href="blog.html" >Blog</a></li>
-    
-    </ul>
-</nav>
-            <div class = "main">
-                <img src=assets/images/jwv_w.jpg class="main-img borderless" title=Jake W. Vincent>
-                <div id="content">
-                    <div class="buttonspace">
+I"�)<div class="buttonspace">
 	<a href="assets/documents/jake_vincent_cv.pdf" class="download-pdf a-button">Download as PDF</a>
 </div>
 
@@ -75,13 +41,14 @@
 2015: <em>Internally headed relative clauses in Chamorro.</em> <a href="https://linguistics.ucsc.edu/news-events/conferences/pdfs/LURC%20Programs/LURC-2015.pdf">Linguistics Undergraduate Research Conference (LURC)</a>, UC Santa Cruz, May.</p>
 
 <h3 id="teaching-experience">Teaching Experience</h3>
-<p class="sectionnolist"><strong>At UC Santa Cruz as Primary Instructor</strong><br />
+<p><strong>At UC Santa Cruz as Primary Instructor</strong><br />
 <em>Planned:</em> Semantics 1, UC Santa Cruz, Fall quarter.
 2020: Syntactic Structures, UC Santa Cruz, Spring quarter. (<a href="assets/documents/ling111_s20_syllabus.pdf">syllabus</a>)<br />
 2018–2019: TA Training, UC Santa Cruz, Fall and Winter quarters. Supervisor: <a href="https://people.ucsc.edu/~mwagers">Matt Wagers</a>. (<a href="assets/documents/ling240_syllabus.pdf">syllabus</a>)<br />
 <strong>At UC Santa Cruz as Teaching Assistant</strong><br />
-2020: Semantics 1, UC Santa Cruz, Summer session 1. Instructor: <a href="https://people.ucsc.edu/~abrsvn">Adrian Brasoveanu</a>.<br />
-2020: Syntactic Structures, UC Santa Cruz, Winter quarter. Instructor: <a href="https://people.ucsc.edu/~mwagers">Matt Wagers</a>.<br />
+2020: Semantics 1, UC Santa Cruz, Summer session 1. Instructor: <a href="https://people.ucsc.edu/~abrsvn">Adrian Brasoveanu</a>.\</p>
+
+<p class="sectionnolist">2020: Syntactic Structures, UC Santa Cruz, Winter quarter. Instructor: <a href="https://people.ucsc.edu/~mwagers">Matt Wagers</a>.<br />
 2019: Language &amp; Social Identity, UC Santa Cruz, Fall quarter. Instructor: <a href="https://people.ucsc.edu/~jpguevar">Jed Pizarro-Guevara</a>.<br />
 2019: Semantics 1, UC Santa Cruz, Summer session 1. Instructor: <a href="https://people.ucsc.edu/~abrsvn">Adrian Brasoveanu</a>.<br />
 2019: Phonology 1, UC Santa Cruz, Spring quarter. Instructor: <a href="https://people.ucsc.edu/~mamorimo">Maho Morimoto</a>.<br />
@@ -104,7 +71,7 @@
 <p class="sectionnolist">Organizational assistance for <a href="https://sites.google.com/view/camp-ucsc">California Annual Meeting on Psycholinguistics (CAMP)</a>, held at UC Santa Cruz October 26–27, 2019.<br />
 Organizational assistance for <a href="https://sites.google.com/ucsc.edu/pronounsincompetition/home?authuser=0">Pronouns in Competition Workshop</a>, held at UC Santa Cruz April 27–28, 2018.<br />
 Graduate Representative, Department of Linguistics, UC Santa Cruz, January–December, 2018.<br />
-Events committee, Department of Linguistics, UC Santa Cruz, 2016–2017 school year.</p>
+Events committee, Department of Linguistics, UC Santa Cruz, 2016–2017 school year.\</p>
 
 <h3 id="languages">Languages</h3>
 <p class="sectionnolist">English (native)<br />
@@ -121,11 +88,4 @@ Document preparation: <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span><br 
 Programming: R, Python<br />
 Version control: Git<br />
 Office: Excel, Access</p>
-
-                </div>
-            </div>
-            <div class="spacer"></div>
-            <footer>Last updated June 29, 2020</footer>
-        </div>
-    </body>
-</html>
+:ET

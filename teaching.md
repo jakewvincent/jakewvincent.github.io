@@ -1,7 +1,7 @@
 ---
 title: Teaching
 layout: default
-updated: 2020-04-02
+updated: 2020-06-29
 main-img: assets/images/boxelder_borderless.png
 main-img-title: Peel-apart Polaroid of a Box Elder, 2010
 ---
@@ -12,6 +12,8 @@ I enjoy teaching at all levels but have particularly enjoyed leading sections fo
 
 ### Teaching assistant
 - **2019-2020**
+	- **Semantics 1** (Summer 2020, Session 1)  
+    Instructor: [Adrian Brasoveanu](https://people.ucsc.edu/~abrsvn).
     - **Syntactic Structures** (Winter 2020)  
     Instructor: [Matt Wagers](https://people.ucsc.edu/~mwagers). Co-TA: [Max Kaplan](https://people.ucsc.edu/~mkaplan2).
     - **Language & Social Identity** (Fall 2019)  
@@ -43,6 +45,7 @@ I enjoy teaching at all levels but have particularly enjoyed leading sections fo
 
 ### Primary Instructor
 - **2019-2020**
+	- **Semantics 1** (Planned for Fall 2020)
     - **Syntactic Structures** (Spring 2020)
 - **2018-2019**
     - **TA Training** (Fall 2018-Winter 2019)  
