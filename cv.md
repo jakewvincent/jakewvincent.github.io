@@ -17,7 +17,7 @@ main-img-title: Jake W. Vincent
 {: .sectionnolist}
 
 ### Manuscripts
-**Manuscripts in Preparation**\\
+**Manuscripts in preparation**\\
 *Relative clause subextraction in English*.\\
 *Internally headed relative clauses in Chamorro*.
 {: .sectionnolist}
@@ -36,7 +36,7 @@ main-img-title: Jake W. Vincent
 ### Conference Activity
 **Invited talks**\\
 2020: *Explaining variation in the acceptability of relative clause island violations.* [Linguistics at Santa Cruz (LASC)](https://linguistics.ucsc.edu/news-events/conferences/lasc.html), UC Santa Cruz, February 29. ([handout](assets/documents/jwv_lasc2020.pdf))\\
-**Papers Presented**\\
+**Papers presented**\\
 2019: *Relative clause subextraction in English.* 3rd meeting of the California Annual Meeting on Psycholinguistics (CAMP), [UCSC](https://sites.google.com/view/camp-ucsc/home?authuser=0), Santa Cruz, California, October 26-27. ([abstract](assets/documents/jwv_camp3_abstract.pdf) \| [poster](assets/documents/jwv_camp3_poster.pdf))\\
 2018: *Sentential negation and negative concord licensing in Chamorro.* 25th meeting of the Austronesian Formal Linguistics Association (AFLA), [Academia Sinica](https://www.sinica.edu.tw/en), Taipei, Taiwan, May 10–12. (contact for handout)\\
 2018: *Stranding in Chamorro internally headed relative clauses.* 36th meeting of the [West Coast Conference on Formal Linguistics (WCCFL)](https://linguistics.ucla.edu/conference/wccfl36/), UCLA, Los Angeles, California, April 20–22. ([abstract](assets/documents/jwv_wccfl36_abstract.pdf) \| [poster](assets/documents/jwv_wccfl36_poster.pdf))\\
@@ -55,11 +55,11 @@ main-img-title: Jake W. Vincent
 {: .sectionnolist}
 
 ### Teaching Experience
-**At UC Santa Cruz as Primary Instructor**\\
+**At UC Santa Cruz as primary instructor**\\
 *Planned:* Semantics 1, UC Santa Cruz, Fall quarter.
 2020: Syntactic Structures, UC Santa Cruz, Spring quarter. ([syllabus](assets/documents/ling111_s20_syllabus.pdf))\\
 2018–2019: TA Training, UC Santa Cruz, Fall and Winter quarters. Supervisor: [Matt Wagers](https://people.ucsc.edu/~mwagers). ([syllabus](assets/documents/ling240_syllabus.pdf))\\
-**At UC Santa Cruz as Teaching Assistant**\\
+**At UC Santa Cruz as teaching assistant**\\
 2020: Semantics 1, UC Santa Cruz, Summer session 1. Instructor: [Adrian Brasoveanu](https://people.ucsc.edu/~abrsvn).\\
 2020: Syntactic Structures, UC Santa Cruz, Winter quarter. Instructor: [Matt Wagers](https://people.ucsc.edu/~mwagers).\\
 2019: Language & Social Identity, UC Santa Cruz, Fall quarter. Instructor: [Jed Pizarro-Guevara](https://people.ucsc.edu/~jpguevar).\\
