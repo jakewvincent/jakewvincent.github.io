@@ -45,8 +45,8 @@ I enjoy teaching at all levels but have particularly enjoyed leading sections fo
 
 ### Primary Instructor
 - **2019-2020**
-	- **Semantics 1** (Planned for Fall 2020)
-    - **Syntactic Structures** (Spring 2020)
+	- **Semantics 1** (Fall 2020 [**Online**])
+    - **Syntactic Structures** (Spring 2020 [**Online**])
 - **2018-2019**
     - **TA Training** (Fall 2018-Winter 2019)  
     Supervisor: [Matt Wagers](https://people.ucsc.edu/~mwagers).  
