@@ -8,7 +8,7 @@ main-img-title: Peel-apart Polaroid of a Box Elder, 2010
 
 {% include ohrs.html %}
 
-I enjoy teaching at all levels but have particularly enjoyed leading sections for Syntax 1 and 2, Phonology 1, and Semantics 1. This quarter, I am teaching Syntactic Structures as the instructor of record. Helping students understand course material is one of the most gratifying parts of being a teacher, and I appreciate the perspective I gain by revisiting familiar concepts and thinking of new ways to explain them to other people.
+I enjoy teaching at all levels but have particularly enjoyed leading sections for Syntax 1 and 2, Phonology 1, and Semantics 1. This quarter, I am teaching Semantics I as the instructor of record. Helping students understand course material is one of the most gratifying parts of being a teacher, and I appreciate the perspective I gain by revisiting familiar concepts and thinking of new ways to explain them to other people.
 
 ### Teaching assistant
 - **2019-2020**
@@ -44,8 +44,10 @@ I enjoy teaching at all levels but have particularly enjoyed leading sections fo
 {: .section}
 
 ### Primary Instructor
-- **2019-2020**
+- **2020-2021**
 	- **Semantics 1** (Fall 2020 [**Online**])
+	- **Semantics 1** (Winter 2020 [**Online**])
+- **2019-2020**
     - **Syntactic Structures** (Spring 2020 [**Online**])
 - **2018-2019**
     - **TA Training** (Fall 2018-Winter 2019)  
