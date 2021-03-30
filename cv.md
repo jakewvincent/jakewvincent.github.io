@@ -1,8 +1,8 @@
 ---
 title: CV
 layout: default
-updated: 2020-06-29
-main-img: assets/images/jwv_w.jpg
+updated: 2021-03-29
+main-img: assets/images/jwv_x.jpg
 main-img-title: Jake W. Vincent
 ---
 
@@ -11,7 +11,7 @@ main-img-title: Jake W. Vincent
 </div>
 
 ### Education
-2020: Ph.D., Department of Linguistics, University of California, Santa Cruz.\\
+2021: Ph.D., Department of Linguistics, University of California, Santa Cruz.\\
 2017: M.A., Department of Linguistics, UC Santa Cruz. Thesis title: [*D-Raising in Chamorro Relative Clauses and Other A&prime; Constructions*](https://escholarship.org/uc/item/0jq7096r). Thesis advisor: [Sandra Chung](http://people.ucsc.edu/~schung).\\
 2015:  B.A., Department of Linguistics, UC Santa Cruz. Graduated *Summa Cum Laude* with additional Honors in Linguistics.
 {: .sectionnolist}
@@ -56,10 +56,11 @@ main-img-title: Jake W. Vincent
 
 ### Teaching Experience
 **At UC Santa Cruz as primary instructor**\\
-*Planned:* Semantics 1, UC Santa Cruz, Fall quarter.
-2020: Syntactic Structures, UC Santa Cruz, Spring quarter. ([syllabus](assets/documents/ling111_s20_syllabus.pdf))\\
+2020–2021: Semantics 1, UC Santa Cruz, Fall and Winter quarters (asynchronous instruction). Email for syllabus.
+2020: Syntactic Structures, UC Santa Cruz, Spring quarter (1/3 synchronous instruction, 2/3 asynchronous instruction). Email for syllabus.\\
 2018–2019: TA Training, UC Santa Cruz, Fall and Winter quarters. Supervisor: [Matt Wagers](https://people.ucsc.edu/~mwagers). ([syllabus](assets/documents/ling240_syllabus.pdf))\\
 **At UC Santa Cruz as teaching assistant**\\
+2021: Invented Languages, UC Santa Cruz, Spring quarter. Instructor: [Pranav Anand](https://people.ucsc.edu/~panand).\\
 2020: Semantics 1, UC Santa Cruz, Summer session 1. Instructor: [Adrian Brasoveanu](https://people.ucsc.edu/~abrsvn).\\
 2020: Syntactic Structures, UC Santa Cruz, Winter quarter. Instructor: [Matt Wagers](https://people.ucsc.edu/~mwagers).\\
 2019: Language & Social Identity, UC Santa Cruz, Fall quarter. Instructor: [Jed Pizarro-Guevara](https://people.ucsc.edu/~jpguevar).\\

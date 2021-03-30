@@ -1,16 +1,19 @@
 ---
 title: Teaching
 layout: default
-updated: 2020-06-29
+updated: 2021-03-29
 main-img: assets/images/boxelder_borderless.png
 main-img-title: Peel-apart Polaroid of a Box Elder, 2010
 ---
 
 {% include ohrs.html %}
 
-I enjoy teaching at all levels but have particularly enjoyed leading sections for Syntax 1 and 2, Phonology 1, and Semantics 1. This quarter, I am teaching Semantics I as the instructor of record. Helping students understand course material is one of the most gratifying parts of being a teacher, and I appreciate the perspective I gain by revisiting familiar concepts and thinking of new ways to explain them to other people.
+I am passionate about teaching any kind of introductory linguistics class but have particularly enjoyed being the instructor of record for Syntactic Structures and Semantics 1. This quarter, I am a TA for Invented Languages (LING 80K). Helping students understand course material is one of the most gratifying parts of being a teacher, and I appreciate the perspective I gain by revisiting familiar concepts and thinking of new ways to explain them to other people—I'm always looking for new ways to approach complex topics. I strongly believe that effective learning is both challenging and fun!  
 
 ### Teaching assistant
+- **2020–2021**
+	- **Invented languages** (Spring 2021)  
+	Instructor: [Pranav Anand](https://people.ucsc.edu/~panand). Co-TAs: [Andrew Angeles](https://people.ucsc.edu/~aeangele), [Lalitha Balachandran](https://people.ucsc.edu/~lbalacha), [Richard Bibbs](https://people.ucsc.edu/~rbibbs), [Jack Duff](https://people.ucsc.edu/~jduff), [Lisa Hofmann](https://people.ucsc.edu/~lihofman), and [Anelia Kudin](https://people.ucsc.edu/~akudin).
 - **2019-2020**
 	- **Semantics 1** (Summer 2020, Session 1)  
     Instructor: [Adrian Brasoveanu](https://people.ucsc.edu/~abrsvn).
