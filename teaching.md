@@ -1,14 +1,28 @@
 ---
 title: Teaching
 layout: default
-updated: 2021-03-29
+updated: 2021-05-13
 main-img: assets/images/boxelder_borderless.png
 main-img-title: Peel-apart Polaroid of a Box Elder, 2010
 ---
 
 {% include ohrs.html %}
 
-I am passionate about teaching any kind of introductory linguistics class but have particularly enjoyed being the instructor of record for Syntactic Structures and Semantics 1. This quarter, I am a TA for Invented Languages (LING 80K). Helping students understand course material is one of the most gratifying parts of being a teacher, and I appreciate the perspective I gain by revisiting familiar concepts and thinking of new ways to explain them to other people—I'm always looking for new ways to approach complex topics. I strongly believe that effective learning is both challenging and fun!  
+I am passionate about teaching any kind of linguistics class but have particularly enjoyed being the instructor of record for Syntactic Structures and Semantics 1 at UCSC. This quarter, I am a TA for Invented Languages (LING 80K). Helping students understand course material is one of the most gratifying parts of being a teacher, and I appreciate the perspective I gain by revisiting familiar concepts and thinking of new ways to explain them to other people. I'm always looking for new ways to approach complex topics, in the hopes of enhancing my personal understanding and the understanding of current and future students.
+
+### Primary Instructor
+- **2020-2021**
+	- **Semantics 1** (Fall 2020 [**Online**])  
+    Supervisor: [Adrian Brasoveanu](https://people.ucsc.edu/~abrsvn).  
+	- **Semantics 1** (Winter 2020 [**Online**])  
+    Supervisor: [Jess H.K. Law](https://people.ucsc.edu/~jlaw5/).  
+- **2019-2020**
+    - **Syntactic Structures** (Spring 2020 [**Online**])  
+    Supervisor: [Matt Wagers](https://people.ucsc.edu/~mwagers).  
+- **2018-2019**
+    - **TA Training** (Fall 2018-Winter 2019)  
+    Supervisor: [Matt Wagers](https://people.ucsc.edu/~mwagers).  
+{: .section}
 
 ### Teaching assistant
 - **2020–2021**
@@ -44,16 +58,4 @@ I am passionate about teaching any kind of introductory linguistics class but ha
     Instructor: [Brian Smith](https://brianwilliamsmith.github.io). Co-TA: [Jed Pizarro-Guevara](https://people.ucsc.edu/~jpguevar/).
     - **Syntax 1** (Fall 2016)  
     Instructor: [Jorge Hankamer](http://babel.ucsc.edu/~hank). Co-TA: [Deniz Rudin](https://denizrudin.github.io).
-{: .section}
-
-### Primary Instructor
-- **2020-2021**
-	- **Semantics 1** (Fall 2020 [**Online**])
-	- **Semantics 1** (Winter 2020 [**Online**])
-- **2019-2020**
-    - **Syntactic Structures** (Spring 2020 [**Online**])
-- **2018-2019**
-    - **TA Training** (Fall 2018-Winter 2019)  
-    Supervisor: [Matt Wagers](https://people.ucsc.edu/~mwagers).  
-    [Syllabus](assets/documents/ling240_syllabus.pdf)
 {: .section}
