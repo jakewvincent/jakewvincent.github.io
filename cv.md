@@ -1,7 +1,7 @@
 ---
 title: CV
 layout: default
-updated: 2021-03-29
+updated: 2021-05-31
 main-img: assets/images/jwv_x.jpg
 main-img-title: Jake W. Vincent
 ---
@@ -23,7 +23,7 @@ main-img-title: Jake W. Vincent
 {: .sectionnolist}
 
 ### Awards and Honors
-2020: Outstanding Teaching Assistant Award.\\
+2020: Outstanding Teaching Assistant Award, Graduate Division and Department of Linguistics, UC Santa Cruz. For 2019–2020 school year.\\
 2015: Inducted into Phi Beta Kappa.\\
 2015: Chancellor's Award, UC Santa Cruz. (Also entails Dean's Award.) Project title: *Rhyme in the Chamorro language poetry of Joaquin Flores Borja (And what it tells us about poetry and language)*.\\
 2015: Humanities Undergraduate Research Award (HUGRA), Institute for Humanities Research, UC Santa Cruz. Bertha N. Melkonian Prize.
