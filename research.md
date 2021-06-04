@@ -90,7 +90,7 @@ The following tool (written in JavaScript, HTML, and CSS) takes word, gloss, and
 <button class="expand-btn"><h4>Rhyme in Chamorro poetry</h4></button>
 <div class="expand-content" markdown="1">
 
-In an undergraduate project, I analyzed 106 of Joaquin F. Borja's rhyme pairs from the collection of Chamorro literature *[Istreyas Marianas: Chamorro](http://books.google.com/books/about/Estreyas_Marianas.html?id=1oAmAQAAIAAJ)Istreyas Marianas: Chamorro*. Approximately 25% of the rhyme pairs there have strict rhyme (= identical from the vowel of the stressed syllable to the end of the word), and the remainder have what I called *abstract rhyme*, which seems to creatively utilize abstract associations between classes of segments established by the phonological processes in Chamorro grammar. The use of abstract rhyme results in a broad (yet orderly) range of licit rhyming pairs. ([handout](documents/champohandout.pdf))
+In an undergraduate project, I analyzed 106 of Joaquin F. Borja's rhyme pairs from the collection of Chamorro literature [*Istreyas Marianas: Chamorro*](http://books.google.com/books/about/Estreyas_Marianas.html?id=1oAmAQAAIAAJ). Approximately 25% of the rhyme pairs there have strict rhyme (= identical from the vowel of the stressed syllable to the end of the word), and the remainder have what I called *abstract rhyme*, which seems to creatively utilize abstract associations between classes of segments established by the phonological processes in Chamorro grammar. The use of abstract rhyme results in a broad (yet orderly) range of licit rhyming pairs. ([handout](assets/documents/champohandout.pdf))
 
 </div>
 </div>
