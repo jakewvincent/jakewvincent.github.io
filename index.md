@@ -1,7 +1,7 @@
 ---
 title: Home
 layout: default
-updated: 2021-05-13
+updated: 2021-07-16
 main-img: assets/images/mtdiablo.png
 main-img-title: From Mt. Diablo, 2012
 ---

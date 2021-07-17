@@ -175,10 +175,14 @@ html {
 			float: left;
 			margin-left: 1em;
 		}
-		.email::before {
-			content: "//\2003";
+		.email::after {
+			content: "\2003//";
 			color: #e6ecf0;
 		}
+        .backemail {
+            unicode-bidi: bidi-override;
+            direction: rtl;
+        }
 		nav {/* Center the nav bar */
 			text-align: center;
 		}

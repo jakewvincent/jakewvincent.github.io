@@ -1,7 +1,0 @@
-<nav id="navbar">
-    <ul>
-    {% for item in site.data.navigation %}
-        <li><a href="{{ item.link }}" {% if page.title == item.name %} id="activelink" {% endif %}>{{ item.name }}</a></li>
-    {% endfor %}
-    </ul>
-</nav>

@@ -1,7 +1,7 @@
 ---
 title: CV
 layout: default
-updated: 2021-05-31
+updated: 2021-07-03
 main-img: assets/images/jwv_x.jpg
 main-img-title: Jake W. Vincent
 ---
@@ -11,7 +11,7 @@ main-img-title: Jake W. Vincent
 </div>
 
 ### Education
-2021: Ph.D., Department of Linguistics, University of California, Santa Cruz.\\
+2021: Ph.D., Department of Linguistics, UC Santa Cruz. Dissertation title: *Extraction From Relative Clauses: An Experimental Investigation into Variable Island Effects in English—or—This Is a Dissertation That We Really Needed to Find Someone Who'd Write*. Dissertation advisor: [Matt Wagers](https://people.ucsc.edu/~mwagers)\\
 2017: M.A., Department of Linguistics, UC Santa Cruz. Thesis title: [*D-Raising in Chamorro Relative Clauses and Other A&prime; Constructions*](https://escholarship.org/uc/item/0jq7096r). Thesis advisor: [Sandra Chung](http://people.ucsc.edu/~schung).\\
 2015:  B.A., Department of Linguistics, UC Santa Cruz. Graduated *Summa Cum Laude* with additional Honors in Linguistics.
 {: .sectionnolist}
