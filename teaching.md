@@ -12,8 +12,8 @@ I am passionate about teaching any kind of linguistics class but have particular
 
 ### Primary Instructor
 - **2021-2022**
-    - **Language & Mind** (Fall 2021 [**Online**])
     - **Semantics 1** (Winter 2022 [**Online**])
+    - **Language & Mind** (Fall 2021 [**Online**])
 - **2020-2021**
 	- **Semantics 1** (Fall 2020 [**Online**])  
     Supervisor: [Adrian Brasoveanu](https://people.ucsc.edu/~abrsvn).  
