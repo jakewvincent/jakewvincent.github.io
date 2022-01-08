@@ -1,7 +1,7 @@
 ---
 title: Teaching
 layout: default
-updated: 2021-05-13
+updated: 2022-01-08
 main-img: assets/images/boxelder_borderless.png
 main-img-title: Peel-apart Polaroid of a Box Elder, 2010
 ---
@@ -11,6 +11,9 @@ main-img-title: Peel-apart Polaroid of a Box Elder, 2010
 I am passionate about teaching any kind of linguistics class but have particularly enjoyed being the instructor of record for Syntactic Structures and Semantics 1 at UCSC. This quarter, I am a TA for Invented Languages (LING 80K). Helping students understand course material is one of the most gratifying parts of being a teacher, and I appreciate the perspective I gain by revisiting familiar concepts and thinking of new ways to explain them to other people. I'm always looking for new ways to approach complex topics, in the hopes of enhancing my personal understanding and the understanding of current and future students.
 
 ### Primary Instructor
+- **2021-2022**
+    - **Language & Mind** (Fall 2021 [**Online**])
+    - **Semantics 1** (Winter 2022 [**Online**])
 - **2020-2021**
 	- **Semantics 1** (Fall 2020 [**Online**])  
     Supervisor: [Adrian Brasoveanu](https://people.ucsc.edu/~abrsvn).  
