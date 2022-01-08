@@ -17,7 +17,7 @@ main-img-title: Jake W. Vincent
 {: .sectionnolist}
 
 ### Positions Held
-2021-current: Language Engineer (contract), Amazon Web Services.
+2021-current: Language Engineer (contract), Amazon Web Services.\\
 2021-current: Lecturer in Linguistics, UC Santa Cruz.
 {: .sectionnolist }
 
