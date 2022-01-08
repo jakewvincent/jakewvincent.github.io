@@ -1,39 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link type="text/css" rel="stylesheet" href="assets/css/stylesheet.css">
-        <link type="text/css" rel="stylesheet" href="assets/css/syntax.css">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:300,700&display=swap&subset=latin-ext" rel="stylesheet">
-        <title>JWV: CV</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div id="container">
-            <div id="banner">
-    <h2 id="name">Jake W. Vincent</h2>
-    <h2 class="email backemail">moc.liamg@tnecnivwekaj</h2>
-    <div class="divFill"></div>
-</div>
-
-            <nav id="navbar">
-    <ul>
-    
-        <li><a href="index.html" >Home</a></li>
-    
-        <li><a href="cv.html"  id="activelink" >CV</a></li>
-    
-        <li><a href="teaching.html" >Teaching</a></li>
-    
-        <li><a href="research.html" >Research & Projects</a></li>
-    
-        <li><a href="blog.html" >Blog</a></li>
-    
-    </ul>
-</nav>
-            <div class = "main">
-                <img src=assets/images/jwv_x.jpg class="main-img borderless" title=Jake W. Vincent>
-                <div id="content">
-                    <div class="buttonspace">
+I"†,<div class="buttonspace">
 	<a href="assets/documents/jake_vincent_cv.pdf" class="download-pdf a-button">Download as PDF</a>
 </div>
 
@@ -127,11 +92,4 @@ Document preparation: <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span><br 
 Programming: R, Python, Lua<br />
 Version control: Git<br />
 Office: Excel, Access</p>
-
-                </div>
-            </div>
-            <div class="spacer"></div>
-            <footer>Last updated January 08, 2022</footer>
-        </div>
-    </body>
-</html>
+:ET
