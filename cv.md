@@ -109,7 +109,7 @@ Linguistic Society of America
 ### Computer Skills
 Web: HTML, CSS, Jekyll\\
 Document preparation: <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span>\\
-Programming: R, Python, Lua, \\
+Programming: R, Python, Lua\\
 Version control: Git\\
 Office: Excel, Access
 {: .sectionnolist}
