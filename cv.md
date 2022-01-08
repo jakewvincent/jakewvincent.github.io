@@ -1,7 +1,7 @@
 ---
 title: CV
 layout: default
-updated: 2021-07-03
+updated: 2022-01-08
 main-img: assets/images/jwv_x.jpg
 main-img-title: Jake W. Vincent
 ---
@@ -15,6 +15,11 @@ main-img-title: Jake W. Vincent
 2017: M.A., Department of Linguistics, UC Santa Cruz. Thesis title: [*D-Raising in Chamorro Relative Clauses and Other A&prime; Constructions*](https://escholarship.org/uc/item/0jq7096r). Thesis advisor: [Sandra Chung](http://people.ucsc.edu/~schung).\\
 2015:  B.A., Department of Linguistics, UC Santa Cruz. Graduated *Summa Cum Laude* with additional Honors in Linguistics.
 {: .sectionnolist}
+
+### Positions Held
+2021-current: Language Engineer (contract), Amazon Web Services.
+2021-current: Lecturer in Linguistics, UC Santa Cruz.
+{: .sectionnolist }
 
 ### Manuscripts
 **Manuscripts in preparation**\\
@@ -54,11 +59,11 @@ main-img-title: Jake W. Vincent
 2015: *Internally headed relative clauses in Chamorro.* [Linguistics Undergraduate Research Conference (LURC)](https://linguistics.ucsc.edu/news-events/conferences/pdfs/LURC%20Programs/LURC-2015.pdf), UC Santa Cruz, May.
 {: .sectionnolist}
 
-### Teaching Experience
+### Teaching
 **At UC Santa Cruz as primary instructor**\\
-2020–2021: Semantics 1, UC Santa Cruz, Fall and Winter quarters (asynchronous instruction). Email for syllabus.
-2020: Syntactic Structures, UC Santa Cruz, Spring quarter (1/3 synchronous instruction, 2/3 asynchronous instruction). Email for syllabus.\\
-2018–2019: TA Training, UC Santa Cruz, Fall and Winter quarters. Supervisor: [Matt Wagers](https://people.ucsc.edu/~mwagers). ([syllabus](assets/documents/ling240_syllabus.pdf))\\
+Semantics 1, UC Santa Cruz (Fall 2020, Winter 2021, Winter 2022). Asynchronous instruction. Email for syllabus.\\
+Syntactic Structures, UC Santa Cruz (Spring 2020). Hybrid synchronous–asynchronous instruction. Email for syllabus.\\
+Pedagogy of Linguistics (TA Training), UC Santa Cruz (Fall 2018–Winter 2019). Supervisor: [Matt Wagers](https://people.ucsc.edu/~mwagers). ([syllabus](assets/documents/ling240_syllabus.pdf))\\
 **At UC Santa Cruz as teaching assistant**\\
 2021: Invented Languages, UC Santa Cruz, Spring quarter. Instructor: [Pranav Anand](https://people.ucsc.edu/~panand).\\
 2020: Semantics 1, UC Santa Cruz, Summer session 1. Instructor: [Adrian Brasoveanu](https://people.ucsc.edu/~abrsvn).\\
@@ -104,7 +109,7 @@ Linguistic Society of America
 ### Computer Skills
 Web: HTML, CSS, Jekyll\\
 Document preparation: <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span>\\
-Programming: R, Python\\
+Programming: R, Python, Lua, \\
 Version control: Git\\
 Office: Excel, Access
 {: .sectionnolist}
