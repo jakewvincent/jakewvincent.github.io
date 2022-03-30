@@ -23,7 +23,7 @@ main-img-title: Jake W. Vincent
 
 ### Manuscripts
 **Manuscripts in preparation**\\
-With [Ivy Sichel](https://ivysichel.sites.ucsc.edu/) and [Matt Wagers](https://people.ucsc.edu/~mwagers): *Extraction from English RCs and cross-linguistic similarities in the environments that facilitate extraction*\\
+With [Ivy Sichel](https://ivysichel.sites.ucsc.edu/) and [Matt Wagers](https://people.ucsc.edu/~mwagers): *Extraction from English RCs and cross-linguistic similarities in the environments that facilitate extraction*
 {: .sectionnolist}
 
 ### Awards and Honors
