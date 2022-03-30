@@ -1,6 +1,6 @@
 ---
 title: Research & Projects
-updated: 2021-05-13
+updated: 2022-03-29
 layout: default
 main-img: assets/images/shasta_airport.png
 main-img-title: Shasta airport, 2010
@@ -14,7 +14,7 @@ main-img-title: Shasta airport, 2010
 <div class="sectionnolist" markdown="1">
 
 #### Extraction from relative clauses in English
-[Download manuscript](assets/documents/jwv_rc_subext_eng.pdf){: .download-pdf .a-button} [R Notebooks](notebooks.html){: .r-notebook .a-button}
+[Download dissertation](https://www.proquest.com/openview/760063f3ff8277bc8b1a19ca3f701e6e/){: .download-pdf .a-button} [R Notebooks](notebooks.html){: .r-notebook .a-button}
 
 Relative clauses (RCs) are a prototypical example of a strong island, but certain languages have been shown to selectively tolerate RC subextraction (Mainland Scandinavian languages, certain Romance languages, Hebrew, and others). For subextraction to be licit in these languages, the DP that hosts the RC typically needs to be the pivot of a canonical or non-canonical existential, or otherwise non-presupposed.
 						
@@ -67,6 +67,13 @@ In my [MA thesis](https://cloudfront.escholarship.org/dist/prd/content/qt0jq7096
 ### Other projects
 
 <div class="sectionnolist">
+<button class="expand-btn"><h4>Markdown journal/wiki management plugin for Vim</h4></button>
+<div class="expand-content" markdown="1">
+
+[See on GitHub](https://github.com/jakewvincent/mkdnflow.nvim){: .github-button .a-button}
+
+</div>
+
 <button class="expand-btn"><h4>Syllable parser</h4></button>
 <div class="expand-content" markdown="1">
 

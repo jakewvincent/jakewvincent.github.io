@@ -1,7 +1,7 @@
 ---
 title: CV
 layout: default
-updated: 2022-01-08
+updated: 2022-03-29
 main-img: assets/images/jwv_x.jpg
 main-img-title: Jake W. Vincent
 ---
@@ -11,20 +11,19 @@ main-img-title: Jake W. Vincent
 </div>
 
 ### Education
-2021: Ph.D., Department of Linguistics, UC Santa Cruz. Dissertation title: *Extraction From Relative Clauses: An Experimental Investigation into Variable Island Effects in English—or—This Is a Dissertation That We Really Needed to Find Someone Who'd Write*. Dissertation advisor: [Matt Wagers](https://people.ucsc.edu/~mwagers)\\
+2021: Ph.D., Department of Linguistics, UC Santa Cruz. Dissertation title: [*Extraction From Relative Clauses: An Experimental Investigation into Variable Island Effects in English—or—This Is a Dissertation That We Really Needed to Find Someone Who'd Write*](https://www.proquest.com/openview/760063f3ff8277bc8b1a19ca3f701e6e/). Dissertation advisor: [Matt Wagers](https://people.ucsc.edu/~mwagers)\\
 2017: M.A., Department of Linguistics, UC Santa Cruz. Thesis title: [*D-Raising in Chamorro Relative Clauses and Other A&prime; Constructions*](https://escholarship.org/uc/item/0jq7096r). Thesis advisor: [Sandra Chung](http://people.ucsc.edu/~schung).\\
 2015:  B.A., Department of Linguistics, UC Santa Cruz. Graduated *Summa Cum Laude* with additional Honors in Linguistics.
 {: .sectionnolist}
 
 ### Positions Held
-2021-current: Language Engineer (contract), Amazon Web Services.\\
+2021-current: Language Engineer (contract), NLU pod, AiData team, Amazon Web Services.\\
 2021-current: Lecturer in Linguistics, UC Santa Cruz.
 {: .sectionnolist }
 
 ### Manuscripts
 **Manuscripts in preparation**\\
-*Relative clause subextraction in English*.\\
-*Internally headed relative clauses in Chamorro*.
+With [Ivy Sichel](https://ivysichel.sites.ucsc.edu/) and [Matt Wagers](https://people.ucsc.edu/~mwagers): *Extraction from English RCs and cross-linguistic similarities in the environments that facilitate extraction*\\
 {: .sectionnolist}
 
 ### Awards and Honors
@@ -109,7 +108,8 @@ Linguistic Society of America
 ### Computer Skills
 Web: HTML, CSS, Jekyll\\
 Document preparation: <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span>\\
-Programming: R, Python, Lua\\
+Programming/scripting: R, Python, Lua, Bash/Zsh\\
+Remote computing technologies: EC2, SSH, HPC clusters
 Version control: Git\\
 Office: Excel, Access
 {: .sectionnolist}

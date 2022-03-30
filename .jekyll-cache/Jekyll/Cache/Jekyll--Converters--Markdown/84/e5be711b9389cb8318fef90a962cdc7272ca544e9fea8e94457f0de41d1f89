@@ -1,39 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link type="text/css" rel="stylesheet" href="assets/css/stylesheet.css">
-        <link type="text/css" rel="stylesheet" href="assets/css/syntax.css">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:300,700&display=swap&subset=latin-ext" rel="stylesheet">
-        <title>JWV: Home</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div id="container">
-            <div id="banner">
-    <h2 id="name">Jake W. Vincent</h2>
-    <h2 class="email backemail">moc.liamg@tnecnivwekaj</h2>
-    <div class="divFill"></div>
-</div>
-
-            <nav id="navbar">
-    <ul>
-    
-        <li><a href="index.html"  id="activelink" >Home</a></li>
-    
-        <li><a href="cv.html" >CV</a></li>
-    
-        <li><a href="teaching.html" >Teaching</a></li>
-    
-        <li><a href="research.html" >Research & Projects</a></li>
-    
-        <li><a href="blog.html" >Blog</a></li>
-    
-    </ul>
-</nav>
-            <div class = "main">
-                <img src=assets/images/mtdiablo.png class="main-img borderless" title=From Mt. Diablo, 2012>
-                <div id="content">
-                    <div id="ohrs">
+I"~<div id="ohrs">
     <p>
 		SPRING 2022 OFFICE HOURS:<br />
 		(NOT CURRENTLY TEACHING)<br />
@@ -45,11 +10,4 @@
 <p>My <a href="https://www.proquest.com/openview/760063f3ff8277bc8b1a19ca3f701e6e/">dissertation</a> investigates extraction from relative clauses in English in the context of related work on relative clauses in the North Germanic languages of Mainland Scandinavia (<a href="http://perso.ens-lyon.fr/jacques.jayez/Cours/Implicite/Dominance_and_PP_Erteschikshir1979.pdf">Danish</a>, <a href="http://hdl.handle.net/2077/51985">Swedish</a>, and <a href="https://doi.org/10.1353/lan.2019.0051">Norwegian</a>), some <a href="http://157.138.8.12/jspui/bitstream/11707/136/1/Koster.Fest.pdf">Romance languages</a>, and <a href="https://doi.org/10.1162/ling_a_00275">Hebrew</a>. With <a href="https://ivysichel.sites.ucsc.edu/">Ivy Sichel</a> and <a href="https://people.ucsc.edu/~mwagers">Matt Wagers</a>, I am currently investigating the influence of transitive verb type and context on extraction.</p>
 
 <p>I have done work on <a href="http://en.wikipedia.org/wiki/Chamorro_language">Chamorro</a> (Austronesian; <a href="https://www.google.com/maps/@14.4580764,145.4153867,8z">Mariana Islands</a>; 45,000 speakers) and have studied the syntax(-semantics) of the language’s head-internal relative clauses.</p>
-
-                </div>
-            </div>
-            <div class="spacer"></div>
-            <footer>Last updated March 29, 2022</footer>
-        </div>
-    </body>
-</html>
+:ET
