@@ -21,9 +21,8 @@ main-img-title: Jake W. Vincent
 2021-current: Lecturer in Linguistics, UC Santa Cruz.
 {: .sectionnolist }
 
-### Manuscripts
-**Manuscripts in preparation**\\
-With [Ivy Sichel](https://ivysichel.sites.ucsc.edu/) and [Matt Wagers](https://people.ucsc.edu/~mwagers): *Extraction from English RCs and cross-linguistic similarities in the environments that facilitate extraction*
+### Publications
+**Vincent, Jake W.**, [Ivy Sichel](https://ivysichel.sites.ucsc.edu), and [Matthew W. Wagers](https://people.ucsc.edu/~mwagers). 2022. Extraction from English RCs and Cross-Linguistic Similarities in the Environments That Facilitate Extraction. _Languages_ 7: 117. [https://doi.org/10.3390/languages7020117](https://doi.org/10.3390/languages7020117)
 {: .sectionnolist}
 
 ### Awards and Honors

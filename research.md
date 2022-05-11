@@ -14,7 +14,7 @@ main-img-title: Shasta airport, 2010
 <div class="sectionnolist" markdown="1">
 
 #### Extraction from relative clauses in English
-[Download dissertation](https://www.proquest.com/openview/760063f3ff8277bc8b1a19ca3f701e6e/){: .download-pdf .a-button} [R Notebooks](notebooks.html){: .r-notebook .a-button}
+[Download dissertation](https://www.proquest.com/openview/760063f3ff8277bc8b1a19ca3f701e6e/){: .download-pdf .a-button} [R Notebooks](notebooks.html){: .r-notebook .a-button} [Download _Languages_ manuscript](https://doi.org/10.3390/languages7020117){: .download-pdf .a-button}
 
 Relative clauses (RCs) are a prototypical example of a strong island, but certain languages have been shown to selectively tolerate RC subextraction (Mainland Scandinavian languages, certain Romance languages, Hebrew, and others). For subextraction to be licit in these languages, the DP that hosts the RC typically needs to be the pivot of a canonical or non-canonical existential, or otherwise non-presupposed.
 						
