@@ -86,6 +86,10 @@ html {
 			float: none;
 			margin-left: 0;
 		}
+        .backemail {
+            unicode-bidi: bidi-override;
+            direction: rtl;
+        }
 		nav {/* Center the nav bar */
 			text-align: center;
 			width: 100%;

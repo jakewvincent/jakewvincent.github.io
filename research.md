@@ -2,15 +2,15 @@
 title: Research & Projects
 updated: 2022-03-29
 layout: default
-main-img: assets/images/shasta_airport.png
-main-img-title: Shasta airport, 2010
+main-img: assets/images/mtdiablo.png
+main-img-title: From Mt. Diablo, 2012
 ---
 
 <div class="buttonspace">
     <a href="https://www.researchgate.net/profile/Jake_Vincent4" class="rg-button a-button">ResearchGate profile</a>
 </div>
 
-### Current research
+### Recent research
 <div class="sectionnolist" markdown="1">
 
 #### Extraction from relative clauses in English

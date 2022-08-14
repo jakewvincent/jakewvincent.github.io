@@ -1,9 +1,9 @@
 ---
 title: CV
 layout: default
-updated: 2022-03-29
+updated: 2022-08-13
 main-img: assets/images/jwv_x.jpg
-main-img-title: Jake W. Vincent
+main-img-title: Jake W. Vincent, PhD
 ---
 
 <div class="buttonspace">
@@ -17,8 +17,9 @@ main-img-title: Jake W. Vincent
 {: .sectionnolist}
 
 ### Positions Held
-2021-current: Language Engineer (contract), NLU pod, AiData team, Amazon Web Services.\\
-2021-current: Lecturer in Linguistics, UC Santa Cruz.
+2022-current: Language Engineer I, Amazon Transcribe, AiData team, Amazon Web Services.\\
+2021-2022: Language Engineer (contract), Lex NLU pod, AiData team, Amazon Web Services.\\
+2021-2022: Lecturer in Linguistics, UC Santa Cruz.
 {: .sectionnolist }
 
 ### Publications
