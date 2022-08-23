@@ -1,636 +1,655 @@
 *{
-	font-family: "Merriweather Sans", sans-serif;
-	line-height: 1.65em;
+    font-family: "Merriweather Sans", sans-serif;
+    line-height: 1.65em;
 }
 
 h3 {
-	font-family: "Merriweather", serif;
+    font-family: "Merriweather", serif;
 }
 
 h4 {
-	font-family: "Merriweather Sans", serif;
-	margin: 0 0 0.5em 0;
-	color: black;
+    font-family: "Merriweather Sans", serif;
+    margin: 0 0 0.5em 0;
+    color: black;
 }
 
 textarea, input[type="text"] {
-	font-family: monospace;
-	font-size: 1em;
+    font-family: monospace;
+    font-size: 1em;
 }
 
 html {
-	background-color: #f7f7f7;
+    background-color: #f7f7f7;
 }
 
 /*-- Link styling --*/
-	a {/* Took out: border-bottom: 1px dashed #cacfd2;	line-height: 1.25em; text-indent: 0em; */
-		color: #114b10;
-		text-decoration: none;
-		font-weight: 600;
-		}
+a {/* Took out: border-bottom: 1px dashed #cacfd2;	line-height: 1.25em; text-indent: 0em; */
+    color: #114b10;
+    text-decoration: none;
+    font-weight: 600;
+}
 
-	a.image {/* Prevent the above styling when the a tag is of class "image" */
-		display: initial;
-		border-bottom: none;
-		line-height: inherit;
-	}
+a.image {/* Prevent the above styling when the a tag is of class "image" */
+    display: initial;
+    border-bottom: none;
+    line-height: inherit;
+}
 
-	nav a {
-		border-bottom: none;
-		color: black;
-	}
+nav a {
+    border-bottom: none;
+    color: black;
+}
 
-	#ohrs a {
-		border-bottom: none;
-	}
-		
-	a:hover {
-		border-bottom: 1px dashed #8b8f91;
-		color: black;
-		}
+#ohrs a {
+    border-bottom: none;
+}
 
-	a.image:hover {/* Prevent the above styling when the <a> tag is of class "image" */
-		border-bottom: none;
-		background-color: initial;
-		color: none;
-		}
+a:hover {
+    border-bottom: 1px dashed #8b8f91;
+    color: black;
+}
 
-	#activelink {
-		border-bottom: 1px solid #cacfd2;
-	}
-	
+a.image:hover {/* Prevent the above styling when the <a> tag is of class "image" */
+    border-bottom: none;
+    background-color: initial;
+    color: none;
+}
+
+#activelink {
+    border-bottom: 1px solid #cacfd2;
+}
+
 /*-- Conditional styling for different screen sizes --*/
 
-	/*-- For screen sizes smaller than 1279px wide --*/
-	@media (max-width:1279px) {/* NOTE: Read as "for media whose width is no larger than 1279px (in width)" */
-		#container {
-			margin-left: auto;
-			margin-right: auto;
-			width: 100%;
-			/*overflow: auto;*/
-		}
-		#tinycontainer {/* Div for redirection notice */
-			margin-left: auto;
-			margin-right: auto;
-			width: 50%;
-			padding-top: 5rem;
-			overflow: auto;
-		}
-		#banner {/* Center the banner contents */
-			text-align: center;
-		}
-		#banner #name {/* Make sure my name is on its own line */
-			float: none;
-		}
-		#banner .email {/* Make sure my email is on its own line */
-			float: none;
-			margin-left: 0;
-		}
-        .backemail {
-            unicode-bidi: bidi-override;
-            direction: rtl;
-        }
-		nav {/* Center the nav bar */
-			text-align: center;
-			width: 100%;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		#ohrs {/* Make office hours box the only thing on its line */
-			clear: left, right;
-		}
-		.main-img {
-			display: block;
-			clear: left, right;
-			margin-left: auto;
-			margin-right: auto;
-			margin-top: 1em;
-			margin-bottom: 1em;
-			width: 15rem;
-		}
-		.sectionnolist {
-			padding-left: 0.5rem;
-		}
-		
-		/* Make sure that on smaller screens, all table elements become blocks (so cells can rearrange themselves vertically), unless in a form */
-		.flexible-table table, .flexible-table thead, .flexible-table tbody, .flexible-table th, .flexible-table td, .flexible-table tr {
-			display: block;
-		}
-		
-		/* Hide table headers (but not display: none, for accessibility) */
-		.flexible-table thead tr {
-			position: absolute;
-			top: -9999px;
-			left: -9999px;
-		}
-		
-		.flexible-table td {/* Behave like a "row" */
-			border: none;
-			border-bottom: 1px solid #cacfd2;
-			position: relative;
-			padding-left: 25%;
-		}
-		
-		.flexible-table td:before {/* Set up styling for CSS-generated fake headers */
-			position: absolute;
-			top: 6px;
-			left: 6px;
-			width: 45%;
-			padding-right: 10px;
-			white-space: nowrap;
-		}
-		
-		/* Give the table contents fake headers */
-		#adv-disadv-table td:nth-of-type(1):before {
-			content: "Advantages";
-			font-weight: bold;
-		}
-		#adv-disadv-table td:nth-of-type(2):before {
-			content: "Disadvantages";
-			font-weight: bold;
-		}
+/*-- For screen sizes smaller than 1279px wide --*/
+@media (max-width:1279px) {/* NOTE: Read as "for media whose width is no larger than 1279px (in width)" */
+    #container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        /*overflow: auto;*/
+    }
+    #tinycontainer {/* Div for redirection notice */
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding-top: 5rem;
+        overflow: auto;
+    }
+    #banner {/* Center the banner contents */
+        text-align: center;
+    }
+    #banner #name {/* Make sure my name is on its own line */
+        float: none;
+    }
+    #banner .personal-title {/* Make sure my title is on its own line */
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    #banner .social {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    nav {/* Center the nav bar */
+        text-align: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #ohrs {/* Make office hours box the only thing on its line */
+        clear: left, right;
+    }
+    .main-img {
+        display: block;
+        clear: left, right;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 15rem;
+    }
+    .sectionnolist {
+        padding-left: 0.5rem;
+    }
 
-		/* Expandable section buttons */
-		.expand-btn {
-			margin-left: 0;
-		}
-	}
+    /* Make sure that on smaller screens, all table elements become blocks (so cells can rearrange themselves vertically), unless in a form */
+    .flexible-table table, .flexible-table thead, .flexible-table tbody, .flexible-table th, .flexible-table td, .flexible-table tr {
+        display: block;
+    }
 
-	/*-- For screen sizes larger than 1280px wide --*/
-	@media (min-width:1280px) {/* NOTE: Read as "for media whose width is no smaller than 1280px (in width)" */
-		#container {
-			margin-left: auto;
-			margin-right: auto;
-			width: 60%;
-			padding: 1rem;
-			/*overflow: auto;*/ /* removed bc it was interfering w/ CSS sticky */
-		}
-		#tinycontainer {/* Used for redirection notice only */
-			margin-left: auto;
-			margin-right: auto;
-			width: 25%;
-			padding-top: 12.5%;
-			overflow: auto;
-		}
-		#banner #name {/* Allow my name to appear on the same line as my email (see below) */
-			float: left;
-		}
-		#banner .email {/* Allow my email to appear on the same line as my name (see above) */
-			float: left;
-			margin-left: 1em;
-		}
-		.email::after {
-			content: "\2003//";
-			color: #e6ecf0;
-		}
-        .backemail {
-            unicode-bidi: bidi-override;
-            direction: rtl;
-        }
-		nav {/* Center the nav bar */
-			text-align: center;
-		}
-		#ohrs {/* Float office hours box to the left and prevent the box from overlapping other contents  */
-			clear: left;
-			overflow: hidden;
-		}
-		.main-img {/* Float main image to the right and keep the width constant (see non-media-specific settings too) */
-			margin-left: 1em;
-			margin-right: 0;
-			float: right;
-			width: 19rem;
-		}
-		.dropdown:hover .dropdown-content {/* Make dropdown box appear on mouseover */
-		    display: block;
-		}
-		not(fieldset) > table td + td {/* On non-small screens (when tables won't rearrange themselves vertically), give the second column a left border */
-			border-left: 1px solid #cacfd2;
-		}
-		.sectionnolist {
-			padding-left: 2.5rem;
-		}
-		.expand-btn {
-			margin-left: -1em;
-		}
-	}
+    /* Hide table headers (but not display: none, for accessibility) */
+    .flexible-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
 
-	/*-- For screen sizes larger than 2048px wide --*/
-	@media (min-width: 2048px) {/* NOTE: Read as "for media whose width is no smaller than 2048px (in width)" */
-		#container {
-			width: 40%;
-		}
-	}
+    .flexible-table td {/* Behave like a "row" */
+        border: none;
+        border-bottom: 1px solid #cacfd2;
+        position: relative;
+        padding-left: 25%;
+    }
+
+    .flexible-table td:before {/* Set up styling for CSS-generated fake headers */
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    /* Give the table contents fake headers */
+    #adv-disadv-table td:nth-of-type(1):before {
+        content: "Advantages";
+        font-weight: bold;
+    }
+    #adv-disadv-table td:nth-of-type(2):before {
+        content: "Disadvantages";
+        font-weight: bold;
+    }
+
+    /* Expandable section buttons */
+    .expand-btn {
+        margin-left: 0;
+    }
+}
+
+/*-- For screen sizes larger than 1280px wide --*/
+@media (min-width:1280px) {/* NOTE: Read as "for media whose width is no smaller than 1280px (in width)" */
+    #container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        padding: 1rem;
+        /*overflow: auto;*/ /* removed bc it was interfering w/ CSS sticky */
+    }
+    #tinycontainer {/* Used for redirection notice only */
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+        padding-top: 12.5%;
+        overflow: auto;
+    }
+    #banner #name {/* Allow my name to appear on the same line as my title (see below) */
+    }
+    #banner .personal-title {/* Allow my title to appear on the same line as my name (see above) */
+        margin-bottom: 1em;
+    }
+    nav {/* Center the nav bar */
+        text-align: center;
+    }
+    #ohrs {/* Float office hours box to the left and prevent the box from overlapping other contents  */
+        clear: left;
+        overflow: hidden;
+    }
+    .main-img {/* Float main image to the right and keep the width constant (see non-media-specific settings too) */
+        margin-left: 1em;
+        margin-right: 0;
+        float: right;
+        width: 19rem;
+    }
+    .dropdown:hover .dropdown-content {/* Make dropdown box appear on mouseover */
+        display: block;
+    }
+    not(fieldset) > table td + td {/* On non-small screens (when tables won't rearrange themselves vertically), give the second column a left border */
+        border-left: 1px solid #cacfd2;
+    }
+    .sectionnolist {
+        padding-left: 2.5rem;
+    }
+    .expand-btn {
+        margin-left: -1em;
+    }
+}
+
+/*-- For screen sizes larger than 2048px wide --*/
+@media (min-width: 2048px) {/* NOTE: Read as "for media whose width is no smaller than 2048px (in width)" */
+    #container {
+        width: 40%;
+    }
+}
 
 /*-- Banner styling --*/
 
-	#banner {/* Give the banner a bottom border */
-		border-bottom: 1px solid #cacfd2;
-		}
+#banner {/* Give the banner a bottom border */
+    border-bottom: 1px solid #cacfd2;
+}
 
-	#banner #name {/* Float the name heading to the left */
-		font-family: "Merriweather", serif;
-	}
+#banner #name {/* Float the name heading to the left */
+    font-family: "Merriweather", serif;
+}
 
-	#banner .email {/* ...and the email heading to the left */
-		color: #cacfd2;
-		font-family: "Merriweather", serif;
-	}
+#banner .personal-title {/* ...and the title heading to the left */
+    layout: inline-block;
+    float: left;
+    color: #cacfd2;
+    font-weight: bold;
+    font-family: "Merriweather Sans", sans-serif;
+}
 
-	.divFill {			/* Keep banner separate from lower content */
-		clear: both;
-	}
+#banner .social {
+    layout: inline-block;
+    float: right;
+}
+
+#banner .social .fa-brands {
+    color: #cacfd2;
+    font-size: 1.25em;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#banner .social .fa-brands:first-child {
+    margin-left: 0;
+}
+
+#banner .fa-brands:hover {
+    color: #000;
+    border-bottom: none;
+}
+
+.divFill {			/* Keep banner separate from lower content */
+    clear: both;
+}
 
 /*-- Nav styling --*/
-	nav {
-		overflow: hidden;
-		background: #f7f7f7;
-		position: sticky;
-		position: -webkit-sticky;
-		top: 0;
-		z-index: 9;
-	}
+nav {
+    overflow: hidden;
+    background: #f7f7f7;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 9;
+}
 
-	nav li {/* Allow the nav bar items (syntactically an unordered list) to appear on the same line */
-		display: inline;
-		margin: 0;
-		padding: 0;
-		border: 0;
-	}
+nav li {/* Allow the nav bar items (syntactically an unordered list) to appear on the same line */
+    display: inline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
-	nav ul {
-		padding: 0px;
-		margin-top: 1.25em;
-		margin-bottom: 1.25em;
-		margin-left: 0;
-		margin-right: 0
-	}
+nav ul {
+    padding: 0px;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    margin-left: 0;
+    margin-right: 0
+}
 
-	/* Don't let nav items be split onto two lines. Removed on 8/27/19 */
-	/*nav a {
-		position: relative;
-		display: inline-block;
-	}*/
+/* Don't let nav items be split onto two lines. Removed on 8/27/19 */
+/*nav a {
+position: relative;
+display: inline-block;
+}*/
 
-	/* Make nav links click down like a button */
-	nav a:active {
-		top: 1px;
-		left: 1px;
-		border-bottom: none;
-	}
+/* Make nav links click down like a button */
+nav a:active {
+    top: 1px;
+    left: 1px;
+    border-bottom: none;
+}
 
-	/* Add slashes between nav items */
-	nav li:not(:first-child)::before {
-		content: "/";
-		color: #cacfd2;
-		padding-left: 0.5em;
-		padding-right: 0.5em;
-	}
-	
-	/* Sticky class is added to nav using JS once nav reaches top of screen */
-	/*.sticky {
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		background-color: #f7f7f7;
-		transition: 0.33s;
-		width: 100%;
-		z-index: 500;
-		border-bottom: 1px solid #cacfd2;
-	}
+/* Add slashes between nav items */
+nav li:not(:first-child)::before {
+    content: "/";
+    color: #cacfd2;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
 
-	.sticky + .main {
-		padding-top: 4.5em;
-	}*/
+/* Sticky class is added to nav using JS once nav reaches top of screen */
+/*.sticky {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background-color: #f7f7f7;
+transition: 0.33s;
+width: 100%;
+z-index: 500;
+border-bottom: 1px solid #cacfd2;
+}
+
+.sticky + .main {
+padding-top: 4.5em;
+}*/
 
 /*--Image styling--*/
 
-	.main-img {
-		height: auto;
-		margin-bottom: 1em;
-	}
+.main-img {
+    height: auto;
+    margin-bottom: 1em;
+}
 
-	.borderless {	/* Give images w/ the class "borderless" (use for images w/o borders included) rounded corners */
-		border-radius: 4px;
-	}
+.borderless {	/* Give images w/ the class "borderless" (use for images w/o borders included) rounded corners */
+    border-radius: 4px;
+}
 
-	.icon {
-		width: 2em;
-		height: auto;
-		vertical-align: middle;
-		margin-right: 1em;
-	}
+.icon {
+    width: 2em;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 1em;
+}
 
-	.screenshot-part {	/* Style narrower screenshot */
-		width: 65%;
-		height: auto;
-		display: block;
-		margin-top: 1em;
-		margin-bottom: 1em;
-		margin-left: auto;
-		margin-right: auto;
-		border-radius: 2px;
-	}
+.screenshot-part {	/* Style narrower screenshot */
+    width: 65%;
+    height: auto;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+}
 
-	.screenshot-full {	/* Style full-width screenshots */
-		width: 100%;
-		height: auto;
-		display: block;
-		margin-top: 1em;
-		margin-bottom: 1em;
-		margin-left: auto;
-		margin-right: auto;
-		border-radius: 2px;
-	}
+.screenshot-full {	/* Style full-width screenshots */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+}
 
 /*--Content styling--*/
 
-	#content {
-		position: relative;
-		clear: left;
-		margin-bottom: 0.5rem;
-	}
+#content {
+    position: relative;
+    clear: left;
+    margin-bottom: 0.5rem;
+}
 
-	#ohrs {		/* Styling for office hours box */
-		text-align: center;
-		border: 3px double #cacfd2; /* ...previously #66ff66 */
-		margin: 0 auto;
-		margin-bottom: 10px;
-		padding-left: 25px;
-		padding-right: 25px;
-		font-variant: small-caps;
-		font-weight: bold;
-		border-radius: 4px;
-	}
+#ohrs {		/* Styling for office hours box */
+    text-align: center;
+    border: 3px double #cacfd2; /* ...previously #66ff66 */
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-variant: small-caps;
+    font-weight: bold;
+    border-radius: 4px;
+}
 
-	#psrs {		/* Styling for phrase structure rules */
-		font-family: "Courier New", Courier, monospace;
-		list-style-type: none;
-	}
+#psrs {		/* Styling for phrase structure rules */
+    font-family: "Courier New", Courier, monospace;
+    list-style-type: none;
+}
 
-	.buttonspace {
-		padding: 0.5rem;
-		overflow: hidden;
-	}
-		
-	/*--Section styling--*/
-	.section {
-		border-left: 1px solid #cacfd2;
-		}
+.buttonspace {
+    padding: 0.5rem;
+    overflow: hidden;
+}
 
-	.sectionnolist {
-		border-left: 1px solid #cacfd2;
-		}
+/*--Section styling--*/
+.section {
+    border-left: 1px solid #cacfd2;
+}
 
-	.sectionheading {
-		text-decoration: underline;
-		margin-top: 0.35rem;
-		margin-bottom: 0.35rem;
-		}
-		
-	.subsection {
-		padding-left: 2rem;
-		}
+.sectionnolist {
+    border-left: 1px solid #cacfd2;
+}
 
-	.par {	/* Ensure that elements (divs) marked "par" will not tolerate floating elements to their left */
-		clear: left;
-	}
+.sectionheading {
+    text-decoration: underline;
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+}
+
+.subsection {
+    padding-left: 2rem;
+}
+
+.par {	/* Ensure that elements (divs) marked "par" will not tolerate floating elements to their left */
+    clear: left;
+}
 
 /*-- Styling for LaTeX logo --*/
 /*-- Source: http://tess.oconnor.cx/2007/08/tex-poshlet --*/
 
-	.tex sub, .latex sub, .latex sup {
-	text-transform: uppercase;
-	}
+.tex sub, .latex sub, .latex sup {
+    text-transform: uppercase;
+}
 
-	.tex sub, .latex sub {
-	vertical-align: -0.2em;
-	margin-left: -0.1667em;
-	margin-right: -0.125em;
-	}
+.tex sub, .latex sub {
+    vertical-align: -0.2em;
+    margin-left: -0.1667em;
+    margin-right: -0.125em;
+}
 
-	.tex, .latex, .tex sub, .latex sub {
-	font-size: 1em;
-	}
+.tex, .latex, .tex sub, .latex sub {
+    font-size: 1em;
+}
 
-	.latex sup, .tex sup {
-	font-size: 0.9em;
-	vertical-align: 0.27em;
-	margin-left: -0.43em;
-	margin-right: -0.1em;
-	}
+.latex sup, .tex sup {
+    font-size: 0.9em;
+    vertical-align: 0.27em;
+    margin-left: -0.43em;
+    margin-right: -0.1em;
+}
 
-	.latex, .tex {
-		font-family: "Merriweather", serif;
-	}
+.latex, .tex {
+    font-family: "Merriweather", serif;
+}
 
-	.latex sup, .latex sub, .tex sup, .tex sub {
-		font-family: "Merriweather", serif;
-	}
+.latex sup, .latex sub, .tex sup, .tex sub {
+    font-family: "Merriweather", serif;
+}
 
 /*-- Interlinear glosses --*/
 /*-- HTML and CSS interlinear glossing code/styling written by Jake Vincent; feel free to use/modify (https://jakewvincent.github.io) --*/
 
-	.example {	/* Div consisting of all gloss units and free translation */
-		margin-left: 1.5rem;
-	}
+.example {	/* Div consisting of all gloss units and free translation */
+margin-left: 1.5rem;
+}
 
-	.all-align-units {	/* Div consisting of all align-units, excluding the free translation */
-	}
+.all-align-units {	/* Div consisting of all align-units, excluding the free translation */
+}
 
-	.all-align-units .align-unit:not(:first-child){	/* Give all the non-initial align-units a left margin to ease readability */
-		margin-left: 0.25em;
-	}
+.all-align-units .align-unit:not(:first-child){	/* Give all the non-initial align-units a left margin to ease readability */
+    margin-left: 0.25em;
+}
 
-	.align-unit {	/* Div consisting of word and gloss to be vertically left-aligned */
-		display: inline-block;
-	}
+.align-unit {	/* Div consisting of word and gloss to be vertically left-aligned */
+    display: inline-block;
+}
 
-	.word {	/* Single word in the text. Keep here just in case. */
-	}
+.word {	/* Single word in the text. Keep here just in case. */
+}
 
-	.gloss {	/* Gloss/translation of the single word. Keep here just in case. */
-	}
+.gloss {	/* Gloss/translation of the single word. Keep here just in case. */
+}
 
-	.gloss span {	/* Makes anything in a span tag within the gloss class small-caps, e.g. for lexical features */
-		font-variant: small-caps;
-	}
+.gloss span {	/* Makes anything in a span tag within the gloss class small-caps, e.g. for lexical features */
+    font-variant: small-caps;
+}
 
-	.free-transl {	/* English translation of text */
-	}
+.free-transl {	/* English translation of text */
+}
 
 /*-- Styling for redirect pages --*/
 
-	#tinycontainer { /* Used for redirection notice only */
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-	}
-	#tinycontainer img {
-		display: block;
-		width: 50%;
-		opacity: 0.5;
-		margin-left: auto;
-		margin-right: auto;
-		clear: left, right;
-		padding: 1rem;
-	}
+#tinycontainer { /* Used for redirection notice only */
+margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#tinycontainer img {
+    display: block;
+    width: 50%;
+    opacity: 0.5;
+    margin-left: auto;
+    margin-right: auto;
+    clear: left, right;
+    padding: 1rem;
+}
 
 /*-- Expandable section styling --*/
 
-	.expand-btn {
-		border: none;
-		font-size: 1em;
-		background-color: #f7f7f7;
-		padding: 0;
-		cursor: pointer;
-		display: block;
-		/* margin setting is located above in screen-width-specific style sections */
-	}
+.expand-btn {
+    border: none;
+    font-size: 1em;
+    background-color: #f7f7f7;
+    padding: 0;
+    cursor: pointer;
+    display: block;
+    /* margin setting is located above in screen-width-specific style sections */
+}
 
-	.expand-btn h4 {
-		display: inline-block;
-	}
+.expand-btn h4 {
+    display: inline-block;
+}
 
-	.expand-content {
-		display: none;
-		overflow: hidden;
-		background-color: #f7f7f7;
-	}
+.expand-content {
+    display: none;
+    overflow: hidden;
+    background-color: #f7f7f7;
+}
 
-	.expand-btn::before {
-		content: "+"; /* Unicode character for plus sign */
-		color: #8b8f91;
-		margin-right: 0.25em;
-	}
+.expand-btn::before {
+    content: "+"; /* Unicode character for plus sign */
+    color: #8b8f91;
+    margin-right: 0.25em;
+}
 
-	.expanded::before {
-		content: "-"; /* Unicode character for minus sign */
-		color: #8b8f91;
-	}
+.expanded::before {
+    content: "-"; /* Unicode character for minus sign */
+    color: #8b8f91;
+}
 
 /*-- Table styling --*/
 
-	not(fieldset) > table {
-		width: 100%;
-	}
+not(fieldset) > table {
+    width: 100%;
+}
 
-	th {
-		border-bottom: 1px solid #cacfd2;
-		border-collapse: collapse;
-	}
+th {
+    border-bottom: 1px solid #cacfd2;
+    border-collapse: collapse;
+}
 
-	td ul {
-		margin-top: 0.25em;
-		margin-bottom: 0.25em;
-	}
+td ul {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
 
 /*-- Styling for "code" class --*/
 
-	.code, .code span {
-		padding: 0.5em;
-		font-family: monospace;
-		background: #cacfd2;
-		border-radius: 4px;
-		overflow: hidden;
-		line-height: default;
-	}
+.code, .code span {
+    padding: 0.5em;
+    font-family: monospace;
+    background: #cacfd2;
+    border-radius: 4px;
+    overflow: hidden;
+    line-height: default;
+}
 
-	.code span {
-		color: #0004ff;
-	}
+.code span {
+    color: #0004ff;
+}
 
-	.code a, .code a:hover {
-		color: #0004ff;
-		text-decoration: none;
-		font-weight: default;
-		font-family: monospace;
-		text-decoration: none;
-		line-height: default;
-		border-bottom: none;
-	}
+.code a, .code a:hover {
+    color: #0004ff;
+    text-decoration: none;
+    font-weight: default;
+    font-family: monospace;
+    text-decoration: none;
+    line-height: default;
+    border-bottom: none;
+}
 
 /*-- Styling for buttons --*/
 
-	.buttonspace {
-		text-align: center;
-	}
+.buttonspace {
+    text-align: center;
+}
 
-	.buttonspace a {
-		margin: 0 auto;
-	}
+.buttonspace a {
+    margin: 0 auto;
+}
 
-	.a-button {
-		padding: 0.25em 0.5em;
-		border-radius: 0.25em;
-		margin-right: 0.25em;
-		font-weight: bold;
-		box-shadow: 2px 2px 2px #cacfd2;
-	}
-	
-	.a-button-inline {
-		padding: 0.05em 0.25em;
-		border-radius: 0.25em;
-		margin-right: 0.25em;
-		font-weight: bold;
-		box-shadow: 2px 2px 2px #cacfd2;
-	}
+.a-button {
+    padding: 0.25em 0.5em;
+    border-radius: 0.25em;
+    margin-right: 0.25em;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px #cacfd2;
+}
 
-	.a-button:hover {
-		border-bottom: none;
-	}
+.a-button-inline {
+    padding: 0.05em 0.25em;
+    border-radius: 0.25em;
+    margin-right: 0.25em;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px #cacfd2;
+}
 
-	.download-pdf {
-		background: #ff0000;
-		color: white;
-	}
+.a-button:hover {
+    border-bottom: none;
+}
 
-	.download-pdf:hover {
-		background: #c40000;
-		color: white;
-	}
+.download-pdf {
+    background: #ff0000;
+    color: white;
+}
 
-	.r-notebook {
-		background: #75aadb;
-		color: white;
-	}
+.download-pdf:hover {
+    background: #c40000;
+    color: white;
+}
 
-	.r-notebook:hover {
-		background: #618db6;
-		color: white;
-	}
+.r-notebook {
+    background: #75aadb;
+    color: white;
+}
 
-	.rg-button {
-		color: white;
-		background: #00ccbb;
-	}
+.r-notebook:hover {
+    background: #618db6;
+    color: white;
+}
 
-	.rg-button:hover {
-		background: #00b1a2;
-		color: white;
-	}
+.rg-button {
+    color: white;
+    background: #00ccbb;
+}
 
-	.github-button {
-		background: #24292e;
-		color: white;
-	}
+.rg-button:hover {
+    background: #00b1a2;
+    color: white;
+}
 
-	.github-button:hover {
-		background: black;
-		color: white;
-	}
+.github-button {
+    background: #24292e;
+    color: white;
+}
+
+.github-button:hover {
+    background: black;
+    color: white;
+}
 
 /*-- Footer styling --*/
 
-	.spacer {	/* Keep the footer separate from the rest of the content */
-		clear: both;
-	}
+.spacer {	/* Keep the footer separate from the rest of the content */
+    clear: both;
+}
 
-	footer {
-		padding-top: 10px;
-		border-top: 1px solid #cacfd2;
-		font-size: 0.75rem;
-		font-style: italic;
-		color: #cacfd2;
-		text-align: right;
-	}
+footer {
+    padding-top: 10px;
+    border-top: 1px solid #cacfd2;
+    font-size: 0.75rem;
+    font-style: italic;
+    color: #cacfd2;
+    text-align: right;
+}

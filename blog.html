@@ -5,13 +5,13 @@ layout: blog_layout
 
 <div class="main">
     {% for post in site.posts %}
-        <span class="title">{{ post.title }}</span>
+        <a class="title" href="{{ post.url }}">{{ post.title }}</a>
         <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
         <span class="keywords">{{ post.keywords }}</span>
 
         <div class="blog-text">
             <p>
-                {{ post.content }}
+                {{ post.content | strip_html | truncatewords: 100 }}
             </p>
         </div>
     {% endfor %}

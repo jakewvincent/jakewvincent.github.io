@@ -2,7 +2,7 @@
 	.title {
 		font-size: 1.25em;
 		font-weight: bold;
-		font-style: italic;
+		font-style: normal;
 		margin-top: 1em;
 		clear: right;
 		display: block;
@@ -12,13 +12,10 @@
 
 	.date {
 		margin-right: 0.5em;
-		font-style: italic;
+		font-style: normal;
+        font-weight: bold;
 		padding-top: 0.25em;
 		float: left;
-	}
-
-	.date::before {
-		content: "Date: ";
 	}
 
 	.keywords {
@@ -27,11 +24,12 @@
 	}
 
 	.keywords::before {
-		content: "Keywords: ";
+		content: "Tags: ";
+        font-style: normal;
+        font-weight: bold;
 	}
 
 	.blog-text {
 		margin-top: 3em;
 		margin-bottom: 1em;
-		border-bottom: 1px solid #cacfd2
 	}

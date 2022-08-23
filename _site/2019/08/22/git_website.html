@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link type="text/css" rel="stylesheet" href="assets/css/stylesheet.css">
-        <link type="text/css" rel="stylesheet" href="assets/css/syntax.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/stylesheet.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/stylesheet_blog.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/syntax.css">
         <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:300,700&display=swap&subset=latin-ext" rel="stylesheet">
         <title>JWV: Editing your personal or academic website quickly with Git</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,35 +12,37 @@
         <div id="container">
             <div id="banner">
     <h2 id="name">Jake W. Vincent, Ph.D.</h2>
-    <h2 class="email backemail">moc.liamg@tnecnivwekaj</h2>
+    <span class="personal-title">Linguist · Language Engineer</span>
+    <span class="social">
+        <a class="fa-brands fa-researchgate" href="https://www.researchgate.net/profile/Jake-Vincent-3"></a>
+        <a class="fa-brands fa-github" href="https://github.com/jakewvincent/"></a>
+        <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/jake-vincent-phd-8279a6ab"></a>
+    </span>
     <div class="divFill"></div>
 </div>
 
             <nav id="navbar">
     <ul>
     
-        <li><a href="index.html" >Home</a></li>
+        <li><a href="/index.html" >Home</a></li>
     
-        <li><a href="cv.html" >CV</a></li>
+        <li><a href="/cv.html" >CV</a></li>
     
-        <li><a href="teaching.html" >Teaching</a></li>
+        <li><a href="/teaching.html" >Teaching</a></li>
     
-        <li><a href="research.html" >Research & Projects</a></li>
+        <li><a href="/research.html" >Research & Projects</a></li>
     
-        <li><a href="blog.html" >Blog</a></li>
+        <li><a href="/blog.html" >Blog</a></li>
     
     </ul>
 </nav>
             <div class = "main">
-                <img src= class="main-img borderless" title=>
-                <div id="content">
-                    <div>
-    <span class="title">Editing your personal or academic website quickly with Git</span>
-    <span class="date">22 Aug 2019</span>
-    <span class="keywords">git, post-receive hook, website</span>
+                <span class="title">Editing your personal or academic website quickly with Git</span>
+                <span class="date">August 22, 2019</span>
+                <span class="keywords">git, post-receive hook, website</span>
 
-    <div class="blog-text">
-        <p>At UCSC, personal websites can be hosted on the University’s Unix servers (see ITS’s <a href="https://its.ucsc.edu/web/hosting/personal-pages-tutorial.html">tutorial</a> on setting up your web page). Setting up the website for the first time requires uploading all of your website files and folders to the public_html folder in your personal server space. This has to be done using an SFTP (secure file transfer protocol) client of some sort, either one with a GUI like FileZilla, or a command line tool. After the initial upload, updating your website requires uploading new versions of website file(s) using the SFTP client. In my experience, this is not the most streamlined process because after editing and saving the relevant parts of your website, you need to open up your SFTP client, cherry-pick the files you updated, and replace the remote files on the server. Below, I outline a process that allows you to update your website in a more streamlined fashion using <a href="https://en.wikipedia.org/wiki/Git">Git</a>. This process is more streamlined because it doesn’t require you to pick out and replace the updated files. Git does that work for you.</p>
+                <div class="blog-text">
+                    <p>At UCSC, personal websites can be hosted on the University’s Unix servers (see ITS’s <a href="https://its.ucsc.edu/web/hosting/personal-pages-tutorial.html">tutorial</a> on setting up your web page). Setting up the website for the first time requires uploading all of your website files and folders to the public_html folder in your personal server space. This has to be done using an SFTP (secure file transfer protocol) client of some sort, either one with a GUI like FileZilla, or a command line tool. After the initial upload, updating your website requires uploading new versions of website file(s) using the SFTP client. In my experience, this is not the most streamlined process because after editing and saving the relevant parts of your website, you need to open up your SFTP client, cherry-pick the files you updated, and replace the remote files on the server. Below, I outline a process that allows you to update your website in a more streamlined fashion using <a href="https://en.wikipedia.org/wiki/Git">Git</a>. This process is more streamlined because it doesn’t require you to pick out and replace the updated files. Git does that work for you.</p>
 
 <p>Git is a version control system that was invented by Linus Torvalds, the inventor of Linux. Its purpose is to help people who write code (especially collaborative teams) keep track of the changes they make to their code. Each team member has a local copy of the repository (the codebase and its revision history; also called a <em>repo</em>), and when local changes are made to the repo, these changes are “pushed” to a remote location that each team member can access and “pull” to keep their local repo up to date.</p>
 
@@ -117,13 +120,8 @@ git checkout <span class="nt">-f</span></code></pre></figure>
 ~/website<span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="s2">"Updated xyz"</span>  
 ~/website<span class="nv">$ </span>git push <span class="nt">-u</span> ucsc master</code></pre></figure>
 
-    </div>
-</div>
-
                 </div>
             </div>
-            <div class="spacer"></div>
-            <footer>Last updated </footer>
         </div>
     </body>
 </html>

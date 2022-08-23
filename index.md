@@ -1,12 +1,12 @@
 ---
 title: Home
 layout: default
-updated: 2022-08-13
+updated: 2022-08-23
 main-img: assets/images/shasta_airport.png
 main-img-title: Shasta airport, 2010
 ---
 
-Hi! I'm a generative linguist with a background in syntax, semantics, and psycholinguistics. I currently work as a Language Engineer at Amazon Web Services, where I support automated call summarization and theme analysis features for [Contact Lens](https://aws.amazon.com/connect/contact-lens/). Previously, I held a contract position on the [Amazon Lex](https://aws.amazon.com/lex/) team, where I worked on language expansion for Lex and oversaw two performance evaluation tasks for the [Automated Chatbot Designer](https://aws.amazon.com/lex/chatbot-designer/).
+Hi! I'm a generative linguist with a background in syntax, semantics, and psycholinguistics. I currently work as a Language Engineer at Amazon Web Services, where I support automated call summarization and theme analysis features for [Contact Lens for Amazon Connect](https://aws.amazon.com/connect/contact-lens/). Previously, I held a contract position on the [Amazon Lex](https://aws.amazon.com/lex/) team, where I worked on language expansion for Lex and oversaw two performance evaluation tasks for the [Automated Chatbot Designer](https://aws.amazon.com/lex/chatbot-designer/).
 
 I'm the developer and maintainer of [MKDNFLOW](https://github.com/jakewvincent/mkdnflow.nvim), a plugin for the Neovim source code editor that enables the fluent navigation and management of markdown-based notebooks/journals/wikis/websites within the editor itself.
 

@@ -1,1 +1,3 @@
+gems:
+  - jekyll-font-awesome-sass
 highlighter: rouge
