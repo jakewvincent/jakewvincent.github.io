@@ -233,7 +233,7 @@ a.image:hover {/* Prevent the above styling when the <a> tag is of class "image"
     font-family: "Merriweather Sans", sans-serif;
 }
 
-#banner .social {
+#banner .social { /* ...and social icons to the right */
     layout: inline-block;
     float: right;
 }
