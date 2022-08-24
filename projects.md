@@ -2,15 +2,24 @@
 title: Research & Projects
 updated: 2022-03-29
 layout: default
-main-img: assets/images/mtdiablo.png
+main-img: /assets/images/mtdiablo.png
 main-img-title: From Mt. Diablo, 2012
 ---
 
-<div class="buttonspace">
-    <a href="https://www.researchgate.net/profile/Jake_Vincent4" class="rg-button a-button">ResearchGate profile</a>
+### Neovim plugins
+<div class="sectionnolist" markdown="1">
+
+[<i class="fa-brands fa-github"></i>&nbsp;&nbsp;Mkdnflow](https://github.com/jakewvincent/mkdnflow.nvim){: .github-button .a-button}
+
+Initially inspired by [Vimwiki](https://github.com/vimwiki/vimwiki), I designed Mkdnflow to facilitate the fluent navigation and management of markdown-based document repositories (whether that be a notebook or journal, a personal wiki or knowledge base, or pages fed into a static website generator like [Jekyll](https://jekyllrb.com) or [Hugo](https://gohugo.io)). Its most broadly useful feature is following links to other markdown documents in the repository and backward and forward navigation through thus-opened files using `<Backspace>` and `<Delete>`, respectively. Link-following behavior depends on the kind of target the link points to: links to markdown files are opened in the same window in vim; links prefixed with `file:` are opened in the default application for the filetype (any OS); links to websites are opened in the default browser; links to anchors cause the cursor to jump to a matching heading or [Pandoc-flavored bracketed span](https://pandoc.org/MANUAL.html#extension-bracketed_spans). Syntactic and semantic transformation functions can be configured to explicitly transform text into a markdown file's source name or implicitly transform a markdown file's link source when following it, affecting the interpretation of paths. A number of other convenience features are included: automatic directory creation, jumping between links with `<Tab>`, table creation and formatting, list support, section folding, and more. Written in Lua.
+
+[<i class="fa-brands fa-github"></i>&nbsp;&nbsp;TeXmagic](https://github.com/jakewvincent/texmagic.nvim){: .github-button .a-button}
+
+TeXmagic is a very simple Neovim plugin that facilitates LaTeX build engine selection via magic comments like&nbsp; `%!`&nbsp;`TEX`&nbsp;`program`&nbsp;` =`&nbsp;`xelatex`. It is designed with the TexLab LSP server's `build` service in mind, which has to be specified globally in the init file (with the help of the Neovim team's [lspconfig](https://github.com/neovim/nvim-lspconfig) plugin) and cannot be set on a by-project basis. The plugin identifies magic comments at the very top of a `.tex` document and passes the settings you configure for the given program name to the build service.
+
 </div>
 
-### Recent research
+### Research
 <div class="sectionnolist" markdown="1">
 
 #### Extraction from relative clauses in English
@@ -64,15 +73,9 @@ Chamorro has a typologically rare construction in which a noun phrase being modi
 In my [MA thesis](https://cloudfront.escholarship.org/dist/prd/content/qt0jq7096r/qt0jq7096r.pdf?t=p3qtng), I argue that the head NP in Chamorro's internally headed RCs (IHRCs) is merged within the RC as a DP headed by the null operator, after which the D<sup>0</sup> moves to the specifier position of the relative clause CP, abstracting over the RC-internal head and stranding the nominal restrictor. The analysis explains the island sensitivity of the IHRC formation rule, the mandatory presence of the linker *na* directly before the head NP, certain interpretive effects, and their surface similarity to stranding patterns in other A-bar contexts in the language. This work was recently cited in [Cinque's (2020) book on the syntax of relative clauses](https://books.google.com/books?hl=en&lr=&id=cxH9DwAAQBAJ&oi=fnd&pg=PR9&dq=cinque+syntax+of+relative+clauses&ots=LoK2L7ZQQG&sig=RDRX0sev2y1eqiYBkhT7jgJyuLg).
 </div>
 
-### Other projects
+### Miscellaneous projects
 
 <div class="sectionnolist">
-<button class="expand-btn"><h4>Markdown journal/wiki management plugin for Vim</h4></button>
-<div class="expand-content" markdown="1">
-
-[See on GitHub](https://github.com/jakewvincent/mkdnflow.nvim){: .github-button .a-button}
-
-</div>
 
 <button class="expand-btn"><h4>Syllable parser</h4></button>
 <div class="expand-content" markdown="1">

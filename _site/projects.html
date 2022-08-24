@@ -1,8 +1,63 @@
-I"'<div class="buttonspace">
-    <a href="https://www.researchgate.net/profile/Jake_Vincent4" class="rg-button a-button">ResearchGate profile</a>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="/assets/css/stylesheet.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/syntax.css">
+        <link href="/assets/css/fa.all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:300,700&display=swap&subset=latin-ext" rel="stylesheet">
+        <title>JWV: Research & Projects</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="container">
+            <div id="banner">
+    <h2 id="name">Jake W. Vincent, Ph.D.</h2>
+    <span class="personal-title">Linguist · Language Engineer</span>
+    <span class="social">
+        <a class="fa-brands fa-orcid" title="OrcID" href="https://orcid.org/0000-0002-4794-4370"></a>
+        <a class="fa-brands fa-researchgate" title="ResearchGate" href="https://www.researchgate.net/profile/Jake-Vincent-3"></a>
+        <a class="fa-brands fa-github" title="Github" href="https://github.com/jakewvincent/"></a>
+        <a class="fa-brands fa-linkedin" title="LinkedIn" href="https://www.linkedin.com/in/jake-vincent-phd-8279a6ab"></a>
+        <span class="display-on-hover-top">
+            <a class="fa-solid fa-envelope" href=""></a>
+            <code class="email display-on-hover-bottom highlighter-rouge">ved.vwj@ekaj</code>
+        </span>
+    </span>
 </div>
 
-<h3 id="recent-research">Recent research</h3>
+            <nav id="navbar">
+    <ul>
+    
+        <li><a href="/index.html" >Home</a></li>
+    
+        <li><a href="/blog.html" >Blog</a></li>
+    
+        <li><a href="/projects.html" >Projects</a></li>
+    
+        <li><a href="/teaching.html" >Teaching</a></li>
+    
+        <li><a href="/cv.html" >CV</a></li>
+    
+    </ul>
+</nav>
+
+            <div class = "main">
+                <img src=/assets/images/mtdiablo.png class="main-img borderless" title=From Mt. Diablo, 2012>
+                <div id="content">
+                    <h3 id="neovim-plugins">Neovim plugins</h3>
+<div class="sectionnolist">
+
+  <p><a href="https://github.com/jakewvincent/mkdnflow.nvim" class="github-button a-button"><i class="fa-brands fa-github"></i>  Mkdnflow</a></p>
+
+  <p>Initially inspired by <a href="https://github.com/vimwiki/vimwiki">Vimwiki</a>, I designed Mkdnflow to facilitate the fluent navigation and management of markdown-based document repositories (whether that be a notebook or journal, a personal wiki or knowledge base, or pages fed into a static website generator like <a href="https://jekyllrb.com">Jekyll</a> or <a href="https://gohugo.io">Hugo</a>). Its most broadly useful feature is following links to other markdown documents in the repository and backward and forward navigation through thus-opened files using <code class="language-plaintext highlighter-rouge">&lt;Backspace&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;Delete&gt;</code>, respectively. Link-following behavior depends on the kind of target the link points to: links to markdown files are opened in the same window in vim; links prefixed with <code class="language-plaintext highlighter-rouge">file:</code> are opened in the default application for the filetype (any OS); links to websites are opened in the default browser; links to anchors cause the cursor to jump to a matching heading or <a href="https://pandoc.org/MANUAL.html#extension-bracketed_spans">Pandoc-flavored bracketed span</a>. Syntactic and semantic transformation functions can be configured to explicitly transform text into a markdown file’s source name or implicitly transform a markdown file’s link source when following it, affecting the interpretation of paths. A number of other convenience features are included: automatic directory creation, jumping between links with <code class="language-plaintext highlighter-rouge">&lt;Tab&gt;</code>, table creation and formatting, list support, section folding, and more. Written in Lua.</p>
+
+  <p><a href="https://github.com/jakewvincent/texmagic.nvim" class="github-button a-button"><i class="fa-brands fa-github"></i>  TeXmagic</a></p>
+
+  <p>TeXmagic is a very simple Neovim plugin that facilitates LaTeX build engine selection via magic comments like  <code class="language-plaintext highlighter-rouge">%!</code> <code class="language-plaintext highlighter-rouge">TEX</code> <code class="language-plaintext highlighter-rouge">program</code> <code class="language-plaintext highlighter-rouge"> =</code> <code class="language-plaintext highlighter-rouge">xelatex</code>. It is designed with the TexLab LSP server’s <code class="language-plaintext highlighter-rouge">build</code> service in mind, which has to be specified globally in the init file (with the help of the Neovim team’s <a href="https://github.com/neovim/nvim-lspconfig">lspconfig</a> plugin) and cannot be set on a by-project basis. The plugin identifies magic comments at the very top of a <code class="language-plaintext highlighter-rouge">.tex</code> document and passes the settings you configure for the given program name to the build service.</p>
+
+</div>
+
+<h3 id="research">Research</h3>
 <div class="sectionnolist">
 
   <h4 id="extraction-from-relative-clauses-in-english">Extraction from relative clauses in English</h4>
@@ -56,15 +111,9 @@
   <p>In my <a href="https://cloudfront.escholarship.org/dist/prd/content/qt0jq7096r/qt0jq7096r.pdf?t=p3qtng">MA thesis</a>, I argue that the head NP in Chamorro’s internally headed RCs (IHRCs) is merged within the RC as a DP headed by the null operator, after which the D<sup>0</sup> moves to the specifier position of the relative clause CP, abstracting over the RC-internal head and stranding the nominal restrictor. The analysis explains the island sensitivity of the IHRC formation rule, the mandatory presence of the linker <em>na</em> directly before the head NP, certain interpretive effects, and their surface similarity to stranding patterns in other A-bar contexts in the language. This work was recently cited in <a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=cxH9DwAAQBAJ&amp;oi=fnd&amp;pg=PR9&amp;dq=cinque+syntax+of+relative+clauses&amp;ots=LoK2L7ZQQG&amp;sig=RDRX0sev2y1eqiYBkhT7jgJyuLg">Cinque’s (2020) book on the syntax of relative clauses</a>.</p>
 </div>
 
-<h3 id="other-projects">Other projects</h3>
+<h3 id="miscellaneous-projects">Miscellaneous projects</h3>
 
 <div class="sectionnolist">
-<button class="expand-btn"><h4>Markdown journal/wiki management plugin for Vim</h4></button>
-<div class="expand-content">
-
-    <p><a href="https://github.com/jakewvincent/mkdnflow.nvim" class="github-button a-button">See on GitHub</a></p>
-
-  </div>
 
 <button class="expand-btn"><h4>Syllable parser</h4></button>
 <div class="expand-content">
@@ -164,4 +213,11 @@ font-variant: small-caps;
 
 <script src="assets/scripts/expand.js"></script>
 
-:ET
+
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <footer>Last updated March 29, 2022</footer>
+        </div>
+    </body>
+</html>

@@ -179,7 +179,6 @@ a.image:hover {/* Prevent the above styling when the <a> tag is of class "image"
     #banner #name {/* Allow my name to appear on the same line as my title (see below) */
     }
     #banner .personal-title {/* Allow my title to appear on the same line as my name (see above) */
-        margin-bottom: 1em;
     }
     nav {/* Center the nav bar */
         text-align: center;
@@ -219,10 +218,12 @@ a.image:hover {/* Prevent the above styling when the <a> tag is of class "image"
 
 #banner {/* Give the banner a bottom border */
     border-bottom: 1px solid #cacfd2;
+    overflow: auto;
 }
 
 #banner #name {/* Float the name heading to the left */
     font-family: "Merriweather", serif;
+    margin-bottom: 0.5em;
 }
 
 #banner .personal-title {/* ...and the title heading to the left */
@@ -231,6 +232,7 @@ a.image:hover {/* Prevent the above styling when the <a> tag is of class "image"
     color: #cacfd2;
     font-weight: bold;
     font-family: "Merriweather Sans", sans-serif;
+    margin-bottom: 1.25em;
 }
 
 #banner .social { /* ...and social icons to the right */
@@ -238,21 +240,67 @@ a.image:hover {/* Prevent the above styling when the <a> tag is of class "image"
     float: right;
 }
 
-#banner .social .fa-brands {
+.social a {
     color: #cacfd2;
     font-size: 1.25em;
     margin-left: 0.5em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: 1.25em;
 }
 
 #banner .social .fa-brands:first-child {
     margin-left: 0;
 }
 
-#banner .fa-brands:hover {
-    color: #000;
+#banner .social .fa-solid {
+    color: #a7cfd2;
+}
+
+#banner .social .fa-solid:hover {
+    color: #4ab6b9;
+}
+
+#banner .fa-brands:hover, .fa-solid:hover {
     border-bottom: none;
+}
+
+#banner .fa-orcid:hover {
+    color: #a6ce39;
+}
+
+#banner .fa-researchgate:hover {
+    color: #00ccbb;
+}
+
+#banner .fa-linkedin:hover {
+    color: #0a66c2;
+}
+
+#banner .fa-github:hover {
+    color: #24292f;
+}
+
+#banner .display-on-hover-bottom {
+    display: inline-block;
+    position: absolute;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    border: 1px solid #cacfd2;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#banner .display-on-hover-top:hover .display-on-hover-bottom {
+    opacity: 1;
+    height: inherit;
+    transition: opacity 0.33s ease-in;
+    padding: 0.5em;
+    margin-top: -0.65em;
+    unicode-bidi: bidi-override;
+    direction: rtl;
 }
 
 .divFill {			/* Keep banner separate from lower content */
@@ -508,6 +556,10 @@ margin-left: auto;
 }
 
 .expand-btn h4 {
+    display: inline-block;
+}
+
+.expand-btn h3 {
     display: inline-block;
 }
 
