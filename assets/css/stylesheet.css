@@ -94,7 +94,7 @@ a.image:hover {/* Prevent the above styling when the <a> tag is of class "image"
         margin-right: auto;
         width: 100%;
     }
-    #banner .display-on-hover-top:active .display-on-hover-bottom {
+    #banner .display-on-hover-top:hover, .display-on-hover-top:active .display-on-hover-bottom {
         opacity: 1;
         height: inherit;
         transition: opacity 0.33s ease-in;
