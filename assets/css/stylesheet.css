@@ -103,6 +103,12 @@ a.image:hover {/* Prevent the above styling when the <a> tag is of class "image"
         unicode-bidi: bidi-override;
         direction: rtl;
     }
+    #banner .social #mail-icon {
+        color: #cacfd2;
+    }
+    #banner .social #mail-icon:hover {
+        color: #0078d4;
+    }
     nav {/* Center the nav bar */
         text-align: center;
         width: 100%;
