@@ -51,9 +51,9 @@
 
   <p>Initially inspired by <a href="https://github.com/vimwiki/vimwiki">Vimwiki</a>, I designed Mkdnflow to facilitate the fluent navigation and management of markdown-based document repositories (whether that be a notebook or journal, a personal wiki or knowledge base, or pages fed into a static website generator like <a href="https://jekyllrb.com">Jekyll</a> or <a href="https://gohugo.io">Hugo</a>). Its most broadly useful feature is following links to other markdown documents in the repository and backward and forward navigation through thus-opened files using <code class="language-plaintext highlighter-rouge">&lt;Backspace&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;Delete&gt;</code>, respectively. Link-following behavior depends on the kind of target the link points to: links to markdown files are opened in the same window in vim; links prefixed with <code class="language-plaintext highlighter-rouge">file:</code> are opened in the default application for the filetype (any OS); links to websites are opened in the default browser; links to anchors cause the cursor to jump to a matching heading or <a href="https://pandoc.org/MANUAL.html#extension-bracketed_spans">Pandoc-flavored bracketed span</a>. Syntactic and semantic transformation functions can be configured to explicitly transform text into a markdown file’s source name or implicitly transform a markdown file’s link source when following it, affecting the interpretation of paths. A number of other convenience features are included: automatic directory creation, jumping between links with <code class="language-plaintext highlighter-rouge">&lt;Tab&gt;</code>, table creation and formatting, list support, section folding, and more. Written in Lua.</p>
 
-  <p><a href="https://github.com/jakewvincent/texmagic.nvim" class="github-button a-button"><i class="fa-brands fa-github"></i>  TeXmagic</a></p>
+  <p><a href="https://github.com/jakewvincent/texmagic.nvim" class="github-button a-button"><i class="fa-brands fa-github"></i>  T<sub>E</sub>Xmagic</a></p>
 
-  <p>TeXmagic is a very simple Neovim plugin that facilitates LaTeX build engine selection via magic comments like  <code class="language-plaintext highlighter-rouge">%!</code> <code class="language-plaintext highlighter-rouge">TEX</code> <code class="language-plaintext highlighter-rouge">program</code> <code class="language-plaintext highlighter-rouge"> =</code> <code class="language-plaintext highlighter-rouge">xelatex</code>. It is designed with the TexLab LSP server’s <code class="language-plaintext highlighter-rouge">build</code> service in mind, which has to be specified globally in the init file (with the help of the Neovim team’s <a href="https://github.com/neovim/nvim-lspconfig">lspconfig</a> plugin) and cannot be set on a by-project basis. The plugin identifies magic comments at the very top of a <code class="language-plaintext highlighter-rouge">.tex</code> document and passes the settings you configure for the given program name to the build service.</p>
+  <p>T<sub>E</sub>Xmagic is a very simple Neovim plugin that enables <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> build engine selection via magic comments (e.g. <code class="language-plaintext highlighter-rouge">%! TEX program = xelatex</code>). It is designed with the TexLab LSP server’s <code class="language-plaintext highlighter-rouge">build</code> service in mind, which has to be specified globally in the init file (with the help of the Neovim team’s <a href="https://github.com/neovim/nvim-lspconfig">lspconfig</a> plugin) and cannot be set on a by-project basis. The plugin identifies magic comments at the very top of a <code class="language-plaintext highlighter-rouge">.tex</code> document and passes the settings you configure for the given program name to the build service.</p>
 
 </div>
 
@@ -61,14 +61,14 @@
 <div class="sectionnolist">
 
   <h4 id="extraction-from-relative-clauses-in-english">Extraction from relative clauses in English</h4>
-  <p><a href="https://www.proquest.com/openview/760063f3ff8277bc8b1a19ca3f701e6e/" class="download-pdf a-button">Download dissertation</a> <a href="notebooks.html" class="r-notebook a-button">R Notebooks</a> <a href="https://doi.org/10.3390/languages7020117" class="download-pdf a-button">Download <em>Languages</em> manuscript</a></p>
+  <p><a href="https://www.proquest.com/openview/760063f3ff8277bc8b1a19ca3f701e6e/" class="download-pdf a-button"><i class="fa-solid fa-file"></i>  Dissertation</a> <a href="notebooks.html" class="r-notebook a-button"><i class="fa-brands fa-r-project"></i>  Notebooks</a> <a href="https://doi.org/10.3390/languages7020117" class="download-pdf a-button"><i class="fa-solid fa-file"></i>  <em>Languages</em> manuscript</a></p>
 
   <p>Relative clauses (RCs) are a prototypical example of a strong island, but certain languages have been shown to selectively tolerate RC subextraction (Mainland Scandinavian languages, certain Romance languages, Hebrew, and others). For subextraction to be licit in these languages, the DP that hosts the RC typically needs to be the pivot of a canonical or non-canonical existential, or otherwise non-presupposed.</p>
 
   <p>It hasn’t been heavily researched whether these patterns extend to English as well, but some research suggests that it does (see, e.g., <a href="http://www.jstor.org/stable/4178357">Chung &amp; McCloskey 1983</a> and <a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=DUAIAQAAQBAJ&amp;oi=fnd&amp;pg=PA239&amp;dq=kush+microvariation+in+islands&amp;ots=0ABychxQnB&amp;sig=pgZvVqUa2JsscxB_D05KuZ9fSt8#v=onepage&amp;q=kush%20microvariation%20in%20islands&amp;f=false">Kush et al. 2013</a>). I am currently using experimental methods to investigate whether English also selectively tolerates RC subextraction. So far, I have found that English RCs are substantially more transparent to extraction in existentials, as well as in predicate nominals (as found by <a href="https://muse.jhu.edu/article/690046/pdf?casa_token=wBovu7pEZL4AAAAA:LnyFnb7FGW7T2e9nR6rx_UTE_-qQAHXBSaYbTjXJtR2KEVyCYlXZ7JrQEPMfIEuxqKNf9Otung">Sichel 2018</a> for Hebrew). I have written about these results <a href="assets/documents/jwv_rc_subext_eng.pdf">here</a>, and you can find my experiment notebooks <a href="notebooks.html">here</a>. I plan to investigate the online processing of RCs in these environments, and to address the question of whether these cases of improved RC subextraction should be generated by the grammar.</p>
 
   <h4 id="internally-headed-relative-clauses-in-chamorro">Internally headed relative clauses in Chamorro</h4>
-  <p><a href="https://cloudfront.escholarship.org/dist/prd/content/qt0jq7096r/qt0jq7096r.pdf?t=p3qtng" class="download-pdf a-button">Download MA thesis</a></p>
+  <p><a href="https://cloudfront.escholarship.org/dist/prd/content/qt0jq7096r/qt0jq7096r.pdf?t=p3qtng" class="download-pdf a-button"><i class="fa-solid fa-file"></i>  Master’s thesis</a></p>
 
   <p>Chamorro has a typologically rare construction in which a noun phrase being modified by a relative clause surfaces within that relative clause, as shown below.</p>
 
@@ -118,7 +118,7 @@
 <button class="expand-btn"><h4>Syllable parser</h4></button>
 <div class="expand-content">
 
-    <p><a href="https://github.com/jakewvincent/R-syllable-parser" class="github-button a-button">See R implementation on GitHub</a></p>
+    <p><a href="https://github.com/jakewvincent/R-syllable-parser" class="github-button a-button"><i class="fa-brands fa-github"></i>  View source</a></p>
 
     <p>I am currently working on a syllable parser that takes input in IPA characters and produces a syllabified output. Currently, the function follows essentially the same procedure that students are taught to follow in Phonology 1. It first identifies syllable nuclei (including diphthongs), then parses preceding consonants into the syllable of the following nucleus segment by segment (leaving segments unparsed if they don’t form a legal onset cluster), and finally parsing remaining unparsed segments into the coda of the syllable of the preceding nucleus.</p>
 
@@ -128,6 +128,8 @@
 
 <button class="expand-btn"><h4>HTML interlinear gloss generator</h4></button>
 <div class="expand-content">
+
+    <p><a href="https://github.com/jakewvincent/HTML-interlinear-gloss" class="github-button a-button"><i class="fa-brands fa-github"></i>  View source</a></p>
 
     <p>The following tool (written in JavaScript, HTML, and CSS) takes word, gloss, and free translation data and converts it into HTML that will display as an interlinear gloss when pasted into your website HTML file.</p>
 
@@ -206,7 +208,9 @@ font-variant: small-caps;
 <button class="expand-btn"><h4>Rhyme in Chamorro poetry</h4></button>
 <div class="expand-content">
 
-    <p>In an undergraduate project, I analyzed 106 of Joaquin F. Borja’s rhyme pairs from the collection of Chamorro literature <a href="http://books.google.com/books/about/Estreyas_Marianas.html?id=1oAmAQAAIAAJ"><em>Istreyas Marianas: Chamorro</em></a>. Approximately 25% of the rhyme pairs there have strict rhyme (= identical from the vowel of the stressed syllable to the end of the word), and the remainder have what I called <em>abstract rhyme</em>, which seems to creatively utilize abstract associations between classes of segments established by the phonological processes in Chamorro grammar. The use of abstract rhyme results in a broad (yet orderly) range of licit rhyming pairs. (<a href="assets/documents/champohandout.pdf">handout</a>)</p>
+    <p><a href="/assets/documents/champohandout.pdf" class="download-pdf a-button"><i class="fa-solid fa-file"></i>  Handout</a></p>
+
+    <p>In an undergraduate project, I analyzed 106 of Joaquin F. Borja’s rhyme pairs from the collection of Chamorro literature <a href="http://books.google.com/books/about/Estreyas_Marianas.html?id=1oAmAQAAIAAJ"><em>Istreyas Marianas: Chamorro</em></a>. Approximately 25% of the rhyme pairs there have strict rhyme (= identical from the vowel of the stressed syllable to the end of the word), and the remainder have what I called <em>abstract rhyme</em>, which seems to creatively utilize abstract associations between classes of segments established by the phonological processes in Chamorro grammar. The use of abstract rhyme results in a broad (yet orderly) range of licit rhyming pairs.</p>
 
   </div>
 </div>
@@ -217,7 +221,7 @@ font-variant: small-caps;
                 </div>
             </div>
             <div class="spacer"></div>
-            <footer>Last updated March 29, 2022</footer>
+            <footer>Last updated August 27, 2022</footer>
         </div>
     </body>
 </html>

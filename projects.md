@@ -1,6 +1,6 @@
 ---
 title: Research & Projects
-updated: 2022-03-29
+updated: 2022-08-27
 layout: default
 main-img: /assets/images/mtdiablo.png
 main-img-title: From Mt. Diablo, 2012
@@ -13,9 +13,9 @@ main-img-title: From Mt. Diablo, 2012
 
 Initially inspired by [Vimwiki](https://github.com/vimwiki/vimwiki), I designed Mkdnflow to facilitate the fluent navigation and management of markdown-based document repositories (whether that be a notebook or journal, a personal wiki or knowledge base, or pages fed into a static website generator like [Jekyll](https://jekyllrb.com) or [Hugo](https://gohugo.io)). Its most broadly useful feature is following links to other markdown documents in the repository and backward and forward navigation through thus-opened files using `<Backspace>` and `<Delete>`, respectively. Link-following behavior depends on the kind of target the link points to: links to markdown files are opened in the same window in vim; links prefixed with `file:` are opened in the default application for the filetype (any OS); links to websites are opened in the default browser; links to anchors cause the cursor to jump to a matching heading or [Pandoc-flavored bracketed span](https://pandoc.org/MANUAL.html#extension-bracketed_spans). Syntactic and semantic transformation functions can be configured to explicitly transform text into a markdown file's source name or implicitly transform a markdown file's link source when following it, affecting the interpretation of paths. A number of other convenience features are included: automatic directory creation, jumping between links with `<Tab>`, table creation and formatting, list support, section folding, and more. Written in Lua.
 
-[<i class="fa-brands fa-github"></i>&nbsp;&nbsp;TeXmagic](https://github.com/jakewvincent/texmagic.nvim){: .github-button .a-button}
+[<i class="fa-brands fa-github"></i>&nbsp;&nbsp;T<sub>E</sub>Xmagic](https://github.com/jakewvincent/texmagic.nvim){: .github-button .a-button}
 
-TeXmagic is a very simple Neovim plugin that facilitates LaTeX build engine selection via magic comments like&nbsp; `%!`&nbsp;`TEX`&nbsp;`program`&nbsp;` =`&nbsp;`xelatex`. It is designed with the TexLab LSP server's `build` service in mind, which has to be specified globally in the init file (with the help of the Neovim team's [lspconfig](https://github.com/neovim/nvim-lspconfig) plugin) and cannot be set on a by-project basis. The plugin identifies magic comments at the very top of a `.tex` document and passes the settings you configure for the given program name to the build service.
+T<sub>E</sub>Xmagic is a very simple Neovim plugin that enables <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> build engine selection via magic comments (e.g. `%! TEX program = xelatex`). It is designed with the TexLab LSP server's `build` service in mind, which has to be specified globally in the init file (with the help of the Neovim team's [lspconfig](https://github.com/neovim/nvim-lspconfig) plugin) and cannot be set on a by-project basis. The plugin identifies magic comments at the very top of a `.tex` document and passes the settings you configure for the given program name to the build service.
 
 </div>
 
@@ -23,14 +23,14 @@ TeXmagic is a very simple Neovim plugin that facilitates LaTeX build engine sele
 <div class="sectionnolist" markdown="1">
 
 #### Extraction from relative clauses in English
-[Download dissertation](https://www.proquest.com/openview/760063f3ff8277bc8b1a19ca3f701e6e/){: .download-pdf .a-button} [R Notebooks](notebooks.html){: .r-notebook .a-button} [Download _Languages_ manuscript](https://doi.org/10.3390/languages7020117){: .download-pdf .a-button}
+[<i class="fa-solid fa-file"></i>&nbsp;&nbsp;Dissertation](https://www.proquest.com/openview/760063f3ff8277bc8b1a19ca3f701e6e/){: .download-pdf .a-button} [<i class="fa-brands fa-r-project"></i>&nbsp;&nbsp;Notebooks](notebooks.html){: .r-notebook .a-button} [<i class="fa-solid fa-file"></i>&nbsp;&nbsp;_Languages_ manuscript](https://doi.org/10.3390/languages7020117){: .download-pdf .a-button}
 
 Relative clauses (RCs) are a prototypical example of a strong island, but certain languages have been shown to selectively tolerate RC subextraction (Mainland Scandinavian languages, certain Romance languages, Hebrew, and others). For subextraction to be licit in these languages, the DP that hosts the RC typically needs to be the pivot of a canonical or non-canonical existential, or otherwise non-presupposed.
 						
 It hasn't been heavily researched whether these patterns extend to English as well, but some research suggests that it does (see, e.g., [Chung & McCloskey 1983](http://www.jstor.org/stable/4178357) and [Kush et al. 2013](https://books.google.com/books?hl=en&lr=&id=DUAIAQAAQBAJ&oi=fnd&pg=PA239&dq=kush+microvariation+in+islands&ots=0ABychxQnB&sig=pgZvVqUa2JsscxB_D05KuZ9fSt8#v=onepage&q=kush%20microvariation%20in%20islands&f=false)). I am currently using experimental methods to investigate whether English also selectively tolerates RC subextraction. So far, I have found that English RCs are substantially more transparent to extraction in existentials, as well as in predicate nominals (as found by [Sichel 2018](https://muse.jhu.edu/article/690046/pdf?casa_token=wBovu7pEZL4AAAAA:LnyFnb7FGW7T2e9nR6rx_UTE_-qQAHXBSaYbTjXJtR2KEVyCYlXZ7JrQEPMfIEuxqKNf9Otung) for Hebrew). I have written about these results [here](assets/documents/jwv_rc_subext_eng.pdf), and you can find my experiment notebooks [here](notebooks.html). I plan to investigate the online processing of RCs in these environments, and to address the question of whether these cases of improved RC subextraction should be generated by the grammar.
 
 #### Internally headed relative clauses in Chamorro
-[Download MA thesis](https://cloudfront.escholarship.org/dist/prd/content/qt0jq7096r/qt0jq7096r.pdf?t=p3qtng){: .download-pdf .a-button}
+[<i class="fa-solid fa-file"></i>&nbsp;&nbsp;Master's thesis](https://cloudfront.escholarship.org/dist/prd/content/qt0jq7096r/qt0jq7096r.pdf?t=p3qtng){: .download-pdf .a-button}
 
 Chamorro has a typologically rare construction in which a noun phrase being modified by a relative clause surfaces within that relative clause, as shown below.
 
@@ -80,7 +80,7 @@ In my [MA thesis](https://cloudfront.escholarship.org/dist/prd/content/qt0jq7096
 <button class="expand-btn"><h4>Syllable parser</h4></button>
 <div class="expand-content" markdown="1">
 
-[See R implementation on GitHub](https://github.com/jakewvincent/R-syllable-parser){: .github-button .a-button}
+[<i class="fa-brands fa-github"></i>&nbsp;&nbsp;View source](https://github.com/jakewvincent/R-syllable-parser){: .github-button .a-button}
 
 I am currently working on a syllable parser that takes input in IPA characters and produces a syllabified output. Currently, the function follows essentially the same procedure that students are taught to follow in Phonology 1. It first identifies syllable nuclei (including diphthongs), then parses preceding consonants into the syllable of the following nucleus segment by segment (leaving segments unparsed if they don't form a legal onset cluster), and finally parsing remaining unparsed segments into the coda of the syllable of the preceding nucleus.
 
@@ -91,6 +91,8 @@ The program also includes an integration with the [Carnegie Mellon University Pr
 <button class="expand-btn"><h4>HTML interlinear gloss generator</h4></button>
 <div class="expand-content" markdown="1">
 
+[<i class="fa-brands fa-github"></i>&nbsp;&nbsp;View source](https://github.com/jakewvincent/HTML-interlinear-gloss){: .github-button .a-button }
+
 The following tool (written in JavaScript, HTML, and CSS) takes word, gloss, and free translation data and converts it into HTML that will display as an interlinear gloss when pasted into your website HTML file.
 
 {% include gloss_generator.html %}
@@ -100,7 +102,9 @@ The following tool (written in JavaScript, HTML, and CSS) takes word, gloss, and
 <button class="expand-btn"><h4>Rhyme in Chamorro poetry</h4></button>
 <div class="expand-content" markdown="1">
 
-In an undergraduate project, I analyzed 106 of Joaquin F. Borja's rhyme pairs from the collection of Chamorro literature [*Istreyas Marianas: Chamorro*](http://books.google.com/books/about/Estreyas_Marianas.html?id=1oAmAQAAIAAJ). Approximately 25% of the rhyme pairs there have strict rhyme (= identical from the vowel of the stressed syllable to the end of the word), and the remainder have what I called *abstract rhyme*, which seems to creatively utilize abstract associations between classes of segments established by the phonological processes in Chamorro grammar. The use of abstract rhyme results in a broad (yet orderly) range of licit rhyming pairs. ([handout](assets/documents/champohandout.pdf))
+[<i class="fa-solid fa-file"></i>&nbsp;&nbsp;Handout](/assets/documents/champohandout.pdf){: .download-pdf .a-button}
+
+In an undergraduate project, I analyzed 106 of Joaquin F. Borja's rhyme pairs from the collection of Chamorro literature [*Istreyas Marianas: Chamorro*](http://books.google.com/books/about/Estreyas_Marianas.html?id=1oAmAQAAIAAJ). Approximately 25% of the rhyme pairs there have strict rhyme (= identical from the vowel of the stressed syllable to the end of the word), and the remainder have what I called *abstract rhyme*, which seems to creatively utilize abstract associations between classes of segments established by the phonological processes in Chamorro grammar. The use of abstract rhyme results in a broad (yet orderly) range of licit rhyming pairs.
 
 </div>
 </div>
