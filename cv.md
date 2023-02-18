@@ -1,7 +1,7 @@
 ---
 title: CV
 layout: default
-updated: 2022-08-13
+updated: 2023-02-18
 main-img: assets/images/jwv_x.jpg
 main-img-title: Jake W. Vincent, PhD
 ---
