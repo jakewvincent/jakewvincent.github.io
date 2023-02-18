@@ -17,7 +17,7 @@ main-img-title: Jake W. Vincent, PhD
 {: .sectionnolist}
 
 ### Positions Held
-2022-current: Language Engineer I, Amazon Transcribe (Contact Lens), AiData team, AI Labs, Amazon Web Services.\\
+2022-current: Language Engineer II, Amazon Transcribe (Contact Lens), AiData team, AI Labs, Amazon Web Services.\\
 2021-2022: Language Engineer (contract), Amazon Lex (NLU pod), AiData team, AI Labs, Amazon Web Services.\\
 2021-2022: Lecturer in Linguistics, UC Santa Cruz.
 {: .sectionnolist }
