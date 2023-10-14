@@ -1,7 +1,7 @@
 ---
 title: CV
 layout: default
-updated: 2023-02-18
+updated: 2023-10-13
 main-img: assets/images/jwv_x.jpg
 main-img-title: Jake W. Vincent, PhD
 ---
@@ -23,6 +23,7 @@ main-img-title: Jake W. Vincent, PhD
 {: .sectionnolist }
 
 ### Publications
+[Tang, Liyan](https://www.tangliyan.com/)*, Igor Shalyminov, Amy Ming-Wei Wong, Jon Burnsky, **Jake W. Vincent**, Yu'an Yang, Siffi Singh, Song Feng, Hwanjun Song, Hang Su, Justin Sun, Yi Zhang, Saab Mansour, and Kathleen McKeown. 2023. Manuscript in preparation. TofuEval: Evaluating Factual Consistency of Topic-Focused Dialogue Summarization. University of Texas at Austin and AWS AI Labs.\\
 **Vincent, Jake W.**, [Ivy Sichel](https://ivysichel.sites.ucsc.edu), and [Matthew W. Wagers](https://people.ucsc.edu/~mwagers). 2022. Extraction from English RCs and Cross-Linguistic Similarities in the Environments That Facilitate Extraction. _Languages_ 7: 117. [https://doi.org/10.3390/languages7020117](https://doi.org/10.3390/languages7020117)
 {: .sectionnolist}
 
@@ -106,10 +107,9 @@ Linguistic Society of America
 {: .sectionnolist}
 
 ### Computer Skills
-Web: HTML, CSS, Jekyll\\
+Programming/scripting: Python, R, Lua, Bash/Zsh\\
+Web: HTML, CSS, JavaScript, Liquid/Jinja templating, \\
 Document preparation: <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span>\\
-Programming/scripting: R, Python, Lua, Bash/Zsh\\
-Remote computing technologies: EC2, SSH, HPC clusters
-Version control: Git\\
-Office: Excel, Access
+Remote and cloud computation: AWS, SSH & SFTP, HPC clusters
+Version control: Git
 {: .sectionnolist}
