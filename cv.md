@@ -23,7 +23,7 @@ main-img-title: Jake W. Vincent, PhD
 {: .sectionnolist }
 
 ### Publications
-[Tang, Liyan](https://www.tangliyan.com/)*, Igor Shalyminov, Amy Ming-Wei Wong, Jon Burnsky, **Jake W. Vincent**, Yu'an Yang, Siffi Singh, Song Feng, Hwanjun Song, Hang Su, Justin Sun, Yi Zhang, Saab Mansour, and Kathleen McKeown. 2023. Manuscript in preparation. TofuEval: Evaluating Factual Consistency of Topic-Focused Dialogue Summarization. University of Texas at Austin and AWS AI Labs.\\
+[Tang, Liyan](https://www.tangliyan.com/), Igor Shalyminov, Amy Ming-Wei Wong, Jon Burnsky, **Jake W. Vincent**, Yu'an Yang, Siffi Singh, Song Feng, Hwanjun Song, Hang Su, Justin Sun, Yi Zhang, Saab Mansour, and Kathleen McKeown. 2023. Manuscript in preparation. TofuEval: Evaluating Factual Consistency of Topic-Focused Dialogue Summarization. University of Texas at Austin and AWS AI Labs.\\
 **Vincent, Jake W.**, [Ivy Sichel](https://ivysichel.sites.ucsc.edu), and [Matthew W. Wagers](https://people.ucsc.edu/~mwagers). 2022. Extraction from English RCs and Cross-Linguistic Similarities in the Environments That Facilitate Extraction. _Languages_ 7: 117. [https://doi.org/10.3390/languages7020117](https://doi.org/10.3390/languages7020117)
 {: .sectionnolist}
 
