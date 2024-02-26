@@ -1,7 +1,7 @@
 ---
 title: CV
 layout: default
-updated: 2023-10-13
+updated: 2024-02-26
 main-img: assets/images/jwv_x.jpg
 main-img-title: Jake W. Vincent, PhD
 ---
@@ -23,8 +23,8 @@ main-img-title: Jake W. Vincent, PhD
 {: .sectionnolist }
 
 ### Publications
-[Tang, Liyan](https://www.tangliyan.com/), Igor Shalyminov, Amy Ming-Wei Wong, Jon Burnsky, **Jake W. Vincent**, Yu'an Yang, Siffi Singh, Song Feng, Hwanjun Song, Hang Su, Justin Sun, Yi Zhang, Saab Mansour, and Kathleen McKeown. 2023. Manuscript in preparation. TofuEval: Evaluating Factual Consistency of Topic-Focused Dialogue Summarization. University of Texas at Austin and AWS AI Labs.\\
-**Vincent, Jake W.**, [Ivy Sichel](https://ivysichel.sites.ucsc.edu), and [Matthew W. Wagers](https://people.ucsc.edu/~mwagers). 2022. Extraction from English RCs and Cross-Linguistic Similarities in the Environments That Facilitate Extraction. _Languages_ 7: 117. [https://doi.org/10.3390/languages7020117](https://doi.org/10.3390/languages7020117)
+[Tang, Liyan](https://www.tangliyan.com/), Igor Shalyminov, Amy Ming-Wei Wong, Jon Burnsky, **Jake W. Vincent**, Yu'an Yang, Siffi Singh, Song Feng, Hwanjun Song, Hang Su, Justin Sun, Yi Zhang, Saab Mansour, and Kathleen McKeown. 2023. TofuEval: Evaluating Factual Consistency of Topic-Focused Dialogue Summarization. University of Texas at Austin and AWS AI Labs. NAACL 2024 Conference Submission. ([paper](https://arxiv.org/abs/2402.13249))\\
+**Vincent, Jake W.**, [Ivy Sichel](https://ivysichel.sites.ucsc.edu), and [Matthew W. Wagers](https://people.ucsc.edu/~mwagers). 2022. Extraction from English RCs and Cross-Linguistic Similarities in the Environments That Facilitate Extraction. _Languages_ 7: 117. ([paper](https://doi.org/10.3390/languages7020117))
 {: .sectionnolist}
 
 ### Awards and Honors
