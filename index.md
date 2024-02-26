@@ -1,12 +1,12 @@
 ---
 title: Home
 layout: default
-updated: 2023-10-13
+updated: 2024-02-26
 main-img: assets/images/shasta_airport.png
 main-img-title: Shasta airport, 2010
 ---
 
-Hi! I'm a generative linguist and language data professional with a background in syntax, semantics, and psycholinguistics. I currently work as a Language Engineer at Amazon Web Services, where I support automated call summarization and theme analysis features for [Contact Lens for Amazon Connect](https://aws.amazon.com/connect/contact-lens/). Previously, I held a contract position on the [Amazon Lex](https://aws.amazon.com/lex/) team, where I worked on language expansion for Lex and oversaw two performance evaluation tasks for the [Automated Chatbot Designer](https://aws.amazon.com/lex/chatbot-designer/).
+I'm a language data professional with formal training in generative linguistics and an academic background in syntax, semantics, and psycholinguistics and experimental methodologies. I am currently a Language Engineer II at Amazon Web Services, where I support NLU features for [Amazon Transcribe](https://aws.amazon.com/transcribe/), including those bundled under [Contact Lens for Amazon Connect](https://aws.amazon.com/connect/contact-lens/) as well as [Transcribe Call Analytics](https://aws.amazon.com/transcribe/call-analytics/). I previously held a contract position on the [Amazon Lex](https://aws.amazon.com/lex/) team, where I worked on language expansion for Lex and oversaw performance evaluation tasks for the [Automated Chatbot Designer](https://aws.amazon.com/lex/chatbot-designer/).
 
 I'm the developer and maintainer of [Mkdnflow](https://github.com/jakewvincent/mkdnflow.nvim), a plugin for the Neovim source code editor that enhances the navigation and management of any kind of collection of markdown files within Neovim (notebooks, journals, wikis, pre-rendered websites, etc.).
 
