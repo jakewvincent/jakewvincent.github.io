@@ -29,6 +29,7 @@ main-img-title: Jake W. Vincent, PhD
 
 ### Community Engagement
 2024: Humanists in Tech Alumni Panel, The Humanities Institute, UC Santa Cruz. Humanizing Technology Project. March 6. ([flyer](assets/documents/2024_humanists_in_tech_alumni_panel.pdf))
+{: .sectionnolist}
 
 ### Awards and Honors
 2020: Outstanding Teaching Assistant Award, Graduate Division and Department of Linguistics, UC Santa Cruz. For 2019–2020 school year.\\
