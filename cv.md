@@ -1,7 +1,7 @@
 ---
 title: CV
 layout: default
-updated: 2024-02-26
+updated: 2024-03-07
 main-img: assets/images/jwv_x.jpg
 main-img-title: Jake W. Vincent, PhD
 ---
@@ -23,9 +23,12 @@ main-img-title: Jake W. Vincent, PhD
 {: .sectionnolist }
 
 ### Publications
-[Tang, Liyan](https://www.tangliyan.com/), Igor Shalyminov, Amy Ming-Wei Wong, Jon Burnsky, **Jake W. Vincent**, Yu'an Yang, Siffi Singh, Song Feng, Hwanjun Song, Hang Su, Justin Sun, Yi Zhang, Saab Mansour, and Kathleen McKeown. 2023. TofuEval: Evaluating Factual Consistency of Topic-Focused Dialogue Summarization. University of Texas at Austin and AWS AI Labs. NAACL 2024 Conference Submission. ([paper](https://arxiv.org/abs/2402.13249))\\
+[Tang, Liyan](https://www.tangliyan.com/), [Igor Shalyminov](https://shalyminov.com/), [Amy Ming-Wei Wong](https://www.linkedin.com/in/amy-wong-b660b2107/), [Jon Burnsky](https://jburnsky.github.io/linguist/), **Jake W. Vincent**, [Yu'an Yang](https://yu-an.github.io/), [Siffi Singh](https://www.amazon.science/author/siffi-singh), [Song Feng](https://songfeng.github.io/), [Hwanjun Song](https://songhwanjun.github.io/), [Hang Su](https://www.linkedin.com/in/hang-su-654a5543/), [Justin Sun](https://www.linkedin.com/in/justin-lj-sun/), [Yi Zhang](https://www.linkedin.com/in/yi-zhang-8175392/), [Saab Mansour](https://www.linkedin.com/in/saabmansour/), and [Kathleen McKeown](http://www1.cs.columbia.edu/~kathy/). 2023. TofuEval: Evaluating Factual Consistency of Topic-Focused Dialogue Summarization. University of Texas at Austin and AWS AI Labs. NAACL 2024 Conference Submission. ([paper](https://arxiv.org/abs/2402.13249))\\
 **Vincent, Jake W.**, [Ivy Sichel](https://ivysichel.sites.ucsc.edu), and [Matthew W. Wagers](https://people.ucsc.edu/~mwagers). 2022. Extraction from English RCs and Cross-Linguistic Similarities in the Environments That Facilitate Extraction. _Languages_ 7: 117. ([paper](https://doi.org/10.3390/languages7020117))
 {: .sectionnolist}
+
+### Community Engagement
+2024: Humanists in Tech Alumni Panel, The Humanities Institute, UC Santa Cruz. Humanizing Technology Project. March 6. ([flyer](assets/documents/2024_humanists_in_tech_alumni_panel.pdf))
 
 ### Awards and Honors
 2020: Outstanding Teaching Assistant Award, Graduate Division and Department of Linguistics, UC Santa Cruz. For 2019–2020 school year.\\
