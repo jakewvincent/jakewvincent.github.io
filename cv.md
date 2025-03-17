@@ -1,7 +1,7 @@
 ---
 title: CV
 layout: default
-updated: 2024-03-07
+updated: 2025-03-16
 main-img: assets/images/jwv_x.jpg
 main-img-title: Jake W. Vincent, PhD
 ---
@@ -17,12 +17,14 @@ main-img-title: Jake W. Vincent, PhD
 {: .sectionnolist}
 
 ### Positions Held
-2022-current: Language Engineer II, Amazon Transcribe (Contact Lens), AiData team, AI Labs, Amazon Web Services.\\
+2022-current: Language Engineer II, Amazon Transcribe, MLP Data team, Amazon Web Services.\\
 2021-2022: Language Engineer (contract), Amazon Lex (NLU pod), AiData team, AI Labs, Amazon Web Services.\\
 2021-2022: Lecturer in Linguistics, UC Santa Cruz.
 {: .sectionnolist }
 
-### Publications
+### Publications & Research Activities
+[Koupaee, Mahnaz](https://www3.cs.stonybrook.edu/~mkoupaee/index.html), **Jake W. Vincent**, [Saab Mansour](https://www.linkedin.com/in/saabmansour/), [Igor Shalyminov](https://shalyminov.com/), Han He, [Hwanjun Song](https://songhwanjun.github.io/), Raphael Shu, Jianfeng He, Yi Nian, [Amy Ming-Wei Wong](https://www.linkedin.com/in/amy-wong-b660b2107/), Kyu J. Han, and [Hang Su](https://www.linkedin.com/in/hang-su-654a5543/). 2025. Faithful, Unfaithful or Ambiguous? Multi-Agent Debate with Initial Stance for Summary Evaluation. NAACL 2025 Conference Submission. ([paper](https://arxiv.org/abs/2502.08514))\\
+[Shalyminov, Igor](https://shalyminov.com/), [Hang Su](https://www.linkedin.com/in/hang-su-654a5543/), Jason Cai, [James Gung](https://jgung.github.io/about/), [Raphael Shu](https://www.nlab.ci.i.u-tokyo.ac.jp/~shu/), **Jake W. Vincent**, and [Saab Mansour](https://www.linkedin.com/in/saabmansour/). 2025. Controllable Conversation Theme Detection. DSTC12 Public Task. ([track website](https://github.com/amazon-science/dstc12-controllable-conversational-theme-detection) [proposal](assets/documents/2025_dstc12_controllable_conversation_theme_detection.pdf))\\
 [Tang, Liyan](https://www.tangliyan.com/), [Igor Shalyminov](https://shalyminov.com/), [Amy Ming-Wei Wong](https://www.linkedin.com/in/amy-wong-b660b2107/), [Jon Burnsky](https://jburnsky.github.io/linguist/), **Jake W. Vincent**, [Yu'an Yang](https://yu-an.github.io/), [Siffi Singh](https://www.amazon.science/author/siffi-singh), [Song Feng](https://songfeng.github.io/), [Hwanjun Song](https://songhwanjun.github.io/), [Hang Su](https://www.linkedin.com/in/hang-su-654a5543/), [Justin Sun](https://www.linkedin.com/in/justin-lj-sun/), [Yi Zhang](https://www.linkedin.com/in/yi-zhang-8175392/), [Saab Mansour](https://www.linkedin.com/in/saabmansour/), and [Kathleen McKeown](http://www1.cs.columbia.edu/~kathy/). 2023. TofuEval: Evaluating Factual Consistency of Topic-Focused Dialogue Summarization. University of Texas at Austin and AWS AI Labs. NAACL 2024 Conference Submission. ([paper](https://arxiv.org/abs/2402.13249))\\
 **Vincent, Jake W.**, [Ivy Sichel](https://ivysichel.sites.ucsc.edu), and [Matthew W. Wagers](https://people.ucsc.edu/~mwagers). 2022. Extraction from English RCs and Cross-Linguistic Similarities in the Environments That Facilitate Extraction. _Languages_ 7: 117. ([paper](https://doi.org/10.3390/languages7020117))
 {: .sectionnolist}
