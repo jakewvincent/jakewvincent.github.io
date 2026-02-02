@@ -55,3 +55,7 @@ Markdown files in root (index.md, cv.md, projects.md, teaching.md, notebooks.md)
 
 - `_config.yml` - Minimal config, only sets Rouge syntax highlighter
 - Fonts: Google Fonts (Merriweather family) + Font Awesome 6 icons
+
+## Git Conventions
+
+- Do not add Co-Authored-By lines to commit messages
