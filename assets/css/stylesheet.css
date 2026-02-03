@@ -330,6 +330,13 @@ nav {
     position: -webkit-sticky;
     top: 0;
     z-index: 9;
+    transition: box-shadow 0.2s ease;
+}
+
+nav.stuck {
+    border-bottom: 1px solid #cacfd2;
+    width: 110%;
+    margin-left: -5%;
 }
 
 nav li {/* Allow the nav bar items (syntactically an unordered list) to appear on the same line */
@@ -704,6 +711,93 @@ td ul {
 .github-button:hover {
     background: black;
     color: white;
+}
+
+.demo-button {
+    background: #f5d142;
+    color: black;
+}
+
+.demo-button:hover {
+    background: #e0bf3a;
+    color: black;
+}
+
+/*-- Project card styling --*/
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.project-card {
+    background: white;
+    border-radius: 6px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    box-shadow: 2px 2px 2px #cacfd2;
+}
+
+.project-card:hover {
+    box-shadow: 1px 1px 1px #cacfd2;
+    transform: translateX(1px) translateY(1px);
+}
+
+.card-title {
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 1.1em;
+    margin: 0 0 0.75rem 0;
+    color: #114b10;
+}
+
+.card-title i {
+    margin-right: 0.4em;
+    color: #24292e;
+}
+
+.card-description {
+    font-size: 0.9em;
+    line-height: 1.6em;
+    color: #333;
+    margin: 0 0 1rem 0;
+    flex-grow: 1;
+}
+
+.card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.card-tag {
+    background: #f0f0f0;
+    color: #555;
+    font-size: 0.75em;
+    padding: 0.2em 0.6em;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.card-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.card-links .a-button {
+    font-size: 0.85em;
 }
 
 /*-- Footer styling --*/

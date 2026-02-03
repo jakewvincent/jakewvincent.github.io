@@ -1,112 +1,174 @@
 ---
 title: Research & Projects
-updated: 2022-08-27
+updated: 2026-02-02
 layout: default
-main-img: /assets/images/mtdiablo.png
-main-img-title: From Mt. Diablo, 2012
 ---
 
-### Neovim plugins
-<div class="sectionnolist" markdown="1">
+### Software projects
 
-[<i class="fa-brands fa-github"></i>&nbsp;&nbsp;Mkdnflow](https://github.com/jakewvincent/mkdnflow.nvim){: .github-button .a-button}
-
-Initially inspired by [Vimwiki](https://github.com/vimwiki/vimwiki), I designed Mkdnflow to facilitate the fluent navigation and management of markdown-based document repositories (whether that be a notebook or journal, a personal wiki or knowledge base, or pages fed into a static website generator like [Jekyll](https://jekyllrb.com) or [Hugo](https://gohugo.io)). Its most broadly useful feature is following links to other markdown documents in the repository and backward and forward navigation through thus-opened files using `<Backspace>` and `<Delete>`, respectively. Link-following behavior depends on the kind of target the link points to: links to markdown files are opened in the same window in vim; links prefixed with `file:` are opened in the default application for the filetype (any OS); links to websites are opened in the default browser; links to anchors cause the cursor to jump to a matching heading or [Pandoc-flavored bracketed span](https://pandoc.org/MANUAL.html#extension-bracketed_spans). Syntactic and semantic transformation functions can be configured to explicitly transform text into a markdown file's source name or implicitly transform a markdown file's link source when following it, affecting the interpretation of paths. A number of other convenience features are included: automatic directory creation, jumping between links with `<Tab>`, table creation and formatting, list support, section folding, and more. Written in Lua.
-
-[<i class="fa-brands fa-github"></i>&nbsp;&nbsp;T<sub>E</sub>Xmagic](https://github.com/jakewvincent/texmagic.nvim){: .github-button .a-button}
-
-T<sub>E</sub>Xmagic is a very simple Neovim plugin that enables <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> build engine selection via magic comments (e.g. `%! TEX program = xelatex`). It is designed with the TexLab LSP server's `build` service in mind, which has to be specified globally in the init file (with the help of the Neovim team's [lspconfig](https://github.com/neovim/nvim-lspconfig) plugin) and cannot be set on a by-project basis. The plugin identifies magic comments at the very top of a `.tex` document and passes the settings you configure for the given program name to the build service.
-
+<div class="card-grid">
+    <div class="project-card">
+        <h4 class="card-title"><i class="fa-solid fa-hand-holding-heart"></i> Therapy Docs</h4>
+        <p class="card-description">A tablet-optimized clinical documentation system for mental health professionals, designed for use during therapy sessions with stylus input. Features include AI-powered narrative generation via streaming, structured progress notes with intervention tracking, intake assessments, treatment planning, diagnosis management, and a mock/real API architecture that enables full functionality without backend infrastructure.</p>
+        <div class="card-meta">
+            <span class="card-tag">JavaScript</span>
+            <span class="card-tag">Alpine.js</span>
+            <span class="card-tag">Healthcare</span>
+            <span class="card-tag">AI</span>
+        </div>
+        <div class="card-links">
+            <a class="github-button a-button" href="https://github.com/jakewvincent/therapy-docs-demo"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;View on GitHub</a>
+            <a class="demo-button a-button" href="https://therapydocs.demos.jwv.dev"><i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;&nbsp;View Demo</a>
+        </div>
+    </div>
+    <div class="project-card">
+        <h4 class="card-title"><i class="fa-solid fa-ear-listen"></i> TinyScribe</h4>
+        <p class="card-description">A browser-based speech transcription and speaker diarization tool in which all processing runs client-side using small ML models (Whisper Tiny, WavLM). Features real-time transcription, speaker identification via voice embeddings, optional speaker enrollment for persistent identification, and debug views exposing similarity scores and clustering decisions. Built for personal exploration of how ASR and diarization systems work under the hood, and designed to be modular for use in other projects.</p>
+        <div class="card-meta">
+            <span class="card-tag">JavaScript</span>
+            <span class="card-tag">WebAssembly</span>
+            <span class="card-tag">ML</span>
+            <span class="card-tag">Speech</span>
+        </div>
+        <div class="card-links">
+            <a class="github-button a-button" href="https://github.com/jakewvincent/tinyscribe">
+                <i class="fa-brands fa-github"></i>
+                &nbsp;&nbsp;View on GitHub
+            </a>
+            <a class="demo-button a-button" href="https://tinyscribe.demos.jwv.dev">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                &nbsp;&nbsp;View Demo
+            </a>
+        </div>
+    </div>
+    <div class="project-card">
+        <h4 class="card-title"><i class="fa-solid fa-image"></i> Icon Thesaurus</h4>
+        <p class="card-description">A semantic icon vocabulary builder for comparing icons across 10 popular libraries (Lucide, Heroicons, Feather, Phosphor, Tabler, Bootstrap, Font Awesome, Material Design, Remix, Ionicons). Define abstract meanings like "home" or "settings," then find and compare equivalent icons from each library, like a thesaurus for visual symbols. Features hierarchical organization, multi-variant selection, drag-and-drop reordering, and SVG sprite sheet export with semantic IDs.</p>
+        <div class="card-meta">
+            <span class="card-tag">JavaScript</span>
+            <span class="card-tag">Alpine.js</span>
+            <span class="card-tag">Design</span>
+        </div>
+        <div class="card-links">
+            <a class="github-button a-button" href="https://github.com/jakewvincent/icon-thesaurus">
+                <i class="fa-brands fa-github"></i>
+                &nbsp;&nbsp;View on GitHub
+            </a>
+            <a class="demo-button a-button" href="https://iconthesaurus.demos.jwv.dev">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                &nbsp;&nbsp;View Demo
+            </a>
+        </div>
+    </div>
+    <div class="project-card">
+        <h4 class="card-title"><i class="fa-brands fa-markdown"></i> Mkdnflow</h4>
+        <p class="card-description">A Neovim plugin for fluent navigation and management of markdown-based document repositories—notebooks, wikis, knowledge bases, or static site content. Features include link-following, backward/forward navigation, automatic directory creation, table formatting, list support, section folding, and more.</p>
+        <div class="card-meta">
+            <span class="card-tag">Lua</span>
+            <span class="card-tag">Neovim</span>
+            <span class="card-tag">Markdown</span>
+        </div>
+        <div class="card-links">
+            <a class="github-button a-button" href="https://github.com/jakewvincent/mkdnflow.nvim">
+                <i class="fa-brands fa-github"></i>
+                &nbsp;&nbsp;View on GitHub
+            </a>
+        </div>
+    </div>
+    <div class="project-card">
+        <h4 class="card-title"><i class="fa-solid fa-align-justify"></i> TeXmagic</h4>
+        <p class="card-description">A simple Neovim plugin enabling <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> build engine selection via magic comments (e.g. <code>%! TEX program = xelatex</code>). Designed for use with the TexLab LSP server's build service.</p>
+        <div class="card-meta">
+            <span class="card-tag">Lua</span>
+            <span class="card-tag">Neovim</span>
+            <span class="card-tag">LaTeX</span>
+        </div>
+        <div class="card-links">
+            <a class="github-button a-button" href="https://github.com/jakewvincent/texmagic.nvim">
+                <i class="fa-brands fa-github"></i>
+                &nbsp;&nbsp;View on GitHub
+            </a>
+        </div>
+    </div>
 </div>
 
 ### Research
-<div class="sectionnolist" markdown="1">
 
-#### Extraction from relative clauses in English
-[<i class="fa-solid fa-file"></i>&nbsp;&nbsp;Dissertation](https://www.proquest.com/openview/760063f3ff8277bc8b1a19ca3f701e6e/){: .download-pdf .a-button} [<i class="fa-brands fa-r-project"></i>&nbsp;&nbsp;Notebooks](notebooks.html){: .r-notebook .a-button} [<i class="fa-solid fa-file"></i>&nbsp;&nbsp;_Languages_ manuscript](https://doi.org/10.3390/languages7020117){: .download-pdf .a-button}
-
-Relative clauses (RCs) are a prototypical example of a strong island, but certain languages have been shown to selectively tolerate RC subextraction (Mainland Scandinavian languages, certain Romance languages, Hebrew, and others). For subextraction to be licit in these languages, the DP that hosts the RC typically needs to be the pivot of a canonical or non-canonical existential, or otherwise non-presupposed.
-						
-It hasn't been heavily researched whether these patterns extend to English as well, but some research suggests that it does (see, e.g., [Chung & McCloskey 1983](http://www.jstor.org/stable/4178357) and [Kush et al. 2013](https://books.google.com/books?hl=en&lr=&id=DUAIAQAAQBAJ&oi=fnd&pg=PA239&dq=kush+microvariation+in+islands&ots=0ABychxQnB&sig=pgZvVqUa2JsscxB_D05KuZ9fSt8#v=onepage&q=kush%20microvariation%20in%20islands&f=false)). I am currently using experimental methods to investigate whether English also selectively tolerates RC subextraction. So far, I have found that English RCs are substantially more transparent to extraction in existentials, as well as in predicate nominals (as found by [Sichel 2018](https://muse.jhu.edu/article/690046/pdf?casa_token=wBovu7pEZL4AAAAA:LnyFnb7FGW7T2e9nR6rx_UTE_-qQAHXBSaYbTjXJtR2KEVyCYlXZ7JrQEPMfIEuxqKNf9Otung) for Hebrew). I have written about these results [here](assets/documents/jwv_rc_subext_eng.pdf), and you can find my experiment notebooks [here](notebooks.html). I plan to investigate the online processing of RCs in these environments, and to address the question of whether these cases of improved RC subextraction should be generated by the grammar.
-
-#### Internally headed relative clauses in Chamorro
-[<i class="fa-solid fa-file"></i>&nbsp;&nbsp;Master's thesis](https://cloudfront.escholarship.org/dist/prd/content/qt0jq7096r/qt0jq7096r.pdf?t=p3qtng){: .download-pdf .a-button}
-
-Chamorro has a typologically rare construction in which a noun phrase being modified by a relative clause surfaces within that relative clause, as shown below.
-
-<div class="example">
-    <div class="all-align-units">
-        <div class="align-unit">
-            <div class="word">Chum&aring;lik</div>
-            <div class="gloss"><span>sg.agr</span>:laugh</div>
+<div class="card-grid">
+    <div class="project-card">
+    <h4 class="card-title">Extraction from relative clauses in English</h4>
+    <p class="card-description">Investigation of whether English selectively tolerates RC subextraction, as documented in Mainland Scandinavian languages, Romance languages, and Hebrew (see <a href="http://www.jstor.org/stable/4178357">Chung & McCloskey 1983</a>, <a href="https://books.google.com/books?hl=en&lr=&id=DUAIAQAAQBAJ&oi=fnd&pg=PA239&dq=kush+microvariation+in+islands&ots=0ABychxQnB&sig=pgZvVqUa2JsscxB_D05KuZ9fSt8#v=onepage&q=kush%20microvariation%20in%20islands&f=false">Kush et al. 2013</a>, <a href="https://muse.jhu.edu/article/690046/pdf?casa_token=wBovu7pEZL4AAAAA:LnyFnb7FGW7T2e9nR6rx_UTE_-qQAHXBSaYbTjXJtR2KEVyCYlXZ7JrQEPMfIEuxqKNf9Otung">Sichel 2018</a>). Findings show English RCs are substantially more transparent to extraction in existentials and predicate nominals.</p>
+    <div class="card-meta">
+        <span class="card-tag">Syntax</span>
+        <span class="card-tag">Experimental</span>
+        <span class="card-tag">English</span>
+    </div>
+    <div class="card-links">
+        <a class="download-pdf a-button" href="https://www.proquest.com/openview/760063f3ff8277bc8b1a19ca3f701e6e/"><i class="fa-solid fa-file"></i>&nbsp;&nbsp;Dissertation</a>
+        <a class="download-pdf a-button" href="assets/documents/jwv_rc_subext_eng.pdf"><i class="fa-solid fa-file"></i>&nbsp;&nbsp;Writeup</a>
+        <a class="r-notebook a-button" href="notebooks.html"><i class="fa-brands fa-r-project"></i>&nbsp;&nbsp;Notebooks</a>
+        <a class="download-pdf a-button" href="https://doi.org/10.3390/languages7020117"><i class="fa-solid fa-file"></i>&nbsp;&nbsp;<em>Languages</em> manuscript</a>
+    </div>
+    </div>
+    <div class="project-card">
+        <h4 class="card-title">Internally headed relative clauses in Chamorro</h4>
+        <p class="card-description">Analysis of Chamorro's typologically rare construction where a noun phrase surfaces within its modifying relative clause. My MA thesis argues the head NP is merged within the RC as a DP headed by a null operator, explaining island sensitivity, linker placement, and interpretive effects. Cited in <a href="https://books.google.com/books?hl=en&lr=&id=cxH9DwAAQBAJ&oi=fnd&pg=PR9&dq=cinque+syntax+of+relative+clauses&ots=LoK2L7ZQQG&sig=RDRX0sev2y1eqiYBkhT7jgJyuLg">Cinque (2020)</a>.</p>
+        <div class="card-meta">
+            <span class="card-tag">Syntax</span>
+            <span class="card-tag">Chamorro</span>
         </div>
-        <div class="align-unit">
-            <div class="word">i</div>
-            <div class="gloss">the</div>
-        </div>
-        <div class="align-unit">
-            <div class="word">[mat&aring;'chung</div>
-            <div class="gloss"><span>sg.agr</span>.sit</div>
-        </div>
-        <div class="align-unit">
-            <div class="word">na</div>
-            <div class="gloss"><span>lk</span></div>
-        </div>
-        <div class="align-unit">
-            <div class="word"><b>p&aring;tgun</b></div>
-            <div class="gloss">child</div>
-        </div>
-        <div class="align-unit">
-            <div class="word">gi</div>
-            <div class="gloss"><span>loc</span></div>
-        </div>
-        <div class="align-unit">
-            <div class="word">siya.]</div>
-            <div class="gloss">chair</div>
+        <div class="card-links">
+            <a class="download-pdf a-button" href="https://cloudfront.escholarship.org/dist/prd/content/qt0jq7096r/qt0jq7096r.pdf?t=p3qtng">
+                <i class="fa-solid fa-file"></i>
+                &nbsp;&nbsp;Master's thesis
+            </a>
         </div>
     </div>
-    <div class="free-transl">
-        'The <b>child</b> [who sat in the chair] laughed.'
+        <div class="project-card">
+        <h4 class="card-title">Syllable parser</h4>
+        <p class="card-description">A syllable parser that takes IPA input and produces syllabified output. Includes integration with the <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">CMU Pronouncing Dictionary</a> (100k+ words), with ARPABET-to-IPA conversion for statistical analysis of English pronunciations.</p>
+        <div class="card-meta">
+            <span class="card-tag">Phonology</span>
+            <span class="card-tag">R</span>
+            <span class="card-tag">English</span>
+        </div>
+        <div class="card-links">
+            <a class="github-button a-button" href="https://github.com/jakewvincent/R-syllable-parser">
+                <i class="fa-brands fa-github"></i>
+                &nbsp;&nbsp;View source
+            </a>
+        </div>
+    </div>
+    <div class="project-card">
+        <h4 class="card-title">HTML interlinear gloss generator</h4>
+        <p class="card-description">A tool that converts word, gloss, and free translation data into HTML for displaying interlinear glosses—the standard format for presenting linguistic examples with word-by-word translations—on websites.</p>
+        <div class="card-meta">
+            <span class="card-tag">JavaScript</span>
+            <span class="card-tag">Linguistics</span>
+        </div>
+        <div class="card-links">
+            <a class="github-button a-button" href="https://github.com/jakewvincent/HTML-interlinear-gloss">
+                <i class="fa-brands fa-github"></i>
+                &nbsp;&nbsp;View source
+            </a>
+            <a class="demo-button a-button" href="gloss-generator.html">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                &nbsp;&nbsp;Try it
+            </a>
+        </div>
+    </div>
+    <div class="project-card">
+        <h4 class="card-title">Rhyme in Chamorro poetry</h4>
+        <p class="card-description">Analysis of 106 rhyme pairs from Joaquin F. Borja's <a href="http://books.google.com/books/about/Estreyas_Marianas.html?id=1oAmAQAAIAAJ"><em>Istreyas Marianas: Chamorro</em></a>. The study found ~25% strict rhyme and ~75% "abstract rhyme" utilizing associations between segment classes established by Chamorro phonological processes.</p>
+        <div class="card-meta">
+            <span class="card-tag">Phonology</span>
+            <span class="card-tag">Chamorro</span>
+        </div>
+        <div class="card-links">
+            <a class="download-pdf a-button" href="/assets/documents/champohandout.pdf">
+                <i class="fa-solid fa-file"></i>
+                &nbsp;&nbsp;Handout
+            </a>
+        </div>
     </div>
 </div>
-
-In my [MA thesis](https://cloudfront.escholarship.org/dist/prd/content/qt0jq7096r/qt0jq7096r.pdf?t=p3qtng), I argue that the head NP in Chamorro's internally headed RCs (IHRCs) is merged within the RC as a DP headed by the null operator, after which the D<sup>0</sup> moves to the specifier position of the relative clause CP, abstracting over the RC-internal head and stranding the nominal restrictor. The analysis explains the island sensitivity of the IHRC formation rule, the mandatory presence of the linker *na* directly before the head NP, certain interpretive effects, and their surface similarity to stranding patterns in other A-bar contexts in the language. This work was recently cited in [Cinque's (2020) book on the syntax of relative clauses](https://books.google.com/books?hl=en&lr=&id=cxH9DwAAQBAJ&oi=fnd&pg=PR9&dq=cinque+syntax+of+relative+clauses&ots=LoK2L7ZQQG&sig=RDRX0sev2y1eqiYBkhT7jgJyuLg).
-</div>
-
-### Miscellaneous projects
-
-<div class="sectionnolist">
-
-<button class="expand-btn"><h4>Syllable parser</h4></button>
-<div class="expand-content" markdown="1">
-
-[<i class="fa-brands fa-github"></i>&nbsp;&nbsp;View source](https://github.com/jakewvincent/R-syllable-parser){: .github-button .a-button}
-
-I am currently working on a syllable parser that takes input in IPA characters and produces a syllabified output. Currently, the function follows essentially the same procedure that students are taught to follow in Phonology 1. It first identifies syllable nuclei (including diphthongs), then parses preceding consonants into the syllable of the following nucleus segment by segment (leaving segments unparsed if they don't form a legal onset cluster), and finally parsing remaining unparsed segments into the coda of the syllable of the preceding nucleus.
-
-The program also includes an integration with the [Carnegie Mellon University Pronouncing Dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict), which contains pronunciations for over 100,000 words. The script converts the ARPABET codes that come with the dictionary into IPA, which makes it possible to look for statistical patterns across English pronunciations and syllabifications.
-
-</div>
-
-<button class="expand-btn"><h4>HTML interlinear gloss generator</h4></button>
-<div class="expand-content" markdown="1">
-
-[<i class="fa-brands fa-github"></i>&nbsp;&nbsp;View source](https://github.com/jakewvincent/HTML-interlinear-gloss){: .github-button .a-button }
-
-The following tool (written in JavaScript, HTML, and CSS) takes word, gloss, and free translation data and converts it into HTML that will display as an interlinear gloss when pasted into your website HTML file.
-
-{% include gloss_generator.html %}
-
-</div>
-
-<button class="expand-btn"><h4>Rhyme in Chamorro poetry</h4></button>
-<div class="expand-content" markdown="1">
-
-[<i class="fa-solid fa-file"></i>&nbsp;&nbsp;Handout](/assets/documents/champohandout.pdf){: .download-pdf .a-button}
-
-In an undergraduate project, I analyzed 106 of Joaquin F. Borja's rhyme pairs from the collection of Chamorro literature [*Istreyas Marianas: Chamorro*](http://books.google.com/books/about/Estreyas_Marianas.html?id=1oAmAQAAIAAJ). Approximately 25% of the rhyme pairs there have strict rhyme (= identical from the vowel of the stressed syllable to the end of the word), and the remainder have what I called *abstract rhyme*, which seems to creatively utilize abstract associations between classes of segments established by the phonological processes in Chamorro grammar. The use of abstract rhyme results in a broad (yet orderly) range of licit rhyming pairs.
-
-</div>
-</div>
-
-<script src="assets/scripts/expand.js"></script>
