@@ -12,7 +12,7 @@
         <div id="container">
             <div id="banner">
     <h2 id="name">Jake W. Vincent, Ph.D.</h2>
-    <span class="personal-title">Data Scientist (NLP) · LLM/HITL Evaluation &amp; Prompt Engineering · Linguist</span>
+    <span class="personal-title">Data Scientist · Linguist</span>
     <span class="social">
         <a class="fa-brands fa-orcid" title="OrcID" href="https://orcid.org/0000-0002-4794-4370"></a>
         <a class="fa-brands fa-researchgate" title="ResearchGate" href="https://www.researchgate.net/profile/Jake-Vincent-3"></a>
@@ -30,11 +30,7 @@
     
         <li><a href="/index.html"  id="activelink" >Home</a></li>
     
-        <li><a href="/blog.html" >Blog</a></li>
-    
         <li><a href="/projects.html" >Projects</a></li>
-    
-        <li><a href="/teaching.html" >Teaching</a></li>
     
         <li><a href="/cv.html" >CV</a></li>
     
@@ -44,12 +40,24 @@
             <div class = "main">
                 <img src=assets/images/shasta_airport.png class="main-img borderless" title=Shasta airport, 2010>
                 <div id="content">
-                    <p>I’m a Data Scientist in <a href="https://aws.amazon.com/sagemaker/ai/groundtruth/">SageMaker AI (Ground Truth org)</a> at Amazon Web Services, currently serving as the primary implementation lead for the data workflows supporting the <a href="https://aws.amazon.com/connect/contact-lens/">Contact Lens</a> Applied Science team’s development and testing, translating Product/Science goals into annotation and evaluation methodologies, developing and running human- and LLM-in-the-loop pipelines, and driving decisions with statistical analysis, linguistic expertise, and conversation analytics domain experience. Recent work has included prompt engineering for summary generation and evaluation, building a multilingual system for realistic synthetic data generation across multiple channels, and shaping my team’s AWS infrastructure and security patterns.</p>
+                    <p>I’m a linguist and data scientist working at the intersection of linguistics and engineering. I build data infrastructure for conversation analytics: synthetic data generation systems, evaluation methodologies, and annotation tooling that enables research and development teams to build and test conversation analytics systems.</p>
+
+<p>Most recently, I was a Language Data Scientist at AWS supporting Amazon Transcribe’s Contact Lens Applied Science Team. There, I built agentic annotation systems for trend detection ground truth annotations, developed evaluation systems for LLM-generated summaries, and created synthetic dialogue generation pipelines for multilingual customer service conversations.</p>
+
+<p>I maintain <a href="https://github.com/jakewvincent/mkdnflow.nvim">mkdnflow.nvim</a>, a Neovim plugin with 700+ stars for navigating markdown documents and markdown-based journals or wikis. I’m happiest when building, whether that’s tools, knowledge, solutions to problems, or objects meant to be beautiful, and I’m gratified by continually improving those things. I’m currently looking for my next role.</p>
 
                 </div>
             </div>
             <div class="spacer"></div>
-            <footer>Last updated September 03, 2025</footer>
+            <footer>Last updated February 02, 2026</footer>
         </div>
+        <script>
+            const nav = document.querySelector('nav');
+            const observer = new IntersectionObserver(
+                ([e]) => nav.classList.toggle('stuck', e.intersectionRatio < 1),
+                { threshold: [1], rootMargin: '-1px 0px 0px 0px' }
+            );
+            observer.observe(nav);
+        </script>
     </body>
 </html>

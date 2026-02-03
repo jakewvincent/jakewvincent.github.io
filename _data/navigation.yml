@@ -1,15 +1,9 @@
 - name: Home
   link: /index.html
   id: 01
-- name: Blog
-  link: /blog.html
-  id: 02
 - name: Projects
   link: /projects.html
-  id: 03
-- name: Teaching
-  link: /teaching.html
-  id: 04
+  id: 02
 - name: CV
   link: /cv.html
-  id: 05
+  id: 03

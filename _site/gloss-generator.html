@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="/assets/css/stylesheet.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/syntax.css">
+        <link href="/assets/css/fa.all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:300,700&display=swap&subset=latin-ext" rel="stylesheet">
+        <title>JWV: Interlinear Gloss Generator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="container">
+            <div id="banner">
+    <h2 id="name">Jake W. Vincent, Ph.D.</h2>
+    <span class="personal-title">Data Scientist · Linguist</span>
+    <span class="social">
+        <a class="fa-brands fa-orcid" title="OrcID" href="https://orcid.org/0000-0002-4794-4370"></a>
+        <a class="fa-brands fa-researchgate" title="ResearchGate" href="https://www.researchgate.net/profile/Jake-Vincent-3"></a>
+        <a class="fa-brands fa-github" title="Github" href="https://github.com/jakewvincent/"></a>
+        <a class="fa-brands fa-linkedin" title="LinkedIn" href="https://www.linkedin.com/in/jake-vincent-phd-8279a6ab"></a>
+        <span class="display-on-hover-top">
+            <a class="fa-solid fa-envelope" id="mail-icon"></a>
+            <code class="email display-on-hover-bottom highlighter-rouge">ved.vwj@ekaj</code>
+        </span>
+    </span>
+</div>
+
+            <nav id="navbar">
+    <ul>
+    
+        <li><a href="/index.html" >Home</a></li>
+    
+        <li><a href="/projects.html" >Projects</a></li>
+    
+        <li><a href="/cv.html" >CV</a></li>
+    
+    </ul>
+</nav>
+
+            <div class = "main">
+                
+                <div id="content">
+                    <p>A tool for generating HTML interlinear glosses—the standard format for presenting linguistic examples with word-by-word translations. Enter your words, glosses, and free translation below, and the tool will generate HTML and CSS you can paste into your website.</p>
+
+<h3 id="example">Example</h3>
+
+<p>Here’s an example of an internally headed relative clause in Chamorro (from my <a href="https://cloudfront.escholarship.org/dist/prd/content/qt0jq7096r/qt0jq7096r.pdf?t=p3qtng">MA thesis</a>), rendered using the HTML and CSS this tool generates:</p>
+
+<div class="example">
+    <div class="all-align-units">
+        <div class="align-unit">
+            <div class="word">Chum&aring;lik</div>
+            <div class="gloss"><span>sg.agr</span>:laugh</div>
+        </div>
+        <div class="align-unit">
+            <div class="word">i</div>
+            <div class="gloss">the</div>
+        </div>
+        <div class="align-unit">
+            <div class="word">[mat&aring;'chung</div>
+            <div class="gloss"><span>sg.agr</span>.sit</div>
+        </div>
+        <div class="align-unit">
+            <div class="word">na</div>
+            <div class="gloss"><span>lk</span></div>
+        </div>
+        <div class="align-unit">
+            <div class="word"><b>p&aring;tgun</b></div>
+            <div class="gloss">child</div>
+        </div>
+        <div class="align-unit">
+            <div class="word">gi</div>
+            <div class="gloss"><span>loc</span></div>
+        </div>
+        <div class="align-unit">
+            <div class="word">siya.]</div>
+            <div class="gloss">chair</div>
+        </div>
+    </div>
+    <div class="free-transl">
+        'The <b>child</b> [who sat in the chair] laughed.'
+    </div>
+</div>
+
+<h3 id="generator">Generator</h3>
+
+<script src="assets/scripts/lingGlossHTML.js"></script>
+
+<script src="assets/scripts/clearFormOnLoad.js"></script>
+
+<script src="assets/scripts/addGlossUnit.js"></script>
+
+<script src="assets/scripts/selectOnClick.js"></script>
+
+<script src="assets/scripts/showExample.js"></script>
+
+<script src="assets/scripts/initialState.js"></script>
+
+<script src="assets/scripts/resetFields.js"></script>
+
+<form action="" id="glossForm">
+    <fieldset>
+        <input type="button" value="Convert" onclick="convert()" />
+        <input type="button" value="Reset" onclick="resetFields()" />
+        <input type="button" value="Show example" onclick="showExample()" />
+        <input type="button" value="Add unit" onclick="addGlossUnit()" />
+        <table id="allInput">
+            <tr id="wordRow">
+                <td>Words:</td>
+                <td id="wordTd1"><input type="text" id="wordIn1" size="10" oninput="convert()" /></td>
+            </tr>
+            <tr id="glossRow">
+                <td>Glosses:</td>
+                <td id="glossTd1"><input type="text" id="glossIn1" size="10" oninput="convert()" /></td>
+            </tr>
+            <tr>
+                <td>Free translation:&nbsp;</td>
+                <td id="ftTd" colspan="0"><input type="text" id="ftIn" style="width:100%; box-sizing:border-box" size="10" oninput="convert()" /></td>
+            </tr>
+        </table>
+
+        <div>
+            <p>Preview:</p>
+            <p id="examplePreview" style="color: #8b8f91;">
+                Preview will show here.
+            </p>
+        </div>
+
+        <p>HTML:</p>
+        <textarea type="text" id="textOut" style="width:50%; height:20em;" onclick="selectAll('textOut')"></textarea>
+        <p>Paste the following into your stylesheet:</p>
+        <textarea style="width: 64em; height: 24em;" id="css" onclick="selectAll('css')">
+.example {
+margin-left: 1.5rem;
+}
+.all-align-units {
+}
+/* give non-initial align-units left margin for readability */
+.all-align-units .align-unit:not(:first-child){
+margin-left: 0.25em;
+}
+.align-unit {
+display: inline-block;
+}
+.word {
+}
+.gloss {
+}
+.gloss span {/* make spans small-caps (for features) */
+font-variant: small-caps;
+}
+.free-transl {
+}</textarea>
+    </fieldset>
+</form>
+
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <footer>Last updated February 02, 2026</footer>
+        </div>
+        <script>
+            const nav = document.querySelector('nav');
+            const observer = new IntersectionObserver(
+                ([e]) => nav.classList.toggle('stuck', e.intersectionRatio < 1),
+                { threshold: [1], rootMargin: '-1px 0px 0px 0px' }
+            );
+            observer.observe(nav);
+        </script>
+    </body>
+</html>

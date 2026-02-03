@@ -12,7 +12,7 @@
         <div id="container">
             <div id="banner">
     <h2 id="name">Jake W. Vincent, Ph.D.</h2>
-    <span class="personal-title">Data Scientist (NLP) · LLM/HITL Evaluation &amp; Prompt Engineering · Linguist</span>
+    <span class="personal-title">Data Scientist · Linguist</span>
     <span class="social">
         <a class="fa-brands fa-orcid" title="OrcID" href="https://orcid.org/0000-0002-4794-4370"></a>
         <a class="fa-brands fa-researchgate" title="ResearchGate" href="https://www.researchgate.net/profile/Jake-Vincent-3"></a>
@@ -30,11 +30,7 @@
     
         <li><a href="/index.html" >Home</a></li>
     
-        <li><a href="/blog.html" >Blog</a></li>
-    
         <li><a href="/projects.html" >Projects</a></li>
-    
-        <li><a href="/teaching.html" >Teaching</a></li>
     
         <li><a href="/cv.html" >CV</a></li>
     
@@ -59,5 +55,13 @@
             <div class="spacer"></div>
             <footer>Last updated January 21, 2020</footer>
         </div>
+        <script>
+            const nav = document.querySelector('nav');
+            const observer = new IntersectionObserver(
+                ([e]) => nav.classList.toggle('stuck', e.intersectionRatio < 1),
+                { threshold: [1], rootMargin: '-1px 0px 0px 0px' }
+            );
+            observer.observe(nav);
+        </script>
     </body>
 </html>

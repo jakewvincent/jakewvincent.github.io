@@ -12,7 +12,7 @@
         <div id="container">
             <div id="banner">
     <h2 id="name">Jake W. Vincent, Ph.D.</h2>
-    <span class="personal-title">Data Scientist (NLP) · LLM/HITL Evaluation &amp; Prompt Engineering · Linguist</span>
+    <span class="personal-title">Data Scientist · Linguist</span>
     <span class="social">
         <a class="fa-brands fa-orcid" title="OrcID" href="https://orcid.org/0000-0002-4794-4370"></a>
         <a class="fa-brands fa-researchgate" title="ResearchGate" href="https://www.researchgate.net/profile/Jake-Vincent-3"></a>
@@ -30,11 +30,7 @@
     
         <li><a href="/index.html" >Home</a></li>
     
-        <li><a href="/blog.html" >Blog</a></li>
-    
         <li><a href="/projects.html" >Projects</a></li>
-    
-        <li><a href="/teaching.html" >Teaching</a></li>
     
         <li><a href="/cv.html"  id="activelink" >CV</a></li>
     
@@ -54,7 +50,7 @@
 2015:  B.A., Department of Linguistics, UC Santa Cruz. Graduated <em>Summa Cum Laude</em> with additional Honors in Linguistics.</p>
 
 <h3 id="positions-held">Positions Held</h3>
-<p class="sectionnolist">2025-current: Language Data Scientist II, SageMaker AI/Ground Truth, Bedrock Data Services, Amazon Web Services.<br />
+<p class="sectionnolist">2025-2026: Language Data Scientist II, SageMaker AI/Ground Truth, Bedrock Data Services, Amazon Web Services.<br />
 2022-2025: Language Engineer II, Amazon Transcribe, MLP Data team, Amazon Web Services.<br />
 2021-2022: Language Engineer (contract), Amazon Lex (NLU pod), AiData team, AI Labs, Amazon Web Services.<br />
 2021-2022: Lecturer in Linguistics, UC Santa Cruz.</p>
@@ -149,7 +145,15 @@ Version control: Git</p>
                 </div>
             </div>
             <div class="spacer"></div>
-            <footer>Last updated September 03, 2025</footer>
+            <footer>Last updated February 02, 2026</footer>
         </div>
+        <script>
+            const nav = document.querySelector('nav');
+            const observer = new IntersectionObserver(
+                ([e]) => nav.classList.toggle('stuck', e.intersectionRatio < 1),
+                { threshold: [1], rootMargin: '-1px 0px 0px 0px' }
+            );
+            observer.observe(nav);
+        </script>
     </body>
 </html>

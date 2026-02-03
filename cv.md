@@ -1,7 +1,7 @@
 ---
 title: CV
 layout: default
-updated: 2025-09-03
+updated: 2026-02-02
 main-img: assets/images/jwv_x.jpg
 main-img-title: Jake W. Vincent, PhD
 ---
@@ -17,7 +17,7 @@ main-img-title: Jake W. Vincent, PhD
 {: .sectionnolist}
 
 ### Positions Held
-2025-current: Language Data Scientist II, SageMaker AI/Ground Truth, Bedrock Data Services, Amazon Web Services.\\
+2025-2026: Language Data Scientist II, SageMaker AI/Ground Truth, Bedrock Data Services, Amazon Web Services.\\
 2022-2025: Language Engineer II, Amazon Transcribe, MLP Data team, Amazon Web Services.\\
 2021-2022: Language Engineer (contract), Amazon Lex (NLU pod), AiData team, AI Labs, Amazon Web Services.\\
 2021-2022: Lecturer in Linguistics, UC Santa Cruz.

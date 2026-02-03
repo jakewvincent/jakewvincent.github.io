@@ -1,9 +1,13 @@
 ---
 title: Home
 layout: default
-updated: 2025-09-03
+updated: 2026-02-02
 main-img: assets/images/shasta_airport.png
 main-img-title: Shasta airport, 2010
 ---
 
-I'm a Language Data Scientist in [SageMaker AI (Ground Truth org)](https://aws.amazon.com/sagemaker/ai/groundtruth/) at Amazon Web Services, currently serving as the primary implementation lead for the data workflows supporting the [Contact Lens](https://aws.amazon.com/connect/contact-lens/) feature development and testing. I translate Product and Applied Science requirements into annotation and evaluation methodologies, develop both human-first and LLM-first data production pipelines, and drive decisions with statistical analysis, linguistic expertise, and conversation analytics domain experience. Recent work has included prompt engineering for summary generation and evaluation, building a multilingual system for realistic synthetic conversational data generation, and shaping my team's AWS infrastructure and security patterns.
+I'm a linguist and data scientist working at the intersection of linguistics and engineering. I build data infrastructure for conversation analytics: synthetic data generation systems, evaluation methodologies, and annotation tooling that enables research and development teams to build and test conversation analytics systems.
+
+Most recently, I was a Language Data Scientist at AWS supporting Amazon Transcribe's Contact Lens Applied Science Team. There, I built agentic annotation systems for trend detection ground truth annotations, developed evaluation systems for LLM-generated summaries, and created synthetic dialogue generation pipelines for multilingual customer service conversations.
+
+I maintain [mkdnflow.nvim](https://github.com/jakewvincent/mkdnflow.nvim), a Neovim plugin with 700+ stars for navigating markdown documents and markdown-based journals or wikis. I'm happiest when building, whether that's tools, knowledge, solutions to problems, or objects meant to be beautiful, and I'm gratified by continually improving those things. I'm currently looking for my next role.
