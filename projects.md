@@ -8,6 +8,19 @@ layout: default
 
 <div class="card-grid">
     <div class="project-card">
+        <h4 class="card-title"><i class="fa-solid fa-comments"></i> Discourse Simulator for Task-Oriented Dialogue</h4>
+        <p class="card-description">A conversation simulation system grounded in formal discourse theory. Agents with private mental states (beliefs, desires, intentions) interact through discourse operations on shared information structures including Common Ground, the Table, Discourse Commitments, and To-Do Lists. Integrates Farkas &amp; Bruce (2010), Portner (2007), and the BDI model to generate multi-participant dialogues driven by formal pragmatic principles.</p>
+        <div class="card-meta">
+            <span class="card-tag">Python</span>
+            <span class="card-tag">Discourse</span>
+            <span class="card-tag">Pragmatics</span>
+            <span class="card-tag">BDI</span>
+        </div>
+        <div class="card-links">
+            <a class="rg-button a-button" href="discourse_sim.html"><i class="fa-solid fa-book-open"></i>&nbsp;&nbsp;Architecture</a>
+        </div>
+    </div>
+    <div class="project-card">
         <h4 class="card-title"><i class="fa-solid fa-hand-holding-heart"></i> Therapy Docs</h4>
         <p class="card-description">A tablet-optimized clinical documentation system for mental health professionals, designed for use during therapy sessions with stylus input. Features include AI-powered narrative generation via streaming, structured progress notes with intervention tracking, intake assessments, treatment planning, diagnosis management, and a mock/real API architecture that enables full functionality without backend infrastructure.</p>
         <div class="card-meta">
