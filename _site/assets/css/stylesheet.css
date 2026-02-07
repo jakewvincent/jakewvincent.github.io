@@ -809,6 +809,29 @@ td ul {
     font-size: 0.85em;
 }
 
+/*-- Two-column layout --*/
+
+.two-col {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.two-col-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.two-col-diagram {
+    flex: 0 0 auto;
+}
+
+@media (max-width: 768px) {
+    .two-col {
+        flex-direction: column;
+    }
+}
+
 /*-- Footer styling --*/
 
 .spacer {	/* Keep the footer separate from the rest of the content */

@@ -19,9 +19,28 @@ The system combines insights from two theoretical areas:
 
 **Agent Theory** (for private/individual states)
 
-1. **The BDI model (Rao & Georgeff, 1995)** --- agents with private Beliefs, Desires (goals), and Intentions that exist independently of and prior to the discourse, and that evolve via private operations on the individual's state over the course of a conversation
+1. **The BDI model (Rao & Georgeff 1995)** --- agents with private Beliefs, Desires (goals), and Intentions that exist independently of and prior to the discourse, and that evolve via private operations on the individual's state over the course of a conversation
 
 The result is a system in which agents carry rich internal states that guide their contributions to a shared workspace. The workspace tracks what has been settled (in the common ground), what remains open (on the Table), and what has been promised (in the to-do list). A set of discourse moves formally connects these two layers, and most moves include a linguistic contribution that is added to the conversation's transcript.
+
+{% raw %}
+<pre class="mermaid">
+flowchart TB
+    subgraph shared[" Shared Workspace "]
+        CG["Common Ground"] ~~~ T["The Table"] ~~~ DC["Discourse Commitments"] ~~~ TD["To-Do Lists"]
+    end
+
+    shared -. "Discourse Briefing" .-> agent
+    agent -- "Discourse Moves<br>(via MCP tools)" --> junction[ ]
+    junction --> shared
+    junction -.-> transcript(["Transcript"])
+    style junction fill:none,stroke:none
+
+    subgraph agent[" Agent · per participant "]
+        B["Beliefs"] ~~~ G["Goals"] ~~~ I["Intentions"] ~~~ IG["Individual Ground"]
+    end
+</pre>
+{% endraw %}
 
 ---
 
@@ -39,7 +58,7 @@ The word "accepted" is important here. Following Stalnaker (2002), the CG is a m
 
 The Table contains items that are under active discussion: questions, proposals, requests, and assertions. These create conversational pressure toward resolution. Items on the Table demand attention by appearing in a discourse briefing that prompts each agent to complete their turn: a question needs an answer, a proposal needs acceptance or rejection, a request needs acknowledgment or an answer, etc. This pressure helps drive the conversation forward.
 
-Items on the Table have a lifecycle, beginning as **`active`**, and can transition to **`awaiting acceptance`** (when an answer has been uttered but not yet accepted), **`resolved`** (whether accepted or rejected), **`amended`** (replaced by a revised version), or **`retracted`** (withdrawn by the original speaker).
+Items on the Table have a lifecycle, beginning as **`active`**, and can transition to **`awaiting acceptance`** (when an answer has been uttered but not yet accepted), **`resolved`** (whether accepted or rejected), **`amended`** (replaced by a revised version, which closes the original item and adds a new active item), or **`retracted`** (withdrawn by the original speaker).
 
 The four item types reflect different kinds of conversational pressure:
 
@@ -68,6 +87,21 @@ Each participant has a separate to-do list, to which items can be added in two w
 The Individual Ground contains private factual knowledge held by each participant that has not been shared. One participant may know their own scheduling constraints and preferences; another may know the system's current state and applicable policies. Information may move from Individual Ground to common ground through disclosure and acceptance, but private knowledge need not always be shared.
 
 The Individual Ground is part of each participant's private state, but it is distinct from the revisable *beliefs* discussed in the [Agent Architecture](#agent-architecture-the-bdi-model) section below. Individual Ground holds stable factual records (e.g. a phone number; some status retrieved from an external system) that don't carry the uncertainty or revision dynamics that beliefs do. The two constructs come from different theoretical traditions (Farkas & Bruce for Individual Ground; Rao & Georgeff for beliefs) and serve different roles in the system.
+
+{% raw %}
+<pre class="mermaid">
+flowchart TB
+    assert["Agent asserts, proposes,<br>requests, or asks<br><i>(PutOnTable)</i>"]
+    assert --> dc["Speaker's<br>Discourse Commitments"]
+    assert --> table["The Table<br>(status: active)"]
+    table --> resolve{"Other party<br>resolves"}
+    resolve -->|"Accept"| cg["Common Ground"]
+    resolve -->|"Reject"| stays["Stays in speaker's DC<br>(agree to disagree)"]
+    dc -.->|"on acceptance"| cg
+
+    bypass["Uncontroversial information<br><i>(AddToCommonGround)</i>"] -->|"bypasses Table"| cg
+</pre>
+{% endraw %}
 
 ---
 
@@ -186,6 +220,9 @@ Tools fall into several categories that reflect distinct kinds of agentic action
 
 Each turn in the conversation follows a cycle:
 
+<div class="two-col">
+<div class="two-col-text" markdown="1">
+
 1. **Floor management**: By default, the floor is given to participants in turn.
 2. **Discourse briefing**: Before each turn, the current speaker receives a structured summary of the discourse state. This briefing is the primary mechanism by which the discourse state becomes *legible* to each agent. Without it, the agents would only have the raw conversation transcript to work from and would have no *formal* awareness of what has been established, what remains open, or what has been promised.
     1. The briefing is organized to mirror the distinction between shared and private state. It begins with the common ground (established mutual facts), then presents Discourse Commitments, separated into the speaker's own assertions and those made by others. That's followed by any answers awaiting the speaker's response, which are flagged as high-priority items in need of resolution. It then shows the Table (as a list of active items under discussion), to-do lists (as pending commitments for each participant), and the speaker's Individual Ground (private knowledge).
@@ -194,6 +231,27 @@ Each turn in the conversation follows a cycle:
 3. **Deliberation**: The agent considers the briefing alongside the conversation history to decide what to do. The briefing makes conversational pressure visible: a participant with an unresolved primary goal seeing a proposal on the Table knows they need to respond. An agent seeing unanswered questions knows there is pressure to address them. Items flagged as awaiting response create urgency that the agent can act on.
 4. **Discourse moves**: The agent performs one or more discourse moves, producing utterances and updating the discourse state.
 5. **State update**: The discourse state is updated to reflect the moves made.
+
+</div>
+
+<div class="two-col-diagram">
+{% raw %}
+<pre class="mermaid">
+flowchart TB
+    floor["1. Floor Management<br><i>Assign the floor</i>"]
+    floor --> briefing["2. Discourse Briefing<br><i>Summarize state for speaker</i>"]
+    briefing --> deliberation["3. Deliberation<br><i>Agent reasons about response</i>"]
+    deliberation --> moves["4. Discourse Moves<br><i>Agent acts and speaks</i>"]
+    moves --> update["5. State Update<br><i>Discourse state updated</i>"]
+    update --> check{"Completion<br>condition?"}
+    check -->|"No"| floor
+    check -->|"Close / Limit / Hang up"| done(["Conversation ends"])
+</pre>
+{% endraw %}
+</div>
+
+</div>
+
 
 This loop continues until a completion condition is met: the conversation is formally closed (possible if there are no unresolved items), the configured turn limit is reached, or a participant hangs up or abandons the conversation.
 
@@ -213,3 +271,17 @@ This loop continues until a completion condition is met: the conversation is for
   <div class="csl-entry">Stalnaker, Robert. “Common Ground.” <i>Linguistics and Philosophy</i> 25, no. 5/6 (2002): 701–21. <a href="https://doi.org/10.1023/A:1020867916902">https://doi.org/10.1023/A:1020867916902</a>.</div>
   <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Common%20Ground&amp;rft.jtitle=Linguistics%20and%20Philosophy&amp;rft.volume=25&amp;rft.issue=5%2F6&amp;rft.aufirst=Robert&amp;rft.aulast=Stalnaker&amp;rft.au=Robert%20Stalnaker&amp;rft.date=2002&amp;rft.pages=701-721&amp;rft.spage=701&amp;rft.epage=721"></span>
 </div>
+
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({
+        startOnLoad: true,
+        theme: 'default',
+        flowchart: {
+            useMaxWidth: true,
+            htmlLabels: true,
+            curve: 'basis'
+        },
+        securityLevel: 'loose'
+    });
+</script>
