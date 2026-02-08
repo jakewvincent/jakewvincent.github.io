@@ -59,3 +59,4 @@ Markdown files in root (index.md, cv.md, projects.md, teaching.md, notebooks.md)
 ## Git Conventions
 
 - Do not add Co-Authored-By lines to commit messages
+- `_site/` must be committed and pushed — there is no GitHub Actions build step, so the built output is served directly from the repo
