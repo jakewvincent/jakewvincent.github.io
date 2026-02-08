@@ -23,7 +23,10 @@ The system combines insights from two theoretical areas:
 
 The result is a system in which agents carry rich internal states that guide their contributions to a shared workspace. The workspace tracks what has been settled (in the common ground), what remains open (on the Table), and what has been promised (in the to-do list). A set of discourse moves formally connects these two layers, and most moves include a linguistic contribution that is added to the conversation's transcript.
 
-<img src="assets/images/discourse-sim-fig1.svg">
+<figure>
+    <img src="assets/images/discourse-sim-fig1.svg">
+    <figcaption>Figure 1: Architecture overview</figcaption>
+</figure>
 
 ---
 
@@ -65,20 +68,10 @@ Each participant has a separate to-do list, to which items can be added in two w
 - **Commissives** (promises): The speaker adds to their *own* to-do list (*I'll send you a confirmation*)
 - **Directives** (requests/commands): The speaker adds to *another's* to-do list (*Please provide the necessary details*)
 
-{% raw %}
-<pre class="mermaid">
-flowchart TB
-    assert["Agent asserts, proposes,<br>requests, or asks<br><i>(PutOnTable)</i>"]
-    assert --> dc["Speaker's<br>Discourse Commitments"]
-    assert --> table["The Table<br>(status: active)"]
-    table --> resolve{"Other party<br>resolves"}
-    resolve -->|"Accept"| cg["Common Ground"]
-    resolve -->|"Reject"| stays["Stays in speaker's DC<br>(agree to disagree)"]
-    dc -.->|"on acceptance"| cg
-
-    bypass["Uncontroversial information<br><i>(AddToCommonGround)</i>"] -->|"bypasses Table"| cg
-</pre>
-{% endraw %}
+<figure>
+    <img src="assets/images/discourse-sim-fig2.svg">
+    <figcaption>Figure 2: How content enters the common ground</figcaption>
+</figure>
 
 ---
 
@@ -197,8 +190,10 @@ Tools fall into several categories that reflect distinct kinds of agentic action
 
 Each turn in the conversation follows a cycle:
 
-<div class="two-col">
-<div class="two-col-text" markdown="1">
+<figure class="float-right" style="width: 45%;">
+    <img src="assets/images/discourse-sim-fig3.svg">
+    <figcaption>Figure 3: Conversation turn structure</figcaption>
+</figure>
 
 1. **Floor management**: By default, the floor is given to participants in turn.
 2. **Discourse briefing**: Before each turn, the current speaker receives a structured summary of the discourse state. This briefing is the primary mechanism by which the discourse state becomes *legible* to each agent. Without it, the agents would only have the raw conversation transcript to work from and would have no *formal* awareness of what has been established, what remains open, or what has been promised.
@@ -208,26 +203,6 @@ Each turn in the conversation follows a cycle:
 3. **Deliberation**: The agent considers the briefing alongside the conversation history to decide what to do. The briefing makes conversational pressure visible: a participant with an unresolved primary goal seeing a proposal on the Table knows they need to respond. An agent seeing unanswered questions knows there is pressure to address them. Items flagged as awaiting response create urgency that the agent can act on.
 4. **Discourse moves**: The agent performs one or more discourse moves, producing utterances and updating the discourse state.
 5. **State update**: The discourse state is updated to reflect the moves made.
-
-</div>
-
-<div class="two-col-diagram">
-{% raw %}
-<pre class="mermaid">
-flowchart TB
-    floor["1. Floor Management<br><i>Assign the floor</i>"]
-    floor --> briefing["2. Discourse Briefing<br><i>Summarize state for speaker</i>"]
-    briefing --> deliberation["3. Deliberation<br><i>Agent reasons about response</i>"]
-    deliberation --> moves["4. Discourse Moves<br><i>Agent acts and speaks</i>"]
-    moves --> update["5. State Update<br><i>Discourse state updated</i>"]
-    update --> check{"Completion<br>condition?"}
-    check -->|"No"| floor
-    check -->|"Close / Limit / Hang up"| done(["Conversation ends"])
-</pre>
-{% endraw %}
-</div>
-
-</div>
 
 
 This loop continues until a completion condition is met: the conversation is formally closed (possible if there are no unresolved items), the configured turn limit is reached, or a participant hangs up or abandons the conversation.
@@ -248,17 +223,3 @@ This loop continues until a completion condition is met: the conversation is for
   <div class="csl-entry">Stalnaker, Robert. “Common Ground.” <i>Linguistics and Philosophy</i> 25, no. 5/6 (2002): 701–21. <a href="https://doi.org/10.1023/A:1020867916902">https://doi.org/10.1023/A:1020867916902</a>.</div>
   <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Common%20Ground&amp;rft.jtitle=Linguistics%20and%20Philosophy&amp;rft.volume=25&amp;rft.issue=5%2F6&amp;rft.aufirst=Robert&amp;rft.aulast=Stalnaker&amp;rft.au=Robert%20Stalnaker&amp;rft.date=2002&amp;rft.pages=701-721&amp;rft.spage=701&amp;rft.epage=721"></span>
 </div>
-
-<script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({
-        startOnLoad: true,
-        theme: 'default',
-        flowchart: {
-            useMaxWidth: true,
-            htmlLabels: true,
-            curve: 'basis'
-        },
-        securityLevel: 'loose'
-    });
-</script>

@@ -127,6 +127,13 @@ a.image:hover {/* Prevent the above styling when the <a> tag is of class "image"
         margin-bottom: 1em;
         width: 15rem;
     }
+    figure.float-right {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 15rem;
+    }
     .sectionnolist {
         padding-left: 0.5rem;
     }
@@ -206,6 +213,12 @@ a.image:hover {/* Prevent the above styling when the <a> tag is of class "image"
         margin-left: 1em;
         margin-right: 0;
         float: right;
+        width: 19rem;
+    }
+    figure.float-right {
+        float: right;
+        margin-left: 1em;
+        margin-right: 0;
         width: 19rem;
     }
     .dropdown:hover .dropdown-content {/* Make dropdown box appear on mouseover */
@@ -435,6 +448,30 @@ padding-top: 4.5em;
     margin-left: auto;
     margin-right: auto;
     border-radius: 2px;
+}
+
+/*--Figure styling--*/
+
+figure {
+    margin: 1.5em 0;
+    padding: 0;
+}
+
+figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.85em;
+    font-style: italic;
+    color: #8b8f91;
+    margin-top: 0.5em;
 }
 
 /*--Content styling--*/
@@ -807,29 +844,6 @@ td ul {
 
 .card-links .a-button {
     font-size: 0.85em;
-}
-
-/*-- Two-column layout --*/
-
-.two-col {
-    display: flex;
-    gap: 2rem;
-    align-items: flex-start;
-}
-
-.two-col-text {
-    flex: 1;
-    min-width: 0;
-}
-
-.two-col-diagram {
-    flex: 0 0 auto;
-}
-
-@media (max-width: 768px) {
-    .two-col {
-        flex-direction: column;
-    }
 }
 
 /*-- Footer styling --*/
