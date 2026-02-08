@@ -23,24 +23,7 @@ The system combines insights from two theoretical areas:
 
 The result is a system in which agents carry rich internal states that guide their contributions to a shared workspace. The workspace tracks what has been settled (in the common ground), what remains open (on the Table), and what has been promised (in the to-do list). A set of discourse moves formally connects these two layers, and most moves include a linguistic contribution that is added to the conversation's transcript.
 
-{% raw %}
-<pre class="mermaid">
-flowchart TB
-    subgraph shared[" Shared Workspace "]
-        CG["Common Ground"] ~~~ T["The Table"] ~~~ DC["Discourse Commitments"] ~~~ TD["To-Do Lists"]
-    end
-
-    shared -. "Discourse Briefing" .-> agent
-    agent -- "Discourse Moves<br>(via MCP tools)" --> junction[ ]
-    junction --> shared
-    junction -.-> transcript(["Transcript"])
-    style junction fill:none,stroke:none
-
-    subgraph agent[" Agent · per participant "]
-        B["Beliefs"] ~~~ G["Goals"] ~~~ I["Intentions"] ~~~ IG["Individual Ground"]
-    end
-</pre>
-{% endraw %}
+<img src="assets/images/discourse-sim-fig1.svg">
 
 ---
 
@@ -81,12 +64,6 @@ Each participant has a separate to-do list, to which items can be added in two w
 
 - **Commissives** (promises): The speaker adds to their *own* to-do list (*I'll send you a confirmation*)
 - **Directives** (requests/commands): The speaker adds to *another's* to-do list (*Please provide the necessary details*)
-
-### Individual Ground
-
-The Individual Ground contains private factual knowledge held by each participant that has not been shared. One participant may know their own scheduling constraints and preferences; another may know the system's current state and applicable policies. Information may move from Individual Ground to common ground through disclosure and acceptance, but private knowledge need not always be shared.
-
-The Individual Ground is part of each participant's private state, but it is distinct from the revisable *beliefs* discussed in the [Agent Architecture](#agent-architecture-the-bdi-model) section below. Individual Ground holds stable factual records (e.g. a phone number; some status retrieved from an external system) that don't carry the uncertainty or revision dynamics that beliefs do. The two constructs come from different theoretical traditions (Farkas & Bruce for Individual Ground; Rao & Georgeff for beliefs) and serve different roles in the system.
 
 {% raw %}
 <pre class="mermaid">
@@ -145,7 +122,7 @@ Each agentic participant in a conversation maintains a private state made up of 
 
 ### Beliefs (epistemic state)
 
-Beliefs represent what an agent takes to be true about the world. Unlike propositions in the common ground (which are mutually shared with other conversational participants), beliefs are private and vary in uncertainty. In the present implementation, belief carries a confidence level (**`certain`**, **`likely`**, or **`uncertain`**) and a source (**`prior knowledge`**, **`conversation`**, **`system lookup`**, or **`inference`**).
+Beliefs represent what an agent takes to be true about the world. Unlike propositions in the common ground (which are mutually shared with other conversational participants), beliefs are private and vary in uncertainty. Each belief carries a confidence level (**`certain`**, **`likely`**, or **`uncertain`**) and a source (**`prior knowledge`**, **`conversation`**, **`system lookup`**, or **`inference`**). This means beliefs span a range from stable factual knowledge an agent brings to the conversation (a phone number, a scheduling constraint, a record retrieved from a system) to uncertain or defeasible attitudes. Information from a participant's private beliefs may move to the common ground through disclosure and acceptance, but private knowledge need not always be shared.
 
 Beliefs are also *revisable*. When new information is accepted into the common ground that contradicts an existing belief, a Belief Revision Function (BRF) belonging to the agent determines whether the individual's belief is actually updated. The BRF style is derived from the personality attributes defined in the agent's [participant profile](#participant-profiles) and is inspired by the AGM postulates (Alchourrón, Gärdenfors, & Makinson, 1985). It comes in four styles:
 
@@ -210,7 +187,7 @@ This is significant for two reasons. For one, it means the discourse state remai
 Tools fall into several categories that reflect distinct kinds of agentic actions:
 
 1. **Discourse tools**: The main way of participating in a conversation. These tools correspond to discourse moves: putting items on the Table, resolving them, making commitments, etc. Every discourse tool that produces an utterance takes an **`utterance`** parameter (the actual utterance content, as text) alongside additional, tool-specific parameters that might further inform the discourse operation. This separates *what is said* from *what it does* to the discourse state.
-2. **Preparation tools**: Internal actions that do not produce utterances. A participant recalling their own relevant details or a facilitator looking up a record in an external system return information to each agent privately, populating their Individual Ground, but nothing appears in the conversation transcript. These tools model behind-the-scenes cognitive and procedural work that underlies the discourse.
+2. **Preparation tools**: Internal actions that do not produce utterances. A participant recalling their own relevant details or a facilitator looking up a record in an external system return information to each agent privately, adding to their private beliefs, but nothing appears in the conversation transcript. These tools model behind-the-scenes cognitive and procedural work that underlies the discourse.
 3. **Seeding tools**: Used exclusively during the pre-conversation seeding phase, when the participants establish goals, beliefs, and intentions. They are not available during the main phase of the conversation.
 4. **Private state management tools**: Allow agents to update their private mental state during the conversation, such as marking a goal as achieved, revising a belief, or linking an intention to a public to-do item. These help bridge the private and public layers of the system.
 
@@ -225,8 +202,8 @@ Each turn in the conversation follows a cycle:
 
 1. **Floor management**: By default, the floor is given to participants in turn.
 2. **Discourse briefing**: Before each turn, the current speaker receives a structured summary of the discourse state. This briefing is the primary mechanism by which the discourse state becomes *legible* to each agent. Without it, the agents would only have the raw conversation transcript to work from and would have no *formal* awareness of what has been established, what remains open, or what has been promised.
-    1. The briefing is organized to mirror the distinction between shared and private state. It begins with the common ground (established mutual facts), then presents Discourse Commitments, separated into the speaker's own assertions and those made by others. That's followed by any answers awaiting the speaker's response, which are flagged as high-priority items in need of resolution. It then shows the Table (as a list of active items under discussion), to-do lists (as pending commitments for each participant), and the speaker's Individual Ground (private knowledge).
-    2. The briefing moves on to the speaker's private state: their self-registered beliefs, goals, and intentions.
+    1. The briefing is organized to mirror the distinction between shared and private state. It begins with the common ground (established mutual facts), then presents Discourse Commitments, separated into the speaker's own assertions and those made by others. That's followed by any answers awaiting the speaker's response, which are flagged as high-priority items in need of resolution. It then shows the Table (as a list of active items under discussion) and to-do lists (as pending commitments for each participant).
+    2. The briefing moves on to the speaker's private state: their beliefs, goals, and intentions.
     3. The briefing is perspectival: each participant sees the same shared structures but only their own private state. This asymmetry is faithful to the theoretical model: common ground is mutual, but mental states are private.
 3. **Deliberation**: The agent considers the briefing alongside the conversation history to decide what to do. The briefing makes conversational pressure visible: a participant with an unresolved primary goal seeing a proposal on the Table knows they need to respond. An agent seeing unanswered questions knows there is pressure to address them. Items flagged as awaiting response create urgency that the agent can act on.
 4. **Discourse moves**: The agent performs one or more discourse moves, producing utterances and updating the discourse state.
