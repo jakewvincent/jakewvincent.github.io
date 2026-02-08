@@ -14,8 +14,8 @@ The system combines insights from two theoretical areas:
 
 **Pragmatics & Discourse Theory** (for the shared state)
 
-1. **Farkas & Bruce (2010)** --- conversation as manipulation of shared information structures (common ground, The Table, Discourse Commitments)
-2. **Portner (2007)** --- a shared To-Do List semantics for commissives and imperatives
+1. **Farkas & Bruce (2010)**: Conversation as manipulation of shared information structures (Common Ground, The Table, Discourse Commitments)
+2. **Portner (2007)**: A To-Do List component for imperatives (adapted here to handle commissives and directives)
 
 **Agent Theory** (for private/individual states)
 
@@ -61,7 +61,7 @@ This reflects an asymmetry that is observed in natural conversational interactio
 
 ### To-Do Lists (Portner 2007)
 
-Incorporating Portner's (2007) To-Do List model extends our framework to track both commitments (things participants have committed themselves to *doing*) and imperatives (things participants have commanded another participant to do). Note that this is completely distinct from DCs, which are epistemic (commitments about what is true).
+Adapting Portner's (2007) To-Do List model for imperatives extends our framework to track both commissives (things participants have committed themselves to *doing*) and directives (things participants have commanded another participant to do). Note that this is completely distinct from DCs, which are epistemic (commitments about what is true).
 
 Each participant has a separate to-do list, to which items can be added in two ways:
 
