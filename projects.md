@@ -1,6 +1,6 @@
 ---
 title: Research & Projects
-updated: 2026-02-02
+updated: 2026-02-09
 layout: default
 ---
 
@@ -11,7 +11,9 @@ layout: default
         <h4 class="card-title"><i class="fa-solid fa-comments"></i> Discourse Simulator for Task-Oriented Dialogue</h4>
         <p class="card-description">A conversation simulation system grounded in formal discourse theory. Agents with private mental states (beliefs, desires, intentions) interact through discourse operations on shared information structures including Common Ground, the Table, Discourse Commitments, and To-Do Lists. Integrates Farkas &amp; Bruce (2010), Portner (2007), and the BDI model to generate multi-participant dialogues driven by formal pragmatic principles.</p>
         <div class="card-meta">
-            <span class="card-tag">Python</span>
+            <span class="card-tag">Agents</span>
+            <span class="card-tag">MCP</span>
+            <span class="card-tag">Synthetic data</span>
             <span class="card-tag">Discourse</span>
             <span class="card-tag">Pragmatics</span>
             <span class="card-tag">BDI</span>
@@ -28,6 +30,8 @@ layout: default
             <span class="card-tag">Alpine.js</span>
             <span class="card-tag">Healthcare</span>
             <span class="card-tag">AI</span>
+            <span class="card-tag">Lambda</span>
+            <span class="card-tag">API Gateway</span>
         </div>
         <div class="card-links">
             <a class="github-button a-button" href="https://github.com/jakewvincent/therapy-docs-demo"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;View on GitHub</a>
@@ -42,6 +46,7 @@ layout: default
             <span class="card-tag">WebAssembly</span>
             <span class="card-tag">ML</span>
             <span class="card-tag">Speech</span>
+            <span class="card-tag">ASR</span>
         </div>
         <div class="card-links">
             <a class="github-button a-button" href="https://github.com/jakewvincent/tinyscribe">
