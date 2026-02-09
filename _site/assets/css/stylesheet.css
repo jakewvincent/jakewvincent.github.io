@@ -575,6 +575,7 @@ margin-left: 1.5rem;
 
 .align-unit {	/* Div consisting of word and gloss to be vertically left-aligned */
     display: inline-block;
+    vertical-align: top;
 }
 
 .word {	/* Single word in the text. Keep here just in case. */
