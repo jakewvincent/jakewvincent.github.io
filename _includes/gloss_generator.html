@@ -1,10 +1,127 @@
-<script src="assets/scripts/lingGlossHTML.js"></script>
-<script src="assets/scripts/clearFormOnLoad.js"></script>
-<script src="assets/scripts/addGlossUnit.js"></script>
-<script src="assets/scripts/selectOnClick.js"></script>
-<script src="assets/scripts/showExample.js"></script>
-<script src="assets/scripts/initialState.js"></script>
-<script src="assets/scripts/resetFields.js"></script>
+<script>
+let glossUnits = 1;
+
+function convert() {
+    const textOut = document.getElementById("textOut");
+    const table = document.getElementById("allInput");
+    const nCells = table.rows[0].cells.length;
+    const ft = document.getElementById("ftIn").value;
+
+    const glUnits = [];
+    for (let i = 1; i < nCells; i++) {
+        const wordCell = table.rows[0].cells[i].children[0].value;
+        const glossCell = table.rows[1].cells[i].children[0].value;
+        glUnits.push(
+            '        <div class="align-unit">\n' +
+            '            <div class="word">' + wordCell + '</div>\n' +
+            '            <div class="gloss">' + glossCell + '</div>\n' +
+            '        </div>\n'
+        );
+    }
+
+    textOut.value =
+        '<div class="example">\n' +
+        '    <div class="all-align-units">\n' +
+        glUnits.join("") + '\n' +
+        '    </div>\n' +
+        '    <div class="free-transl">\n' +
+        '        ' + ft + '\n' +
+        '    </div>\n' +
+        '</div>';
+
+    const preview = document.getElementById("examplePreview");
+    preview.style.color = "black";
+    preview.innerHTML = textOut.value;
+}
+
+function addGlossUnit() {
+    glossUnits++;
+
+    const wordRow = document.getElementById("wordRow");
+    const tdWord = document.createElement("td");
+    tdWord.id = "wordTd" + glossUnits;
+    const inputWord = document.createElement("input");
+    inputWord.type = "text";
+    inputWord.id = "wordIn" + glossUnits;
+    inputWord.size = 10;
+    inputWord.addEventListener("input", convert);
+    tdWord.appendChild(inputWord);
+    wordRow.appendChild(tdWord);
+
+    const glossRow = document.getElementById("glossRow");
+    const tdGloss = document.createElement("td");
+    tdGloss.id = "glossTd" + glossUnits;
+    const inputGloss = document.createElement("input");
+    inputGloss.type = "text";
+    inputGloss.id = "glossIn" + glossUnits;
+    inputGloss.size = 10;
+    inputGloss.addEventListener("input", convert);
+    tdGloss.appendChild(inputGloss);
+    glossRow.appendChild(tdGloss);
+
+    document.getElementById("ftTd").colSpan = glossUnits;
+}
+
+function resetFields() {
+    const wordRow = document.getElementById("wordRow");
+    const glossRow = document.getElementById("glossRow");
+
+    // Remove all added TDs (keep label cell and first input cell)
+    while (wordRow.cells.length > 2) {
+        wordRow.removeChild(wordRow.lastChild);
+    }
+    while (glossRow.cells.length > 2) {
+        glossRow.removeChild(glossRow.lastChild);
+    }
+
+    // Clear the remaining inputs and output
+    document.getElementById("wordIn1").value = "";
+    document.getElementById("glossIn1").value = "";
+    document.getElementById("ftIn").value = "";
+    document.getElementById("textOut").value = "";
+
+    // Reset counter and colspan
+    glossUnits = 1;
+    document.getElementById("ftTd").colSpan = 1;
+
+    // Reset preview
+    const preview = document.getElementById("examplePreview");
+    preview.style.color = "#8b8f91";
+    preview.innerHTML = "Preview will show here.";
+}
+
+function showExample() {
+    resetFields();
+
+    for (let i = 0; i < 6; i++) {
+        addGlossUnit();
+    }
+
+    document.getElementById("wordIn1").value = "Chumålik";
+    document.getElementById("wordIn2").value = "i";
+    document.getElementById("wordIn3").value = "[matå'chung";
+    document.getElementById("wordIn4").value = "na";
+    document.getElementById("wordIn5").value = "påtgun";
+    document.getElementById("wordIn6").value = "gi";
+    document.getElementById("wordIn7").value = "siya.]";
+    document.getElementById("glossIn1").value = '<span>sg.agr</span>:laugh';
+    document.getElementById("glossIn2").value = "the";
+    document.getElementById("glossIn3").value = '<span>sg.agr</span>.sit';
+    document.getElementById("glossIn4").value = '<span>lk</span>';
+    document.getElementById("glossIn5").value = "child";
+    document.getElementById("glossIn6").value = '<span>loc</span>';
+    document.getElementById("glossIn7").value = "chair";
+    document.getElementById("ftIn").value = "'The child who sat in the chair laughed.'";
+
+    convert();
+}
+
+function selectAll(id) {
+    const el = document.getElementById(id);
+    el.focus();
+    el.select();
+}
+</script>
 <form action="" id="glossForm">
     <fieldset>
         <input type="button" value="Convert" onclick="convert()">
@@ -22,7 +139,7 @@
             </tr>
             <tr>
                 <td>Free translation:&nbsp;</td>
-                <td id="ftTd" colspan="0"><input type="text" id="ftIn" style="width:100%; box-sizing:border-box" size="10" oninput="convert()"></td>
+                <td id="ftTd" colspan="1"><input type="text" id="ftIn" style="width:100%; box-sizing:border-box" size="10" oninput="convert()"></td>
             </tr>
         </table>
 
