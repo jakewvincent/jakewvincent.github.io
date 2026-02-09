@@ -812,6 +812,21 @@ td ul {
     color: #24292e;
 }
 
+.card-year::before {
+    content: "(";
+}
+
+.card-year::after {
+    content: ")";
+}
+
+.card-year {
+    font-weight: normal;
+    font-size: 0.8em;
+    color: #8b8f91;
+    margin-left: 5px;
+}
+
 .card-description {
     font-size: 0.9em;
     line-height: 1.6em;
