@@ -215,20 +215,22 @@ function selectAll(id) {
         <input type="button" value="Reset" onclick="resetFields()" />
         <input type="button" value="Show example" onclick="showExample()" />
         <input type="button" value="Add unit" onclick="addGlossUnit()" />
-        <table id="allInput">
-            <tr id="wordRow">
-                <td>Words:</td>
-                <td id="wordTd1"><input type="text" id="wordIn1" size="10" oninput="convert()" /></td>
-            </tr>
-            <tr id="glossRow">
-                <td>Glosses:</td>
-                <td id="glossTd1"><input type="text" id="glossIn1" size="10" oninput="convert()" /></td>
-            </tr>
-            <tr>
-                <td>Free translation:&nbsp;</td>
-                <td id="ftTd" colspan="1"><input type="text" id="ftIn" style="width:100%; box-sizing:border-box" size="10" oninput="convert()" /></td>
-            </tr>
-        </table>
+        <div style="overflow-x: auto;">
+            <table id="allInput">
+                <tr id="wordRow">
+                    <td>Words:</td>
+                    <td id="wordTd1"><input type="text" id="wordIn1" size="10" oninput="convert()" /></td>
+                </tr>
+                <tr id="glossRow">
+                    <td>Glosses:</td>
+                    <td id="glossTd1"><input type="text" id="glossIn1" size="10" oninput="convert()" /></td>
+                </tr>
+                <tr>
+                    <td>Free translation:&nbsp;</td>
+                    <td id="ftTd" colspan="1"><input type="text" id="ftIn" style="width:100%; box-sizing:border-box" size="10" oninput="convert()" /></td>
+                </tr>
+            </table>
+        </div>
 
         <div>
             <p>Preview:</p>
