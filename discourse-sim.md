@@ -1,14 +1,14 @@
 ---
 title: "Discourse Simulator for Task-Oriented Dialogue"
 layout: default
-updated: 2026-02-06
+updated: 2026-03-29
 ---
 
 # Discourse simulator for task-oriented dialogue
 
 ## Overview
 
-This system simulates multi-participant, task-oriented phone conversations by modeling the discourse moves of agentic participants who interact through *discourse operations* (implemented as MCP tools) on a shared discourse structure. Rather than treating conversation as a sequence of specific types of utterances, the system adopts a discourse-theoretic perspective. It models utterances not by what they *are* (e.g., "this is a question"), but by what they *do to the context*.
+This system simulates multi-participant, task-oriented conversations by modeling the discourse moves of agentic participants who interact through *discourse operations* (implemented as tools) on a shared discourse structure. Rather than treating conversation as a sequence of specific types of utterances, the system adopts a discourse-theoretic perspective. It models utterances not by what they *are* (e.g., "this is a question"), but by what they *do to the context*.
 
 The system combines insights from two theoretical areas:
 
@@ -19,7 +19,7 @@ The system combines insights from two theoretical areas:
 
 **Agent Theory** (for private/individual states)
 
-1. **The BDI model (Rao & Georgeff 1995)** --- agents with private Beliefs, Desires (goals), and Intentions that exist independently of and prior to the discourse, and that evolve via private operations on the individual's state over the course of a conversation
+1. **The BDI model (Rao & Georgeff 1995)** --- agents with private Beliefs, Desires, and Intentions that exist independently of and prior to the discourse, and that evolve via private operations on the individual's state over the course of a conversation
 
 The result is a system in which agents carry rich internal states that guide their contributions to a shared workspace. The workspace tracks what has been settled (in the common ground), what remains open (on the Table), and what has been promised (in the to-do list). A set of discourse moves formally connects these two layers, and most moves include a linguistic contribution that is added to the conversation's transcript.
 
@@ -38,13 +38,13 @@ The conversational workspace (or discourse state) is modeled after Farkas & Bruc
 
 The common ground is the set of propositions mutually accepted by all participants. It starts empty and grows as participants assert, accept information, and resolve issues that are up for discussion. A proposition enters the CG only when it's been publicly committed to *and* accepted by the relevant parties. The CG represents the established shared understanding (what everyone has agreed to treat as true).
 
-The word "accepted" is important here. Following Stalnaker (2002), the CG is a matter of common *acceptance* and not necessarily of common *belief*. A participant can accept a proposition for the purposes of the conversation, proceeding as though it were true, without recording it as a held belief. A participant might accept the other's assertion that "the earliest available time is Thursday" (in order to move the conversation forward) while privately believing an earlier slot must exist. The system reflects this possibility, since the CG and an agent's private beliefs are implemented as separate structures that can diverge. When any new CG content contradicts an agent's existing belief, the agent's Belief Revision Function determines whether the private belief is updated, but the BRF can lead the agent to reject the revision. So the common ground tracks the *discursive* state (what's been established through discourse moves) rather than *doxastic* states (what participants privately believe to be true).
+The word "accepted" is important here. Following Stalnaker (2002), the CG is a matter of common *acceptance* and not necessarily of common *belief*. A participant can accept a proposition for the purposes of the conversation, proceeding as though it were true, without recording it as a held belief. A participant might accept the other's assertion that "the earliest available time is Thursday" (in order to move the conversation forward) while privately believing an earlier slot must exist. The system reflects this possibility, since the CG and an agent's private beliefs are implemented as separate structures that can diverge. When any new CG content contradicts an agent's existing belief, the agent's Belief Revision Style (BRS) influences whether the private belief is updated, and the BRS can lead the agent to reject the revision. So the common ground tracks the *discursive* state (what's been established through discourse moves) rather than *doxastic* states (what participants privately believe to be true).
 
 ### The Table
 
 The Table contains items that are under active discussion: questions, proposals, requests, and assertions. These create conversational pressure toward resolution. Items on the Table demand attention by appearing in a discourse briefing that prompts each agent to complete their turn: a question needs an answer, a proposal needs acceptance or rejection, a request needs acknowledgment or an answer, etc. This pressure helps drive the conversation forward.
 
-Items on the Table have a lifecycle, beginning as **`active`**, and can transition to **`awaiting acceptance`** (when an answer has been uttered but not yet accepted), **`resolved`** (whether accepted or rejected), **`amended`** (replaced by a revised version, which closes the original item and adds a new active item), or **`retracted`** (withdrawn by the original speaker).
+Items on the Table have a lifecycle, beginning as **`active`**, and can transition to **`staged`** (when an answer has been uttered but not yet accepted), **`resolved`** (whether accepted or rejected), **`superseded`** (replaced by a revised version, which closes the original item and adds a new active item), **`withdrawn`** (retracted by the original speaker), or **`contested`** (challenged or disputed by another participant).
 
 The four item types reflect different kinds of conversational pressure:
 
@@ -77,35 +77,35 @@ Each participant has a separate to-do list, to which items can be added in two w
 
 ## Discourse moves
 
-Agents interact with the discourse state through a fixed set of discourse moves, each of these operationalized as a tool in the MCP server. Every move has defined effects on the discourse state's components, creating a formal connection between what an agent says and how the conversational state changes.
+Agents interact with the discourse state through a fixed set of discourse moves, each of these operationalized as a tool in the system's tool layer. Every move has defined effects on the discourse state's components, creating a formal connection between what an agent says and how the conversational state changes.
 
 ### Initiating moves (selected)
 
-- **PutOnTable**: Creates a new item (question, proposal, request, or assertion) on the Table and adds the content to the speaker's Discourse Commitments.
-- **AddToCommonGround**: Directly adds a proposition to the common ground, bypassing the Table. Only used for information so uncontroversial it needs no negotiation, and all participants know it needs no negotiation.
-- **UpdateToDo**: Adds, completes, or cancels a to-do item. Creates commissives (promises to self) or directives (requests to other).
+- **`table`**: Creates a new item (question, proposal, request, or assertion) on the Table and adds the content to the speaker's Discourse Commitments.
+- **`add_to_common_ground`**: Directly adds a proposition to the common ground, bypassing the Table. Only used for information so uncontroversial it needs no negotiation, and all participants know it needs no negotiation.
+- **`change_todo`**: Adds, completes, or cancels a to-do item. Creates commissives (promises to self) or directives (requests to other).
 
 ### Responding moves
 
-- **AnswerQuestion**: Provides an answer to a question on the Table. The answer enters the answerer's Discourse Commitments, and the question transitions to awaiting acceptance (of the answer).
-- **Resolve**: Accepts, rejects, defers, or partially accepts an item on the Table. Acceptance moves the content from DC to CG.
+- **`answer`**: Provides an answer to a question on the Table. The answer enters the answerer's Discourse Commitments, and the question transitions to staged (awaiting acceptance of the answer).
+- **`resolve`**: Accepts, rejects, postpones, or partially accepts an item on the Table. Acceptance moves the content from DC to CG.
 
 ### Managing moves
 
-- **Retract**: Withdraws one of the speaker's own additions to the Table
-- **Amend**: Replaces, clarifies, or expands an existing Table item with a new version
-- **Challenge**: Disputes a proposition in the common ground, potentially leading to belief revision
-- **SelfCorrect**: Corrects a prior assertion by the same speaker
+- **`retract`**: Withdraws one of the speaker's own additions to the Table
+- **`amend`**: Replaces, clarifies, or expands an existing Table item with a new version
+- **`challenge`**: Disputes a proposition in the common ground, potentially leading to belief revision
+- **`correct_record`**: Corrects a prior assertion by the same speaker
 
 ### Structural moves (selected)
 
-- **OpenConversation/CloseConversation**: Marks conversational boundaries; closing requires no unresolved Table items and no pending to-do items
-- **YieldTurn**: Explicitly yields the conversational floor (without an utterance)
-- **HangUp**: Terminates the conversation abruptly without verbal closure (a nonverbal action; different from closing)
+- **`open_conversation`**/**`close_conversation`**: Marks conversational boundaries; closing requires no unresolved Table items and no pending to-do items
+- **`yield`**: Explicitly yields the conversational floor (without an utterance)
+- **`hang_up`**: Terminates the conversation abruptly without verbal closure (a nonverbal action; different from closing)
 
 ### Freeform
 
-The **Say** move produces utterances that do not directly manipulate the discourse state: empathetic responses, acknowledgments, social pleasantries, and phatic speech. These are important for conversational naturalness but do not alter the formal state structures.
+The **`say`** move produces utterances that do not directly manipulate the discourse state: empathetic responses, acknowledgments, social pleasantries, and phatic speech. These are important for conversational naturalness but do not alter the formal state structures.
 
 ---
 
@@ -115,63 +115,63 @@ Each agentic participant in a conversation maintains a private state made up of 
 
 ### Beliefs (epistemic state)
 
-Beliefs represent what an agent takes to be true about the world. Unlike propositions in the common ground (which are mutually shared with other conversational participants), beliefs are private and vary in uncertainty. Each belief carries a confidence level (**`certain`**, **`likely`**, or **`uncertain`**) and a source (**`prior knowledge`**, **`conversation`**, **`system lookup`**, or **`inference`**). This means beliefs span a range from stable factual knowledge an agent brings to the conversation (a phone number, a scheduling constraint, a record retrieved from a system) to uncertain or defeasible attitudes. Information from a participant's private beliefs may move to the common ground through disclosure and acceptance, but private knowledge need not always be shared.
+Beliefs represent what an agent takes to be true about the world. Unlike propositions in the common ground (which are mutually shared with other conversational participants), beliefs are private and vary in uncertainty. Each belief carries a confidence level (**`high`**, **`moderate`**, or **`low`**) and a source (**`prior knowledge`**, **`conversation`**, **`data source`**, or **`inference`**). This means beliefs span a range from stable factual knowledge an agent brings to the conversation (a phone number, a scheduling constraint, a record retrieved from a system) to uncertain or defeasible attitudes. Information from a participant's private beliefs may move to the common ground through disclosure and acceptance, but private knowledge need not always be shared.
 
-Beliefs are also *revisable*. When new information is accepted into the common ground that contradicts an existing belief, a Belief Revision Function (BRF) belonging to the agent determines whether the individual's belief is actually updated. The BRF style is derived from the personality attributes defined in the agent's [participant profile](#participant-profiles) and is inspired by the AGM postulates (Alchourrón, Gärdenfors, & Makinson, 1985). It comes in four styles:
+Beliefs are also *revisable*. When new information is accepted into the common ground that contradicts an existing belief, the agent's Belief Revision Style (BRS) influences whether the individual's belief is actually updated. The BRS is an advisory label derived from the agent's [participant profile](#participant-profiles), included in the agent's discourse briefing to guide how they handle contradictory information. The concept is inspired by the AGM postulates (Alchourrón, Gärdenfors, & Makinson, 1985). It comes in four styles:
 
 | Style         | Behavior                                                                                                                                |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| **Stubborn**  | Resists revision. Only updates uncertain beliefs; requires high-credibility evidence for likely beliefs; never revises certain beliefs. |
-| **Flexible**  | Generally open to revision. Rejects only low-credibility challenges to certain beliefs.                                                 |
+| **Stubborn**  | Resists revision. Only updates low-confidence beliefs; requires high-credibility evidence for moderate beliefs; never revises high-confidence beliefs. |
+| **Flexible**  | Generally open to revision. Rejects only low-credibility challenges to high-confidence beliefs.                                                 |
 | **Skeptical** | Demands strong evidence for any revision, regardless of current confidence.                                                             |
 | **Trusting**  | Accepts all revisions regardless of confidence or source credibility.                                                                   |
 
-This means that the same piece of new information entering the common ground can have different effects on different agents' belief states, depending on their BRF style.
+This means that the same piece of new information entering the common ground can have different effects on different agents' belief states, depending on their BRS.
 
-### Goals (desires)
+### Desires
 
-Goals represent what an agent wants to achieve, whether private or public. They are initialized prior to the conversation and are never directly visible to other participants, though an agent could choose to express them through discourse moves. Goals have a *priority* attribute:
+Desires represent what an agent wants to achieve, whether private or public. They are initialized prior to the conversation and are never directly visible to other participants, though an agent could choose to express them through discourse moves. Desires have a *priority* attribute:
 
 - **`primary`**: The main objective for the interaction (e.g. *obtain information about available appointments*)
 - **`secondary`**: Desirable but not essential (e.g. *understand the scheduling constraints*)
-- **`implicit`**: Background motivations that the agent may not explicitly articulate (e.g. *feel respected*, *minimize time spent*)
+- **`latent`**: Background motivations that the agent may not explicitly articulate (e.g. *feel respected*, *minimize time spent*)
 
-Goals start as **`active`** and can transition to **`achieved`** or **`abandoned`** over the course of a conversation.
+Desires start as **`active`** and can transition to **`achieved`** or **`cancelled`** over the course of a conversation.
 
 ### Intentions (deliberative state)
 
-Intentions represent an agent's private plans for *how* to achieve their goals. These are distinct from public commitments (they are still part of the individual's private state); an agent may intend to propose an alternative solution but has not yet expressed this in discourse. Intentions serve as a bridge between the private state and the discourse state. When enacted, intentions typically result in discourse moves that shape how the dialogue unfolds.
+Intentions represent an agent's private plans for *how* to achieve their desires. These are distinct from public commitments (they are still part of the individual's private state); an agent may intend to propose an alternative solution but has not yet expressed this in discourse. Intentions serve as a bridge between the private state and the discourse state. When enacted, intentions typically result in discourse moves that shape how the dialogue unfolds.
 
 ### Seeding
 
-To establish beliefs and goals before a conversation begins, each agent undergoes a *seeding phase* in which their goals, beliefs, and (optionally) intentions are initialized from their context, which includes their personal profile and any scenario information they've been provided. This simulates a mental state that will drive how each agent shows up for the onset of the conversation. For example, one participant might enter a conversation with a primary goal of scheduling an appointment, a belief that a particular time slot is available, and an intention to propose that time. Another participant might enter with a belief that they have answered a phone call, a belief about scheduling constraints, and a goal of trying to address the caller's need.
+To establish beliefs and desires before a conversation begins, each agent undergoes a *seeding phase* in which their desires, beliefs, and (optionally) intentions are initialized from their context, which includes their personal profile and any scenario information they've been provided. This simulates a mental state that will drive how each agent shows up for the onset of the conversation. For example, one participant might enter a conversation with a primary desire to schedule an appointment, a belief that a particular time slot is available, and an intention to propose that time. Another participant might enter with a belief that they have answered a phone call, a belief about scheduling constraints, and a desire to address the caller's need.
 
 ### Participant profiles
 
 While the BDI model gives agents a mental architecture and our discourse-theoretic model gives a pragmatic architecture, profiles define each agent's identity, backstory, and personality characteristics. Each participant in a conversation is backed by a profile that specifies who they are along dimensions that shape both their behavior in discourse and the way the system initializes their mental state.
 
-Participant profiles typically include the following categories of information.
+The engine itself is profile-schema-agnostic --- it treats profiles as opaque data structures. The specific fields and categories within a profile are defined by a domain pack, which supplies the profile schema, sampling distributions, and BRS derivation logic. However, a profile will typically include information like the following:
 
 1. **Personal information**: Name, location, and various demographic details
-2. **Personality traits modeled on the Big Five**: Extroversion, openness, conscientiousness, agreeableness, and neuroticism
+2. **Personality traits**: For example, traits modeled on the Big Five (extroversion, openness, conscientiousness, agreeableness, and neuroticism)
 3. **A current state**: Mood, stress level, and urgency
 4. **Linguistic characteristics**: First language, language proficiency, dialect, and disfluency rate
 
 Profiles for participants in professional roles additionally include domain-specific attributes, including their division or department, trainings completed, years of experience, etc.
 
-Profiles are utilized in several ways in the system. First, personality traits directly determine the agent's BRF style. High agreeableness and high openness produce a Trusting agent; low agreeableness produces a Stubborn one. The mapping from personality to BRF style means that the way an agent handles contradictory information is grounded in their profile, rather than being assigned arbitrarily.
+Profiles are utilized in several ways in the system. First, personality traits can be used by the domain pack to derive the agent's BRS. For example, a domain pack might map high agreeableness and high openness to a Trusting style, while low agreeableness produces a Stubborn one. The mapping from personality to BRS means that the way an agent handles contradictory information is grounded in their profile, rather than being assigned arbitrarily.
 
 Second, profiles are worked into the system prompt template, the actual instructions that dictate the agent's identity and behavioral characteristics throughout the conversation. An agent with high neuroticism and a stressed mood will behave differently than one who is relaxed and agreeable.
 
-Third, profiles provide the raw material for the seeding phase. During the seeding phase, each agent reads their profile and any information they've been provided about the context or situation (their task, mood, urgency, professional context, etc.) and uses it to generate plausible initial goals, beliefs, and intentions. A profile describing a frustrated, high-urgency participant with an unresolved issue will produce different seeded goals than one describing a calm, low-urgency participant with a general inquiry.
+Third, profiles provide the raw material for the seeding phase. During the seeding phase, each agent reads their profile and any information they've been provided about the context or situation (their task, mood, urgency, professional context, etc.) and uses it to generate plausible initial desires, beliefs, and intentions. A profile describing a frustrated, high-urgency participant with an unresolved issue will produce different seeded desires than one describing a calm, low-urgency participant with a general inquiry.
 
-The institutional or organizational context can also optionally play a role. Examples of this context could include policies for a participant to follow, standard operating procedures, verification protocols, and available actions. Together, these will constrain what agents can do and what resolutions are available. These contextual artifacts sit alongside participant profiles as inputs during the seeding phase, potentially affecting the initial beliefs, goals, and intentions the agents register to their private state, which in turn shapes the space of possible conversations that can be generated.
+The institutional or organizational context can also optionally play a role. Examples of this context could include policies for a participant to follow, standard operating procedures, verification protocols, and available actions. Together, these will constrain what agents can do and what resolutions are available. These contextual artifacts sit alongside participant profiles as inputs during the seeding phase, potentially affecting the initial beliefs, desires, and intentions the agents register to their private state, which in turn shapes the space of possible conversations that can be generated.
 
 ---
 
-## MCP server
+## Tool-mediated interaction
 
-A central design decision is that agents never read or write the discourse state directly. All interaction with the shared workspace is mediated by an MCP server that exposes a set of tools with which the agents can interact with the discourse state. Agents invoke these tools by name, with parameters, to produce an utterance and update the discourse state in one step. Agents reason about which tools to call and with what arguments, and the server executes the resulting updates to the discourse state.
+A central design decision is that agents never read or write the discourse state directly. All interaction with the shared workspace is mediated by a tool system that exposes a set of discourse operations with which the agents can interact with the discourse state. Agents invoke these tools by name, with parameters, to produce an utterance and update the discourse state in one step. Agents reason about which tools to call and with what arguments, and the system executes the resulting updates to the discourse state.
 
 This is significant for two reasons. For one, it means the discourse state remains consistent: there's no way for an agent to e.g. add something to the common ground without it being properly sourced and tracked, because the only path to the common ground runs through a tool that enforces discourse norms humans naturally follow. Second, it means the agent's tool selection is itself a meaningful signal about the simulated mental activity. Selecting a tool to put a proposal on the Table for discussion is a different discourse move than using a generic tool for uttering something, even if the surface utterance might be similar. The tool choice captures the underlying pragmatics that the utterance alone might leave ambiguous.
 
@@ -179,10 +179,10 @@ This is significant for two reasons. For one, it means the discourse state remai
 
 Tools fall into several categories that reflect distinct kinds of agentic actions:
 
-1. **Discourse tools**: The main way of participating in a conversation. These tools correspond to discourse moves: putting items on the Table, resolving them, making commitments, etc. Every discourse tool that produces an utterance takes an **`utterance`** parameter (the actual utterance content, as text) alongside additional, tool-specific parameters that might further inform the discourse operation. This separates *what is said* from *what it does* to the discourse state.
+1. **Conversational tools**: The main way of participating in a conversation. These tools correspond to discourse moves: putting items on the Table, resolving them, making commitments, etc. Every conversational tool that produces an utterance takes an **`utterance`** parameter (the actual utterance content, as text) alongside additional, tool-specific parameters that might further inform the discourse operation. This separates *what is said* from *what it does* to the discourse state.
 2. **Preparation tools**: Internal actions that do not produce utterances. A participant recalling their own relevant details or a facilitator looking up a record in an external system return information to each agent privately, adding to their private beliefs, but nothing appears in the conversation transcript. These tools model behind-the-scenes cognitive and procedural work that underlies the discourse.
-3. **Seeding tools**: Used exclusively during the pre-conversation seeding phase, when the participants establish goals, beliefs, and intentions. They are not available during the main phase of the conversation.
-4. **Private state management tools**: Allow agents to update their private mental state during the conversation, such as marking a goal as achieved, revising a belief, or linking an intention to a public to-do item. These help bridge the private and public layers of the system.
+3. **Seeding tools**: Used exclusively during the pre-conversation seeding phase, when the participants establish desires, beliefs, and intentions. They are not available during the main phase of the conversation.
+4. **Private state management tools**: Allow agents to update their private mental state during the conversation, such as marking a desire as achieved, revising a belief, or linking an intention to a public to-do item. These help bridge the private and public layers of the system.
 
 ---
 
@@ -195,12 +195,12 @@ Each turn in the conversation follows a cycle:
     <figcaption>Figure 3: Conversation turn structure</figcaption>
 </figure>
 
-1. **Floor management**: By default, the floor is given to participants in turn.
+1. **Floor management**: The floor is offered to participants based on priority. Each participant can claim or decline the floor, optionally with an urgency weight. When multiple participants claim, urgency (then priority) determines who speaks next.
 2. **Discourse briefing**: Before each turn, the current speaker receives a structured summary of the discourse state. This briefing is the primary mechanism by which the discourse state becomes *legible* to each agent. Without it, the agents would only have the raw conversation transcript to work from and would have no *formal* awareness of what has been established, what remains open, or what has been promised.
     1. The briefing is organized to mirror the distinction between shared and private state. It begins with the common ground (established mutual facts), then presents Discourse Commitments, separated into the speaker's own assertions and those made by others. That's followed by any answers awaiting the speaker's response, which are flagged as high-priority items in need of resolution. It then shows the Table (as a list of active items under discussion) and to-do lists (as pending commitments for each participant).
-    2. The briefing moves on to the speaker's private state: their beliefs, goals, and intentions.
+    2. The briefing moves on to the speaker's private state: their beliefs, desires, and intentions.
     3. The briefing is perspectival: each participant sees the same shared structures but only their own private state. This asymmetry is faithful to the theoretical model: common ground is mutual, but mental states are private.
-3. **Deliberation**: The agent considers the briefing alongside the conversation history to decide what to do. The briefing makes conversational pressure visible: a participant with an unresolved primary goal seeing a proposal on the Table knows they need to respond. An agent seeing unanswered questions knows there is pressure to address them. Items flagged as awaiting response create urgency that the agent can act on.
+3. **Deliberation**: The agent considers the briefing alongside the conversation history to decide what to do. The briefing makes conversational pressure visible: a participant with an unresolved primary desire seeing a proposal on the Table knows they need to respond. An agent seeing unanswered questions knows there is pressure to address them. Items flagged as awaiting response create urgency that the agent can act on.
 4. **Discourse moves**: The agent performs one or more discourse moves, producing utterances and updating the discourse state.
 5. **State update**: The discourse state is updated to reflect the moves made.
 
