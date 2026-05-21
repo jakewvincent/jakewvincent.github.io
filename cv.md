@@ -1,7 +1,7 @@
 ---
 title: CV
 layout: default
-updated: 2026-02-02
+updated: 2026-05-21
 main-img: assets/images/jwv_x.jpg
 main-img-title: Jake W. Vincent, PhD
 ---
@@ -17,6 +17,7 @@ main-img-title: Jake W. Vincent, PhD
 {: .sectionnolist}
 
 ### Positions Held
+2026-current: Forward Deployed AI Engineer & Data Scientist, Five9.\\
 2025-2026: Language Data Scientist II, SageMaker AI/Ground Truth, Bedrock Data Services, Amazon Web Services.\\
 2022-2025: Language Engineer II, Amazon Transcribe, MLP Data team, Amazon Web Services.\\
 2021-2022: Language Engineer (contract), Amazon Lex (NLU pod), AiData team, AI Labs, Amazon Web Services.\\
@@ -32,6 +33,7 @@ main-img-title: Jake W. Vincent, PhD
 {: .sectionnolist}
 
 ### Community Engagement
+2026: *Linguist(ic)s in Tech*. Presentation given to annual professionalization seminar. Linguistics Department, UC Santa Cruz. May 8.\\
 2024: Humanists in Tech Alumni Panel, The Humanities Institute, UC Santa Cruz. Humanizing Technology Project. March 6. ([flyer](assets/documents/2024_humanists_in_tech_alumni_panel.pdf))
 {: .sectionnolist}
 
@@ -56,7 +58,7 @@ main-img-title: Jake W. Vincent, PhD
 2017: *Circumnominal relative clauses in Chamorro.* [24th meeting of the Austronesian Formal Linguistics Association (AFLA)](https://lingconf.com/afla24/), University of Washington, April 7–9. ([abstract](assets/documents/jwv_afla24_abstract.pdf) \| [handout](assets/documents/jwv_afla24_handout.pdf))
 {: .sectionnolist}
 
-### Departmental Talks
+### Department Talks
 2019: *Computation via Hummingbird: Why and how to use the UCSC Hummingbird Computational Cluster.* [s/lab](https://sites.google.com/a/ucsc.edu/s-lab/), UC Santa Cruz, April 8. ([slides](assets/documents/jwv_slab_hb.pdf) \| [other materials](hb.html))\\
 2019: *Acceptable extraction from relative clauses in English.* [s/lab](https://sites.google.com/a/ucsc.edu/s-lab/), UC Santa Cruz, January 25. ([slides](assets/documents/jwv_rc_subext_slab.pdf))\\
 2018: *Extraction from Complex NP islands: An experimental perspective*. [Linguistics at Santa Cruz (LASC)](https://linguistics.ucsc.edu/news-events/conferences/pdfs/LASC%20Programs/lasc-2018.pdf), UC Santa Cruz, March 10. ([abstract](assets/documents/jwv_lasc2018_abstract.pdf) \| [poster](assets/documents/jwv_lasc2018_poster.pdf))\\
