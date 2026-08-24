@@ -1,26 +1,19 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link type="text/css" rel="stylesheet" href="/assets/css/stylesheet.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/stylesheet_blog.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/syntax.css">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:300,700&display=swap&subset=latin-ext" rel="stylesheet">
-        <title>JWV: {{ page.title }}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+<!doctype html>
+<html lang="en">
+    {% include head.html %}
     <body>
+        <a class="skip-link" href="#main-content">Skip to content</a>
         <div id="container">
             {% include banner.html %}
-            {% include navigation.html %}
-            <div class = "main">
-                <span class="title">{{ page.title }}</span>
-                <span class="date">{{ page.date | date: '%B %d, %Y' }}</span>
-                <span class="keywords">{{ page.keywords }}</span>
-
+            <main id="main-content" class="main">
+                <h1 class="title">{{ page.title }}</h1>
+                <p class="date">{{ page.date | date: '%B %d, %Y' }}</p>
+                {% if page.keywords %}<p class="keywords">{{ page.keywords }}</p>{% endif %}
                 <div class="blog-text">
                     {{ content }}
                 </div>
-            </div>
+            </main>
+            {% include footer.html %}
         </div>
     </body>
 </html>

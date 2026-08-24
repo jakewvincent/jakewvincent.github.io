@@ -4,8 +4,6 @@ layout: default
 updated: 2026-03-29
 ---
 
-# Discourse simulator for task-oriented dialogue
-
 ## Overview
 
 This system simulates multi-participant, task-oriented conversations by modeling the discourse moves of agentic participants who interact through *discourse operations* (implemented as tools) on a shared discourse structure. Rather than treating conversation as a sequence of specific types of utterances, the system adopts a discourse-theoretic perspective. It models utterances not by what they *are* (e.g., "this is a question"), but by what they *do to the context*.
@@ -24,7 +22,7 @@ The system combines insights from two theoretical areas:
 The result is a system in which agents carry rich internal states that guide their contributions to a shared workspace. The workspace tracks what has been settled (in the common ground), what remains open (on the Table), and what has been promised (in the to-do list). A set of discourse moves formally connects these two layers, and most moves include a linguistic contribution that is added to the conversation's transcript.
 
 <figure>
-    <img src="assets/images/discourse-sim-fig1.svg">
+    <img src="assets/images/discourse-sim-fig1.svg" alt="Architecture diagram of the Discourse Simulator: each agent holds private beliefs, desires, and intentions, and communicates with other agents only through discourse operations acting on shared structures—the common ground, the Table, and the to-do list—which together produce the conversation transcript.">
     <figcaption>Figure 1: Architecture overview</figcaption>
 </figure>
 
@@ -69,7 +67,7 @@ Each participant has a separate to-do list, to which items can be added in two w
 - **Directives** (requests/commands): The speaker adds to *another's* to-do list (*Please provide the necessary details*)
 
 <figure>
-    <img src="assets/images/discourse-sim-fig2.svg">
+    <img src="assets/images/discourse-sim-fig2.svg" alt="Diagram of how a speaker's utterance updates the common ground: proposed content is added to the Table, accepted moves shift it into the shared Common Ground, and rejected proposals are discarded.">
     <figcaption>Figure 2: How content enters the common ground</figcaption>
 </figure>
 
@@ -191,7 +189,7 @@ Tools fall into several categories that reflect distinct kinds of agentic action
 Each turn in the conversation follows a cycle:
 
 <figure class="float-right" style="width: 45%;">
-    <img src="assets/images/discourse-sim-fig3.svg">
+    <img src="assets/images/discourse-sim-fig3.svg" alt="Flowchart of one conversation turn: an agent selects an intention from its private plan, chooses a discourse operation, produces an utterance, and the other agents update their discourse state before responding.">
     <figcaption>Figure 3: Conversation turn structure</figcaption>
 </figure>
 

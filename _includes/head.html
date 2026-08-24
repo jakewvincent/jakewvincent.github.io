@@ -1,0 +1,23 @@
+{% assign meta_description = page.description | default: site.description %}
+{% assign social_image = page.social-image | default: site.default_og_image %}
+{% assign social_image_alt = page.main-img-alt | default: site.default_image_alt %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>{% if page.title == "Home" %}{{ site.title }}{% else %}{{ page.title }} — Jake W. Vincent{% endif %}</title>
+    <meta name="description" content="{{ meta_description | strip_html | strip_newlines | escape }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{% if page.title == "Home" %}{{ site.title }}{% else %}{{ page.title }} — Jake W. Vincent{% endif %}">
+    <meta property="og:description" content="{{ meta_description | strip_html | strip_newlines | escape }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ social_image | absolute_url }}">
+    <meta property="og:image:alt" content="{{ social_image_alt | escape }}">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="{{ '/assets/css/stylesheet.css' | relative_url }}">
+    {% if page.layout == "blog_layout" or page.layout == "post" %}<link rel="stylesheet" href="{{ '/assets/css/stylesheet_blog.css' | relative_url }}">{% endif %}
+    <link rel="stylesheet" href="{{ '/assets/css/syntax.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/fa.all.min.css' | relative_url }}">
+</head>

@@ -1,14 +1,9 @@
-<div id="banner">
-    <h2 id="name">Jake W. Vincent, Ph.D.</h2>
-    <span class="personal-title">Data Scientist · Linguist</span>
-    <span class="social">
-        <a class="fa-brands fa-orcid" title="OrcID" href="https://orcid.org/0000-0002-4794-4370"></a>
-        <a class="fa-brands fa-researchgate" title="ResearchGate" href="https://www.researchgate.net/profile/Jake-Vincent-3"></a>
-        <a class="fa-brands fa-github" title="Github" href="https://github.com/jakewvincent/"></a>
-        <a class="fa-brands fa-linkedin" title="LinkedIn" href="https://www.linkedin.com/in/jake-vincent-phd-8279a6ab"></a>
-        <span class="display-on-hover-top">
-            <a class="fa-solid fa-envelope" id="mail-icon"></a>
-            <code class="email display-on-hover-bottom highlighter-rouge">ved.vwj@ekaj</code>
-        </span>
-    </span>
-</div>
+{% assign masthead_image = page.main-img-wide | default: page.main-img | default: site.default_image_wide | default: site.default_image %}
+{% assign masthead_alt = page.main-img-alt | default: page.main-img-title | default: site.default_image_alt %}
+<header id="banner" class="site-masthead">
+    <a id="name" class="site-name" href="/" aria-label="Jake W. Vincent — home">Jake W. Vincent</a>
+    <div class="masthead-photo" style="--masthead-position: {{ page.main-img-position | default: 'center center' }}">
+        <img src="{{ masthead_image | relative_url }}" alt="{{ masthead_alt | escape }}" decoding="async" loading="eager" fetchpriority="high">
+    </div>
+    {% include navigation.html %}
+</header>

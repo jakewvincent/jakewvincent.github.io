@@ -1,193 +1,70 @@
 ---
-title: Research & Projects
-updated: 2026-02-09
+title: Work
 layout: default
+nav: work
+updated: 2026-08-22
+description: "Agent systems and open-source work: full-agent telephony, mobile Hermes chat, mkdnflow.nvim, and Discourse Simulator, plus evaluation and language research."
+main-img: assets/images/boxelder_borderless.png
+main-img-wide: assets/images/boxelder_wide.webp
+main-img-alt: Peel-apart Polaroid of a box elder tree against pale sky.
 ---
 
-### Software projects
+<section class="artifact-index" aria-labelledby="featured-work">
+    <div class="section-heading-row">
+        <h2 id="featured-work">Agent systems</h2>
+    </div>
 
-<div class="card-grid">
-    <div class="project-card">
-        <h4 class="card-title"><i class="fa-solid fa-comments"></i> Discourse Simulator for Task-Oriented Dialogue <span class="card-year">current</span></h4>
-        <p class="card-description">A conversation simulation system grounded in formal discourse theory. Agents with private mental states (beliefs, desires, intentions) interact through discourse operations on shared information structures including Common Ground, the Table, Discourse Commitments, and To-Do Lists. Integrates Farkas &amp; Bruce (2010), Portner (2007), and the BDI model to generate multi-participant dialogues driven by formal pragmatic principles.</p>
-        <div class="card-meta">
-            <span class="card-tag">Agents</span>
-            <span class="card-tag">MCP</span>
-            <span class="card-tag">Synthetic data</span>
-            <span class="card-tag">Discourse</span>
-            <span class="card-tag">Pragmatics</span>
-            <span class="card-tag">BDI</span>
+    <article class="artifact-row">
+        <p class="artifact-number" aria-hidden="true">01</p>
+        <div class="artifact-copy">
+            <p class="artifact-type">Live personal deployment · current</p>
+            <h3>Full-agent telephony for Hermes</h3>
+            <p>A live telephone interface to my full Hermes agent. LiveKit/SIP carries calls into persistent Hermes sessions with memory, tools, and project context intact. The engineering focus is the seam between real-time audio and durable agent state: fail-closed authorization and routing, barge-in, and reconciling persisted history so it reflects only speech that was actually delivered. The source remains private.</p>
         </div>
-        <div class="card-links">
-            <a class="rg-button a-button" href="discourse-sim.html"><i class="fa-solid fa-book-open"></i>&nbsp;&nbsp;White Paper</a>
-        </div>
-    </div>
-    <div class="project-card">
-        <h4 class="card-title"><i class="fa-solid fa-hand-holding-heart"></i> Therapy Docs <span class="card-year">recent</span></h4>
-        <p class="card-description">A tablet-optimized clinical documentation system for mental health professionals, designed for use during therapy sessions with stylus input. Features include AI-powered narrative generation via streaming, structured progress notes with intervention tracking, intake assessments, treatment planning, diagnosis management, and a mock/real API architecture that enables full functionality without backend infrastructure.</p>
-        <div class="card-meta">
-            <span class="card-tag">JavaScript</span>
-            <span class="card-tag">Alpine.js</span>
-            <span class="card-tag">Healthcare</span>
-            <span class="card-tag">AI</span>
-            <span class="card-tag">Lambda</span>
-            <span class="card-tag">API Gateway</span>
-        </div>
-        <div class="card-links">
-            <a class="github-button a-button" href="https://github.com/jakewvincent/therapy-docs-demo"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;View on GitHub</a>
-            <a class="demo-button a-button" href="https://therapydocs.demos.jwv.dev"><i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;&nbsp;View Demo</a>
-        </div>
-    </div>
-    <div class="project-card">
-        <h4 class="card-title"><i class="fa-solid fa-ear-listen"></i> TinyScribe <span class="card-year">recent</span></h4>
-        <p class="card-description">A browser-based speech transcription and speaker diarization tool in which all processing runs client-side using small ML models (Whisper Tiny, WavLM). Features real-time transcription, speaker identification via voice embeddings, optional speaker enrollment for persistent identification, and debug views exposing similarity scores and clustering decisions. Built for personal exploration of how ASR and diarization systems work under the hood, and designed to be modular for use in other projects.</p>
-        <div class="card-meta">
-            <span class="card-tag">JavaScript</span>
-            <span class="card-tag">WebAssembly</span>
-            <span class="card-tag">ML</span>
-            <span class="card-tag">Speech</span>
-            <span class="card-tag">ASR</span>
-            <span class="card-tag">Experimental</span>
-        </div>
-        <div class="card-links">
-            <a class="github-button a-button" href="https://github.com/jakewvincent/tinyscribe">
-                <i class="fa-brands fa-github"></i>
-                &nbsp;&nbsp;View on GitHub
-            </a>
-            <a class="demo-button a-button" href="https://tinyscribe.demos.jwv.dev">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                &nbsp;&nbsp;View Demo
-            </a>
-        </div>
-    </div>
-    <div class="project-card">
-        <h4 class="card-title"><i class="fa-solid fa-image"></i> Icon Thesaurus <span class="card-year">recent</span></h4>
-        <p class="card-description">A semantic icon vocabulary builder for comparing icons across 10 popular libraries (Lucide, Heroicons, Feather, Phosphor, Tabler, Bootstrap, Font Awesome, Material Design, Remix, Ionicons). Define abstract meanings like "home" or "settings," then find and compare equivalent icons from each library, like a thesaurus for visual symbols. Features hierarchical organization, multi-variant selection, drag-and-drop reordering, and SVG sprite sheet export with semantic IDs.</p>
-        <div class="card-meta">
-            <span class="card-tag">JavaScript</span>
-            <span class="card-tag">Alpine.js</span>
-            <span class="card-tag">Design</span>
-        </div>
-        <div class="card-links">
-            <a class="github-button a-button" href="https://github.com/jakewvincent/icon-thesaurus">
-                <i class="fa-brands fa-github"></i>
-                &nbsp;&nbsp;View on GitHub
-            </a>
-            <a class="demo-button a-button" href="https://iconthesaurus.demos.jwv.dev">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                &nbsp;&nbsp;View Demo
-            </a>
-        </div>
-    </div>
-    <div class="project-card">
-        <h4 class="card-title"><i class="fa-brands fa-markdown"></i> Mkdnflow <span class="card-year">2021–current</span></h4>
-        <p class="card-description">A Neovim plugin for fluent navigation and management of markdown-based document repositories—notebooks, wikis, knowledge bases, or static site content. Features include link-following, backward/forward navigation, automatic directory creation, table formatting, list support, section folding, and more.</p>
-        <div class="card-meta">
-            <span class="card-tag">Lua</span>
-            <span class="card-tag">Neovim</span>
-            <span class="card-tag">Markdown</span>
-        </div>
-        <div class="card-links">
-            <a class="github-button a-button" href="https://github.com/jakewvincent/mkdnflow.nvim">
-                <i class="fa-brands fa-github"></i>
-                &nbsp;&nbsp;View on GitHub
-            </a>
-        </div>
-    </div>
-    <div class="project-card">
-        <h4 class="card-title"><i class="fa-solid fa-align-justify"></i> TeXmagic <span class="card-year">2021</span></h4>
-        <p class="card-description">A simple Neovim plugin enabling <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> build engine selection via magic comments (e.g. <code>%! TEX program = xelatex</code>). Designed for use with the TexLab LSP server's build service.</p>
-        <div class="card-meta">
-            <span class="card-tag">Lua</span>
-            <span class="card-tag">Neovim</span>
-            <span class="card-tag">LaTeX</span>
-        </div>
-        <div class="card-links">
-            <a class="github-button a-button" href="https://github.com/jakewvincent/texmagic.nvim">
-                <i class="fa-brands fa-github"></i>
-                &nbsp;&nbsp;View on GitHub
-            </a>
-        </div>
-    </div>
-</div>
+        <p class="artifact-action">Case study planned</p>
+    </article>
 
-### Research
+    <article class="artifact-row">
+        <p class="artifact-number" aria-hidden="true">02</p>
+        <div class="artifact-copy">
+            <p class="artifact-type">Deployed personal prototype · current</p>
+            <h3>Touch-first mobile chat for Hermes</h3>
+            <p>A working, touch-first mobile client for canonical Hermes sessions. It preserves Hermes's backend-owned session and tool semantics while adapting streaming output, live and historical tool state, approvals, diffs, and recovery to small screens. I documented the product and architecture case in a public RFC.</p>
+        </div>
+        <p class="artifact-action"><a href="https://github.com/NousResearch/hermes-agent/issues/89661">Architecture RFC ↗</a></p>
+    </article>
 
-<div class="card-grid">
-    <div class="project-card">
-    <h4 class="card-title">Extraction from relative clauses in English <span class="card-year">2018–2022</span></h4>
-    <p class="card-description">Investigation of whether English selectively tolerates RC subextraction, as documented in Mainland Scandinavian languages, Romance languages, and Hebrew (see <a href="http://www.jstor.org/stable/4178357">Chung & McCloskey 1983</a>, <a href="https://books.google.com/books?hl=en&lr=&id=DUAIAQAAQBAJ&oi=fnd&pg=PA239&dq=kush+microvariation+in+islands&ots=0ABychxQnB&sig=pgZvVqUa2JsscxB_D05KuZ9fSt8#v=onepage&q=kush%20microvariation%20in%20islands&f=false">Kush et al. 2013</a>, <a href="https://muse.jhu.edu/article/690046/pdf?casa_token=wBovu7pEZL4AAAAA:LnyFnb7FGW7T2e9nR6rx_UTE_-qQAHXBSaYbTjXJtR2KEVyCYlXZ7JrQEPMfIEuxqKNf9Otung">Sichel 2018</a>). Findings show English RCs are substantially more transparent to extraction in existentials and predicate nominals.</p>
-    <div class="card-meta">
-        <span class="card-tag">Syntax</span>
-        <span class="card-tag">Experimental</span>
-        <span class="card-tag">English</span>
+    <article class="artifact-row">
+        <p class="artifact-number" aria-hidden="true">03</p>
+        <div class="artifact-copy">
+            <p class="artifact-type">Open-source maintenance · 2021–current</p>
+            <h3>mkdnflow.nvim</h3>
+            <p>Creator and maintainer of a Neovim plugin for navigating and managing markdown-based repositories—notebooks, wikis, and knowledge bases. Five years of maintenance since 2021, including issue triage, community pull-request review, and backward-compatible releases across breaking upstream changes. The repository has 800+ GitHub stars.</p>
+        </div>
+        <p class="artifact-action"><a href="https://github.com/jakewvincent/mkdnflow.nvim">View on GitHub ↗</a></p>
+    </article>
+
+    <article class="artifact-row">
+        <p class="artifact-number" aria-hidden="true">04</p>
+        <div class="artifact-copy">
+            <p class="artifact-type">Agent system &amp; working paper · current</p>
+            <h3><a href="/discourse-sim.html">Discourse Simulator for Task-Oriented Dialogue</a></h3>
+            <p>A formal conversation simulator connecting private BDI states to shared discourse structures. The white paper documents the architecture, operational semantics, and worked examples.</p>
+        </div>
+        <p class="artifact-action"><a href="/discourse-sim.html">Read the paper →</a></p>
+    </article>
+</section>
+
+
+<section class="home-context" aria-labelledby="supporting-work">
+    <h2 id="supporting-work">Supporting work</h2>
+    <div>
+        <p><strong><a href="https://arxiv.org/abs/2502.08514">Evaluability taxonomy for summary faithfulness</a></strong> — a multi-author study for which I designed a taxonomy of ambiguity, vagueness, and other conditions that make factuality judgments ill-posed. I improved annotation quality through data analysis, annotator interviews, revised guidelines, and a Socratic review tool.</p>
+        <p><strong><a href="https://arxiv.org/abs/2510.01659">MDSEval</a></strong> — a meta-evaluation benchmark testing whether automatic methods agree with human assessment of multimodal dialogue summaries.</p>
+        <p><strong><a href="https://github.com/jakewvincent/therapy-docs-demo">Therapy Docs</a></strong> — a tablet-optimized prototype for psychotherapy documentation, built around a practicing therapist's workflow: stylus input, streaming narrative generation, structured notes, and a mock/real API architecture. It was not launched as a product. <a href="https://therapydocs.demos.jwv.dev">Demo ↗</a></p>
+        <p><strong><a href="https://github.com/jakewvincent/tinyscribe">TinyScribe</a></strong> — browser-based transcription and speaker diarization running entirely client-side on small models (Whisper Tiny, WavLM). <a href="https://tinyscribe.demos.jwv.dev">Demo ↗</a></p>
+        <p><strong><a href="https://github.com/jakewvincent/icon-thesaurus">Icon Thesaurus</a></strong> — compare semantically equivalent icons across 10 icon libraries; SVG sprite export. <a href="https://iconthesaurus.demos.jwv.dev">Demo ↗</a></p>
+        <p><strong><a href="https://github.com/jakewvincent/texmagic.nvim">TeXmagic</a></strong> — Neovim plugin selecting LaTeX build engines via magic comments (2021).</p>
+        <p><strong>Linguistics research</strong> — experimental syntax (relative-clause extraction in English), Chamorro syntax and phonology, and research tooling. See the <a href="/cv.html">CV</a>, the <a href="/dissertation.html">dissertation page</a>, and <a href="/notebooks.html">analysis notebooks</a>.</p>
     </div>
-    <div class="card-links">
-        <a class="download-pdf a-button" href="https://www.proquest.com/openview/760063f3ff8277bc8b1a19ca3f701e6e/"><i class="fa-solid fa-file"></i>&nbsp;&nbsp;Dissertation</a>
-        <a class="download-pdf a-button" href="assets/documents/jwv_rc_subext_eng.pdf"><i class="fa-solid fa-file"></i>&nbsp;&nbsp;Writeup</a>
-        <a class="r-notebook a-button" href="notebooks.html"><i class="fa-brands fa-r-project"></i>&nbsp;&nbsp;Notebooks</a>
-        <a class="download-pdf a-button" href="https://doi.org/10.3390/languages7020117"><i class="fa-solid fa-file"></i>&nbsp;&nbsp;<em>Languages</em> manuscript</a>
-    </div>
-    </div>
-    <div class="project-card">
-        <h4 class="card-title">Internally headed relative clauses in Chamorro <span class="card-year">2015–2018</span></h4>
-        <p class="card-description">Analysis of Chamorro's typologically rare construction where a noun phrase surfaces within its modifying relative clause. My MA thesis argues the head NP is merged within the RC as a DP headed by a null operator, explaining island sensitivity, linker placement, and interpretive effects. Cited in <a href="https://books.google.com/books?hl=en&lr=&id=cxH9DwAAQBAJ&oi=fnd&pg=PR9&dq=cinque+syntax+of+relative+clauses&ots=LoK2L7ZQQG&sig=RDRX0sev2y1eqiYBkhT7jgJyuLg">Cinque (2020)</a>.</p>
-        <div class="card-meta">
-            <span class="card-tag">Syntax</span>
-            <span class="card-tag">Chamorro</span>
-        </div>
-        <div class="card-links">
-            <a class="download-pdf a-button" href="https://cloudfront.escholarship.org/dist/prd/content/qt0jq7096r/qt0jq7096r.pdf?t=p3qtng">
-                <i class="fa-solid fa-file"></i>
-                &nbsp;&nbsp;Master's thesis
-            </a>
-        </div>
-    </div>
-        <div class="project-card">
-        <h4 class="card-title">Syllable parser <span class="card-year">2020</span></h4>
-        <p class="card-description">A syllable parser that takes IPA input and produces syllabified output. Includes integration with the <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">CMU Pronouncing Dictionary</a> (100k+ words), with ARPABET-to-IPA conversion for statistical analysis of English pronunciations.</p>
-        <div class="card-meta">
-            <span class="card-tag">Phonology</span>
-            <span class="card-tag">R</span>
-            <span class="card-tag">English</span>
-        </div>
-        <div class="card-links">
-            <a class="github-button a-button" href="https://github.com/jakewvincent/R-syllable-parser">
-                <i class="fa-brands fa-github"></i>
-                &nbsp;&nbsp;View source
-            </a>
-        </div>
-    </div>
-    <div class="project-card">
-        <h4 class="card-title">HTML interlinear gloss generator <span class="card-year">2019</span></h4>
-        <p class="card-description">A tool that converts word, gloss, and free translation data into HTML for displaying interlinear glosses—the standard format for presenting linguistic examples with word-by-word translations—on websites.</p>
-        <div class="card-meta">
-            <span class="card-tag">JavaScript</span>
-            <span class="card-tag">Linguistics</span>
-        </div>
-        <div class="card-links">
-            <a class="github-button a-button" href="https://github.com/jakewvincent/HTML-interlinear-gloss">
-                <i class="fa-brands fa-github"></i>
-                &nbsp;&nbsp;View source
-            </a>
-            <a class="demo-button a-button" href="gloss-generator.html">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                &nbsp;&nbsp;Try it
-            </a>
-        </div>
-    </div>
-    <div class="project-card">
-        <h4 class="card-title">Rhyme in Chamorro poetry <span class="card-year">2014</span></h4>
-        <p class="card-description">Analysis of 106 rhyme pairs from Joaquin F. Borja's <a href="http://books.google.com/books/about/Estreyas_Marianas.html?id=1oAmAQAAIAAJ"><em>Istreyas Marianas: Chamorro</em></a>. The study found ~25% strict rhyme and ~75% "abstract rhyme" utilizing associations between segment classes established by Chamorro phonological processes.</p>
-        <div class="card-meta">
-            <span class="card-tag">Phonology</span>
-            <span class="card-tag">Chamorro</span>
-        </div>
-        <div class="card-links">
-            <a class="download-pdf a-button" href="/assets/documents/champohandout.pdf">
-                <i class="fa-solid fa-file"></i>
-                &nbsp;&nbsp;Handout
-            </a>
-        </div>
-    </div>
-</div>
+</section>

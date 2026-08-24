@@ -1,23 +1,17 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link type="text/css" rel="stylesheet" href="/assets/css/stylesheet.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/stylesheet_blog.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/syntax.css">
-        <link href="/assets/css/fa.all.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:300,700&display=swap&subset=latin-ext" rel="stylesheet">
-        <title>JWV: {{ page.title }}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+<!doctype html>
+<html lang="en">
+    {% include head.html %}
     <body>
+        <a class="skip-link" href="#main-content">Skip to content</a>
         <div id="container">
             {% include banner.html %}
-            {% include navigation.html %}
-            <div class = "main">
+            <main id="main-content" class="main">
+                {% unless page.title == "Home" %}<h1 class="page-title">{{ page.title }}</h1>{% endunless %}
                 <div id="content">
                     {{ content }}
                 </div>
-            </div>
+            </main>
+            {% include footer.html %}
         </div>
     </body>
 </html>

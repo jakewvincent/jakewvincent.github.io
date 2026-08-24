@@ -2,8 +2,9 @@
 title: Experiment notebooks
 updated: 2020-01-21
 layout: default
-main-img: assets/images/black_walnut.png
-main-img-title: Black Walnut, 2012
+main-img: assets/images/boxelder_borderless.png
+main-img-wide: assets/images/boxelder_wide.webp
+main-img-title: Peel-apart Polaroid of a Box Elder, 2010
 ---
 
 ### English relative clause subextraction experiment notebooks

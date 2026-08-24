@@ -1,9 +1,9 @@
 - name: Home
-  link: /index.html
-  id: 01
-- name: Projects
+  link: /
+  id: home
+- name: Work
   link: /projects.html
-  id: 02
+  id: work
 - name: CV
   link: /cv.html
-  id: 03
+  id: cv

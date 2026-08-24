@@ -3,6 +3,7 @@ title: Teaching
 layout: default
 updated: 2022-09-25
 main-img: assets/images/boxelder_borderless.png
+main-img-wide: assets/images/boxelder_wide.webp
 main-img-title: Peel-apart Polaroid of a Box Elder, 2010
 ---
 

@@ -1,4 +1,14 @@
-.jekyll-cache
+.jekyll-cache/
 .playwright-mcp
+.bundle/
+vendor/bundle/
 
-_site/CLAUDE.md
+# Private / local-only design context — not for the public repo
+.impeccable/
+PRODUCT.md
+DESIGN.md
+
+# Disposable review artifacts
+sketches/
+assets/css/stylesheet 2.css
+_site/assets/css/stylesheet 2.css

@@ -1,1 +1,17 @@
 highlighter: rouge
+url: https://www.jwv.dev
+title: Jake W. Vincent — Agent systems and conversational AI
+description: Jake W. Vincent builds agent systems, deployment tooling, and evaluation methods for conversational AI.
+default_image: assets/images/boxelder_borderless.png
+default_image_wide: assets/images/boxelder_wide.webp
+default_og_image: assets/images/social-card-default.jpg
+default_image_alt: Peel-apart Polaroid of a box elder tree, 2010.
+
+exclude:
+  - CLAUDE.md
+  - DESIGN.md
+  - PRODUCT.md
+  - README.md
+  - mise.toml
+  - sketches
+  - .gitignore

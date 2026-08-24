@@ -1,7 +1,7 @@
-<nav id="navbar">
+<nav id="navbar" aria-label="Primary">
     <ul>
     {% for item in site.data.navigation %}
-        <li><a href="{{ item.link }}" {% if page.title == item.name %} id="activelink" {% endif %}>{{ item.name }}</a></li>
+        <li><a href="{{ item.link }}"{% if page.nav == item.id %} class="active" aria-current="page"{% endif %}>{{ item.name }}</a></li>
     {% endfor %}
     </ul>
 </nav>

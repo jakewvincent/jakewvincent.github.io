@@ -1,20 +1,32 @@
 ---
-title: CV
+title: Curriculum vitae
+display-title: "<em>Curriculum vitae</em>"
 layout: default
-updated: 2026-05-21
-main-img: assets/images/jwv_x.jpg
-main-img-title: Jake W. Vincent, PhD
+nav: cv
+updated: 2026-08-22
+main-img: assets/images/boxelder_borderless.png
+main-img-wide: assets/images/boxelder_wide.webp
+main-img-title: Peel-apart Polaroid of a Box Elder, 2010
+main-img-alt: Peel-apart Polaroid of a box elder tree against pale sky.
 ---
 
-<div class="buttonspace">
-	<a href="assets/documents/jake_vincent_cv.pdf" class="download-pdf a-button"><i class="fa-solid fa-file"></i>&nbsp;&nbsp;PDF copy</a>
-</div>
+<div class="cv-opening">
+
+<figure class="cv-portrait">
+    <img src="/assets/images/jake-portrait-full.webp" alt="Jake W. Vincent smiling outdoors in front of green foliage." width="600" height="800">
+</figure>
+
+<div class="cv-education" markdown="1">
 
 ### Education
 2021: Ph.D., Department of Linguistics, UC Santa Cruz. Dissertation title: [*Extraction From Relative Clauses: An Experimental Investigation into Variable Island Effects in English—or—This Is a Dissertation That We Really Needed to Find Someone Who'd Write*](https://www.proquest.com/openview/760063f3ff8277bc8b1a19ca3f701e6e/). Dissertation advisor: [Matt Wagers](https://people.ucsc.edu/~mwagers)\\
 2017: M.A., Department of Linguistics, UC Santa Cruz. Thesis title: [*D-Raising in Chamorro Relative Clauses and Other A&prime; Constructions*](https://escholarship.org/uc/item/0jq7096r). Thesis advisor: [Sandra Chung](http://people.ucsc.edu/~schung).\\
 2015:  B.A., Department of Linguistics, UC Santa Cruz. Graduated *Summa Cum Laude* with additional Honors in Linguistics.
 {: .sectionnolist}
+
+</div>
+
+<div class="cv-positions" markdown="1">
 
 ### Positions Held
 2026-current: Forward Deployed AI Engineer & Data Scientist, Five9.\\
@@ -23,6 +35,12 @@ main-img-title: Jake W. Vincent, PhD
 2021-2022: Language Engineer (contract), Amazon Lex (NLU pod), AiData team, AI Labs, Amazon Web Services.\\
 2021-2022: Lecturer in Linguistics, UC Santa Cruz.
 {: .sectionnolist }
+
+</div>
+
+</div>
+
+<div class="cv-body" markdown="1">
 
 ### Publications & Research Activities
 [Liu, Yinhong](https://yinhongliu.com), [Jianfeng He](https://www.linkedin.com/in/jianfeng-he-5a1b651b7/), [Hang Su](https://www.linkedin.com/in/hang-su-654a5543/), [Ruixue Lian](https://www.linkedin.com/in/ruixue-lian), **Jake W. Vincent**, [Srikanth Vishnubhotla](https://www.linkedin.com/in/srikanth-vishnubhotla), [Robinson Piramuthu](https://www.linkedin.com/in/rpiramuthu), [Saab Mansour](https://www.linkedin.com/in/saabmansour/). 2025. MDSEval: A Meta-Evaluation Benchmark for Multimodal Dialogue Summarization. EMNLP 2025 Conference Submission. ([paper](https://arxiv.org/abs/2510.01659))\\
@@ -92,7 +110,7 @@ Pedagogy of Linguistics (TA Training), UC Santa Cruz (Fall 2018–Winter 2019). 
 {: .sectionnolist}
 
 ### Research Experience
-2017: Graduate student researcher, UC Santa Cruz. Helped organize and develop materials for [language-learning activities](images/loteria_boards.jpg) in Santiago Laxopa Zapotec (SLZ) and San Mart&iacute;n Peras Mixtec (SMPM) for the inaugural [Nido de Lenguas](http://wlma.ucsc.edu/nido-de-lenguas.html). June–September. Supervisors: [Maziar Toosarvandani](https://people.ucsc.edu/~mtoosarv) and [Pranav Anand](https://people.ucsc.edu/~panand).\\
+2017: Graduate student researcher, UC Santa Cruz. Helped organize and develop materials for language-learning activities in Santiago Laxopa Zapotec (SLZ) and San Mart&iacute;n Peras Mixtec (SMPM) for the inaugural [Nido de Lenguas](http://wlma.ucsc.edu/nido-de-lenguas.html). June–September. Supervisors: [Maziar Toosarvandani](https://people.ucsc.edu/~mtoosarv) and [Pranav Anand](https://people.ucsc.edu/~panand).\\
 2017: Graduate student researcher, UC Santa Cruz. Identified borrowings and confirmed previously-identified borrowings from Spanish, Japanese, and English into Chamorro and supervised two undergraduate research assistants. March–June. Supervisor: [Sandra Chung](https://people.ucsc.edu/~schung).\\
 2016: Graduate student researcher, UC Santa Cruz. Facilitated and supervised annotation of recordings generated in a linguistic elicitation experiment in Chamorro. March–September. Supervisors: Matt Wagers and Sandra Chung.\\
 2015: Research Experiences for Undergraduates Fellow, [Chamorro Psycholinguistics Project](http://chamorro.sites.ucsc.edu) (BCS #1251429). Developed an independent project on relative clauses in Chamorro. 2014–2015 school year. Supervisors: [Sandra Chung](http://people.ucsc.edu/~schung) and [Matt Wagers](http://people.ucsc.edu/~mwagers).
@@ -123,3 +141,5 @@ Document preparation: <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span>\\
 Remote and cloud computation: AWS, SSH & SFTP, HPC clusters
 Version control: Git
 {: .sectionnolist}
+
+</div>

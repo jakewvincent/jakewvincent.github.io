@@ -1,44 +1,55 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link type="text/css" rel="stylesheet" href="/assets/css/stylesheet.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/syntax.css">
-        <link href="/assets/css/fa.all.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:300,700&display=swap&subset=latin-ext" rel="stylesheet">
-        <title>JWV: Interlinear Gloss Generator</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div id="container">
-            <div id="banner">
-    <h2 id="name">Jake W. Vincent, Ph.D.</h2>
-    <span class="personal-title">Data Scientist · Linguist</span>
-    <span class="social">
-        <a class="fa-brands fa-orcid" title="OrcID" href="https://orcid.org/0000-0002-4794-4370"></a>
-        <a class="fa-brands fa-researchgate" title="ResearchGate" href="https://www.researchgate.net/profile/Jake-Vincent-3"></a>
-        <a class="fa-brands fa-github" title="Github" href="https://github.com/jakewvincent/"></a>
-        <a class="fa-brands fa-linkedin" title="LinkedIn" href="https://www.linkedin.com/in/jake-vincent-phd-8279a6ab"></a>
-        <span class="display-on-hover-top">
-            <a class="fa-solid fa-envelope" id="mail-icon"></a>
-            <code class="email display-on-hover-bottom highlighter-rouge">ved.vwj@ekaj</code>
-        </span>
-    </span>
-</div>
+<!doctype html>
+<html lang="en">
+    
 
-            <nav id="navbar">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Interlinear Gloss Generator — Jake W. Vincent</title>
+    <meta name="description" content="Jake W. Vincent builds agent systems, deployment tooling, and evaluation methods for conversational AI.">
+    <link rel="canonical" href="https://www.jwv.dev/gloss-generator.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Interlinear Gloss Generator — Jake W. Vincent">
+    <meta property="og:description" content="Jake W. Vincent builds agent systems, deployment tooling, and evaluation methods for conversational AI.">
+    <meta property="og:url" content="https://www.jwv.dev/gloss-generator.html">
+    <meta property="og:image" content="https://www.jwv.dev/assets/images/social-card-default.jpg">
+    <meta property="og:image:alt" content="Peel-apart Polaroid of a box elder tree, 2010.">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="/assets/css/stylesheet.css">
+    
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+    <link rel="stylesheet" href="/assets/css/fa.all.min.css">
+</head>
+
+    <body>
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div id="container">
+            
+
+<header id="banner" class="site-masthead">
+    <a id="name" class="site-name" href="/" aria-label="Jake W. Vincent — home">Jake W. Vincent</a>
+    <div class="masthead-photo" style="--masthead-position: center center">
+        <img src="/assets/images/boxelder_wide.webp" alt="Peel-apart Polaroid of a box elder tree, 2010." decoding="async" loading="eager" fetchpriority="high">
+    </div>
+    <nav id="navbar" aria-label="Primary">
     <ul>
     
-        <li><a href="/index.html" >Home</a></li>
+        <li><a href="/">Home</a></li>
     
-        <li><a href="/projects.html" >Projects</a></li>
+        <li><a href="/projects.html">Work</a></li>
     
-        <li><a href="/cv.html" >CV</a></li>
+        <li><a href="/cv.html">CV</a></li>
     
     </ul>
 </nav>
 
-            <div class = "main">
-                
+</header>
+
+            <main id="main-content" class="main">
+                <h1 class="page-title">Interlinear Gloss Generator</h1>
                 <div id="content">
                     <p>A tool for generating HTML interlinear glosses—the standard format for presenting linguistic examples with word-by-word translations. Enter your words, glosses, and free translation below, and the tool will generate HTML and CSS you can paste into your website.</p>
 
@@ -270,17 +281,18 @@ font-variant: small-caps;
 
 
                 </div>
-            </div>
-            <div class="spacer"></div>
-            <footer>Last updated February 02, 2026</footer>
+            </main>
+            <footer class="site-footer">
+    <p>Last updated February 02, 2026</p>
+    <nav class="footer-links" aria-label="External profiles and contact">
+        <a href="https://github.com/jakewvincent/">GitHub</a>
+        <a href="https://orcid.org/0000-0002-4794-4370">ORCID</a>
+        <a href="https://www.researchgate.net/profile/Jake-Vincent-3">ResearchGate</a>
+        <a href="https://www.linkedin.com/in/jake-vincent-phd-8279a6ab">LinkedIn</a>
+        <a href="mailto:jake@jwv.dev">Email</a>
+    </nav>
+</footer>
+
         </div>
-        <script>
-            const nav = document.querySelector('nav');
-            const observer = new IntersectionObserver(
-                ([e]) => nav.classList.toggle('stuck', e.intersectionRatio < 1),
-                { threshold: [1], rootMargin: '-1px 0px 0px 0px' }
-            );
-            observer.observe(nav);
-        </script>
     </body>
 </html>
