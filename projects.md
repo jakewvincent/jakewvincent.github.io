@@ -2,8 +2,8 @@
 title: Work
 layout: default
 nav: work
-updated: 2026-08-22
-description: "Agent systems and open-source work: full-agent telephony, mobile Hermes chat, mkdnflow.nvim, and Discourse Simulator, plus evaluation and language research."
+updated: 2026-09-21
+description: "Agent systems and open-source work: full-agent telephony, mkdnflow.nvim, and Discourse Simulator, plus evaluation and language research."
 main-img: assets/images/boxelder_borderless.png
 main-img-wide: assets/images/boxelder_wide.webp
 main-img-alt: Peel-apart Polaroid of a box elder tree against pale sky.
@@ -27,16 +27,6 @@ main-img-alt: Peel-apart Polaroid of a box elder tree against pale sky.
     <article class="artifact-row">
         <p class="artifact-number" aria-hidden="true">02</p>
         <div class="artifact-copy">
-            <p class="artifact-type">Deployed personal prototype · current</p>
-            <h3>Touch-first mobile chat for Hermes</h3>
-            <p>A working, touch-first mobile client for canonical Hermes sessions. It preserves Hermes's backend-owned session and tool semantics while adapting streaming output, live and historical tool state, approvals, diffs, and recovery to small screens. I documented the product and architecture case in a public RFC.</p>
-        </div>
-        <p class="artifact-action"><a href="https://github.com/NousResearch/hermes-agent/issues/89661">Architecture RFC ↗</a></p>
-    </article>
-
-    <article class="artifact-row">
-        <p class="artifact-number" aria-hidden="true">03</p>
-        <div class="artifact-copy">
             <p class="artifact-type">Open-source maintenance · 2021–current</p>
             <h3>mkdnflow.nvim</h3>
             <p>Creator and maintainer of a Neovim plugin for navigating and managing markdown-based repositories—notebooks, wikis, and knowledge bases. Five years of maintenance since 2021, including issue triage, community pull-request review, and backward-compatible releases across breaking upstream changes. The repository has 800+ GitHub stars.</p>
@@ -45,7 +35,7 @@ main-img-alt: Peel-apart Polaroid of a box elder tree against pale sky.
     </article>
 
     <article class="artifact-row">
-        <p class="artifact-number" aria-hidden="true">04</p>
+        <p class="artifact-number" aria-hidden="true">03</p>
         <div class="artifact-copy">
             <p class="artifact-type">Agent system &amp; working paper · current</p>
             <h3><a href="/discourse-sim.html">Discourse Simulator for Task-Oriented Dialogue</a></h3>
